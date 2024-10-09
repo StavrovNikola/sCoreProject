@@ -21,7 +21,6 @@ public class sCoreSerbia {
 
 
 
-
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
@@ -30,20 +29,21 @@ public class sCoreSerbia {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-       // driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        // driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
         driver.get("https://qa-score.uniqa.rs/POS/Serbia/Products");
         mainPage = new MainPage(driver);
 
     }
 
+    //INFO OFFERS
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Riziko Kredit with UW role ")
-    @Step ("Creating info offer with UW")
+    @Step("Creating info offer with UW")
     @Owner("Nikola Stavrov")
-    @Test (priority = 10)
-    public void InfoOfferRizikoKreditUW () {
+    @Test(priority = 10)
+    public void InfoOfferRizikoKreditUW() {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreUW");
@@ -97,14 +97,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Spektar with UW role ")
-    @Step ("Creating info offer with UW")
+    @Step("Creating info offer with UW")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 20)
-    public void InfoOfferSpektarUW () {
+    @Test(priority = 20)
+    public void InfoOfferSpektarUW() {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreUW");
@@ -156,14 +157,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Joker with UW role ")
-    @Step ("Creating info offer with UW")
+    @Step("Creating info offer with UW")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 30)
-    public void InfoOfferJokerUW () {
+    @Test(priority = 30)
+    public void InfoOfferJokerUW() {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreUW");
@@ -215,14 +217,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Riziko with UW role ")
-    @Step ("Creating info offer with UW")
+    @Step("Creating info offer with UW")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 40)
-    public void InfoOfferRizikoUW () {
+    @Test(priority = 40)
+    public void InfoOfferRizikoUW() {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreUW");
@@ -271,14 +274,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Favorit with UW role ")
-    @Step ("Creating info offer with UW")
+    @Step("Creating info offer with UW")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 50)
-    public void InfoOfferFavoritUW () {
+    @Test(priority = 50)
+    public void InfoOfferFavoritUW() {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreUW");
@@ -327,14 +331,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Joker Old with UW role ")
-    @Step ("Creating info offer with UW")
+    @Step("Creating info offer with UW")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 60)
-    public void InfoOfferJokerOldUW () {
+    @Test(priority = 60)
+    public void InfoOfferJokerOldUW() {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreUW");
@@ -379,14 +384,15 @@ public class sCoreSerbia {
         mainPage.Print.click();
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Dozivotni riziko with UW role ")
-    @Step ("Creating info offer with UW")
+    @Step("Creating info offer with UW")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 70)
-    public void InfoOfferDozivotniRizikoUW () {
+    @Test(priority = 70)
+    public void InfoOfferDozivotniRizikoUW() {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreUW");
@@ -427,14 +433,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Riziko Kredit with BOC role ")
-    @Step ("Creating info offer with BOC")
+    @Step("Creating info offer with BOC")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 80)
-    public void InfoOfferRizikoKreditBOC () {
+    @Test(priority = 80)
+    public void InfoOfferRizikoKreditBOC() {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreBOC");
@@ -488,14 +495,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Spektar with BOC role ")
-    @Step ("Creating info offer with BOC")
+    @Step("Creating info offer with BOC")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 90)
-    public void InfoOfferSpektarBOC () {
+    @Test(priority = 90)
+    public void InfoOfferSpektarBOC() {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreBOC");
@@ -551,11 +559,11 @@ public class sCoreSerbia {
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Joker with BOC role ")
-    @Step ("Creating info offer with BOC")
+    @Step("Creating info offer with BOC")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 100)
-    public void InfoOfferJokerBOC () {
+    @Test(priority = 100)
+    public void InfoOfferJokerBOC() {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreBOC");
@@ -607,14 +615,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Riziko with BOC role ")
-    @Step ("Creating info offer with BOC")
+    @Step("Creating info offer with BOC")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 110)
-    public void InfoOfferRizikoBOC () {
+    @Test(priority = 110)
+    public void InfoOfferRizikoBOC() {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreBOC");
@@ -663,14 +672,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Favorit with BOC role ")
-    @Step ("Creating info offer with BOC")
+    @Step("Creating info offer with BOC")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 120)
-    public void InfoOfferFavoritBOC () {
+    @Test(priority = 120)
+    public void InfoOfferFavoritBOC() {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreBOC");
@@ -719,14 +729,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Joker Old with BOC role ")
-    @Step ("Creating info offer with BOC")
+    @Step("Creating info offer with BOC")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 130)
-    public void InfoOfferJokerOldBOC () {
+    @Test(priority = 130)
+    public void InfoOfferJokerOldBOC() {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreBOC");
@@ -772,14 +783,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Dozivotni riziko with BOC role ")
-    @Step ("Creating info offer with BOC")
+    @Step("Creating info offer with BOC")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 140)
-    public void InfoOfferDozivotniRizikoBOC () {
+    @Test(priority = 140)
+    public void InfoOfferDozivotniRizikoBOC() {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreBOC");
@@ -820,14 +832,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Riziko Kredit with Agent role ")
-    @Step ("Creating info offer with Agent")
+    @Step("Creating info offer with Agent")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 150)
-    public void InfoOfferRizikoKreditAgent () throws InterruptedException {
+    @Test(priority = 150)
+    public void InfoOfferRizikoKreditAgent() throws InterruptedException {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgent");
@@ -837,7 +850,8 @@ public class sCoreSerbia {
         mainPage.Life.click();
         for (WebElement webElement : Arrays.asList(mainPage.DozivotniNe, mainPage.NextQuestion, mainPage.MladjiOd14Ne, mainPage.NextQuestion, mainPage.OsiguranjeKreditaDa, mainPage.InfoOffer)) {
             Thread.sleep(1000);
-            webElement.click();}
+            webElement.click();
+        }
         mainPage.Product.click();
         mainPage.ClientInfo.click();
         mainPage.ClientInfo.sendKeys("Test Lice");
@@ -888,11 +902,11 @@ public class sCoreSerbia {
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Spektar with Agent role ")
-    @Step ("Creating info offer with Agent")
+    @Step("Creating info offer with Agent")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 160)
-    public void InfoOfferSpektarAgent () throws InterruptedException {
+    @Test(priority = 160)
+    public void InfoOfferSpektarAgent() throws InterruptedException {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgent");
@@ -900,9 +914,10 @@ public class sCoreSerbia {
         mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
-        for (WebElement webElement : Arrays.asList(mainPage.DozivotniNe, mainPage.NextQuestion, mainPage.MladjiOd14Ne, mainPage.NextQuestion, mainPage.OsiguranjeKreditaNe,mainPage.NextQuestion, mainPage.SamoStednjaNe, mainPage.NextQuestion, mainPage.RizikSmrtiNe, mainPage.InfoOffer)) {
+        for (WebElement webElement : Arrays.asList(mainPage.DozivotniNe, mainPage.NextQuestion, mainPage.MladjiOd14Ne, mainPage.NextQuestion, mainPage.OsiguranjeKreditaNe, mainPage.NextQuestion, mainPage.SamoStednjaNe, mainPage.NextQuestion, mainPage.RizikSmrtiNe, mainPage.InfoOffer)) {
             Thread.sleep(1000);
-            webElement.click();}
+            webElement.click();
+        }
         mainPage.Product.click();
         mainPage.ClientInfo.click();
         mainPage.ClientInfo.sendKeys("Test Lice");
@@ -947,14 +962,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Joker with Agent role ")
-    @Step ("Creating info offer with Agent")
+    @Step("Creating info offer with Agent")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 170)
-    public void InfoOfferJokerAgent () throws InterruptedException {
+    @Test(priority = 170)
+    public void InfoOfferJokerAgent() throws InterruptedException {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgent");
@@ -962,9 +978,10 @@ public class sCoreSerbia {
         mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
-        for (WebElement webElement : Arrays.asList(mainPage.DozivotniNe, mainPage.NextQuestion, mainPage.MladjiOd14Ne, mainPage.NextQuestion, mainPage.OsiguranjeKreditaNe,mainPage.NextQuestion, mainPage.SamoStednjaDa, mainPage.NextQuestion, mainPage.JokerPlusNe, mainPage.NextQuestion, mainPage.JokerPremiumDa, mainPage.InfoOffer)) {
+        for (WebElement webElement : Arrays.asList(mainPage.DozivotniNe, mainPage.NextQuestion, mainPage.MladjiOd14Ne, mainPage.NextQuestion, mainPage.OsiguranjeKreditaNe, mainPage.NextQuestion, mainPage.SamoStednjaDa, mainPage.NextQuestion, mainPage.JokerPlusNe, mainPage.NextQuestion, mainPage.JokerPremiumDa, mainPage.InfoOffer)) {
             Thread.sleep(1000);
-            webElement.click();}
+            webElement.click();
+        }
         mainPage.Product.click();
         mainPage.ClientInfo.click();
         mainPage.ClientInfo.sendKeys("Test Lice");
@@ -1009,14 +1026,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Riziko with Agent role ")
-    @Step ("Creating info offer with Agent")
+    @Step("Creating info offer with Agent")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 180)
-    public void InfoOfferRizikoAgent () throws InterruptedException {
+    @Test(priority = 180)
+    public void InfoOfferRizikoAgent() throws InterruptedException {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgent");
@@ -1024,9 +1042,10 @@ public class sCoreSerbia {
         mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
-        for (WebElement webElement : Arrays.asList(mainPage.DozivotniNe, mainPage.NextQuestion, mainPage.MladjiOd14Ne, mainPage.NextQuestion, mainPage.OsiguranjeKreditaNe,mainPage.NextQuestion, mainPage.SamoStednjaNe, mainPage.NextQuestion, mainPage.RizikSmrtiDa, mainPage.NextQuestion, mainPage.PovratPremijeNe, mainPage.NextQuestion, mainPage.OsiguranjeInvesticijeNe, mainPage.InfoOffer)) {
+        for (WebElement webElement : Arrays.asList(mainPage.DozivotniNe, mainPage.NextQuestion, mainPage.MladjiOd14Ne, mainPage.NextQuestion, mainPage.OsiguranjeKreditaNe, mainPage.NextQuestion, mainPage.SamoStednjaNe, mainPage.NextQuestion, mainPage.RizikSmrtiDa, mainPage.NextQuestion, mainPage.PovratPremijeNe, mainPage.NextQuestion, mainPage.OsiguranjeInvesticijeNe, mainPage.InfoOffer)) {
             Thread.sleep(1000);
-            webElement.click();}
+            webElement.click();
+        }
         mainPage.Product.click();
         mainPage.ClientInfo.click();
         mainPage.ClientInfo.sendKeys("Test Lice");
@@ -1068,14 +1087,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Favorit with Agent role ")
-    @Step ("Creating info offer with Agent")
+    @Step("Creating info offer with Agent")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 190)
-    public void InfoOfferFavoritAgent () throws InterruptedException {
+    @Test(priority = 190)
+    public void InfoOfferFavoritAgent() throws InterruptedException {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgent");
@@ -1085,7 +1105,8 @@ public class sCoreSerbia {
         mainPage.Life.click();
         for (WebElement webElement : Arrays.asList(mainPage.DozivotniNe, mainPage.NextQuestion, mainPage.MladjiOd14Da, mainPage.InfoOffer)) {
             Thread.sleep(1000);
-            webElement.click();}
+            webElement.click();
+        }
         mainPage.Product.click();
         mainPage.ClientInfo.click();
         mainPage.ClientInfo.sendKeys("Test Lice");
@@ -1127,14 +1148,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Joker old with Agent role ")
-    @Step ("Creating info offer with Agent")
+    @Step("Creating info offer with Agent")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 200)
-    public void InfoOfferJokerOldAgent () throws InterruptedException {
+    @Test(priority = 200)
+    public void InfoOfferJokerOldAgent() throws InterruptedException {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgent");
@@ -1144,7 +1166,8 @@ public class sCoreSerbia {
         mainPage.Life.click();
         for (WebElement webElement : Arrays.asList(mainPage.DozivotniNe, mainPage.NextQuestion, mainPage.MladjiOd14Ne, mainPage.NextQuestion, mainPage.OsiguranjeKreditaNe, mainPage.NextQuestion, mainPage.SamoStednjaDa, mainPage.NextQuestion, mainPage.JokerPlusDa, mainPage.InfoOffer)) {
             Thread.sleep(1000);
-            webElement.click();}
+            webElement.click();
+        }
         mainPage.Product.click();
         mainPage.ClientInfo.click();
         mainPage.ClientInfo.sendKeys("Test Lice");
@@ -1183,14 +1206,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of Dozivotni riziko with Agent role ")
-    @Step ("Creating info offer with Agent")
+    @Step("Creating info offer with Agent")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 210)
-    public void InfoOfferDozivotniRizikoAgent () throws InterruptedException {
+    @Test(priority = 210)
+    public void InfoOfferDozivotniRizikoAgent() throws InterruptedException {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgent");
@@ -1200,7 +1224,8 @@ public class sCoreSerbia {
         mainPage.Life.click();
         for (WebElement webElement : Arrays.asList(mainPage.DozivotniDa, mainPage.InfoOffer)) {
             Thread.sleep(1000);
-            webElement.click();}
+            webElement.click();
+        }
         mainPage.Product.click();
         mainPage.ClientInfo.click();
         mainPage.ClientInfo.sendKeys("Test Lice");
@@ -1234,14 +1259,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of SME KMP with UW role ")
-    @Step ("Creating info offer with UW")
+    @Step("Creating info offer with UW")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 220)
-    public void InfoOfferSMEKMPUW () {
+    @Test(priority = 220)
+    public void InfoOfferSMEKMPUW() {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreUW");
@@ -1269,8 +1295,8 @@ public class sCoreSerbia {
         select4.selectByIndex(1);
         Select select2 = new Select(mainPage.PaymentMethod);
         select2.selectByIndex(1);
-      //  Select select5 = new Select(mainPage.DurationInMonths);
-      //  select5.selectByIndex(1);
+        //  Select select5 = new Select(mainPage.DurationInMonths);
+        //  select5.selectByIndex(1);
         mainPage.TabConcerns.click();
         Select select6 = new Select(mainPage.InsuredSum);
         select6.selectByIndex(1);
@@ -1300,14 +1326,15 @@ public class sCoreSerbia {
 
 
     }
+
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of SME KMP with BOC role ")
-    @Step ("Creating info offer with BOC")
+    @Step("Creating info offer with BOC")
     @Owner("Nikola Stavrov")
 
-    @Test (priority = 230)
-    public void InfoOfferSMEKMPBOC () {
+    @Test(priority = 230)
+    public void InfoOfferSMEKMPBOC() {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreBOC");
@@ -1366,12 +1393,198 @@ public class sCoreSerbia {
 
 
     }
-    @AfterTest
-    public void teardown() {
-        driver.quit();
+
+    //ANNULATIONS
+    @Epic("sCore Serbia")
+    @Feature("Annulations")
+    @Description("Annulations of info offer ")
+    @Step("Annulation of info offer - Customer withdrawal")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 240)
+    public void AnnulationCustomerWithdrawalInfoOffer() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(2);
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(1);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.08.2024");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.AnnulationReactivation.click();
+        Select select2 = new Select(mainPage.AnnulationType);
+        select2.selectByIndex(1);
+        mainPage.Annule.click();
+
+
     }
 
-     }
+    @Epic("sCore Serbia")
+    @Feature("Annulations")
+    @Description("Annulations of info offer ")
+    @Step("Annulation of info offer - Customer replacement")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 250)
+    public void AnnulationContractReplacementInfoOffer() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(2);
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(1);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.08.2024");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.AnnulationReactivation.click();
+        Select select2 = new Select(mainPage.AnnulationType);
+        select2.selectByIndex(2);
+        mainPage.Annule.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Annulations")
+    @Description("Annulations of offer ")
+    @Step("Annulation of offer - Customer withdrawal")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 260)
+    public void AnnulationCustomerWithdrawalOffer() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(4);
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(19);
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.AnnulationReactivation.click();
+        Select select2 = new Select(mainPage.AnnulationType);
+        select2.selectByIndex(1);
+        mainPage.Annule.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Annulations")
+    @Description("Annulations of offer ")
+    @Step("Annulation of offer - Customer replacement")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 270)
+    public void AnnulationContractReplacementOffer() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(4);
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(19);
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.AnnulationReactivation.click();
+        Select select2 = new Select(mainPage.AnnulationType);
+        select2.selectByIndex(2);
+        mainPage.Annule.click();
+
+
+    }
+
+
+    @Epic("sCore Serbia")
+    @Feature("Annulations")
+    @Description("Annulations of activated info offer ")
+    @Step("Annulation of activated info offer - Customer withdrawal")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 280)
+    public void AnnulationCustomerWithdrawalInfoOfferActivated() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(2);
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(2);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.08.2024");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.AnnulationReactivation.click();
+        Select select2 = new Select(mainPage.AnnulationType);
+        select2.selectByIndex(1);
+        mainPage.Annule.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Annulations")
+    @Description("Annulations of activated info offer ")
+    @Step("Annulation of activated info offer - Customer replacement")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 290)
+    public void AnnulationContractReplacementInfoOfferActivated() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(2);
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(2);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.08.2024");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.AnnulationReactivation.click();
+        Select select2 = new Select(mainPage.AnnulationType);
+        select2.selectByIndex(2);
+        mainPage.Annule.click();
+
+
+    }
+
+}
 
 
 
