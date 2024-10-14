@@ -375,8 +375,6 @@ public class MainPage {
     @FindBy(xpath = "//*[@id='MainContent_wucIndividualBusinessEntitySearch_tbIdentificationNumber']")
     public WebElement inputMainContentWucIndividual2;
 
-  //  @FindBy(xpath = "/html/body/div[3]/iframe")
-    //public WebElement iFrame;
 
 
     //MONTENEGRO
