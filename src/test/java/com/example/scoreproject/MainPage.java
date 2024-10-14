@@ -75,9 +75,6 @@ public class MainPage {
     @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(9) > div > div:nth-of-type(2) > label:nth-of-type(2)")
     public WebElement OsiguranjeInvesticijeNe;
 
-    @FindBy(css = "#backBtn")
-    public WebElement PreviousQuestion;
-
     @FindBy(css = "#nextBtn")
     public WebElement NextQuestion;
 
