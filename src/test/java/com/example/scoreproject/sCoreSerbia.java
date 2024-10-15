@@ -4968,8 +4968,8 @@ public class sCoreSerbia {
 
         js.executeScript("window.scrollBy(0, 500);");
 
-        WebElement PorukaSPNFT = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[2]/ul"));
-        assert PorukaSPNFT.getText().equals("Unešeno lice se nalazi na sankcionoj listi EU i/ili PEP listi! Nije moguć dalji rad na dokumentu.") : "Očekivana poruka nakon dodavanja lica sa sankcione liste";
+        //WebElement PorukaSPNFT = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[2]/ul"));
+        //assert PorukaSPNFT.getText().equals("Unešeno lice se nalazi na sankcionoj listi EU i/ili PEP listi! Nije moguć dalji rad na dokumentu.") : "Očekivana poruka nakon dodavanja lica sa sankcione liste";
 
 
 

@@ -540,6 +540,8 @@ public class MainPage {
     @FindBy(css = "a[onclick='return editItemFromGrid(2, 1, \":1:11\");']")
     public WebElement CancellationReactivationCRO;
 
+    @FindBy(css = "label[for='Kol14_40']")
+    public WebElement IndexationCRO;
 
 
 
