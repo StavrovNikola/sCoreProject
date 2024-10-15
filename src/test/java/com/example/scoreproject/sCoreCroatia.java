@@ -1542,7 +1542,7 @@ public class sCoreCroatia {
         WebElement OIB = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[1]/div[1]/input"));
         OIB.click();
         OIB.clear();
-        OIB.sendKeys("10972535407");
+        OIB.sendKeys("53196123668");
 
         WebElement PretraziLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
         PretraziLice.click();
@@ -1594,7 +1594,7 @@ public class sCoreCroatia {
 
         WebElement IznosOS = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[1]/fieldset/div[1]/div[2]/div/input"));
         IznosOS.clear();
-        IznosOS.sendKeys("7500");
+        IznosOS.sendKeys("5000");
 
         WebElement Visina = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[1]/fieldset/div[3]/div[5]/div/input"));
         Visina.sendKeys("190");
@@ -1914,7 +1914,7 @@ public class sCoreCroatia {
         WebElement OIB = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[1]/div[1]/input"));
         OIB.click();
         OIB.clear();
-        OIB.sendKeys("10972535407");
+        OIB.sendKeys("81540506790");
 
         WebElement PretraziLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
         PretraziLice.click();
@@ -2297,7 +2297,7 @@ public class sCoreCroatia {
         WebElement OIB = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[1]/div[1]/input"));
         OIB.click();
         OIB.clear();
-        OIB.sendKeys("10972535407");
+        OIB.sendKeys("64080250224");
 
         WebElement PretraziLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
         PretraziLice.click();
@@ -2620,7 +2620,7 @@ public class sCoreCroatia {
         WebElement OIB = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[1]/div[1]/input"));
         OIB.click();
         OIB.clear();
-        OIB.sendKeys("56033006787");
+        OIB.sendKeys("97451659348");
 
         WebElement PretraziLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
         PretraziLice.click();
@@ -3091,7 +3091,7 @@ public class sCoreCroatia {
         WebElement OIB = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[1]/div[1]/input"));
         OIB.click();
         OIB.clear();
-        OIB.sendKeys("56033006787");
+        OIB.sendKeys("96857952493");
 
         WebElement PretraziLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
         PretraziLice.click();

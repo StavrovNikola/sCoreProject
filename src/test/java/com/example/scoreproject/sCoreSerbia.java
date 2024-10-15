@@ -2080,7 +2080,7 @@ public class sCoreSerbia {
 
         WebElement JMBG = driver.findElement(By.id("MainContent_wucIndividualBusinessEntitySearch_tbIdentificationNumber"));
         JMBG.click();
-        JMBG.sendKeys("1504999700243");
+        JMBG.sendKeys("1311982700247");
 
         WebElement PretraziLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
         PretraziLice.click();
@@ -2891,7 +2891,7 @@ public class sCoreSerbia {
 
         WebElement JMBG = driver.findElement(By.id("MainContent_wucIndividualBusinessEntitySearch_tbIdentificationNumber"));
         JMBG.click();
-        JMBG.sendKeys("1504999700243");
+        JMBG.sendKeys("1311992700245");
 
         WebElement PretraziLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
         PretraziLice.click();
@@ -3170,7 +3170,7 @@ public class sCoreSerbia {
 
         WebElement JMBG = driver.findElement(By.id("MainContent_wucIndividualBusinessEntitySearch_tbIdentificationNumber"));
         JMBG.click();
-        JMBG.sendKeys("1504999700243");
+        JMBG.sendKeys("1311993700249");
 
         WebElement PretraziLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
         PretraziLice.click();
@@ -3453,7 +3453,7 @@ public class sCoreSerbia {
 
         WebElement JMBG = driver.findElement(By.id("MainContent_wucIndividualBusinessEntitySearch_tbIdentificationNumber"));
         JMBG.click();
-        JMBG.sendKeys("1504000700241");
+        JMBG.sendKeys("1310960700247");
 
         WebElement PretraziLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
         PretraziLice.click();
@@ -3714,7 +3714,7 @@ public class sCoreSerbia {
 
         WebElement JMBG = driver.findElement(By.id("MainContent_wucIndividualBusinessEntitySearch_tbIdentificationNumber"));
         JMBG.click();
-        JMBG.sendKeys("1504000700241");
+        JMBG.sendKeys("1310960700247");
 
         WebElement PretraziLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
         PretraziLice.click();

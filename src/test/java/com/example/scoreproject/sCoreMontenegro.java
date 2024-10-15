@@ -1850,7 +1850,7 @@ public class sCoreMontenegro {
 
         WebElement JMBG = driver.findElement(By.id("MainContent_wucIndividualBusinessEntitySearch_tbIdentificationNumber"));
         JMBG.click();
-        JMBG.sendKeys("2504990710010");
+        JMBG.sendKeys("1211989700248");
 
         WebElement PretraziLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
         PretraziLice.click();
@@ -2228,7 +2228,7 @@ public class sCoreMontenegro {
 
         WebElement JMBG = driver.findElement(By.id("MainContent_wucIndividualBusinessEntitySearch_tbIdentificationNumber"));
         JMBG.click();
-        JMBG.sendKeys("1607991213002");
+        JMBG.sendKeys("1211990700243");
 
         WebElement PretraziLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
         PretraziLice.click();
@@ -2595,7 +2595,7 @@ public class sCoreMontenegro {
 
         WebElement JMBG = driver.findElement(By.id("MainContent_wucIndividualBusinessEntitySearch_tbIdentificationNumber"));
         JMBG.click();
-        JMBG.sendKeys("1607991213002");
+        JMBG.sendKeys("1211992700240");
 
         WebElement PretraziLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
         PretraziLice.click();
@@ -2692,7 +2692,7 @@ public class sCoreMontenegro {
 
         WebElement IznosOS = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[1]/fieldset/div[1]/div[2]/div/input"));
         IznosOS.clear();
-        IznosOS.sendKeys("8000");
+        IznosOS.sendKeys("6000");
 
         WebElement Visina = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[1]/fieldset/div[3]/div[5]/div/input"));
         Visina.sendKeys("187");
@@ -2995,7 +2995,7 @@ public class sCoreMontenegro {
 
         WebElement JMBG = driver.findElement(By.id("MainContent_wucIndividualBusinessEntitySearch_tbIdentificationNumber"));
         JMBG.click();
-        JMBG.sendKeys("1607991213002");
+        JMBG.sendKeys("1211993700244");
 
         WebElement PretraziLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
         PretraziLice.click();
@@ -3092,7 +3092,7 @@ public class sCoreMontenegro {
 
         WebElement IznosOS = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[1]/fieldset/div[1]/div[2]/div/input"));
         IznosOS.clear();
-        IznosOS.sendKeys("15000");
+        IznosOS.sendKeys("7500");
 
         WebElement Visina = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[1]/fieldset/div[3]/div[5]/div/input"));
         Visina.sendKeys("187");
