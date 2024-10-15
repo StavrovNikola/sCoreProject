@@ -375,6 +375,20 @@ public class MainPage {
     @FindBy(xpath = "//*[@id='MainContent_wucIndividualBusinessEntitySearch_tbIdentificationNumber']")
     public WebElement inputMainContentWucIndividual2;
 
+    @FindBy(css = "html > body > form > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div > ul:nth-of-type(1) > li:nth-of-type(3) > a")
+    public WebElement MassPrint;
+
+    @FindBy(css = "#Kol1")
+    public WebElement Month;
+
+    @FindBy(css = "#Kol2")
+    public WebElement Year;
+
+    @FindBy(css = "#Kol3")
+    public WebElement Policies;
+
+    @FindBy(css = "#Kol4")
+    public WebElement Confirmation;
 
 
     //MONTENEGRO
@@ -603,6 +617,9 @@ public class MainPage {
 
     @FindBy(css = "label[for='Kol14_123']")
     public WebElement ExclusionPaymentMethode;
+
+
+
 
 
 
