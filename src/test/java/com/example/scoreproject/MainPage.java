@@ -391,6 +391,8 @@ public class MainPage {
     public WebElement Confirmation;
 
 
+
+
     //MONTENEGRO
 
     @FindBy(css = "div[class$='joker']")
@@ -617,6 +619,7 @@ public class MainPage {
 
     @FindBy(css = "label[for='Kol14_123']")
     public WebElement ExclusionPaymentMethode;
+
 
 
 

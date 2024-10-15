@@ -6250,6 +6250,1363 @@ public class sCoreSerbia {
 
     }
 
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Riziko Kredit with UW role - Valute clausule No")
+    @Step("Creating info offer with UW")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 640)
+    public void InfoOfferRizikoKreditValuteClausuleNo() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.RizikoKredit.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("15");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(1);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(4);
+        Select select3 = new Select(mainPage.DurationInMonths);
+        select3.selectByIndex(1);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("15000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1990");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.HeightConcernPerson.click();
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.click();
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.ConcernInterest.click();
+        mainPage.ConcernInterest.clear();
+        mainPage.ConcernInterest.sendKeys("15");
+        mainPage.Accept.click();
+        mainPage.SaveQuestionary.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Spektar with UW role - Valute clausule No")
+    @Step("Creating info offer with UW")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 650)
+    public void InfoOfferSpektarValuteClausuleNo() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.Spektar.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("10");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(2);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(4);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("10000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1980");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.HeightConcernPerson.click();
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.click();
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.inputSumDozivljenje.click();
+        mainPage.inputSumDozivljenje.clear();
+        mainPage.inputSumDozivljenje.sendKeys("10000");
+        mainPage.Accept.click();
+        mainPage.SaveQuestionary.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Joker with UW role - Valute clausule No")
+    @Step("Creating info offer with UW")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 660)
+    public void InfoOfferJokerValuteClausuleNo() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.Joker.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("25");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(3);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(4);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("25000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1990");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.HeightConcernPerson.click();
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.click();
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.inputSumTrajniInvaliditetKaoPosledicaNezgode.click();
+        mainPage.inputSumTrajniInvaliditetKaoPosledicaNezgode.clear();
+        mainPage.inputSumTrajniInvaliditetKaoPosledicaNezgode.sendKeys("10000");
+        mainPage.Accept.click();
+        mainPage.SaveQuestionary.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Riziko with UW role - Valute clausule No")
+    @Step("Creating info offer with UW")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 670)
+    public void InfoOfferRizikoValuteClausuleNo() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.Riziko.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("20");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(4);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(1);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(4);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("35000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1970");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.HeightConcernPerson.click();
+        mainPage.HeightConcernPerson.sendKeys("187");
+        mainPage.WeightConcernPerson.click();
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.Accept.click();
+        mainPage.SaveQuestionary.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Favorit with UW role - Valute clausule No")
+    @Step("Creating info offer with UW")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 680)
+    public void InfoOfferFavoritValuteClausuleNo() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.Favorit.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("18");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(1);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(2);
+        Select select3 = new Select(mainPage.Banka);
+        select3.selectByIndex(5);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("15000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.2023");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.getInputSumTrajniInvaliditetKaoPosledicaNezgodeFavorit.click();
+        mainPage.getInputSumTrajniInvaliditetKaoPosledicaNezgodeFavorit.clear();
+        mainPage.getInputSumTrajniInvaliditetKaoPosledicaNezgodeFavorit.sendKeys("12500");
+        mainPage.Accept.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Joker Old with UW role - Valute clausule No")
+    @Step("Creating info offer with UW")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 690)
+    public void InfoOfferJokerOldValuteClausuleNo() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.JokerOld.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("3");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(1);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(2);
+        Select select3 = new Select(mainPage.Banka);
+        select3.selectByIndex(10);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("10000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1980");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.Accept.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Dozivotni riziko with UW role - Valute clausule No")
+    @Step("Creating info offer with UW")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 700)
+    public void InfoOfferDozivotniRizikoValuteClausuleNo() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.DozivotniRiziko.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(3);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(1);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(4);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("4000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1960");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.Accept.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Riziko Kredit with BOC role - Valute clausule No")
+    @Step("Creating info offer with BOC")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 710)
+    public void InfoOfferRizikoKreditBOCValuteClausuleNo () {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreBOC");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.RizikoKredit.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("15");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(1);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(4);
+        Select select3 = new Select(mainPage.DurationInMonths);
+        select3.selectByIndex(1);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("15000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1990");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.HeightConcernPerson.click();
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.click();
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.ConcernInterest.click();
+        mainPage.ConcernInterest.clear();
+        mainPage.ConcernInterest.sendKeys("15");
+        mainPage.Accept.click();
+        mainPage.SaveQuestionary.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Spektar with BOC role - Valute clausule No")
+    @Step("Creating info offer with BOC")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 720)
+    public void InfoOfferSpektarBOCValuteClausuleNo() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreBOC");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SpektarBOC.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("10");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(2);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(4);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("10000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1980");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.HeightConcernPerson.click();
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.click();
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.inputSumDozivljenje.click();
+        mainPage.inputSumDozivljenje.clear();
+        mainPage.inputSumDozivljenje.sendKeys("10000");
+        mainPage.Accept.click();
+        mainPage.SaveQuestionary.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Joker with BOC role - Valute clausule No")
+    @Step("Creating info offer with BOC")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 730)
+    public void InfoOfferJokerBOCValuteClausuleNo() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreBOC");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.JokerBOC.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("25");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(3);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(4);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("25000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1990");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.HeightConcernPerson.click();
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.click();
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.inputSumTrajniInvaliditetKaoPosledicaNezgode.click();
+        mainPage.inputSumTrajniInvaliditetKaoPosledicaNezgode.clear();
+        mainPage.inputSumTrajniInvaliditetKaoPosledicaNezgode.sendKeys("10000");
+        mainPage.Accept.click();
+        mainPage.SaveQuestionary.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Riziko with BOC role - Valute clausule No")
+    @Step("Creating info offer with BOC")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 740)
+    public void InfoOfferRizikoBOCValuteClausuleNo() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreBOC");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.Riziko.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("20");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(4);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(4);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("35000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1970");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.HeightConcernPerson.click();
+        mainPage.HeightConcernPerson.sendKeys("187");
+        mainPage.WeightConcernPerson.click();
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.Accept.click();
+        mainPage.SaveQuestionary.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Favorit with BOC role - Valute clausule No")
+    @Step("Creating info offer with BOC")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 750)
+    public void InfoOfferFavoritBOCValuteClausuleNo() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreBOC");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.Favorit.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("18");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(1);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(2);
+        Select select3 = new Select(mainPage.Banka);
+        select3.selectByIndex(5);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("15000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.2023");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.getInputSumTrajniInvaliditetKaoPosledicaNezgodeFavorit.click();
+        mainPage.getInputSumTrajniInvaliditetKaoPosledicaNezgodeFavorit.clear();
+        mainPage.getInputSumTrajniInvaliditetKaoPosledicaNezgodeFavorit.sendKeys("12500");
+        mainPage.Accept.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Joker Old with BOC role - Valute clausule No")
+    @Step("Creating info offer with BOC")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 760)
+    public void InfoOfferJokerOldBOCValuteClausuleNo() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreBOC");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.JokerOld.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("3");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(1);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(2);
+        Select select3 = new Select(mainPage.Banka);
+        select3.selectByIndex(10);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("10000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1980");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.Accept.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Dozivotni riziko with BOC role - Valute clausule No")
+    @Step("Creating info offer with BOC")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 770)
+    public void InfoOfferDozivotniRizikoBOCValuteClausuleNo() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreBOC");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.DozivotniRizikoBOC.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(3);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(4);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("4000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1960");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.Accept.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Riziko Kredit with Agent role - Valute clausule No")
+    @Step("Creating info offer with Agent")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 780)
+    public void InfoOfferRizikoKreditAgentValuteClausuleNo() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreAgent");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        for (WebElement webElement : Arrays.asList(mainPage.DozivotniNe, mainPage.NextQuestion, mainPage.MladjiOd14Ne, mainPage.NextQuestion, mainPage.OsiguranjeKreditaDa, mainPage.InfoOffer)) {
+            Thread.sleep(1000);
+            webElement.click();
+        }
+        mainPage.Product.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("15");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(1);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(4);
+        Select select3 = new Select(mainPage.DurationInMonths);
+        select3.selectByIndex(1);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("15000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1990");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.HeightConcernPerson.click();
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.click();
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.ConcernInterest.click();
+        mainPage.ConcernInterest.clear();
+        mainPage.ConcernInterest.sendKeys("15");
+        mainPage.Accept.click();
+        mainPage.SaveQuestionary.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Spektar with Agent role - Valute clausule No")
+    @Step("Creating info offer with Agent")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 790)
+    public void InfoOfferSpektarAgentValuteClausuleNo() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreAgent");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        for (WebElement webElement : Arrays.asList(mainPage.DozivotniNe, mainPage.NextQuestion, mainPage.MladjiOd14Ne, mainPage.NextQuestion, mainPage.OsiguranjeKreditaNe, mainPage.NextQuestion, mainPage.SamoStednjaNe, mainPage.NextQuestion, mainPage.RizikSmrtiNe, mainPage.InfoOffer)) {
+            Thread.sleep(1000);
+            webElement.click();
+        }
+        mainPage.Product.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("10");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(2);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(4);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("10000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1980");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.HeightConcernPerson.click();
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.click();
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.inputSumDozivljenje.click();
+        mainPage.inputSumDozivljenje.clear();
+        mainPage.inputSumDozivljenje.sendKeys("10000");
+        mainPage.Accept.click();
+        mainPage.SaveQuestionary.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Joker with Agent role - Valute clausule No")
+    @Step("Creating info offer with Agent")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 800)
+    public void InfoOfferJokerAgentValuteClausuleNo() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreAgent");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        for (WebElement webElement : Arrays.asList(mainPage.DozivotniNe, mainPage.NextQuestion, mainPage.MladjiOd14Ne, mainPage.NextQuestion, mainPage.OsiguranjeKreditaNe, mainPage.NextQuestion, mainPage.SamoStednjaDa, mainPage.NextQuestion, mainPage.JokerPlusNe, mainPage.NextQuestion, mainPage.JokerPremiumDa, mainPage.InfoOffer)) {
+            Thread.sleep(1000);
+            webElement.click();
+        }
+        mainPage.Product.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("25");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(3);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(4);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("25000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1990");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.HeightConcernPerson.click();
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.click();
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.inputSumTrajniInvaliditetKaoPosledicaNezgode.click();
+        mainPage.inputSumTrajniInvaliditetKaoPosledicaNezgode.clear();
+        mainPage.inputSumTrajniInvaliditetKaoPosledicaNezgode.sendKeys("10000");
+        mainPage.Accept.click();
+        mainPage.SaveQuestionary.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Riziko with Agent role - Valute clausule No")
+    @Step("Creating info offer with Agent")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 810)
+    public void InfoOfferRizikoAgentValuteClausuleNo() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreAgent");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        for (WebElement webElement : Arrays.asList(mainPage.DozivotniNe, mainPage.NextQuestion, mainPage.MladjiOd14Ne, mainPage.NextQuestion, mainPage.OsiguranjeKreditaNe, mainPage.NextQuestion, mainPage.SamoStednjaNe, mainPage.NextQuestion, mainPage.RizikSmrtiDa, mainPage.NextQuestion, mainPage.PovratPremijeNe, mainPage.NextQuestion, mainPage.OsiguranjeInvesticijeNe, mainPage.InfoOffer)) {
+            Thread.sleep(1000);
+            webElement.click();
+        }
+        mainPage.Product.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("20");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(4);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(4);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("35000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1970");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.HeightConcernPerson.click();
+        mainPage.HeightConcernPerson.sendKeys("187");
+        mainPage.WeightConcernPerson.click();
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.Accept.click();
+        mainPage.SaveQuestionary.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Favorit with Agent role - Valute clausule No")
+    @Step("Creating info offer with Agent")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 820)
+    public void InfoOfferFavoritAgentValuteClausuleNo() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreAgent");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        for (WebElement webElement : Arrays.asList(mainPage.DozivotniNe, mainPage.NextQuestion, mainPage.MladjiOd14Da, mainPage.InfoOffer)) {
+            Thread.sleep(1000);
+            webElement.click();
+        }
+        mainPage.Product.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("18");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(1);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(2);
+        Select select3 = new Select(mainPage.Banka);
+        select3.selectByIndex(5);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("20000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.2023");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.getInputSumTrajniInvaliditetKaoPosledicaNezgodeFavorit.click();
+        mainPage.getInputSumTrajniInvaliditetKaoPosledicaNezgodeFavorit.clear();
+        mainPage.getInputSumTrajniInvaliditetKaoPosledicaNezgodeFavorit.sendKeys("18000");
+        mainPage.Accept.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Joker old with Agent role - Valute clausule No")
+    @Step("Creating info offer with Agent")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 830)
+    public void InfoOfferJokerOldAgentValuteClausuleNo() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreAgent");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        for (WebElement webElement : Arrays.asList(mainPage.DozivotniNe, mainPage.NextQuestion, mainPage.MladjiOd14Ne, mainPage.NextQuestion, mainPage.OsiguranjeKreditaNe, mainPage.NextQuestion, mainPage.SamoStednjaDa, mainPage.NextQuestion, mainPage.JokerPlusDa, mainPage.InfoOffer)) {
+            Thread.sleep(1000);
+            webElement.click();
+        }
+        mainPage.Product.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("3");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(1);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(2);
+        Select select3 = new Select(mainPage.Banka);
+        select3.selectByIndex(10);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("30000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1980");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.Accept.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of Dozivotni riziko with Agent role - Valute clausule No")
+    @Step("Creating info offer with Agent")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 840)
+    public void InfoOfferDozivotniRizikoAgentValuteClausuleNo() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreAgent");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        for (WebElement webElement : Arrays.asList(mainPage.DozivotniDa, mainPage.InfoOffer)) {
+            Thread.sleep(1000);
+            webElement.click();
+        }
+        mainPage.Product.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(3);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(1);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(4);
+        mainPage.TabConcerns.click();
+        Select select4 = new Select(mainPage.InsuredSum);
+        select4.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("4000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1960");
+        Select select5 = new Select(mainPage.GenderConcernPerson);
+        select5.selectByIndex(2);
+        mainPage.Accept.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of SME KMP with UW role - Valute clausule No")
+    @Step("Creating info offer with UW")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 850)
+    public void InfoOfferSMEKMPUWValuteClausuleNo() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.RizikoKredit.click();
+        mainPage.SMEKeyPerson.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("5");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(1);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(1);
+        Select select3 = new Select(mainPage.Valute);
+        select3.selectByIndex(5);
+        Select select4 = new Select(mainPage.Clause);
+        select4.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(4);
+        //  Select select5 = new Select(mainPage.DurationInMonths);
+        //  select5.selectByIndex(1);
+        mainPage.TabConcerns.click();
+        Select select6 = new Select(mainPage.InsuredSum);
+        select6.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("25000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1980");
+        Select select7 = new Select(mainPage.GenderConcernPerson);
+        select7.selectByIndex(2);
+        mainPage.HeightConcernPerson.click();
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.click();
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.ConcernInterest.click();
+        mainPage.ConcernInterest.clear();
+        mainPage.ConcernInterest.sendKeys("15");
+        mainPage.Accept.click();
+        mainPage.SaveQuestionary.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Info offer")
+    @Description("Creating info offer of SME KMP with BOC role - Valute clausule No")
+    @Step("Creating info offer with BOC")
+    @Owner("Nikola Stavrov")
+
+    @Test(priority = 860)
+    public void InfoOfferSMEKMPBOCValuteClausuleNo() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreBOC");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.RizikoKredit.click();
+        mainPage.SMEKeyPerson.click();
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Test Lice");
+        mainPage.DurationInYear.click();
+        mainPage.DurationInYear.clear();
+        mainPage.DurationInYear.sendKeys("4");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(1);
+        Select select1 = new Select(mainPage.Clause);
+        select1.selectByIndex(2);
+        Select select3 = new Select(mainPage.Valute);
+        select3.selectByIndex(5);
+        Select select4 = new Select(mainPage.Clause);
+        select4.selectByIndex(1);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(4);
+        //  Select select5 = new Select(mainPage.DurationInMonths);
+        //  select5.selectByIndex(1);
+        mainPage.TabConcerns.click();
+        Select select6 = new Select(mainPage.InsuredSum);
+        select6.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("20000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1970");
+        Select select7 = new Select(mainPage.GenderConcernPerson);
+        select7.selectByIndex(2);
+        mainPage.HeightConcernPerson.click();
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.click();
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.ConcernInterest.click();
+        mainPage.ConcernInterest.clear();
+        mainPage.ConcernInterest.sendKeys("15");
+        mainPage.Accept.click();
+        mainPage.SaveQuestionary.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+
+
+    }
+
 }
 
 
