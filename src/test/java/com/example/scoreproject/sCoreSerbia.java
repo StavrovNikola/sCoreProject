@@ -11,7 +11,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.time.Duration;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
-
 import org.testng.annotations.Test;
 
 
@@ -7539,7 +7538,6 @@ public class sCoreSerbia {
 
 
     }
-
     @Epic("sCore Serbia")
     @Feature("Info offer")
     @Description("Creating info offer of SME KMP with BOC role - Valute clausule No")
@@ -7606,6 +7604,8 @@ public class sCoreSerbia {
 
 
     }
+
+
 
 
 }
