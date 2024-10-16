@@ -2387,7 +2387,7 @@ public class sCoreMontenegro {
         WebElement AMLPoruka1 = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[2]/ul/li"));
         assert AMLPoruka1.getText().equals("Morate popuniti Upitnik o spriječavanju pranja novca") : "Očekivana poruka nakon potvrde potpisa a pre popunjavanja AMLa";
 
-        WebElement AML = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[10]/a"));
+        WebElement AML = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[9]/a"));
         AML.click();
 
         WebElement NamjenaOsiguranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[1]/div/div/div/label[3]"));
@@ -2779,7 +2779,7 @@ public class sCoreMontenegro {
         WebElement AMLPoruka1 = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[2]/ul/li"));
         assert AMLPoruka1.getText().equals("Morate popuniti Upitnik o spriječavanju pranja novca") : "Očekivana poruka nakon potvrde potpisa a pre popunjavanja AMLa";
 
-        WebElement AML = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[10]/a"));
+        WebElement AML = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[9]/a"));
         AML.click();
 
         WebElement NamjenaOsiguranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[1]/div/div/div/label[3]"));
@@ -3092,7 +3092,7 @@ public class sCoreMontenegro {
 
         WebElement IznosOS = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[1]/fieldset/div[1]/div[2]/div/input"));
         IznosOS.clear();
-        IznosOS.sendKeys("7500");
+        IznosOS.sendKeys("16000");
 
         WebElement Visina = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[1]/fieldset/div[3]/div[5]/div/input"));
         Visina.sendKeys("187");

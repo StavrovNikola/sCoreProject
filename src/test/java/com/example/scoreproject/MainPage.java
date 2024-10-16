@@ -8,7 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 // page_url = https://www.jetbrains.com/
 public class MainPage {
 
-    //SERBIA 
+
+    //SERBIA
     @FindBy(xpath = "//*[@id='Username']")
     public WebElement inputUsername;
 

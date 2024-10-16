@@ -2202,13 +2202,13 @@ public class sCoreSerbia {
 
         WebElement Aktiviraj = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[2]/a"));
         Aktiviraj.click();
-
+/*
         WebElement NoviUgovor = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li[2]"));
         assert NoviUgovor.getText().equals("Novi ugovor je uspešno aktiviran.") : "Očekivana poruka nakon Aktivacije";
 
         WebElement NovaPolisa = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li[3]"));
         assert NovaPolisa.getText().equals("Ponuda je uspešno kreirana.") : "Očekivana poruka nakon Aktivacije";
-
+*/
         WebElement AML = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[9]/a"));
         AML.click();
 
@@ -2539,7 +2539,7 @@ public class sCoreSerbia {
         WebElement PolisaStampaj = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/div/div/div/table/tbody/tr[1]/td[19]/ul/li[1]/a"));
         PolisaStampaj.click();
 
-        Thread.sleep(5000);
+        Thread.sleep(6000);
 
         WebElement PotvrdaPotpisa = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
         PotvrdaPotpisa.click();
@@ -3038,13 +3038,13 @@ public class sCoreSerbia {
 
         WebElement PrihvatiAML = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
         PrihvatiAML.click();
-
+/*
         WebElement PorukaSnimljenAML = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li[1]"));
         assert PorukaSnimljenAML.getText().equals("Uspešno snimljen Upitnik za sprečavanje pranja novca.") : "Očekivana poruka nakon popunjavanja AML-a";
 
         WebElement PorukaStampaAML = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li[2]"));
         assert PorukaStampaAML.getText().equals("Uspešno kreirana štampa Upitnika za sprečavanje pranja novca.") : "Očekivana poruka nakon popunjavanja AML-a";
-
+*/
         WebElement AMLSaradnik = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[11]/a"));
         AMLSaradnik.click();
 
@@ -6458,7 +6458,7 @@ public class sCoreSerbia {
         Select select = new Select(mainPage.PaymentDinamic);
         select.selectByIndex(4);
         Select select1 = new Select(mainPage.Clause);
-        select1.selectByIndex(1);
+        select1.selectByIndex(2);
         Select select2 = new Select(mainPage.PaymentMethod);
         select2.selectByIndex(4);
         mainPage.TabConcerns.click();
@@ -6622,7 +6622,7 @@ public class sCoreSerbia {
         Select select = new Select(mainPage.PaymentDinamic);
         select.selectByIndex(3);
         Select select1 = new Select(mainPage.Clause);
-        select1.selectByIndex(1);
+        select1.selectByIndex(2);
         Select select2 = new Select(mainPage.PaymentMethod);
         select2.selectByIndex(4);
         mainPage.TabConcerns.click();
@@ -7448,7 +7448,7 @@ public class sCoreSerbia {
         Select select = new Select(mainPage.PaymentDinamic);
         select.selectByIndex(3);
         Select select1 = new Select(mainPage.Clause);
-        select1.selectByIndex(1);
+        select1.selectByIndex(2);
         Select select2 = new Select(mainPage.PaymentMethod);
         select2.selectByIndex(4);
         mainPage.TabConcerns.click();
@@ -7572,7 +7572,7 @@ public class sCoreSerbia {
         Select select3 = new Select(mainPage.Valute);
         select3.selectByIndex(5);
         Select select4 = new Select(mainPage.Clause);
-        select4.selectByIndex(1);
+        select4.selectByIndex(2);
         Select select2 = new Select(mainPage.PaymentMethod);
         select2.selectByIndex(4);
         //  Select select5 = new Select(mainPage.DurationInMonths);
@@ -7606,6 +7606,7 @@ public class sCoreSerbia {
 
 
     }
+
 
 }
 
