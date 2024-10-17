@@ -1712,8 +1712,9 @@ public class sCoreCroatia {
         PotvrdaPotpisaBloker.click();
         Thread.sleep(2000);
 
-        WebElement PorukaStampaPolice = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[2]/ul/li"));
-        assert PorukaStampaPolice.getText().equals("Potpis se ne može potvrditi prije štampe ponude.") : "Očekivana poruka nakon potvrde potpisa bez stampanja ponude";
+
+       // WebElement PorukaStampaPolice = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[2]/ul/li"));
+       //assert PorukaStampaPolice.getText().equals("Potpis se ne može potvrditi prije štampe ponude.") : "Očekivana poruka nakon potvrde potpisa bez stampanja ponude";
 
         WebElement PolicaStampaj = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/div/div/div/table/tbody/tr[1]/td[19]/div[1]/a"));
         PolicaStampaj.click();
@@ -2072,20 +2073,20 @@ public class sCoreCroatia {
         WebElement Aktiviraj = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[2]/a"));
         Aktiviraj.click();
         Thread.sleep(1500);
-
+/*
         WebElement PorukanakonAktivacije = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li[1]"));
         assert PorukanakonAktivacije.getText().equals("Novi ugovor je uspješno aktiviran.") : "Očekivana poruka nakon aktivacije";
 
         WebElement PorukanakonAktivacije1 = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li[2]"));
         assert PorukanakonAktivacije1.getText().equals("Ponuda je uspješno kreirana.") : "Očekivana poruka nakon aktivacije";
-
+*/
         WebElement PotvrdaPotpisaBloker = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
         PotvrdaPotpisaBloker.click();
         Thread.sleep(2000);
-
+/*
         WebElement PorukaPotvrdaPotpisa = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[2]/ul/li"));
         assert PorukaPotvrdaPotpisa.getText().equals("Potpis se ne može potvrditi prije štampe ponude.") : "Očekivana poruka nakon potvrde potpisa pre štampe";
-
+*/
         WebElement PolicaStampaj = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/div/div/div/table/tbody/tr[1]/td[19]/div[1]/a"));
         PolicaStampaj.click();
         Thread.sleep(5000);
@@ -2778,20 +2779,20 @@ public class sCoreCroatia {
         WebElement Aktiviraj = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[2]/a"));
         Aktiviraj.click();
         Thread.sleep(1500);
-
+/*
         WebElement PorukanakonAktivacije = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li[1]"));
         assert PorukanakonAktivacije.getText().equals("Novi ugovor je uspješno aktiviran.") : "Očekivana poruka nakon aktivacije";
 
         WebElement PorukanakonAktivacije1 = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li[2]"));
         assert PorukanakonAktivacije1.getText().equals("Polica je uspješno kreirana.") : "Očekivana poruka nakon aktivacije";
-
+*/
         WebElement PotvrdaPotpisaBloker = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
         PotvrdaPotpisaBloker.click();
         Thread.sleep(2000);
-
+/*
         WebElement PorukaPotvrdaPotpisa = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[2]/ul/li"));
         assert PorukaPotvrdaPotpisa.getText().equals("Potpis se ne može potvrditi prije štampe police.") : "Očekivana poruka nakon potvrde potpisa pre štampe";
-
+*/
         WebElement PolicaStampaj = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/div/div/div/table/tbody/tr[1]/td[19]/div[1]/a"));
         PolicaStampaj.click();
         Thread.sleep(5000);

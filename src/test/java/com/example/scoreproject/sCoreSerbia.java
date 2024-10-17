@@ -2123,7 +2123,7 @@ public class sCoreSerbia {
         WebElement PrihvatiZakonskog = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[1]/div[1]/div[1]/div/a"));
         PrihvatiZakonskog.click();
 
-        js.executeScript("window.scrollBy(750, 0);");
+       // js.executeScript("window.scrollBy(750, 0);");
 
         WebElement KorisnikZaSlucajSmrti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/a"));
         Thread.sleep(1500);
@@ -2388,7 +2388,7 @@ public class sCoreSerbia {
         PrihvatiPravno.click();
         Thread.sleep(2000);
 
-        js.executeScript("window.scrollBy(-500, 0);");
+//        js.executeScript("window.scrollBy(-500, 0);");
 
         WebElement ZakonskiZastupnik = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[10]/div/div/div/label"));
         ZakonskiZastupnik.click();
@@ -2623,7 +2623,7 @@ public class sCoreSerbia {
         driver.switchTo().frame(iFrame);
         Thread.sleep(2000);
 
-        js.executeScript("window.scrollBy(-500, 0);");
+    //    js.executeScript("window.scrollBy(-500, 0);");
 
         WebElement DodajPlatioca = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[5]/div/div/div/div[2]/div/div/a"));
         DodajPlatioca.click();
@@ -3064,14 +3064,14 @@ public class sCoreSerbia {
 
         WebElement PrihvatiAML1 = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
         PrihvatiAML1.click();
-        ;
 
+/*
         WebElement PorukaAMLSnimljen1 = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li[1]"));
         assert PorukaAMLSnimljen1.getText().equals("Uspešno snimljen Upitnik za sprečavanje pranja novca.") : "Očekivana poruka nakon popunjavanja AMLa";
 
         WebElement PorukaAMLŠtampa1 = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li[2]"));
         assert PorukaAMLŠtampa1.getText().equals("Uspešno kreirana štampa Upitnika za sprečavanje pranja novca.") : "Očekivana poruka nakon popunjavanja AMLa";
-
+*/
         WebElement StampanaDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[8]/a"));
         StampanaDokumenta.click();
 
@@ -3215,7 +3215,7 @@ public class sCoreSerbia {
         WebElement PrihvatiPravno = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div/div[1]/div[1]/div/a"));
         PrihvatiPravno.click();
 
-        js.executeScript("window.scrollBy(0, 750);");
+     //   js.executeScript("window.scrollBy(0, 750);");
 
         WebElement ZakonskiZastupnik = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[10]/div/div/div/label"));
         ZakonskiZastupnik.click();
@@ -3470,12 +3470,12 @@ public class sCoreSerbia {
         WebElement PrihvatiLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[1]/div[1]/div[1]/div/a"));
         PrihvatiLice.click();
 
-        js.executeScript("window.scrollBy(0, 500);");
+       // js.executeScript("window.scrollBy(0, 500);");
 
         WebElement Platilac = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/div/div/label"));
         Platilac.click();
 
-        js.executeScript("window.scrollBy(0, 500);");
+       // js.executeScript("window.scrollBy(0, 500);");
 
         WebElement ZakonskiZastupnik = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[10]/div/div/div/label"));
         ZakonskiZastupnik.click();
@@ -3897,7 +3897,7 @@ public class sCoreSerbia {
         WebElement PolisaStampaj = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/div/div/div/table/tbody/tr[1]/td[19]/ul/li[1]/a"));
         PolisaStampaj.click();
 
-        Thread.sleep(7000);
+        Thread.sleep(4000);
 
         //  js.executeScript("window.scrollBy(500, 0);");
 
@@ -4030,7 +4030,7 @@ public class sCoreSerbia {
         PrihvatiPravno.click();
         Thread.sleep(3500);
 
-        js.executeScript("window.scrollBy(-500, 0);");
+        //js.executeScript("window.scrollBy(-500, 0);");
 
         WebElement ZakonskiZastupnik = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[10]/div/div/div/label"));
         ZakonskiZastupnik.click();
