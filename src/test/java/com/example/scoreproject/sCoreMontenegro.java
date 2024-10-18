@@ -1631,7 +1631,7 @@ public class sCoreMontenegro {
 
         WebElement KIDStampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/div/div/div/table/tbody/tr[2]/td[19]/div[1]/a"));
         KIDStampa.click();
-        Thread.sleep(4500);
+        Thread.sleep(6500);
 
         WebElement PotvrdaPotpisa = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
         PotvrdaPotpisa.click();
