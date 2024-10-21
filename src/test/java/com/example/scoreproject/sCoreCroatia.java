@@ -16,6 +16,7 @@ public class sCoreCroatia {
 
 
 
+
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
@@ -3437,68 +3438,28 @@ public class sCoreCroatia {
     @Test (priority = 390)
     public void ClausesTB () throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        //JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://aasv098.uniqa.hr/POS/Croatia/NoAD/");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreAgentUW CRO");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Werts!23!!g00!");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[1]/div/div/div"));
-        Zivot.click();
-        Thread.sleep(1500);
-
-        WebElement BocniMeni = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div"));
-        BocniMeni.click();
-
-        WebElement Pretraga = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[1]/a"));
-        Pretraga.click();
-
-        WebElement TipDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[2]/div/div/div/div/div/select"));
-        Select select = new Select(TipDokumenta);
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
         select.selectByIndex(4);
-
-        WebElement StatusDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[13]/div/div/div/div/div/select"));
-        Select select1 = new Select(StatusDokumenta);
-        select1.selectByIndex(10);
-
-        WebElement Proizvod = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[3]/div/div/div/div/div/select"));
-        Select select2 = new Select(Proizvod);
-        select2.selectByIndex(1);
-
-        WebElement Pretrazi = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        Pretrazi.click();
-        Thread.sleep(2500);
-
-        WebElement AkcijaPregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/span/a/img"));
-        AkcijaPregled.click();
-
-        WebElement Pregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/ul/li[1]/a"));
-        Pregled.click();
-
-        WebElement KlauzuleNapomene = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[6]/a"));
-        KlauzuleNapomene.click();
-
-        WebElement OpćiUvjeti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[1]/label"));
-        assert OpćiUvjeti.getText().equals("Opći uvjeti za osiguranje života OUŽ 1/2023"):"Očekivani uslovi";
-
-        WebElement PosebniUvjetiTeškeBolesti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[2]/label"));
-        assert PosebniUvjetiTeškeBolesti.getText().equals("Posebni uvjeti za dopunsko pokriće za slučaj nastanka teških bolesti uz osiguranje života PUTB 1/2023"):"Očekivani uslovi";
-
-        WebElement InformacijeUgovaratelju = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[3]/label"));
-        assert InformacijeUgovaratelju.getText().equals("Informacije ugovaratelju osiguranja života INF-TB 1/2023"):"Očekivani uslovi";
-
-        WebElement IOOP = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[4]/label"));
-        assert IOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Očekivani uslovi";
+        Select select1 = new Select(mainPage.Products);
+        select1.selectByIndex(1);
+        Select select2 = new Select(mainPage.Status);
+        select2.selectByIndex(10);
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearchCRO.click();
+        mainPage.Preview.click();
+        mainPage.TabClausesCRO.click();
+        assert mainPage.OUZ2023.getText().equals("Opći uvjeti za osiguranje života OUŽ 1/2023"):"Excepted General Conditions";
+        assert mainPage.PUTB2023.getText().equals("Posebni uvjeti za dopunsko pokriće za slučaj nastanka teških bolesti uz osiguranje života PUTB 1/2023"):"Excepted Special Conditions";
+        assert mainPage.INFTB2023.getText().equals("Informacije ugovaratelju osiguranja života INF-TB 1/2023"):"Excepted Special Conditions";
+        assert mainPage.IOOPTB.getText().equals("Informacije o obradi podataka INF IOOP"):"Excepted Special Conditions";
 
     }
 
@@ -3510,71 +3471,28 @@ public class sCoreCroatia {
     @Test (priority = 400)
     public void ClausesMO () throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        //JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://aasv098.uniqa.hr/POS/Croatia/NoAD/");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreAgentUW CRO");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Werts!23!!g00!");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[1]/div/div/div"));
-        Zivot.click();
-        Thread.sleep(1500);
-
-        WebElement BocniMeni = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div"));
-        BocniMeni.click();
-
-        WebElement Pretraga = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[1]/a"));
-        Pretraga.click();
-
-        WebElement TipDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[2]/div/div/div/div/div/select"));
-        Select select = new Select(TipDokumenta);
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
         select.selectByIndex(4);
+        Select select1 = new Select(mainPage.Products);
+        select1.selectByIndex(2);
+        Select select2 = new Select(mainPage.Status);
+        select2.selectByIndex(10);
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearchCRO.click();
+        mainPage.Preview.click();
+        mainPage.TabClausesCRO.click();
+        assert mainPage.OUZ2023.getText().equals("Opći uvjeti za osiguranje života OUŽ 1/2023"):"Excepted General Conditions";
+        assert mainPage.INFZIV2023.getText().equals("Informacije ugovaratelju osiguranja života INF-ZIV 1/2023"):"Excepted Special Conditions";
+        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Excepted Special Conditions";
 
-        WebElement StatusDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[13]/div/div/div/div/div/select"));
-        Select select1 = new Select(StatusDokumenta);
-        select1.selectByIndex(10);
-
-        WebElement Proizvod = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[3]/div/div/div/div/div/select"));
-        Select select2 = new Select(Proizvod);
-        select2.selectByIndex(2);
-
-        WebElement Pretrazi = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        Pretrazi.click();
-        Thread.sleep(2500);
-
-        WebElement AkcijaPregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/span/a/img"));
-        AkcijaPregled.click();
-
-        WebElement Pregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/ul/li[1]/a"));
-        Pregled.click();
-
-        WebElement KlauzuleNapomene = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[6]/a"));
-        KlauzuleNapomene.click();
-
-        WebElement OpćiUvjeti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[1]/label"));
-        assert OpćiUvjeti.getText().equals("Opći uvjeti za osiguranje života OUŽ 1/2023"):"Očekivani uslovi";
-
-        //  WebElement PosebniUvjetiTeškeBolesti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[2]/label"));
-        //    assert PosebniUvjetiTeškeBolesti.getText().equals("Posebni uvjeti za dopunsko osiguranje od posljedica nezgode DON 1/2022"):"Očekivani uslovi";
-
-        //  WebElement IndeksnaKlauzula = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[3]/label"));
-        //   assert IndeksnaKlauzula.getText().equals("Ž-Kl-001/02-14 - Indeksna klauzula Osnova i vrijeme indeksne prilagodbe Premija se povećava uvijek na godišnjicu početka osiguranja, na osnovu u tom trenutku objavljenog indeksa potrošačkih cijena (Verbraucherpreisindex) Austrijskog statističkog zavoda (Österreichisches Statistisches Zentralamt). Do prilagodbe dolazi samo ako bi godišnji iznos uvećanja premije iznosio najmanje 25 EUR. Uz povećanje premije povećava se iznos osiguranja, bez ponovnog provjeravanja rizika. Povećavanje međusobnih obveza a) Premija Premija se povećava u odnosu na prijašnju premiju za onaj postotak, za koji se povećao indeks od početka ugovora, odnosno od posljednje indeksne prilagodbe. b) Osigurana svota Razlika premije dobivena povećanjem koristi se za preostalo trajanje osiguranja, uzevši u obzir dostignutu starost osiguranika u trenutku prilagodbe i preostalo vrijeme do završetka ugovora o osiguranju, uz nepromijenjene ostale ugovorene uvjete. Nakon izvršene indeksne prilagodbe izdaje se dopuna police osiguranja. Osigurateljeva obveza za povećanje osigurane svote započinje primitkom uplate nove premije. Odbijanje indeksne prilagodbe Ukoliko ugovaratelj ne želi indeksnu prilagodbu, dužan je u roku od četiri tjedna vratiti osiguratelju dopunu police, uz odgovarajuću napomenu. Razlozi zbog kojih ne dolazi do indeksne prilagodbe Do indeksne prilagodbe ne dolaŽi u slučaju: a) kada je preostalo vrijeme osiguranja kraće od jedne godine, b) ako ugovaratelj odustane od indeksne prilagodbe, osim ukoliko naknadno ponovno ne zatraži indeksaciju, c) ako je osnovom ugovora o osiguranju, do kraja trajanja osiguranja u potpunosti ili djelomično ugovaratelj oslobođen plaćanja premije, d) ako je osiguranje raskinuto ili kapitalizirano. Pravo na dobit S indeksnom prilagodbom, odnosno povećanjem premije i iznosa osiguranja, povećava se i udio u raspodjeli dobiti društva koja se utvrđuje sukladno Općim uvjetima za osiguranje života."):"Očekivani uslovi";
-
-        WebElement InformacijeUgovaratelju = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[2]/label"));
-        assert InformacijeUgovaratelju.getText().equals("Informacije ugovaratelju osiguranja života INF-ZIV 1/2023"):"Očekivani uslovi";
-
-        WebElement IOOP = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[3]/label"));
-        assert IOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Očekivani uslovi";
 
     }
 
@@ -3587,65 +3505,28 @@ public class sCoreCroatia {
     @Test (priority = 410)
     public void ClausesMODOR () throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        //JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://aasv098.uniqa.hr/POS/Croatia/NoAD/");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreAgentUW CRO");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Werts!23!!g00!");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[1]/div/div/div"));
-        Zivot.click();
-        Thread.sleep(1500);
-
-        WebElement BocniMeni = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div"));
-        BocniMeni.click();
-
-        WebElement Pretraga = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[1]/a"));
-        Pretraga.click();
-
-        WebElement TipDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[2]/div/div/div/div/div/select"));
-        Select select = new Select(TipDokumenta);
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
         select.selectByIndex(4);
+        Select select1 = new Select(mainPage.Products);
+        select1.selectByIndex(3);
+        Select select2 = new Select(mainPage.Status);
+        select2.selectByIndex(10);
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearchCRO.click();
+        mainPage.Preview.click();
+        mainPage.TabClausesCRO.click();
+        assert mainPage.OUZ2023.getText().equals("Opći uvjeti za osiguranje života OUŽ 1/2023"):"Excepted General Conditions";
+        assert mainPage.INFZIV2023.getText().equals("Informacije ugovaratelju osiguranja života INF-ZIV 1/2023"):"Excepted Special Conditions";
+        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Excepted Special Conditions";
 
-        WebElement StatusDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[13]/div/div/div/div/div/select"));
-        Select select1 = new Select(StatusDokumenta);
-        select1.selectByIndex(10);
-
-        WebElement Proizvod = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[3]/div/div/div/div/div/select"));
-        Select select2 = new Select(Proizvod);
-        select2.selectByIndex(3);
-
-        WebElement Pretrazi = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        Pretrazi.click();
-        Thread.sleep(2500);
-
-        WebElement AkcijaPregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/span/a/img"));
-        AkcijaPregled.click();
-
-        WebElement Pregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/ul/li[1]/a"));
-        Pregled.click();
-
-        WebElement KlauzuleNapomene = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[6]/a"));
-        KlauzuleNapomene.click();
-
-        WebElement OpćiUvjeti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[1]/label"));
-        assert OpćiUvjeti.getText().equals("Opći uvjeti za osiguranje života OUŽ 1/2023"):"Očekivani uslovi";
-
-        WebElement InformacijeUgovaratelju = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[2]/label"));
-        assert InformacijeUgovaratelju.getText().equals("Informacije ugovaratelju osiguranja života INF-ZIV 1/2023"):"Očekivani uslovi";
-
-        WebElement IOOP = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[3]/label"));
-        assert IOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Očekivani uslovi";
 
     }
 
@@ -3657,71 +3538,31 @@ public class sCoreCroatia {
     @Test (priority = 420)
     public void ClausesROPOS () throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        //JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://aasv098.uniqa.hr/POS/Croatia/NoAD/");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreAgentUW CRO");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Werts!23!!g00!");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[1]/div/div/div"));
-        Zivot.click();
-        Thread.sleep(1500);
-
-        WebElement BocniMeni = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div"));
-        BocniMeni.click();
-
-        WebElement Pretraga = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[1]/a"));
-        Pretraga.click();
-
-        WebElement TipDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[2]/div/div/div/div/div/select"));
-        Select select = new Select(TipDokumenta);
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
         select.selectByIndex(4);
+        Select select1 = new Select(mainPage.Products);
+        select1.selectByIndex(5);
+        Select select2 = new Select(mainPage.Status);
+        select2.selectByIndex(10);
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearchCRO.click();
+        mainPage.Preview.click();
+        mainPage.TabClausesCRO.click();
+        assert mainPage.OUZ2023.getText().equals("Opći uvjeti za osiguranje života OUŽ 1/2023"):"Excepted General Conditions";
+        assert mainPage.INFZIV2023.getText().equals("Informacije ugovaratelju osiguranja života INF-ZIV 1/2023"):"Excepted Special Conditions";
+        assert mainPage.Clause05.getText().equals("Klauzula 05 1. U slučaju smrti osiguranika za vrijeme trajanja osiguranja, osiguratelj isplaćuje korisniku ugovoreni osigurani iznos naveden na polici. 2. Ovaj ugovor o osiguranju ne uključuje pravo na sudjelovanje u dobiti osiguratelja i dobit se ne isplaćuje. 3. Otkup i kapitalizacija prema članku 26. i 27. Općih uvjeta za osiguranje života ne mogu se zatražiti."):"Excepted Special Conditions";
+        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Excepted Special Conditions";
 
-        WebElement StatusDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[13]/div/div/div/div/div/select"));
-        Select select1 = new Select(StatusDokumenta);
-        select1.selectByIndex(10);
-
-        WebElement Proizvod = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[3]/div/div/div/div/div/select"));
-        Select select2 = new Select(Proizvod);
-        select2.selectByIndex(5);
-
-        WebElement Pretrazi = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        Pretrazi.click();
-        Thread.sleep(2500);
-
-        WebElement AkcijaPregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/span/a/img"));
-        AkcijaPregled.click();
-
-        WebElement Pregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/ul/li[1]/a"));
-        Pregled.click();
-
-        WebElement KlauzuleNapomene = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[5]/a"));
-        KlauzuleNapomene.click();
-
-        WebElement OpćiUvjeti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[1]/label"));
-        assert OpćiUvjeti.getText().equals("Opći uvjeti za osiguranje života OUŽ 1/2023"):"Očekivani uslovi";
-
-        WebElement Klauzula05 = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[2]/label"));
-        assert Klauzula05.getText().equals("Klauzula 05 1. U slučaju smrti osiguranika za vrijeme trajanja osiguranja, osiguratelj isplaćuje korisniku ugovoreni osigurani iznos naveden na polici. 2. Ovaj ugovor o osiguranju ne uključuje pravo na sudjelovanje u dobiti osiguratelja i dobit se ne isplaćuje. 3. Otkup i kapitalizacija prema članku 26. i 27. Općih uvjeta za osiguranje života ne mogu se zatražiti."):"Očekivani uslovi";
-
-        WebElement InformacijeUgovaratelju = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[3]/label"));
-        assert InformacijeUgovaratelju.getText().equals("Informacije ugovaratelju osiguranja života INF-ZIV 1/2023"):"Očekivani uslovi";
-
-        WebElement IOOP = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[4]/label"));
-        assert IOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Očekivani uslovi";
 
     }
-
 
 
     @Epic("sCore Croatia")
@@ -3732,62 +3573,28 @@ public class sCoreCroatia {
     @Test (priority = 430)
     public void ClausesFidelisLife () throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        //JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://aasv098.uniqa.hr/POS/Croatia/NoAD/");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreAgentUW CRO");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Werts!23!!g00!");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[1]/div/div/div"));
-        Zivot.click();
-        Thread.sleep(1500);
-
-        WebElement BocniMeni = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div"));
-        BocniMeni.click();
-
-        WebElement Pretraga = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[1]/a"));
-        Pretraga.click();
-
-        WebElement TipDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[2]/div/div/div/div/div/select"));
-        Select select = new Select(TipDokumenta);
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
         select.selectByIndex(4);
+        Select select1 = new Select(mainPage.Products);
+        select1.selectByIndex(7);
+        Select select2 = new Select(mainPage.Status);
+        select2.selectByIndex(10);
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearchCRO.click();
+        mainPage.Preview.click();
+        mainPage.TabClausesCRO.click();
+        assert mainPage.OUZIF2023.getText().equals("Opći uvjeti za osiguranje života vezano za jedinice investicijskih fondova OUŽIF 1/2023"):"Excepted General Conditions";
+        assert mainPage.PUZIF2022.getText().equals("Posebni uvjeti za osiguranje života vezano za jedinice investicijskih fondova za ugovoreno povećanje premije i osiguranog iznosa bez ponovnog liječničkog pregleda PUŽIF 1/2022"):"Excepted Special Conditions";
+        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Excepted Special Conditions";
 
-        WebElement StatusDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[13]/div/div/div/div/div/select"));
-        Select select1 = new Select(StatusDokumenta);
-        select1.selectByIndex(10);
-
-        WebElement Proizvod = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[3]/div/div/div/div/div/select"));
-        Select select2 = new Select(Proizvod);
-        select2.selectByIndex(7);
-
-        WebElement Pretrazi = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        Pretrazi.click();
-        Thread.sleep(2500);
-
-        WebElement AkcijaPregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/span/a/img"));
-        AkcijaPregled.click();
-
-        WebElement Pregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[14]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/ul/li[1]/a"));
-        Pregled.click();
-
-        WebElement KlauzuleNapomene = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[5]/a"));
-        KlauzuleNapomene.click();
-
-        WebElement OpćiUvjeti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[1]/label"));
-        assert OpćiUvjeti.getText().equals("Opći uvjeti za osiguranje života vezano za jedinice investicijskih fondova OUŽIF 1/2023"):"Očekivani uslovi";
-
-        WebElement PosebniUvjetiInvesticijskiFondovi = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[2]/label"));
-        assert PosebniUvjetiInvesticijskiFondovi.getText().equals("Posebni uvjeti za osiguranje života vezano za jedinice investicijskih fondova za ugovoreno povećanje premije i osiguranog iznosa bez ponovnog liječničkog pregleda PUŽIF 1/2022"):"Očekivani uslovi";
 
     }
 

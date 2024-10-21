@@ -560,6 +560,40 @@ public class MainPage {
     @FindBy(css = "label[for='Kol14_40']")
     public WebElement IndexationCRO;
 
+    @FindBy(css = "a[onclick='return editItemFromGrid(2, 1, \":1:1\");']")
+    public WebElement PreviewCRO;
+
+    @FindBy(css = "#tab_Clauses")
+    public WebElement TabClausesCRO;
+
+    @FindBy(css = "label[for='Kol4_3971']")
+    public WebElement OUZ2023;
+
+    @FindBy(css = "label[for='Kol4_3985']")
+    public WebElement PUTB2023;
+
+    @FindBy(css = "label[for='Kol4_3972']")
+    public WebElement INFTB2023;
+
+    @FindBy(css = "label[for='Kol4_2044']")
+    public WebElement IOOPTB;
+
+    @FindBy(css = "label[for='Kol4_3973']")
+    public WebElement INFZIV2023;
+
+    @FindBy(css = "label[for='Kol4_2044']")
+    public WebElement INFIOOP;
+
+    @FindBy(css = "label[for='Kol4_2816']")
+    public WebElement Clause05;
+
+    @FindBy(css = "label[for='Kol4_3976']")
+    public WebElement OUZIF2023;
+
+    @FindBy(css = "label[for='Kol4_3911']")
+    public WebElement PUZIF2022;
+
+
 
 
     //BOSNIA
@@ -621,17 +655,41 @@ public class MainPage {
     @FindBy(css = "label[for='Kol14_123']")
     public WebElement ExclusionPaymentMethode;
 
+    @FindBy(css = "a[onclick='return editItemFromGrid(2, 1, \":1:1\");']")
+    public WebElement Preview;
 
+    @FindBy(css = "#tab_Clauses")
+    public WebElement TabClauses;
 
+    @FindBy(css = "#selProducts")
+    public WebElement ProductsBA;
 
+    @FindBy(css = "label[for='Kol4_2773']")
+    public WebElement GenerelacConditions;
 
+    @FindBy(css = "label[for='Kol4_2774']")
+    public WebElement SpecialConditionsClassic;
 
+    @FindBy(css = "label[for='Kol4_2779']")
+    public WebElement SpecialConditionsComfort;
 
+    @FindBy(css = "label[for='Kol4_2778']")
+    public WebElement SpecialConditionsUniqo;
 
+    @FindBy(css = "label[for='Kol4_2779']")
+    public WebElement SpecialConditionsUniqo1;
 
+    @FindBy(css = "label[for='Kol4_2777']")
+    public WebElement SpecialConditionsKapital;
 
+    @FindBy(css = "label[for='Kol4_2779']")
+    public WebElement SpecialConditionsKapital1;
 
+    @FindBy(css = "label[for='Kol4_2776']")
+    public WebElement SpecialConditionsComfortDual;
 
+    @FindBy(css = "#btn_ExportToExcel")
+    public WebElement ExportToExcel;
 
 
 
@@ -663,26 +721,17 @@ public class MainPage {
 
 
 
-    
 
 
 
 
-    
-    
 
 
-    
-    
 
-    
-    
 
-    
 
 
 
-  
 
 
 
@@ -692,77 +741,111 @@ public class MainPage {
 
 
 
-   
 
-   
-  
- 
- 
 
-    
-    
-    
-    
-    
-    
-    
-    
 
-    
 
 
 
 
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
-    
 
 
 
 
-  
-    
-   
 
 
 
-    
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
-    
 
 
 
 
 
-    
-    
-    
 
-    
-    
 
-   
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
