@@ -15,8 +15,6 @@ public class sCoreCroatia {
     private MainPage mainPage;
 
 
-
-
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
@@ -3606,50 +3604,23 @@ public class sCoreCroatia {
     @Test (priority = 440)
     public void SideMenuTB () throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        //JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://aasv098.uniqa.hr/POS/Croatia/NoAD/");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreAgentUW CRO");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Werts!23!!g00!");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[1]/div"));
-        Zivot.click();
-
-        WebElement TB = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[1]/div"));
-        TB.click();
-
-        WebElement PredugovornaDokTB = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[6]/a"));
-        PredugovornaDokTB.click();
-
-        WebElement IOOP2024 = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[2]"));
-        assert IOOP2024.getText().equals("Informacije o obradi podataka INF IOOP") : "IOOP 2024 štampa";
-
-        WebElement IOOPStampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[3]/div/a"));
-        IOOPStampa.click();
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.TB.click();
+        mainPage.SideMenuCRO.click();
+        mainPage.SideMenuDocuments.click();
+        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
+        mainPage.WhiteButton.click();
         Thread.sleep(2500);
-
-        WebElement INFTB = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[2]"));
-        assert INFTB.getText().equals("Informacije ugovaratelju INF-TB_2023") : "INF štampa";
-
-        WebElement INFTBStampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[3]/div/a"));
-        INFTBStampa.click();
+        assert mainPage.INFTB20231.getText().equals("Informacije ugovaratelju INF-TB_2023"):"Expected side menu document";
+        mainPage.WhiteButton1.click();
         Thread.sleep(2500);
-
-        WebElement InformacijeOProizvoduTB = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[3]/td[2]"));
-        assert InformacijeOProizvoduTB.getText().equals("Informacije o proizvodu osiguranja TB2016") : "Informacije o proizvodu osiguranja štampa";
-
-        WebElement InformacijeOProizvoduTBStampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[3]/td[3]/div/a"));
-        InformacijeOProizvoduTBStampa.click();
+        assert mainPage.TB2016.getText().equals("Informacije o proizvodu osiguranja TB2016"):"Expected side menu document";
+        mainPage.WhiteButton2.click();
 
 
     }
@@ -3662,50 +3633,23 @@ public class sCoreCroatia {
     @Test (priority = 450)
     public void SideMenuMO () throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        //JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://aasv098.uniqa.hr/POS/Croatia/NoAD/");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreAgentUW CRO");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Werts!23!!g00!");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[1]/div"));
-        Zivot.click();
-
-        WebElement MO = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[2]/div"));
-        MO.click();
-
-        WebElement PredugovornaDokMO = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[6]/a"));
-        PredugovornaDokMO.click();
-
-        WebElement IOOP2024 = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[2]"));
-        assert IOOP2024.getText().equals("Informacije o obradi podataka INF IOOP") : "IOOP 2024 štampa";
-
-        WebElement IOOPStampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[3]/div/a"));
-        IOOPStampa.click();
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.MO.click();
+        mainPage.SideMenuCRO.click();
+        mainPage.SideMenuDocuments.click();
+        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
+        mainPage.WhiteButton.click();
         Thread.sleep(2500);
-
-        WebElement INFMO = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[2]"));
-        assert INFMO.getText().equals("Informacije ugovaratelju INF-ZIV_2023") : "INF štampa";
-
-        WebElement INFMOStampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[3]/div/a"));
-        INFMOStampa.click();
+        assert mainPage.INFZIV2023SideMenu.getText().equals("Informacije ugovaratelju INF-ZIV_2023"):"Expected side menu document";
+        mainPage.WhiteButton1.click();
         Thread.sleep(2500);
-
-        WebElement InformacijeOProizvoduMO = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[3]/td[2]"));
-        assert InformacijeOProizvoduMO.getText().equals("Informacije o proizvodu osiguranja MO16") : "Informacije o proizvodu osiguranja štampa";
-
-        WebElement InformacijeOProizvoduMOStampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[3]/td[3]/div/a"));
-        InformacijeOProizvoduMOStampa.click();
+        assert mainPage.MO16.getText().equals("Informacije o proizvodu osiguranja MO16"):"Expected side menu document";
+        mainPage.WhiteButton2.click();
 
 
     }
@@ -3718,50 +3662,23 @@ public class sCoreCroatia {
     @Test (priority = 460)
     public void SideMenuMODOR () throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        //JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://aasv098.uniqa.hr/POS/Croatia/NoAD/");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreAgentUW CRO");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Werts!23!!g00!");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[1]/div"));
-        Zivot.click();
-
-        WebElement MODOR = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[3]/div"));
-        MODOR.click();
-
-        WebElement PredugovornaDokMODOR = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[6]/a"));
-        PredugovornaDokMODOR.click();
-
-        WebElement IOOP2024 = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[2]"));
-        assert IOOP2024.getText().equals("Informacije o obradi podataka INF IOOP") : "IOOP 2024 štampa";
-
-        WebElement IOOPStampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[3]/div/a"));
-        IOOPStampa.click();
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.MODOR.click();
+        mainPage.SideMenuCRO.click();
+        mainPage.SideMenuDocuments.click();
+        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
+        mainPage.WhiteButton.click();
         Thread.sleep(2500);
-
-        WebElement INFMODOR = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[2]"));
-        assert INFMODOR.getText().equals("Informacije ugovaratelju INF-ZIV_2023") : "INF štampa";
-
-        WebElement INFMODORStampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[3]/div/a"));
-        INFMODORStampa.click();
+        assert mainPage.INFZIV2023SideMenu.getText().equals("Informacije ugovaratelju INF-ZIV_2023"):"Expected side menu document";
+        mainPage.WhiteButton1.click();
         Thread.sleep(2500);
-
-        WebElement InformacijeOProizvoduMODOR = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[3]/td[2]"));
-        assert InformacijeOProizvoduMODOR.getText().equals("Informacije o proizvodu osiguranja MODOR16") : "Informacije o proizvodu osiguranja štampa";
-
-        WebElement InformacijeOProizvoduMOStampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[3]/td[3]/div/a"));
-        InformacijeOProizvoduMOStampa.click();
+        assert mainPage.MODOR16.getText().equals("Informacije o proizvodu osiguranja MODOR16"):"Expected side menu document";
+        mainPage.WhiteButton2.click();
 
 
     }
@@ -3774,56 +3691,28 @@ public class sCoreCroatia {
     @Test (priority = 470)
     public void SideMenuROPOS () throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        //JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://aasv098.uniqa.hr/POS/Croatia/NoAD/");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreAgentUW CRO");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Werts!23!!g00!");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[1]/div"));
-        Zivot.click();
-
-        WebElement ROPOS = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[4]/div/div/div"));
-        ROPOS.click();
-
-        WebElement PredugovornaDokROPOS = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[6]/a"));
-        PredugovornaDokROPOS.click();
-
-        WebElement IOOP2024 = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[2]"));
-        assert IOOP2024.getText().equals("Informacije o obradi podataka INF IOOP") : "IOOP 2024 štampa";
-
-        WebElement IOOPStampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[3]/div/a"));
-        IOOPStampa.click();
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.ROPOS.click();
+        mainPage.SideMenuCRO.click();
+        mainPage.SideMenuDocuments.click();
+        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
+        mainPage.WhiteButton.click();
         Thread.sleep(2500);
-
-        WebElement INFROPOS = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[2]"));
-        assert INFROPOS.getText().equals("Informacije ugovaratelju INF-ZIV_2023") : "INF štampa";
-
-        WebElement INFROPOSStampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[3]/div/a"));
-        INFROPOSStampa.click();
+        assert mainPage.INFZIV2023SideMenu.getText().equals("Informacije ugovaratelju INF-ZIV_2023"):"Expected side menu document";
+        mainPage.WhiteButton1.click();
         Thread.sleep(2500);
+        assert mainPage.ROPOS16.getText().equals("Informacije o proizvodu osiguranja ROPOS16"):"Expected side menu document";
+        mainPage.WhiteButton2.click();
+        Thread.sleep(2500);
+        assert mainPage.ROPOS16J.getText().equals("Informacije o proizvodu osiguranja ROPOS16-J"):"Expected side menu document";
+        mainPage.WhiteButton3.click();
 
-        WebElement InformacijeOProizvoduROPOS = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[3]/td[2]"));
-        assert InformacijeOProizvoduROPOS.getText().equals("Informacije o proizvodu osiguranja ROPOS16") : "Informacije o proizvodu osiguranja štampa";
 
-        WebElement InformacijeOProizvoduROPOSStampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[3]/td[3]/div/a"));
-        InformacijeOProizvoduROPOSStampa.click();
-
-        WebElement InformacijeOProizvoduROPOSJ = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[4]/td[2]"));
-        assert InformacijeOProizvoduROPOSJ.getText().equals("Informacije o proizvodu osiguranja ROPOS16-J") : "Informacije o proizvodu osiguranja štampa";
-
-        WebElement InformacijeOProizvoduROPOSJStampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[4]/td[3]/div/a"));
-        InformacijeOProizvoduROPOSJStampa.click();
 
     }
 
@@ -3835,103 +3724,50 @@ public class sCoreCroatia {
     @Test (priority = 480)
     public void SideMenuFidelisLife () throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        //JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://aasv098.uniqa.hr/POS/Croatia/NoAD/");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreAgentUW CRO");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Werts!23!!g00!");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[1]/div"));
-        Zivot.click();
-
-        WebElement FidelisLife = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[5]/div"));
-        FidelisLife.click();
-
-        WebElement PredugovornaDokFidelisLife = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[6]/a"));
-        PredugovornaDokFidelisLife.click();
-
-        WebElement IOOP2024 = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[2]"));
-        assert IOOP2024.getText().equals("Informacije o obradi podataka INF IOOP") : "IOOP 2024 štampa";
-
-        WebElement IOOPStampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[1]/td[3]/div/a"));
-        IOOPStampa.click();
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.FidelisLife.click();
+        mainPage.SideMenuCRO.click();
+        mainPage.SideMenuDocuments.click();
+        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
+        mainPage.WhiteButton.click();
         Thread.sleep(2500);
-
-        WebElement KIDFidelis2035J2024 = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[2]"));
-        assert KIDFidelis2035J2024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2035_J 1-2024") : "KID štampa";
-
-        WebElement KIDFidelis2035J2024Stampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[2]/td[3]/div/a"));
-        KIDFidelis2035J2024Stampa.click();
-
-        WebElement KIDFidelis2040J2024 = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[3]/td[2]"));
-        assert KIDFidelis2040J2024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2040_J 1-2024") : "KID štampa";
-
-        WebElement KIDFidelis2040J2024Stampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[3]/td[3]/div/a"));
-        KIDFidelis2040J2024Stampa.click();
-
-        WebElement KIDFidelis2045J2024 = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[4]/td[2]"));
-        assert KIDFidelis2045J2024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2045_J 1-2024") : "KID štampa";
-
-        WebElement KIDFidelis2045J2024Stampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[4]/td[3]/div/a"));
-        KIDFidelis2045J2024Stampa.click();
-
-        WebElement KIDFidelis2050J2024 = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[5]/td[2]"));
-        assert KIDFidelis2050J2024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2050_J 1-2024") : "KID štampa";
-
-        WebElement KIDFidelis2050J2024Stampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[5]/td[3]/div/a"));
-        KIDFidelis2050J2024Stampa.click();
-
-        WebElement KIDFidelis2055J2024 = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[6]/td[2]"));
-        assert KIDFidelis2055J2024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2055_J 1-2024") : "KID štampa";
-
-        WebElement KIDFidelis2055J2024Stampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[6]/td[3]/div/a"));
-        KIDFidelis2055J2024Stampa.click();
-
-        WebElement KIDFidelis2035V2024 = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[7]/td[2]"));
-        assert KIDFidelis2035V2024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2035_V 1-2024") : "KID štampa";
-
-        WebElement KIDFidelis2035V2024Stampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[7]/td[3]/div/a"));
-        KIDFidelis2035V2024Stampa.click();
-
-        WebElement KIDFidelis2040V2024 = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[8]/td[2]"));
-        assert KIDFidelis2040V2024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2040_V 1-2024") : "KID štampa";
-
-        WebElement KIDFidelis2040V2024Stampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[8]/td[3]/div/a"));
-        KIDFidelis2040V2024Stampa.click();
-
-        WebElement KIDFidelis2045V2024 = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[9]/td[2]"));
-        assert KIDFidelis2045V2024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2045_V 1-2024") : "KID štampa";
-
-        WebElement KIDFidelis2045V2024Stampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[9]/td[3]/div/a"));
-        KIDFidelis2045V2024Stampa.click();
-
-        WebElement KIDFidelis2050V2024 = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[10]/td[2]"));
-        assert KIDFidelis2050V2024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2050_V 1-2024") : "KID štampa";
-
-        WebElement KIDFidelis2050V2024Stampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[10]/td[3]/div/a"));
-        KIDFidelis2050V2024Stampa.click();
-
-        WebElement KIDFidelis2055V2024 = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[11]/td[2]"));
-        assert KIDFidelis2055V2024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2055_V 1-2024") : "KID štampa";
-
-        WebElement KIDFidelis2055V2024Stampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[11]/td[3]/div/a"));
-        KIDFidelis2055V2024Stampa.click();
-
-        WebElement INFFidelisLife = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[12]/td[2]"));
-        assert INFFidelisLife.getText().equals("Informacije ugovaratelju osiguranja života vezano za jedinice Fidelis investicijskih fondova INF FidelisLife 1-2024") : "KID štampa";
-
-        WebElement INFFidelisLifeStampa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div/div/div/table/tbody/tr[12]/td[3]/div/a"));
-        INFFidelisLifeStampa.click();
+        assert mainPage.FidelisLifeTarget2035J12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2035_J 1-2024"):"Expected side menu document";
+        mainPage.WhiteButton1.click();
+        Thread.sleep(2500);
+        assert mainPage.FidelisLifeTarget2040J12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2040_J 1-2024"):"Expected side menu document";
+        mainPage.WhiteButton2.click();
+        Thread.sleep(2500);
+        assert mainPage.FidelisLifeTarget2045J12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2045_J 1-2024"):"Expected side menu document";
+        mainPage.WhiteButton3.click();
+        Thread.sleep(2500);
+        assert mainPage.FidelisLifeTarget2050J12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2050_J 1-2024"):"Expected side menu document";
+        mainPage.WhiteButton4.click();
+        Thread.sleep(2500);
+        assert mainPage.FidelisLifeTarget2055J12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2055_J 1-2024"):"Expected side menu document";
+        mainPage.WhiteButton5.click();
+        Thread.sleep(2500);
+        assert mainPage.FidelisLifeTarget2035V12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2035_V 1-2024"):"Expected side menu document";
+        mainPage.WhiteButton6.click();
+        Thread.sleep(2500);
+        assert mainPage.FidelisLifeTarget2040V12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2040_V 1-2024"):"Expected side menu document";
+        mainPage.WhiteButton7.click();
+        Thread.sleep(2500);
+        assert mainPage.FidelisLifeTarget2045V12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2045_V 1-2024"):"Expected side menu document";
+        mainPage.WhiteButton8.click();
+        Thread.sleep(2500);
+        assert mainPage.FidelisLifeTarget2050V12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2050_V 1-2024"):"Expected side menu document";
+        mainPage.WhiteButton9.click();
+        Thread.sleep(2500);
+        assert mainPage.FidelisLifeTarget2055V12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2055_V 1-2024"):"Expected side menu document";
+        mainPage.WhiteButton10.click();
+        Thread.sleep(2500);
+        assert mainPage.FidelisFonds12024.getText().equals("Informacije ugovaratelju osiguranja života vezano za jedinice Fidelis investicijskih fondova INF FidelisLife 1-2024"):"Expected side menu document";
+        mainPage.WhiteButton11.click();
 
 
     }
