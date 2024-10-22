@@ -3613,7 +3613,8 @@ public class sCoreCroatia {
         mainPage.TB.click();
         mainPage.SideMenuCRO.click();
         mainPage.SideMenuDocuments.click();
-        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
+        Thread.sleep(2500);
+        assert mainPage.INFIOOPSideMenu.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
         mainPage.WhiteButton.click();
         Thread.sleep(2500);
         assert mainPage.INFTB20231.getText().equals("Informacije ugovaratelju INF-TB_2023"):"Expected side menu document";
@@ -3642,7 +3643,7 @@ public class sCoreCroatia {
         mainPage.MO.click();
         mainPage.SideMenuCRO.click();
         mainPage.SideMenuDocuments.click();
-        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
+        assert mainPage.INFIOOPSideMenu.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
         mainPage.WhiteButton.click();
         Thread.sleep(2500);
         assert mainPage.INFZIV2023SideMenu.getText().equals("Informacije ugovaratelju INF-ZIV_2023"):"Expected side menu document";
@@ -3671,7 +3672,7 @@ public class sCoreCroatia {
         mainPage.MODOR.click();
         mainPage.SideMenuCRO.click();
         mainPage.SideMenuDocuments.click();
-        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
+        assert mainPage.INFIOOPSideMenu.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
         mainPage.WhiteButton.click();
         Thread.sleep(2500);
         assert mainPage.INFZIV2023SideMenu.getText().equals("Informacije ugovaratelju INF-ZIV_2023"):"Expected side menu document";
@@ -3700,7 +3701,7 @@ public class sCoreCroatia {
         mainPage.ROPOS.click();
         mainPage.SideMenuCRO.click();
         mainPage.SideMenuDocuments.click();
-        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
+        assert mainPage.INFIOOPSideMenu.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
         mainPage.WhiteButton.click();
         Thread.sleep(2500);
         assert mainPage.INFZIV2023SideMenu.getText().equals("Informacije ugovaratelju INF-ZIV_2023"):"Expected side menu document";
@@ -3733,7 +3734,7 @@ public class sCoreCroatia {
         mainPage.FidelisLife.click();
         mainPage.SideMenuCRO.click();
         mainPage.SideMenuDocuments.click();
-        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
+        assert mainPage.INFIOOPSideMenu.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
         mainPage.WhiteButton.click();
         Thread.sleep(2500);
         assert mainPage.FidelisLifeTarget2035J12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2035_J 1-2024"):"Expected side menu document";

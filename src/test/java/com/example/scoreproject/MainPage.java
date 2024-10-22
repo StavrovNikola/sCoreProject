@@ -1,4 +1,5 @@
 package com.example.scoreproject;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -621,6 +622,104 @@ public class MainPage {
     @FindBy(css = "label[for='Kol4_3911']")
     public WebElement PUZIF2022;
 
+    @FindBy(css = "#ribbon_menu_area")
+    public WebElement SideMenuCRO;
+
+    @FindBy(css = "a[onclick*='PredefinedDocumentation']")
+    public WebElement SideMenuDocuments;
+
+    @FindBy(css = "a[onclick='return openItemFromGrid(1, 0, \":1:1\");']")
+    public WebElement WhiteButton;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(1) > td:nth-of-type(2)")
+    public WebElement INFIOOPSideMenu;
+
+    @FindBy(css = "a[onclick='return openItemFromGrid(1, 1, \":1:1\");']")
+    public WebElement WhiteButton1;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(2) > td:nth-of-type(2)")
+    public WebElement INFTB20231;
+
+    @FindBy(css = "a[onclick='return openItemFromGrid(1, 2, \":1:1\");']")
+    public WebElement WhiteButton2;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(3) > td:nth-of-type(2)")
+    public WebElement TB2016;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(2) > td:nth-of-type(2)")
+    public WebElement INFZIV2023SideMenu;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(3) > td:nth-of-type(2)")
+    public WebElement MO16;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(3) > td:nth-of-type(2)")
+    public WebElement MODOR16;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(3) > td:nth-of-type(2)")
+    public WebElement ROPOS16;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(4) > td:nth-of-type(2)")
+    public WebElement ROPOS16J;
+
+    @FindBy(css = "a[onclick='return openItemFromGrid(1, 3, \":1:1\");']")
+    public WebElement WhiteButton3;
+
+    @FindBy(css = "a[onclick='return openItemFromGrid(1, 4, \":1:1\");']")
+    public WebElement WhiteButton4;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(5) > td:nth-of-type(2)")
+    public WebElement FidelisLifeTarget2050J12024;
+
+    @FindBy(css = "a[onclick='return openItemFromGrid(1, 5, \":1:1\");']")
+    public WebElement WhiteButton5;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(6) > td:nth-of-type(2)")
+    public WebElement FidelisLifeTarget2055J12024;
+
+    @FindBy(css = "a[onclick='return openItemFromGrid(1, 6, \":1:1\");']")
+    public WebElement WhiteButton6;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(7) > td:nth-of-type(2)")
+    public WebElement FidelisLifeTarget2035V12024;
+
+    @FindBy(css = "a[onclick='return openItemFromGrid(1, 7, \":1:1\");']")
+    public WebElement WhiteButton7;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(8) > td:nth-of-type(2)")
+    public WebElement FidelisLifeTarget2040V12024;
+
+    @FindBy(css = "a[onclick='return openItemFromGrid(1, 8, \":1:1\");']")
+    public WebElement WhiteButton8;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(9) > td:nth-of-type(2)")
+    public WebElement FidelisLifeTarget2045V12024;
+
+    @FindBy(css = "a[onclick='return openItemFromGrid(1, 9, \":1:1\");']")
+    public WebElement WhiteButton9;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(10) > td:nth-of-type(2)")
+    public WebElement FidelisLifeTarget2050V12024;
+
+    @FindBy(css = "a[onclick='return openItemFromGrid(1, 10, \":1:1\");']")
+    public WebElement WhiteButton10;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(11) > td:nth-of-type(2)")
+    public WebElement FidelisLifeTarget2055V12024;
+
+    @FindBy(css = "a[onclick='return openItemFromGrid(1, 11, \":1:1\");']")
+    public WebElement WhiteButton11;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(12) > td:nth-of-type(2)")
+    public WebElement FidelisFonds12024;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(2) > td:nth-of-type(2)")
+    public WebElement FidelisLifeTarget2035J12024;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(3) > td:nth-of-type(2)")
+    public WebElement FidelisLifeTarget2040J12024;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(4) > td:nth-of-type(2)")
+    public WebElement FidelisLifeTarget2045J12024;
 
 
 
@@ -721,104 +820,6 @@ public class MainPage {
     @FindBy(css = "#btn_ExportToExcel")
     public WebElement ExportToExcel;
 
-    @FindBy(css = "#ribbon_menu_area")
-    public WebElement SideMenuCRO;
-
-    @FindBy(css = "a[onclick*='PredefinedDocumentation']")
-    public WebElement SideMenuDocuments;
-
-    @FindBy(css = "a[onclick='return openItemFromGrid(1, 0, \":1:1\");']")
-    public WebElement WhiteButton;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(1) > td:nth-of-type(2)")
-    public WebElement INFIOOPTB;
-
-    @FindBy(css = "a[onclick='return openItemFromGrid(1, 1, \":1:1\");']")
-    public WebElement WhiteButton1;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(2) > td:nth-of-type(2)")
-    public WebElement INFTB20231;
-
-    @FindBy(css = "a[onclick='return openItemFromGrid(1, 2, \":1:1\");']")
-    public WebElement WhiteButton2;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(3) > td:nth-of-type(2)")
-    public WebElement TB2016;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(2) > td:nth-of-type(2)")
-    public WebElement INFZIV2023SideMenu;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(3) > td:nth-of-type(2)")
-    public WebElement MO16;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(3) > td:nth-of-type(2)")
-    public WebElement MODOR16;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(3) > td:nth-of-type(2)")
-    public WebElement ROPOS16;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(4) > td:nth-of-type(2)")
-    public WebElement ROPOS16J;
-
-    @FindBy(css = "a[onclick='return openItemFromGrid(1, 3, \":1:1\");']")
-    public WebElement WhiteButton3;
-
-    @FindBy(css = "a[onclick='return openItemFromGrid(1, 4, \":1:1\");']")
-    public WebElement WhiteButton4;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(5) > td:nth-of-type(2)")
-    public WebElement FidelisLifeTarget2050J12024;
-
-    @FindBy(css = "a[onclick='return openItemFromGrid(1, 5, \":1:1\");']")
-    public WebElement WhiteButton5;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(6) > td:nth-of-type(2)")
-    public WebElement FidelisLifeTarget2055J12024;
-
-    @FindBy(css = "a[onclick='return openItemFromGrid(1, 6, \":1:1\");']")
-    public WebElement WhiteButton6;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(7) > td:nth-of-type(2)")
-    public WebElement FidelisLifeTarget2035V12024;
-
-    @FindBy(css = "a[onclick='return openItemFromGrid(1, 7, \":1:1\");']")
-    public WebElement WhiteButton7;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(8) > td:nth-of-type(2)")
-    public WebElement FidelisLifeTarget2040V12024;
-
-    @FindBy(css = "a[onclick='return openItemFromGrid(1, 8, \":1:1\");']")
-    public WebElement WhiteButton8;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(9) > td:nth-of-type(2)")
-    public WebElement FidelisLifeTarget2045V12024;
-
-    @FindBy(css = "a[onclick='return openItemFromGrid(1, 9, \":1:1\");']")
-    public WebElement WhiteButton9;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(10) > td:nth-of-type(2)")
-    public WebElement FidelisLifeTarget2050V12024;
-
-    @FindBy(css = "a[onclick='return openItemFromGrid(1, 10, \":1:1\");']")
-    public WebElement WhiteButton10;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(11) > td:nth-of-type(2)")
-    public WebElement FidelisLifeTarget2055V12024;
-
-    @FindBy(css = "a[onclick='return openItemFromGrid(1, 11, \":1:1\");']")
-    public WebElement WhiteButton11;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(12) > td:nth-of-type(2)")
-    public WebElement FidelisFonds12024;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(2) > td:nth-of-type(2)")
-    public WebElement FidelisLifeTarget2035J12024;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(3) > td:nth-of-type(2)")
-    public WebElement FidelisLifeTarget2040J12024;
-
-    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(4) > td:nth-of-type(2)")
-    public WebElement FidelisLifeTarget2045J12024;
 
     
 
