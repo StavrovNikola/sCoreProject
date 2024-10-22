@@ -4218,43 +4218,19 @@ public class sCoreMontenegro {
     @Test (priority = 440)
     public void ExportToExcelMontenegro () throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        //JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://mne-test-iis2.stech.loc/POS/Montenegro/NoAD");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("mnescoreTehnika");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Februar.23");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("//*[@id=\"ContentPlaceHolder1_ucContainer1\"]/div[2]/a[1]/div"));
-        Zivot.click();
-        Thread.sleep(1500);
-
-        WebElement BocniMeni = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div"));
-        BocniMeni.click();
-        Thread.sleep(2500);
-
-        WebElement Pretraga = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[1]/a"));
-        Pretraga.click();
-
-        WebElement DatumUgovaranjaOd = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[9]/div[1]/div/input"));
-        DatumUgovaranjaOd.click();
-        DatumUgovaranjaOd.sendKeys("01.06.2024");
-
-        WebElement Pretrazi = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        Pretrazi.click();
-        Thread.sleep(3500);
-
-        WebElement IzveziUExcel = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[2]/a"));
-        IzveziUExcel.click();
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("mnescoreTehnika");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("Februar.23");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.08.2024");
+        mainPage.SearchMenu.click();
+        Thread.sleep(3000);
+        mainPage.ExportToExcel.click();
 
 
     }

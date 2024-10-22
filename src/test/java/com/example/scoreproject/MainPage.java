@@ -391,7 +391,35 @@ public class MainPage {
     @FindBy(css = "#Kol4")
     public WebElement Confirmation;
 
+    @FindBy(css = "a[onclick='return editItemFromGrid(2, 1, \":1:1\");']")
+    public WebElement PreviewSRB;
 
+    @FindBy(css = "#tab_Clauses")
+    public WebElement TabClausesSRB;
+
+    @FindBy(css = "label[for='Kol2_45']")
+    public WebElement Klauzula30DanaStorno;
+
+    @FindBy(css = "label[for='Kol2_51']")
+    public WebElement UgovaranjeValutneKlauzule;
+
+    @FindBy(css = "label[for='Kol2_2691']")
+    public WebElement TacnostPodataka;
+
+    @FindBy(css = "label[for='Kol2_2704']")
+    public WebElement ZastitaPodatakaLicnosti;
+
+    @FindBy(css = "label[for='Kol2_71']")
+    public WebElement KlauzulaZastitaPotrosaca;
+
+    @FindBy(css = "label[for='Kol2_4017']")
+    public WebElement SankcionaKlauzula;
+
+    @FindBy(css = "label[for='Kol2_1710']")
+    public WebElement InformacijeUgovaracaOsiguranja;
+
+    @FindBy(css = "#selProducts")
+    public WebElement ProductsSRB;
 
 
     //MONTENEGRO
@@ -690,6 +718,8 @@ public class MainPage {
 
     @FindBy(css = "#btn_ExportToExcel")
     public WebElement ExportToExcel;
+
+
 
 
 

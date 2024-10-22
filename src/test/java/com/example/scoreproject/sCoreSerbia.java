@@ -19,6 +19,7 @@ public class sCoreSerbia {
 
 
 
+
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
@@ -4193,82 +4194,33 @@ public class sCoreSerbia {
     @Test(priority = 480)
     public void ClausesSpektar() throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://qa-score.uniqa.rs/POS/Serbia/Products");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreUW");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("//*[@id=\"ContentPlaceHolder1_ucContainer1\"]/div[2]/a[1]/div"));
-        Zivot.click();
-        Thread.sleep(1500);
-
-        WebElement BocniMeni = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div"));
-        BocniMeni.click();
-
-        WebElement Pretraga = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[1]/a"));
-        Pretraga.click();
-
-        WebElement TipDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[2]/div/div/div/div/div/select"));
-        Select select = new Select(TipDokumenta);
-        select.selectByIndex(5);
-
-        WebElement StatusDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[13]/div/div/div/div/div/select"));
-        Select select1 = new Select(StatusDokumenta);
-        select1.selectByIndex(3);
-
-        WebElement Proizvod = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[3]/div/div/div/div/div/select"));
-        Select select2 = new Select(Proizvod);
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(4);
+        Select select2 = new Select(mainPage.ProductsSRB);
         select2.selectByIndex(54);
-
-        WebElement Pretrazi = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        Pretrazi.click();
-        Thread.sleep(2500);
-
-        WebElement AkcijaPregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/span/a/img"));
-        AkcijaPregled.click();
-
-        WebElement Pregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/ul/li[1]/a"));
-        Pregled.click();
-
-        WebElement KlauzuleNapomene = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[6]/a"));
-        KlauzuleNapomene.click();
-
-        WebElement OpstiUsloviOsiguranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li/label"));
-        assert OpstiUsloviOsiguranja.getText().equals("Opšti uslovi za osiguranje života OUŽ VIII/2022") : "Očekivani uslovi";
-
-        js.executeScript("window.scrollBy(0, -500);");
-
-        WebElement Klauzula30DanaStorno = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[1]/label"));
-        assert Klauzula30DanaStorno.getText().equals("Klauzula 30 dana storno") : "Očekivana klauzula";
-
-        WebElement UgovaranjeValutneKlauzule = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[2]/label"));
-        assert UgovaranjeValutneKlauzule.getText().equals("Ugovaranje valutne klauzule") : "Očekivana klauzula";
-
-        WebElement TacnostPodataka = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[3]/label"));
-        assert TacnostPodataka.getText().equals("Tačnost podataka") : "Očekivana klauzula";
-
-        WebElement ZastitaPodatakaOLicnosti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[4]/label"));
-        assert ZastitaPodatakaOLicnosti.getText().equals("Zaštita podataka o ličnosti") : "Očekivana klauzula";
-
-        WebElement KlauzulaOZastitiPotrosaca = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[5]/label"));
-        assert KlauzulaOZastitiPotrosaca.getText().equals("Klauzula o zaštiti potrošača") : "Očekivana klauzula";
-
-        WebElement SankcionaKlauzula = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[6]/label"));
-        assert SankcionaKlauzula.getText().equals("Sankciona klauzula") : "Očekivana klauzula";
-
-        WebElement InformacijeZaUgovaracaOsiguranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[7]/label"));
-        assert InformacijeZaUgovaracaOsiguranja.getText().equals("Informacije za ugovarača osiguranja") : "Očekivana klauzula";
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(10);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.06.2024");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.PreviewSRB.click();
+        mainPage.TabClausesSRB.click();
+        assert mainPage.Klauzula30DanaStorno.getText().equals("Klauzula 30 dana storno"):"Excepted Clause";
+        assert mainPage.UgovaranjeValutneKlauzule.getText().equals("Ugovaranje valutne klauzule"):"Excepted Clause";
+        assert mainPage.TacnostPodataka.getText().equals("Tačnost podataka"):"Excepted Clause";
+        assert mainPage.ZastitaPodatakaLicnosti.getText().equals("Zaštita podataka o ličnosti"):"Excepted Clause";
+        assert mainPage.KlauzulaZastitaPotrosaca.getText().equals("Klauzula o zaštiti potrošača"):"Excepted Clause";
+        assert mainPage.SankcionaKlauzula.getText().equals("Sankciona klauzula"):"Excepted Clause";
+        assert mainPage.InformacijeUgovaracaOsiguranja.getText().equals("Informacije za ugovarača osiguranja"):"Excepted Clause";
 
 
     }
@@ -4281,91 +4233,32 @@ public class sCoreSerbia {
     @Test(priority = 490)
     public void ClausesFavorit() throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://qa-score.uniqa.rs/POS/Serbia/Products");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreUW");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("//*[@id=\"ContentPlaceHolder1_ucContainer1\"]/div[2]/a[1]/div"));
-        Zivot.click();
-        Thread.sleep(1500);
-
-        WebElement BocniMeni = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div"));
-        BocniMeni.click();
-
-        WebElement Pretraga = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[1]/a"));
-        Pretraga.click();
-
-        WebElement TipDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[2]/div/div/div/div/div/select"));
-        Select select = new Select(TipDokumenta);
-        select.selectByIndex(5);
-
-        WebElement StatusDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[13]/div/div/div/div/div/select"));
-        Select select1 = new Select(StatusDokumenta);
-        select1.selectByIndex(3);
-
-        WebElement Proizvod = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[3]/div/div/div/div/div/select"));
-        Select select2 = new Select(Proizvod);
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(4);
+        Select select2 = new Select(mainPage.ProductsSRB);
         select2.selectByIndex(52);
-
-        WebElement Pretrazi = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        Pretrazi.click();
-        Thread.sleep(2500);
-
-        WebElement AkcijaPregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/span/a/img"));
-        AkcijaPregled.click();
-
-        WebElement Pregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/ul/li[1]/a"));
-        Pregled.click();
-
-        WebElement KlauzuleNapomene = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[6]/a"));
-        KlauzuleNapomene.click();
-
-        WebElement OpstiUsloviOsiguranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li/label"));
-        assert OpstiUsloviOsiguranja.getText().equals("Opšti uslovi za osiguranje života OUŽ VIII/2022") : "Očekivani uslovi";
-
-        WebElement PosebniUsloviOsiguranjeDece = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[2]/label"));
-        assert PosebniUsloviOsiguranjeDece.getText().equals("Posebni uslovi za osiguranje dece - PUOD II/2020") : "Očekivani uslovi";
-
-        WebElement PosebniUsloviOsiguranjeDeceNezgoda = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[3]/label"));
-        assert PosebniUsloviOsiguranjeDeceNezgoda.getText().equals("Posebni uslovi za osiguranje lica od posledica nesrećnog slučaja kao dopunski uslovi uz osiguranje života - PUNE II/2020") : "Očekivani uslovi";
-
-        WebElement TabelaInvaliditeta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[4]/label"));
-        assert TabelaInvaliditeta.getText().equals("Tabela invaliditeta za određivanje trajnog gubitka opšte radne sposobnosti usled nesrećnog slučaja - TI II/2020") : "Očekivani uslovi";
-
-        js.executeScript("window.scrollBy(0, -500);");
-
-        WebElement Klauzula30DanaStorno = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[1]/label"));
-        assert Klauzula30DanaStorno.getText().equals("Klauzula 30 dana storno") : "Očekivana klauzula";
-
-        WebElement UgovaranjeValutneKlauzule = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[2]/label"));
-        assert UgovaranjeValutneKlauzule.getText().equals("Ugovaranje valutne klauzule") : "Očekivana klauzula";
-
-        WebElement TacnostPodataka = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[3]/label"));
-        assert TacnostPodataka.getText().equals("Tačnost podataka") : "Očekivana klauzula";
-
-        WebElement ZastitaPodatakaOLicnosti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[4]/label"));
-        assert ZastitaPodatakaOLicnosti.getText().equals("Zaštita podataka o ličnosti") : "Očekivana klauzula";
-
-        WebElement KlauzulaOZastitiPotrosaca = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[5]/label"));
-        assert KlauzulaOZastitiPotrosaca.getText().equals("Klauzula o zaštiti potrošača") : "Očekivana klauzula";
-
-        WebElement SankcionaKlauzula = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[6]/label"));
-        assert SankcionaKlauzula.getText().equals("Sankciona klauzula") : "Očekivana klauzula";
-
-        WebElement InformacijeZaUgovaracaOsiguranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[7]/label"));
-        assert InformacijeZaUgovaracaOsiguranja.getText().equals("Informacije za ugovarača osiguranja") : "Očekivana klauzula";
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(10);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.01.2023");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.PreviewSRB.click();
+        mainPage.TabClausesSRB.click();
+        assert mainPage.Klauzula30DanaStorno.getText().equals("Klauzula 30 dana storno"):"Excepted Clause";
+        assert mainPage.TacnostPodataka.getText().equals("Tačnost podataka"):"Excepted Clause";
+        assert mainPage.ZastitaPodatakaLicnosti.getText().equals("Zaštita podataka o ličnosti"):"Excepted Clause";
+        assert mainPage.KlauzulaZastitaPotrosaca.getText().equals("Klauzula o zaštiti potrošača"):"Excepted Clause";
+        assert mainPage.SankcionaKlauzula.getText().equals("Sankciona klauzula"):"Excepted Clause";
+        assert mainPage.InformacijeUgovaracaOsiguranja.getText().equals("Informacije za ugovarača osiguranja"):"Excepted Clause";
 
 
     }
@@ -4378,89 +4271,33 @@ public class sCoreSerbia {
     @Test(priority = 500)
     public void ClausesJoker() throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://qa-score.uniqa.rs/POS/Serbia/Products");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreUW");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("//*[@id=\"ContentPlaceHolder1_ucContainer1\"]/div[2]/a[1]/div"));
-        Zivot.click();
-        Thread.sleep(1500);
-
-        WebElement BocniMeni = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div"));
-        BocniMeni.click();
-
-        WebElement Pretraga = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[1]/a"));
-        Pretraga.click();
-
-        WebElement TipDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[2]/div/div/div/div/div/select"));
-        Select select = new Select(TipDokumenta);
-        select.selectByIndex(5);
-
-        WebElement StatusDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[13]/div/div/div/div/div/select"));
-        Select select1 = new Select(StatusDokumenta);
-        select1.selectByIndex(3);
-
-        WebElement Proizvod = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[3]/div/div/div/div/div/select"));
-        Select select2 = new Select(Proizvod);
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(4);
+        Select select2 = new Select(mainPage.ProductsSRB);
         select2.selectByIndex(53);
-
-        WebElement Pretrazi = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        Pretrazi.click();
-        Thread.sleep(2500);
-
-        WebElement AkcijaPregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/span/a/img"));
-        AkcijaPregled.click();
-
-        WebElement Pregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/ul/li[1]/a"));
-        Pregled.click();
-
-        WebElement KlauzuleNapomene = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[6]/a"));
-        KlauzuleNapomene.click();
-
-        WebElement OpstiUsloviOsiguranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li/label"));
-        assert OpstiUsloviOsiguranja.getText().equals("Opšti uslovi za osiguranje života OUŽ VIII/2022") : "Očekivani uslovi";
-
-        WebElement PosebniUsloviOsiguranjeNesrecniSlucaj = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[2]/label"));
-        assert PosebniUsloviOsiguranjeNesrecniSlucaj.getText().equals("Posebni uslovi za osiguranje lica od posledica nesrećnog slučaja kao dopunski uslovi uz osiguranje života - PUNE II/2020") : "Očekivani uslovi";
-
-        WebElement TabelaInvaliditeta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[3]/label"));
-        assert TabelaInvaliditeta.getText().equals("Tabela invaliditeta za određivanje trajnog gubitka opšte radne sposobnosti usled nesrećnog slučaja - TI II/2020") : "Očekivani uslovi";
-
-        js.executeScript("window.scrollBy(0, -500);");
-
-        WebElement Klauzula30DanaStorno = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[1]/label"));
-        assert Klauzula30DanaStorno.getText().equals("Klauzula 30 dana storno") : "Očekivana klauzula";
-
-        WebElement UgovaranjeValutneKlauzule = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[2]/label"));
-        assert UgovaranjeValutneKlauzule.getText().equals("Ugovaranje valutne klauzule") : "Očekivana klauzula";
-
-        WebElement TacnostPodataka = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[3]/label"));
-        assert TacnostPodataka.getText().equals("Tačnost podataka") : "Očekivana klauzula";
-
-        WebElement ZastitaPodatakaOLicnosti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[4]/label"));
-        assert ZastitaPodatakaOLicnosti.getText().equals("Zaštita podataka o ličnosti") : "Očekivana klauzula";
-
-        WebElement KlauzulaOZastitiPotrosaca = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[5]/label"));
-        assert KlauzulaOZastitiPotrosaca.getText().equals("Klauzula o zaštiti potrošača") : "Očekivana klauzula";
-
-        WebElement SankcionaKlauzula = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[6]/label"));
-        assert SankcionaKlauzula.getText().equals("Sankciona klauzula") : "Očekivana klauzula";
-
-        WebElement InformacijeZaUgovaracaOsiguranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[7]/label"));
-        assert InformacijeZaUgovaracaOsiguranja.getText().equals("Informacije za ugovarača osiguranja") : "Očekivana klauzula";
-
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(10);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.06.2024");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.PreviewSRB.click();
+        mainPage.TabClausesSRB.click();
+        assert mainPage.Klauzula30DanaStorno.getText().equals("Klauzula 30 dana storno"):"Excepted Clause";
+        assert mainPage.UgovaranjeValutneKlauzule.getText().equals("Ugovaranje valutne klauzule"):"Excepted Clause";
+        assert mainPage.TacnostPodataka.getText().equals("Tačnost podataka"):"Excepted Clause";
+        assert mainPage.ZastitaPodatakaLicnosti.getText().equals("Zaštita podataka o ličnosti"):"Excepted Clause";
+        assert mainPage.KlauzulaZastitaPotrosaca.getText().equals("Klauzula o zaštiti potrošača"):"Excepted Clause";
+        assert mainPage.SankcionaKlauzula.getText().equals("Sankciona klauzula"):"Excepted Clause";
+        assert mainPage.InformacijeUgovaracaOsiguranja.getText().equals("Informacije za ugovarača osiguranja"):"Excepted Clause";
 
     }
 
@@ -4473,83 +4310,33 @@ public class sCoreSerbia {
     @Test(priority = 510)
     public void ClausesJokerOld() throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://qa-score.uniqa.rs/POS/Serbia/Products");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreUW");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("//*[@id=\"ContentPlaceHolder1_ucContainer1\"]/div[2]/a[1]/div"));
-        Zivot.click();
-        Thread.sleep(1500);
-
-        WebElement BocniMeni = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div"));
-        BocniMeni.click();
-
-        WebElement Pretraga = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[1]/a"));
-        Pretraga.click();
-
-        WebElement TipDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[2]/div/div/div/div/div/select"));
-        Select select = new Select(TipDokumenta);
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
         select.selectByIndex(4);
-
-        WebElement StatusDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[13]/div/div/div/div/div/select"));
-        Select select1 = new Select(StatusDokumenta);
-        select1.selectByIndex(10);
-
-        WebElement Proizvod = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[3]/div/div/div/div/div/select"));
-        Select select2 = new Select(Proizvod);
+        Select select2 = new Select(mainPage.ProductsSRB);
         select2.selectByIndex(5);
-
-        WebElement Pretrazi = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        Pretrazi.click();
-        Thread.sleep(2500);
-
-        WebElement AkcijaPregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/span/a/img"));
-        AkcijaPregled.click();
-
-        WebElement Pregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/ul/li[1]/a"));
-        Pregled.click();
-
-        WebElement KlauzuleNapomene = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[6]/a"));
-        KlauzuleNapomene.click();
-
-        WebElement OpstiUsloviOsiguranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li/label"));
-        assert OpstiUsloviOsiguranja.getText().equals("Uslovi za osiguranje života za slucaj doživljenja - Džoker Plus od 12.07.2021. godine (UŽD VII/2021)") : "Očekivani uslovi";
-
-        js.executeScript("window.scrollBy(0, -500);");
-
-        WebElement Klauzula30DanaStorno = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[1]/label"));
-        assert Klauzula30DanaStorno.getText().equals("Klauzula 30 dana storno") : "Očekivana klauzula";
-
-        WebElement UgovaranjeValutneKlauzule = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[2]/label"));
-        assert UgovaranjeValutneKlauzule.getText().equals("Ugovaranje valutne klauzule") : "Očekivana klauzula";
-
-        WebElement TacnostPodataka = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[3]/label"));
-        assert TacnostPodataka.getText().equals("Tačnost podataka") : "Očekivana klauzula";
-
-        WebElement ZastitaPodatakaOLicnosti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[4]/label"));
-        assert ZastitaPodatakaOLicnosti.getText().equals("Zaštita podataka o ličnosti") : "Očekivana klauzula";
-
-        WebElement KlauzulaOZastitiPotrosaca = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[5]/label"));
-        assert KlauzulaOZastitiPotrosaca.getText().equals("Klauzula o zaštiti potrošača") : "Očekivana klauzula";
-
-        WebElement SankcionaKlauzula = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[6]/label"));
-        assert SankcionaKlauzula.getText().equals("Sankciona klauzula") : "Očekivana klauzula";
-
-        WebElement InformacijeZaUgovaracaOsiguranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[7]/label"));
-        assert InformacijeZaUgovaracaOsiguranja.getText().equals("Informacije za ugovarača osiguranja") : "Očekivana klauzula";
-
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(10);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.06.2024");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.PreviewSRB.click();
+        mainPage.TabClausesSRB.click();
+        assert mainPage.Klauzula30DanaStorno.getText().equals("Klauzula 30 dana storno"):"Excepted Clause";
+        assert mainPage.UgovaranjeValutneKlauzule.getText().equals("Ugovaranje valutne klauzule"):"Excepted Clause";
+        assert mainPage.TacnostPodataka.getText().equals("Tačnost podataka"):"Excepted Clause";
+        assert mainPage.ZastitaPodatakaLicnosti.getText().equals("Zaštita podataka o ličnosti"):"Excepted Clause";
+        assert mainPage.KlauzulaZastitaPotrosaca.getText().equals("Klauzula o zaštiti potrošača"):"Excepted Clause";
+        assert mainPage.SankcionaKlauzula.getText().equals("Sankciona klauzula"):"Excepted Clause";
+        assert mainPage.InformacijeUgovaracaOsiguranja.getText().equals("Informacije za ugovarača osiguranja"):"Excepted Clause";
 
     }
 
@@ -4562,82 +4349,33 @@ public class sCoreSerbia {
     @Test(priority = 520)
     public void ClausesRiziko() throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://qa-score.uniqa.rs/POS/Serbia/Products");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreUW");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("//*[@id=\"ContentPlaceHolder1_ucContainer1\"]/div[2]/a[1]/div"));
-        Zivot.click();
-        Thread.sleep(1500);
-
-        WebElement BocniMeni = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div"));
-        BocniMeni.click();
-
-        WebElement Pretraga = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[1]/a"));
-        Pretraga.click();
-
-        WebElement TipDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[2]/div/div/div/div/div/select"));
-        Select select = new Select(TipDokumenta);
-        select.selectByIndex(5);
-
-        WebElement StatusDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[13]/div/div/div/div/div/select"));
-        Select select1 = new Select(StatusDokumenta);
-        select1.selectByIndex(3);
-
-        WebElement Proizvod = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[3]/div/div/div/div/div/select"));
-        Select select2 = new Select(Proizvod);
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(4);
+        Select select2 = new Select(mainPage.ProductsSRB);
         select2.selectByIndex(2);
-
-        WebElement Pretrazi = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        Pretrazi.click();
-        Thread.sleep(2500);
-
-        WebElement AkcijaPregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[4]/td[34]/div/div/span/a/img"));
-        AkcijaPregled.click();
-
-        WebElement Pregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[4]/td[34]/div/div/ul/li[1]/a"));
-        Pregled.click();
-
-        WebElement KlauzuleNapomene = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[6]/a"));
-        KlauzuleNapomene.click();
-
-        WebElement OpstiUsloviOsiguranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li/label"));
-        assert OpstiUsloviOsiguranja.getText().equals("Opšti uslovi za osiguranje života OUŽ VIII/2022") : "Očekivani uslovi";
-
-        js.executeScript("window.scrollBy(0, -500);");
-
-        WebElement Klauzula30DanaStorno = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[1]/label"));
-        assert Klauzula30DanaStorno.getText().equals("Klauzula 30 dana storno") : "Očekivana klauzula";
-
-        WebElement TacnostPodataka = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[2]/label"));
-        assert TacnostPodataka.getText().equals("Tačnost podataka") : "Očekivana klauzula";
-
-        WebElement UgovaranjeValutneKlauzule = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[3]/label"));
-        assert UgovaranjeValutneKlauzule.getText().equals("Ugovaranje valutne klauzule") : "Očekivana klauzula";
-
-        WebElement ZastitaPodatakaOLicnosti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[4]/label"));
-        assert ZastitaPodatakaOLicnosti.getText().equals("Zaštita podataka o ličnosti") : "Očekivana klauzula";
-
-        WebElement KlauzulaOZastitiPotrosaca = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[5]/label"));
-        assert KlauzulaOZastitiPotrosaca.getText().equals("Klauzula o zaštiti potrošača") : "Očekivana klauzula";
-
-        WebElement SankcionaKlauzula = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[6]/label"));
-        assert SankcionaKlauzula.getText().equals("Sankciona klauzula") : "Očekivana klauzula";
-
-        WebElement InformacijeZaUgovaracaOsiguranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[7]/label"));
-        assert InformacijeZaUgovaracaOsiguranja.getText().equals("Informacije za ugovarača osiguranja") : "Očekivana klauzula";
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(10);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.06.2024");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.PreviewSRB.click();
+        mainPage.TabClausesSRB.click();
+        assert mainPage.Klauzula30DanaStorno.getText().equals("Klauzula 30 dana storno"):"Excepted Clause";
+        assert mainPage.UgovaranjeValutneKlauzule.getText().equals("Ugovaranje valutne klauzule"):"Excepted Clause";
+        assert mainPage.TacnostPodataka.getText().equals("Tačnost podataka"):"Excepted Clause";
+        assert mainPage.ZastitaPodatakaLicnosti.getText().equals("Zaštita podataka o ličnosti"):"Excepted Clause";
+        assert mainPage.KlauzulaZastitaPotrosaca.getText().equals("Klauzula o zaštiti potrošača"):"Excepted Clause";
+        assert mainPage.SankcionaKlauzula.getText().equals("Sankciona klauzula"):"Excepted Clause";
+        assert mainPage.InformacijeUgovaracaOsiguranja.getText().equals("Informacije za ugovarača osiguranja"):"Excepted Clause";
 
 
     }
@@ -4651,94 +4389,33 @@ public class sCoreSerbia {
     @Test(priority = 530)
     public void ClausesRizikoKredit() throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://qa-score.uniqa.rs/POS/Serbia/Products");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreUW");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("//*[@id=\"ContentPlaceHolder1_ucContainer1\"]/div[2]/a[1]/div"));
-        Zivot.click();
-        Thread.sleep(1500);
-
-        WebElement BocniMeni = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div"));
-        BocniMeni.click();
-
-        WebElement Pretraga = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[1]/a"));
-        Pretraga.click();
-
-        WebElement TipDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[2]/div/div/div/div/div/select"));
-        Select select = new Select(TipDokumenta);
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
         select.selectByIndex(4);
-
-        WebElement StatusDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[13]/div/div/div/div/div/select"));
-        Select select1 = new Select(StatusDokumenta);
-        select1.selectByIndex(10);
-
-        WebElement Proizvod = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[3]/div/div/div/div/div/select"));
-        Select select2 = new Select(Proizvod);
+        Select select2 = new Select(mainPage.ProductsSRB);
         select2.selectByIndex(4);
-
-        WebElement Pretrazi = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        Pretrazi.click();
-        Thread.sleep(2500);
-
-        WebElement AkcijaPregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/span/a/img"));
-        AkcijaPregled.click();
-
-        WebElement Pregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/ul/li[1]/a"));
-        Pregled.click();
-
-        WebElement KlauzuleNapomene = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[6]/a"));
-        KlauzuleNapomene.click();
-
-        js.executeScript("window.scrollBy(0, -500);");
-
-        WebElement Klauzula30DanaStorno = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[1]/label"));
-        assert Klauzula30DanaStorno.getText().equals("Klauzula 30 dana storno") : "Očekivana klauzula";
-
-        WebElement TacnostPodataka = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[2]/label"));
-        assert TacnostPodataka.getText().equals("Tačnost podataka") : "Očekivana klauzula";
-
-        WebElement UgovaranjeValutneKlauzule = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[3]/label"));
-        assert UgovaranjeValutneKlauzule.getText().equals("Ugovaranje valutne klauzule") : "Očekivana klauzula";
-
-        WebElement ZastitaPodatakaOLicnosti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[4]/label"));
-        assert ZastitaPodatakaOLicnosti.getText().equals("Zaštita podataka o ličnosti") : "Očekivana klauzula";
-
-        WebElement KlauzulaOZastitiPotrosaca = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[5]/label"));
-        assert KlauzulaOZastitiPotrosaca.getText().equals("Klauzula o zaštiti potrošača") : "Očekivana klauzula";
-
-        WebElement SankcionaKlauzula = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[6]/label"));
-        assert SankcionaKlauzula.getText().equals("Sankciona klauzula") : "Očekivana klauzula";
-
-        WebElement InformacijeZaUgovaracaOsiguranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[7]/label"));
-        assert InformacijeZaUgovaracaOsiguranja.getText().equals("Informacije za ugovarača osiguranja") : "Očekivana klauzula";
-
-        js.executeScript("window.scrollBy(-500, 0);");
-
-        WebElement PregledPolise = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        PregledPolise.click();
-
-        WebElement KlauzuleNapomene1 = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[6]/a"));
-        KlauzuleNapomene1.click();
-
-        WebElement OpstiUsloviOsiguranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li/label"));
-        assert OpstiUsloviOsiguranja.getText().equals("Opšti uslovi za osiguranje života OUŽ VIII/2022") : "Očekivani uslovi";
-
-        WebElement PosebniUsloviSlucajSmrti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[2]/label"));
-        assert PosebniUsloviSlucajSmrti.getText().equals("Posebni uslovi za osiguranje života za slučaj smrti sa opadajućim osiguranim sumama - PUOOS II 2020") : "Očekivani uslovi";
-
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(10);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.06.2024");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.PreviewSRB.click();
+        mainPage.TabClausesSRB.click();
+        assert mainPage.Klauzula30DanaStorno.getText().equals("Klauzula 30 dana storno"):"Excepted Clause";
+        assert mainPage.UgovaranjeValutneKlauzule.getText().equals("Ugovaranje valutne klauzule"):"Excepted Clause";
+        assert mainPage.TacnostPodataka.getText().equals("Tačnost podataka"):"Excepted Clause";
+        assert mainPage.ZastitaPodatakaLicnosti.getText().equals("Zaštita podataka o ličnosti"):"Excepted Clause";
+        assert mainPage.KlauzulaZastitaPotrosaca.getText().equals("Klauzula o zaštiti potrošača"):"Excepted Clause";
+        assert mainPage.SankcionaKlauzula.getText().equals("Sankciona klauzula"):"Excepted Clause";
+        assert mainPage.InformacijeUgovaracaOsiguranja.getText().equals("Informacije za ugovarača osiguranja"):"Excepted Clause";
 
     }
 
@@ -4751,85 +4428,33 @@ public class sCoreSerbia {
     @Test(priority = 540)
     public void ClausesDozivotniRiziko() throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://qa-score.uniqa.rs/POS/Serbia/Products");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreUW");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("//*[@id=\"ContentPlaceHolder1_ucContainer1\"]/div[2]/a[1]/div"));
-        Zivot.click();
-        Thread.sleep(1500);
-
-        WebElement BocniMeni = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div"));
-        BocniMeni.click();
-
-        WebElement Pretraga = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[1]/a"));
-        Pretraga.click();
-
-        WebElement TipDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[2]/div/div/div/div/div/select"));
-        Select select = new Select(TipDokumenta);
-        select.selectByIndex(5);
-
-        WebElement StatusDokumenta = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[13]/div/div/div/div/div/select"));
-        Select select1 = new Select(StatusDokumenta);
-        select1.selectByIndex(3);
-
-        WebElement Proizvod = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[3]/div/table/tbody/tr/td[3]/div/div/div/div/div/select"));
-        Select select2 = new Select(Proizvod);
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(4);
+        Select select2 = new Select(mainPage.ProductsSRB);
         select2.selectByIndex(58);
-
-        WebElement Pretrazi = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        Pretrazi.click();
-        Thread.sleep(2500);
-
-        WebElement AkcijaPregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/span/a/img"));
-        AkcijaPregled.click();
-
-        WebElement Pregled = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[13]/div/div/div/div[2]/div/div/div[4]/div/table/tbody/tr[1]/td[34]/div/div/ul/li[1]/a"));
-        Pregled.click();
-
-        WebElement KlauzuleNapomene = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[6]/a"));
-        KlauzuleNapomene.click();
-
-        WebElement OpstiUsloviOsiguranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li/label"));
-        assert OpstiUsloviOsiguranja.getText().equals("Opšti uslovi za osiguranje života od 31.08.2022. godine (OUŽ VIII/2022)") : "Očekivani uslovi";
-
-        WebElement PosebniUsloviSlucajSmrti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/fieldset/div/div/div/ul/li[2]/label"));
-        assert PosebniUsloviSlucajSmrti.getText().equals("Posebni uslovi za doživotno osiguranje života za slučaj smrti od 01.03.2023 (PUDOŽS III/2023)") : "Očekivani uslovi";
-
-        js.executeScript("window.scrollBy(0, -500);");
-
-        WebElement Klauzula30DanaStorno = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[1]/label"));
-        assert Klauzula30DanaStorno.getText().equals("Klauzula 30 dana storno") : "Očekivana klauzula";
-
-        WebElement UgovaranjeValutneKlauzule = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[2]/label"));
-        assert UgovaranjeValutneKlauzule.getText().equals("Ugovaranje valutne klauzule") : "Očekivana klauzula";
-
-        WebElement TacnostPodataka = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[3]/label"));
-        assert TacnostPodataka.getText().equals("Tačnost podataka") : "Očekivana klauzula";
-
-        WebElement ZastitaPodatakaOLicnosti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[4]/label"));
-        assert ZastitaPodatakaOLicnosti.getText().equals("Zaštita podataka o ličnosti") : "Očekivana klauzula";
-
-        WebElement KlauzulaOZastitiPotrosaca = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[5]/label"));
-        assert KlauzulaOZastitiPotrosaca.getText().equals("Klauzula o zaštiti potrošača") : "Očekivana klauzula";
-
-        WebElement SankcionaKlauzula = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[6]/label"));
-        assert SankcionaKlauzula.getText().equals("Sankciona klauzula") : "Očekivana klauzula";
-
-        WebElement InformacijeZaUgovaracaOsiguranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div/div/div/ul/li[7]/label"));
-        assert InformacijeZaUgovaracaOsiguranja.getText().equals("Informacije za ugovarača osiguranja") : "Očekivana klauzula";
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(10);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.06.2024");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.PreviewSRB.click();
+        mainPage.TabClausesSRB.click();
+        assert mainPage.Klauzula30DanaStorno.getText().equals("Klauzula 30 dana storno"):"Excepted Clause";
+        assert mainPage.UgovaranjeValutneKlauzule.getText().equals("Ugovaranje valutne klauzule"):"Excepted Clause";
+        assert mainPage.TacnostPodataka.getText().equals("Tačnost podataka"):"Excepted Clause";
+        assert mainPage.ZastitaPodatakaLicnosti.getText().equals("Zaštita podataka o ličnosti"):"Excepted Clause";
+        assert mainPage.KlauzulaZastitaPotrosaca.getText().equals("Klauzula o zaštiti potrošača"):"Excepted Clause";
+        assert mainPage.SankcionaKlauzula.getText().equals("Sankciona klauzula"):"Excepted Clause";
+        assert mainPage.InformacijeUgovaracaOsiguranja.getText().equals("Informacije za ugovarača osiguranja"):"Excepted Clause";
 
 
     }
@@ -4842,43 +4467,19 @@ public class sCoreSerbia {
     @Test(priority = 540)
     public void ExportToExcelSerbia() throws Exception {
 
-        WebDriver driver = new ChromeDriver();
-        //JavascriptExecutor js = (JavascriptExecutor) driver;
-
-
-        driver.get("https://qa-score.uniqa.rs/POS/Serbia/Products");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreUW");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("//*[@id=\"ContentPlaceHolder1_ucContainer1\"]/div[2]/a[1]/div"));
-        Zivot.click();
-        Thread.sleep(1500);
-
-        WebElement BocniMeni = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div"));
-        BocniMeni.click();
-        Thread.sleep(2500);
-
-        WebElement Pretraga = driver.findElement(By.xpath("/html/body/form/div[2]/div[3]/div[1]/div/ul[1]/li[1]/a"));
-        Pretraga.click();
-
-        WebElement DatumUgovaranjaOd = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[9]/div[1]/div/input"));
-        DatumUgovaranjaOd.click();
-        DatumUgovaranjaOd.sendKeys("01.06.2024");
-
-        WebElement Pretrazi = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        Pretrazi.click();
-        Thread.sleep(3500);
-
-        WebElement IzveziUExcel = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[2]/a"));
-        IzveziUExcel.click();
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.06.2024");
+        mainPage.SearchMenu.click();
+        Thread.sleep(3000);
+        mainPage.ExportToExcel.click();
 
     }
 
