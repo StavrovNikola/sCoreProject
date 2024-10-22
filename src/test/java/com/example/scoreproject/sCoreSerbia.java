@@ -20,7 +20,6 @@ public class sCoreSerbia {
 
 
 
-
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
@@ -7209,8 +7208,248 @@ public class sCoreSerbia {
 
     }
 
+    @Epic("sCore Serbia")
+    @Feature("Conditions")
+    @Description("Checking Conditions")
+    @Step("Checking Conditions - Spektar")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 870)
+    public void ConditionsSpektar() throws Exception {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(5);
+        Select select2 = new Select(mainPage.ProductsSRB);
+        select2.selectByIndex(54);
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(3);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.06.2024");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.PreviewSRB.click();
+        mainPage.TabClausesSRB.click();
+        assert mainPage.OpstiUsloviVIII2022.getText().equals("Opšti uslovi za osiguranje života OUŽ VIII/2022"):"Excepted Condition";
 
 
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Conditions")
+    @Description("Checking Conditions")
+    @Step("Checking Clauses - Favorit")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 880)
+    public void ConditionsFavorit() throws Exception {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(5);
+        Select select2 = new Select(mainPage.ProductsSRB);
+        select2.selectByIndex(52);
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(3);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.06.2023");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.PreviewSRB.click();
+        mainPage.TabClausesSRB.click();
+        assert mainPage.OpstiUsloviVIII2022.getText().equals("Opšti uslovi za osiguranje života OUŽ VIII/2022"):"Excepted Condition";
+        assert mainPage.PosebniUsloviOsiguranjeDece.getText().equals("Posebni uslovi za osiguranje dece - PUOD II/2020"):"Excepted Condition";
+        assert mainPage.PosebniUsloviOsiguranjeLica.getText().equals("Posebni uslovi za osiguranje lica od posledica nesrećnog slučaja kao dopunski uslovi uz osiguranje života - PUNE II/2020"):"Excepted Condition";
+        assert mainPage.TabelaInvaliditeta.getText().equals("Tabela invaliditeta za određivanje trajnog gubitka opšte radne sposobnosti usled nesrećnog slučaja - TI II/2020"):"Excepted Condition";
+
+
+    }
+
+    @Epic("sCore Serbia")
+    @Feature("Conditions")
+    @Description("Checking Conditions")
+    @Step("Checking Conditions - Joker")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 890)
+    public void ConditionsJoker() throws Exception {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(5);
+        Select select2 = new Select(mainPage.ProductsSRB);
+        select2.selectByIndex(53);
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(3);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.05.2024");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.PreviewSRB.click();
+        mainPage.TabClausesSRB.click();
+        assert mainPage.OpstiUsloviVIII2022.getText().equals("Opšti uslovi za osiguranje života OUŽ VIII/2022"):"Excepted Condition";
+        assert mainPage.PosebniUsloviOsiguranjeLica.getText().equals("Posebni uslovi za osiguranje lica od posledica nesrećnog slučaja kao dopunski uslovi uz osiguranje života - PUNE II/2020"):"Excepted Condition";
+        assert mainPage.TabelaInvaliditeta.getText().equals("Tabela invaliditeta za određivanje trajnog gubitka opšte radne sposobnosti usled nesrećnog slučaja - TI II/2020"):"Excepted Condition";
+
+
+    }
+
+
+    @Epic("sCore Serbia")
+    @Feature("Conditions")
+    @Description("Checking Conditions")
+    @Step("Checking Conditions - Joker Old")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 900)
+    public void ConditionsJokerOld() throws Exception {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(5);
+        Select select2 = new Select(mainPage.ProductsSRB);
+        select2.selectByIndex(5);
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(3);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.05.2024");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.PreviewSRB.click();
+        mainPage.TabClausesSRB.click();
+        assert mainPage.UŽDVI2021.getText().equals("Uslovi za osiguranje života za slucaj doživljenja - Džoker Plus od 12.07.2021. godine (UŽD VII/2021)"):"Excepted Condition";
+
+
+    }
+
+
+    @Epic("sCore Serbia")
+    @Feature("Conditions")
+    @Description("Checking Conditions")
+    @Step("Checking Conditions - Riziko")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 910)
+    public void ConditionsRiziko() throws Exception {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(5);
+        Select select2 = new Select(mainPage.ProductsSRB);
+        select2.selectByIndex(2);
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(3);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.05.2024");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.PreviewSRB.click();
+        mainPage.TabClausesSRB.click();
+        assert mainPage.OpstiUsloviVIII2022.getText().equals("Opšti uslovi za osiguranje života OUŽ VIII/2022"):"Excepted Condition";
+
+
+
+    }
+
+
+    @Epic("sCore Serbia")
+    @Feature("Conditions")
+    @Description("Checking Conditions")
+    @Step("Checking Conditions - Riziko Kredit")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 920)
+    public void ConditionsRizikoKredit() throws Exception {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(5);
+        Select select2 = new Select(mainPage.ProductsSRB);
+        select2.selectByIndex(4);
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(3);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.06.2024");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.PreviewSRB.click();
+        mainPage.TabClausesSRB.click();
+        assert mainPage.OpstiUsloviVIII2022.getText().equals("Opšti uslovi za osiguranje života OUŽ VIII/2022"):"Excepted Condition";
+        assert mainPage.PUOOSII2020.getText().equals("Posebni uslovi za osiguranje života za slučaj smrti sa opadajućim osiguranim sumama - PUOOS II 2020"):"Excepted Condition";
+
+
+    }
+
+
+    @Epic("sCore Serbia")
+    @Feature("Conditions")
+    @Description("Checking Conditions")
+    @Step("Checking Conditions - Dozivotni Riziko")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 930)
+    public void ConditionsDozivotniRiziko() throws Exception {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SideMenu.click();
+        mainPage.Search.click();
+        Select select = new Select(mainPage.DocumentType);
+        select.selectByIndex(5);
+        Select select2 = new Select(mainPage.ProductsSRB);
+        select2.selectByIndex(58);
+        Select select1 = new Select(mainPage.Status);
+        select1.selectByIndex(3);
+        mainPage.DateOfContracting.click();
+        mainPage.DateOfContracting.sendKeys("01.01.2024");
+        mainPage.SearchMenu.click();
+        mainPage.ImageSearch.click();
+        mainPage.PreviewSRB.click();
+        mainPage.TabClausesSRB.click();
+        assert mainPage.OUŽVIII2022.getText().equals("Opšti uslovi za osiguranje života od 31.08.2022. godine (OUŽ VIII/2022)"):"Excepted Condition";
+        assert mainPage.PUDOŽSIII2023.getText().equals("Posebni uslovi za doživotno osiguranje života za slučaj smrti od 01.03.2023 (PUDOŽS III/2023)"):"Excepted Condition";
+
+    }
 
 }
 

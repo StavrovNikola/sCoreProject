@@ -422,6 +422,33 @@ public class MainPage {
     @FindBy(css = "#selProducts")
     public WebElement ProductsSRB;
 
+    @FindBy(css = "label[for='Kol4_3915']")
+    public WebElement OpstiUsloviVIII2022;
+
+    @FindBy(css = "label[for='Kol4_2731']")
+    public WebElement PosebniUsloviOsiguranjeDece;
+
+    @FindBy(css = "label[for='Kol4_2732']")
+    public WebElement PosebniUsloviOsiguranjeLica;
+
+    @FindBy(css = "label[for='Kol4_2733']")
+    public WebElement TabelaInvaliditeta;
+
+    @FindBy(css = "label[for='Kol4_3842']")
+    public WebElement UŽDVI2021;
+
+    @FindBy(css = "label[for='Kol4_2740']")
+    public WebElement PUOOSII2020;
+
+    @FindBy(css = "label[for='Kol4_3994']")
+    public WebElement PUDOŽSIII2023;
+
+    @FindBy(css = "label[for='Kol4_3993']")
+    public WebElement OUŽVIII2022;
+
+
+
+
 
     //MONTENEGRO
 
@@ -819,6 +846,8 @@ public class MainPage {
 
     @FindBy(css = "#btn_ExportToExcel")
     public WebElement ExportToExcel;
+
+
 
 
     
