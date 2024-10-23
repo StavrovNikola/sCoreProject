@@ -4351,7 +4351,170 @@ public class sCoreMontenegro {
 
 
     }
+
+    @Epic("sCore Montenegro")
+    @Feature("Info offer")
+    @Description("Creating info offer of SME KMP with UW role")
+    @Step("Creating info offer with UW")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 460)
+    public void InfoOfferSMEKMPUW() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("mnescoreTehnika");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("Februar.23");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SMEKMPMNE.click();
+        assert mainPage.SMEKMPCheckbox.getText().equals("SME ključni čovjek pravnog lica"):"Expected label";
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Petar Petrovic");
+        mainPage.DurationInMonthsMNE.click();
+        mainPage.DurationInMonthsMNE.clear();
+        mainPage.DurationInMonthsMNE.sendKeys("12");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Podgorica");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(1);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(1);
+        mainPage.TabConcerns.click();
+        Select select6 = new Select(mainPage.InsuredSum);
+        select6.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("10000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1970");
+        Select select7 = new Select(mainPage.GenderConcernPerson);
+        select7.selectByIndex(2);
+        mainPage.HeightConcernPerson.click();
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.click();
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.ConcernInterest.click();
+        mainPage.ConcernInterest.clear();
+        mainPage.ConcernInterest.sendKeys("15");
+        mainPage.Accept.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
 }
+
+    @Epic("sCore Montenegro")
+    @Feature("Info offer")
+    @Description("Creating info offer of SME KMP with BOC role")
+    @Step("Creating info offer with BOC")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 470)
+    public void InfoOfferSMEKMPBOC() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("mnescorePOC");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("sLusalica.2019");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SMEKMPMNE.click();
+        assert mainPage.SMEKMPCheckbox.getText().equals("SME ključni čovjek pravnog lica"):"Expected label";
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Petar Petrovic");
+        mainPage.DurationInMonthsMNE.click();
+        mainPage.DurationInMonthsMNE.clear();
+        mainPage.DurationInMonthsMNE.sendKeys("36");
+        mainPage.ContentPlaceHolder.click();
+        mainPage.ContentPlaceHolder.sendKeys("Podgorica");
+        mainPage.ContentPlaceHolder1.click();
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(5);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(1);
+        mainPage.TabConcerns.click();
+        Select select6 = new Select(mainPage.InsuredSum);
+        select6.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("20000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1960");
+        Select select7 = new Select(mainPage.GenderConcernPerson);
+        select7.selectByIndex(2);
+        mainPage.HeightConcernPerson.click();
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.click();
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.ConcernInterest.click();
+        mainPage.ConcernInterest.clear();
+        mainPage.ConcernInterest.sendKeys("15");
+        mainPage.Accept.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+    }
+
+    @Epic("sCore Montenegro")
+    @Feature("Info offer")
+    @Description("Creating info offer of SME KMP with Bank Operater role")
+    @Step("Creating info offer with Bank Operater")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 480)
+    public void InfoOfferSMEKMPBankOperater() {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("mneSCoreBankOperator");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("Score.BanOp23");
+        mainPage.buttonLogin.click();
+        mainPage.Life.click();
+        mainPage.SMEKMPMNE.click();
+        assert mainPage.SMEKMPCheckbox.getText().equals("SME ključni čovjek pravnog lica"):"Expected label";
+        mainPage.ClientInfo.click();
+        mainPage.ClientInfo.sendKeys("Petar Petrovic");
+        mainPage.DurationInMonthsMNE.click();
+        mainPage.DurationInMonthsMNE.clear();
+        mainPage.DurationInMonthsMNE.sendKeys("60");
+        Select select = new Select(mainPage.PaymentDinamic);
+        select.selectByIndex(2);
+        Select select2 = new Select(mainPage.PaymentMethod);
+        select2.selectByIndex(1);
+        mainPage.TabConcerns.click();
+        Select select6 = new Select(mainPage.InsuredSum);
+        select6.selectByIndex(1);
+        mainPage.InsuredSumOrPremium.click();
+        mainPage.InsuredSumOrPremium.clear();
+        mainPage.InsuredSumOrPremium.sendKeys("30000");
+        mainPage.DateOfBirth.click();
+        mainPage.DateOfBirth.sendKeys("01.01.1973");
+        Select select7 = new Select(mainPage.GenderConcernPerson);
+        select7.selectByIndex(2);
+        mainPage.HeightConcernPerson.click();
+        mainPage.HeightConcernPerson.sendKeys("180");
+        mainPage.WeightConcernPerson.click();
+        mainPage.WeightConcernPerson.sendKeys("82");
+        mainPage.ConcernInterest.click();
+        mainPage.ConcernInterest.clear();
+        mainPage.ConcernInterest.sendKeys("15");
+        mainPage.Accept.click();
+        mainPage.Calculate.click();
+        mainPage.TechnicalPersons.click();
+        mainPage.TechnicalPersonsOpenSearch.click();
+        mainPage.TechnicalPersonsOpenSearchSelect.click();
+        mainPage.Save.click();
+        mainPage.Activate.click();
+        mainPage.Print.click();
+    }
+
+     }
 
 
 

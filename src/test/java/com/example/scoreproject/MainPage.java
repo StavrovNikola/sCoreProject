@@ -509,6 +509,9 @@ public class MainPage {
     @FindBy(css = "#selProducts")
     public WebElement ProductsMNE;
 
+    @FindBy(css = "label[for='Kol14_195']")
+    public WebElement SMEKMPCheckbox;
+
     
 
 
