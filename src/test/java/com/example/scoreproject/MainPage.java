@@ -506,6 +506,9 @@ public class MainPage {
     @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(13) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > table > tbody > tr > td:nth-of-type(7) > div > div:nth-of-type(1)")
     public WebElement OfferSearchMNE;
 
+    @FindBy(css = "#selProducts")
+    public WebElement ProductsMNE;
+
     
 
 
