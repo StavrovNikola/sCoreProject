@@ -3687,11 +3687,11 @@ public class sCoreMontenegro {
         mainPage.SideMenu.click();
         mainPage.Search.click();
         Select select = new Select(mainPage.DocumentType);
-        select.selectByIndex(2);
+        select.selectByIndex(5);
         Select select2 = new Select(mainPage.ProductsMNE);
         select2.selectByIndex(8);
         Select select1 = new Select(mainPage.Status);
-        select1.selectByIndex(10);
+        select1.selectByIndex(3);
         mainPage.DateOfContracting.click();
         mainPage.DateOfContracting.sendKeys("01.08.2024");
         mainPage.SearchMenu.click();

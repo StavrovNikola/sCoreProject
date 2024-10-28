@@ -1715,7 +1715,7 @@ public class sCoreSerbia {
         Select select1 = new Select(mainPage.Status);
         select1.selectByIndex(12);
         mainPage.DateOfContracting.click();
-        mainPage.DateOfContracting.sendKeys("01.01.2023");
+        mainPage.DateOfContracting.sendKeys("01.05.2024");
         mainPage.SearchMenu.click();
         Thread.sleep(3500);
         mainPage.OfferDateSearchSRB.click();
@@ -1748,7 +1748,7 @@ public class sCoreSerbia {
         Select select1 = new Select(mainPage.Status);
         select1.selectByIndex(12);
         mainPage.DateOfContracting.click();
-        mainPage.DateOfContracting.sendKeys("01.01.2023");
+        mainPage.DateOfContracting.sendKeys("01.04.2024");
         mainPage.SearchMenu.click();
         Thread.sleep(3500);
         mainPage.OfferDateSearchSRB.click();
@@ -1779,7 +1779,7 @@ public class sCoreSerbia {
         Select select1 = new Select(mainPage.Status);
         select1.selectByIndex(12);
         mainPage.DateOfContracting.click();
-        mainPage.DateOfContracting.sendKeys("01.01.2023");
+        mainPage.DateOfContracting.sendKeys("01.03.2024");
         mainPage.SearchMenu.click();
         Thread.sleep(3500);
         mainPage.OfferDateSearchSRB.click();
@@ -1812,7 +1812,7 @@ public class sCoreSerbia {
         Select select1 = new Select(mainPage.Status);
         select1.selectByIndex(12);
         mainPage.DateOfContracting.click();
-        mainPage.DateOfContracting.sendKeys("01.01.2023");
+        mainPage.DateOfContracting.sendKeys("01.06.2024");
         mainPage.SearchMenu.click();
         Thread.sleep(3500);
         mainPage.OfferDateSearchSRB.click();
