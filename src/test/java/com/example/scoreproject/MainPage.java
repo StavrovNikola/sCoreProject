@@ -545,6 +545,386 @@ public class MainPage {
     @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(3) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
     public WebElement GeneralConditionsPrint;
 
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(2) > td:nth-of-type(1)")
+    public WebElement tdPovratPremije;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(2) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(3) > td:nth-of-type(1)")
+    public WebElement tdPreknjizenjeUplate;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(3) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg2;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(4) > td:nth-of-type(1)")
+    public WebElement tdPromenaAdrese;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(4) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg3;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(5) > td:nth-of-type(1)")
+    public WebElement tdPromenaKorisnika;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(5) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg4;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(6) > td:nth-of-type(1)")
+    public WebElement tdPromenaPrezimena;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(6) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg5;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(7) > td:nth-of-type(1)")
+    public WebElement tdPromenaUgovara;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(7) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg6;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(8) > td:nth-of-type(1)")
+    public WebElement tdZahtevIsplatuZivot;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(8) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg7;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(9) > td:nth-of-type(1)")
+    public WebElement tdZahtevDuplikataPolise;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(9) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg8;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(10) > td:nth-of-type(1)")
+    public WebElement tdZahtevPredujam;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(10) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg9;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(11) > td:nth-of-type(1)")
+    public WebElement tdZahtevPromenuUgovornihElemenata;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(1) > tbody > tr:nth-of-type(11) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg63;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(2) > td:nth-of-type(1)")
+    public WebElement tdLab;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(2) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg10;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(3) > td:nth-of-type(1)")
+    public WebElement tdMedicinski;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(3) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg11;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(4) > td:nth-of-type(1)")
+    public WebElement tdMedicinski2;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(4) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg12;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(5) > td:nth-of-type(1)")
+    public WebElement tdSpisakUstanova;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(5) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg13;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(6) > td:nth-of-type(1)")
+    public WebElement tdUpitnikAlergije;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(6) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg14;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(7) > td:nth-of-type(1)")
+    public WebElement tdUpitnikUrinarna;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(7) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg15;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(8) > td:nth-of-type(1)")
+    public WebElement tdUpitnikDijabetes;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(8) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg16;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(9) > td:nth-of-type(1)")
+    public WebElement tdUpitnikEpilepsija;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(9) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg17;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(10) > td:nth-of-type(1)")
+    public WebElement tdUpitnikGenitourinarniProblemi;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(10) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg18;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(11) > td:nth-of-type(1)")
+    public WebElement tdUpitnikKamenBubregu;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(11) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg19;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(12) > td:nth-of-type(1)")
+    public WebElement tdUpitnik;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(12) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg20;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(13) > td:nth-of-type(1)")
+    public WebElement tdUpitnikKronovaBolest;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(13) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg21;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(14) > td:nth-of-type(1)")
+    public WebElement tdUpitnikNeuroloskaMentalna;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(14) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg22;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(15) > td:nth-of-type(1)")
+    public WebElement tdUpitnikOrgana;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(15) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg23;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(16) > td:nth-of-type(1)")
+    public WebElement tdUpitnikKostijuMisica;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(16) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg24;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(17) > td:nth-of-type(1)")
+    public WebElement tdUpitnikOperacijaMlade;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(17) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg25;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(18) > td:nth-of-type(1)")
+    public WebElement tdUpitnikPovredaNakonSaobr;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(18) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg26;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(19) > td:nth-of-type(1)")
+    public WebElement tdUpitnikPovredeGlave;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(19) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg27;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(20) > td:nth-of-type(1)")
+    public WebElement tdUpitnikReumatoidniArtritis;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(20) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg28;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(21) > td:nth-of-type(1)")
+    public WebElement tdUpitnikPoremecajStitne;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(21) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg29;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(22) > td:nth-of-type(1)")
+    public WebElement tdUpitnikViskokPritisak;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(3) > tbody > tr:nth-of-type(22) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg30;
+
+    @FindBy(css = "html > body > div > div:nth-of-type(1) > main > table:nth-of-type(4) > tbody > tr:nth-of-type(2) > td:nth-of-type(1)")
+    public WebElement tdSluBenaBelePranje;
+
+    @FindBy(css = "html > body > div > div:nth-of-type(1) > main > table:nth-of-type(4) > tbody > tr:nth-of-type(2) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg31;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(1) > td:nth-of-type(1)")
+    public WebElement tdUpitZanimanjeMup;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(1) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg32;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(2) > td:nth-of-type(1)")
+    public WebElement tdUpitnikLovom;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(2) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg33;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(3) > td:nth-of-type(1)")
+    public WebElement tdUpitnikAvijacija;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(3) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg34;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(4) > td:nth-of-type(1)")
+    public WebElement tdUpitnikBiciklizam;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(4) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg35;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(5) > td:nth-of-type(1)")
+    public WebElement tdUpitnikBorilackeVestine;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(5) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg36;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(6) > td:nth-of-type(1)")
+    public WebElement tdUpitnikFudbal;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(6) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg37;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(7) > td:nth-of-type(1)")
+    public WebElement tdUpitnikKosarka;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(7) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg38;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(8) > td:nth-of-type(1)")
+    public WebElement tdUpitnikMotoSport;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(8) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg > path:nth-of-type(2)")
+    public WebElement svg39;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(9) > td:nth-of-type(1)")
+    public WebElement UpitnikOdbojka;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(9) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg40;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(10) > td:nth-of-type(1)")
+    public WebElement tdUpitnikPadobranstvo;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(10) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg41;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(11) > td:nth-of-type(1)")
+    public WebElement UpitnikParaglajding;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(11) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg42;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(12) > td:nth-of-type(1)")
+    public WebElement tdUpitnikPlaninarenje;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(12) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg43;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(13) > td:nth-of-type(1)")
+    public WebElement tdUpitnikPomorac;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(13) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg44;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(14) > td:nth-of-type(1)")
+    public WebElement tdUpitnikRonjenje;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(14) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg45;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(15) > td:nth-of-type(1)")
+    public WebElement tdUpitnikRudari;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(15) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg46;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(16) > td:nth-of-type(1)")
+    public WebElement tdUpitnikRukomet;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(16) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg47;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(17) > td:nth-of-type(1)")
+    public WebElement tdUpitnikVatrogasac;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(17) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg48;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(19) > td:nth-of-type(1)")
+    public WebElement tdUpitnikZanimanjeSportHobi;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(19) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg49;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(20) > td:nth-of-type(1)")
+    public WebElement tdUpitnikZimskeSportove;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(20) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg50;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(21) > td:nth-of-type(1)")
+    public WebElement tdUpitnikZanimaje;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(5) > tbody > tr:nth-of-type(21) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg51;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(1) > td:nth-of-type(1)")
+    public WebElement tdDopunskoNaknada;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(1) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg52;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(2) > td:nth-of-type(1)")
+    public WebElement DopunskoNezgoda;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(2) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg53;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(4) > td:nth-of-type(1)")
+    public WebElement tdPosebniUsloviLomKostiju;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(4) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg54;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(5) > td:nth-of-type(1)")
+    public WebElement tdPosebniUsloviPrivremenaRadna;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(5) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg55;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(6) > td:nth-of-type(1)")
+    public WebElement tdTabelaInvaliditeta;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(6) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg56;
+
+    @FindBy(css = "html > body > div > div:nth-of-type(1) > main > table:nth-of-type(6) > tbody > tr:nth-of-type(8) > td:nth-of-type(1)")
+    public WebElement tdUsloviBolesti;
+
+    @FindBy(css = "html > body > div > div:nth-of-type(1) > main > table:nth-of-type(6) > tbody > tr:nth-of-type(8) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg57;
+
+    @FindBy(css = "html > body > div > div:nth-of-type(1) > main > table:nth-of-type(6) > tbody > tr:nth-of-type(9) > td:nth-of-type(1)")
+    public WebElement tdUslovi;
+
+    @FindBy(css = "html > body > div > div:nth-of-type(1) > main > table:nth-of-type(6) > tbody > tr:nth-of-type(9) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg58;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(7) > td:nth-of-type(1)")
+    public WebElement tdUsloviPlus;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(7) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg59;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(10) > td:nth-of-type(1)")
+    public WebElement tdUsloviRizikoKredit;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(10) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg60;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(11) > td:nth-of-type(1)")
+    public WebElement tdUsloviBolesti2;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(11) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg61;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(12) > td:nth-of-type(1)")
+    public WebElement tdUsloviOsiguranjeDece;
+
+    @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(12) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
+    public WebElement svg62;
+
+
+
 
 
     //MONTENEGRO
@@ -949,6 +1329,8 @@ public class MainPage {
 
     @FindBy(css = "#btn_ExportToExcel")
     public WebElement ExportToExcel;
+
+
 
 
 

@@ -15,6 +15,7 @@ public class POSBank {
     private MainPage mainPage;
 
 
+
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
