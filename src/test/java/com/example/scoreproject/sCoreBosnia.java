@@ -38,7 +38,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Classic.click();
@@ -89,7 +89,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Comfort.click();
@@ -140,7 +140,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Uniqo.click();
@@ -199,7 +199,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Kapital.click();
@@ -250,7 +250,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.ComfortDual.click();
@@ -615,7 +615,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("elvira.hadzimusovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Classic.click();
@@ -673,7 +673,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("elvira.hadzimusovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Comfort.click();
@@ -731,7 +731,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("elvira.hadzimusovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Uniqo.click();
@@ -797,7 +797,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("elvira.hadzimusovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Kapital.click();
@@ -855,7 +855,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("elvira.hadzimusovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.ComfortDual.click();
@@ -921,7 +921,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -953,7 +953,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -985,7 +985,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1015,7 +1015,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1046,7 +1046,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1078,7 +1078,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1110,7 +1110,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1151,7 +1151,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1191,7 +1191,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1231,7 +1231,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1271,7 +1271,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1304,7 +1304,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1335,7 +1335,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1368,7 +1368,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1400,7 +1400,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Classic.click();
@@ -1454,7 +1454,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Comfort.click();
@@ -1508,7 +1508,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Uniqo.click();
@@ -1570,7 +1570,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Kapital.click();
@@ -1624,7 +1624,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.ComfortDual.click();
@@ -1686,7 +1686,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Classic.click();
@@ -1738,7 +1738,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Comfort.click();
@@ -1790,7 +1790,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Uniqo.click();
@@ -1850,7 +1850,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Kapital.click();
@@ -1902,7 +1902,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.ComfortDual.click();
@@ -1967,7 +1967,7 @@ public class sCoreBosnia {
         Username.sendKeys("andrea.petrovic");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
+        Password.sendKeys("Sarajevo123!");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
@@ -2177,7 +2177,7 @@ public class sCoreBosnia {
         Username.sendKeys("andrea.petrovic");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
+        Password.sendKeys("Sarajevo123!");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
@@ -2407,7 +2407,7 @@ public class sCoreBosnia {
         Username.sendKeys("andrea.petrovic");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
+        Password.sendKeys("Sarajevo123!");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
@@ -2672,7 +2672,7 @@ public class sCoreBosnia {
         Username.sendKeys("andrea.petrovic");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
+        Password.sendKeys("Sarajevo123!");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
@@ -2903,7 +2903,7 @@ public class sCoreBosnia {
         Username.sendKeys("andrea.petrovic");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
+        Password.sendKeys("Sarajevo123!");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
@@ -3163,7 +3163,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -3199,7 +3199,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -3235,7 +3235,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -3275,7 +3275,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -3312,7 +3312,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -3348,7 +3348,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputPassword.sendKeys("Sarajevo123!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -3380,7 +3380,7 @@ public class sCoreBosnia {
         Username.sendKeys("andrea.petrovic");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
+        Password.sendKeys("Sarajevo123!");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
