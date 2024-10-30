@@ -893,7 +893,7 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
     @Description("Checking and printing documents from Side menu")
     @Step("Side menu - FATCA")
     @Owner("Nikola Stavrov")
-    @Test(priority = 80)
+    @Test(priority = 390)
     public void SideMenuFATCA() throws InterruptedException {
 
         mainPage.inputUsername.click();
@@ -916,7 +916,7 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
     @Description("Checking and printing documents from Side menu")
     @Step("Side menu - Client Questionnaire")
     @Owner("Nikola Stavrov")
-    @Test(priority = 90)
+    @Test(priority = 400)
     public void SideMenuClientQuestionnaire() throws InterruptedException {
 
         mainPage.inputUsername.click();
@@ -939,7 +939,7 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
     @Description("Checking and printing documents from Side menu")
     @Step("Side menu - User Questionnaire")
     @Owner("Nikola Stavrov")
-    @Test(priority = 100)
+    @Test(priority = 410)
     public void SideMenuUserQuestionnaire() throws InterruptedException {
 
         mainPage.inputUsername.click();
@@ -962,7 +962,7 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
     @Description("Checking and printing documents from Side menu")
     @Step("Side menu - PEP Questionnaire")
     @Owner("Nikola Stavrov")
-    @Test(priority = 110)
+    @Test(priority = 420)
     public void SideMenuPEPQuestionnaire() throws InterruptedException {
 
         mainPage.inputUsername.click();
@@ -986,7 +986,7 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
     @Description("Checking and printing documents from Side menu")
     @Step("Side menu - Company Questionnaire")
     @Owner("Nikola Stavrov")
-    @Test(priority = 120)
+    @Test(priority = 430)
     public void SideMenuCompanyQuestionnaire() throws InterruptedException {
 
         mainPage.inputUsername.click();
@@ -1009,7 +1009,7 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
     @Description("Checking and printing documents from Side menu")
     @Step("Side menu - Associates Questionnaire")
     @Owner("Nikola Stavrov")
-    @Test(priority = 130)
+    @Test(priority = 440)
     public void SideMenuAssociatesQuestionnaire() throws InterruptedException {
 
         mainPage.inputUsername.click();
@@ -1030,9 +1030,500 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
     @Epic("POS Bank")
     @Feature("Side menu")
     @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Query occupation MUP")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 450)
+    public void SideMenuOccupationMUP() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitZanimanjeMup.getText().equals("Upit zanimanje MUP"): "Expected label";
+        mainPage.UpitZanimanjeMupPrint.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Questionnaire - hunting")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 460)
+    public void SideMenuHunting() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikLovom.getText().equals("upitnik - bavljenje lovom"): "Expected label";
+        mainPage.UpitnikLovomPrint.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Questionnaire of aviation")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 470)
+    public void SideMenuAviation() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikAvijacija.getText().equals("Upitnik avijacija"): "Expected label";
+        mainPage.UpitnikAvijacijaPrint.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Questionnaire cycling")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 480)
+    public void SideMenuCycling() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikBiciklizam.getText().equals("Upitnik biciklizam"): "Expected label";
+        mainPage.UpitnikBiciklizamPrint.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Martial arts questionnaire")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 490)
+    public void SideMenuMartialArts() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikBorilackeVestine.getText().equals("Upitnik borilacke vestine"): "Expected label";
+        mainPage.UpitnikBorilackeVestinePrint.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Questionnaire football")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 500)
+    public void SideMenuFootball() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikFudbal.getText().equals("Upitnik fudbal"): "Expected label";
+        mainPage.UpitnikFudbalPrint.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Questionnaire basketball")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 510)
+    public void SideMenuBasketball() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikKosarka.getText().equals("Upitnik kosarka"): "Expected label";
+        mainPage.UpitnikKosarkaPrint.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Questionnaire motor sport")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 520)
+    public void SideMenuMotoSport() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikMotoSport.getText().equals("Upitnik moto sport"): "Expected label";
+        mainPage.UpitnikMotoSportPrint.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Questionnaire volleyball")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 530)
+    public void SideMenuVolleyball() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikOdbojka.getText().equals("Upitnik odbojka"): "Expected label";
+        mainPage.UpitnikOdbojkaPrint.click();
+
+
+    }
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Questionnaire skydiving")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 540)
+    public void SideMenuSkydiving() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikPadobranstvo.getText().equals("upitnik padobranstvo"): "Expected label";
+        mainPage.UpitnikPadobranstvoPrint.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Questionnaire paragliding")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 550)
+    public void SideMenuParagliding() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikParaglajding.getText().equals("upitnik paraglajding"): "Expected label";
+        mainPage.UpitnikParaglajdingPrint.click();
+
+    }
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Questionnaire hiking")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 560)
+    public void SideMenuHiking() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikPlaninarenje.getText().equals("upitnik planinarenje"): "Expected label";
+        mainPage.UpitnikPlaninarenjePrint.click();
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Questionnaire seaman")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 570)
+    public void SideMenuSeaman() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikPomorac.getText().equals("upitnik pomorac"): "Expected label";
+        mainPage.UpitnikPomoracPrint.click();
+
+    }
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Questionnaire diving")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 580)
+    public void SideMenuDiving() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikPomorac.getText().equals("upitnik ronjenje"): "Expected label";
+        mainPage.UpitnikPomoracPrint.click();
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Questionnaire miners")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 590)
+    public void SideMenuMiners() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikPomorac.getText().equals("Upitnik rudari"): "Expected label";
+        mainPage.UpitnikPomoracPrint.click();
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Questionnaire handball")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 600)
+    public void SideMenuHandball() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikRukomet.getText().equals("Upitnik rukomet"): "Expected label";
+        mainPage.UpitnikRukometPrint.click();
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Questionnaire firefighter")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 610)
+    public void SideMenuFireFighter() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikVatrogasac.getText().equals("upitnik vatrogasac"): "Expected label";
+        mainPage.UpitnikVatrogasacPrint.click();
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Questionnaire for profession, sport, hobby and travel")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 620)
+    public void SideMenuSportHoby() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikZanimanjeSportHobi.getText().equals("Upitnik za zanimanje sport hobi i putovanje"): "Expected label";
+        mainPage.UpitnikZanimanjeSportHobiPrint.click();
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Questionnaire for winter sports")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 630)
+    public void SideMenuWinterSports() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikZimskeSportove.getText().equals("Upitnik za zimske sportove"): "Expected label";
+        mainPage.UpitnikZimskeSportovePrint.click();
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - The questionnaire is of interest to Security")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 640)
+    public void SideMenuSecurity() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UpitnikZanimanjeObezbedjenje.getText().equals("Upitnik zanimaje Obezbedjenje"): "Expected label";
+        mainPage.UpitnikZanimanjeObezbedjenjePrint.click();
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Additional daily fee")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 650)
+    public void SideMenuAdditionalDaily() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.DopunskoNaknada.getText().equals("Dopunsko dnevna naknada"): "Expected label";
+        mainPage.DopunskoNaknadaPrint.click();
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Additional accident")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 660)
+    public void SideMenuAdditionaAccident() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.DopunskoNezgoda.getText().equals("Dopunsko nezgoda"): "Expected label";
+        mainPage.DopunskoNezgodaPrint.click();
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
     @Step("Side menu - General Conditions")
     @Owner("Nikola Stavrov")
-    @Test(priority = 140)
+    @Test(priority = 670)
     public void SideMenuGeneralConditions() throws InterruptedException {
 
         mainPage.inputUsername.click();
@@ -1046,6 +1537,213 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
         Thread.sleep(2000);
         assert mainPage.GeneralConditions.getText().equals("Opsti uslovi"): "Expected label";
         mainPage.GeneralConditionsPrint.click();
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Special conditions bone fracture")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 680)
+    public void SideMenuBoneFracture() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.PosebniUsloviLomKostiju.getText().equals("Special conditions bone fracture"): "Expected label";
+        mainPage.PosebniUsloviLomKostijuPrint.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Special conditions temporary work incapacity")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 690)
+    public void SideMenuWorkIncapacity() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.PosebniUsloviPrivremenaRadna.getText().equals("Posebni uslovi privremena radna nesposobnost"): "Expected label";
+        mainPage.PosebniUsloviPrivremenaRadnaPrint.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Joker Plus conditions")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 700)
+    public void SideMenuJokerPlusConditions() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.DzokerPlus.getText().equals("Uslovi Dzoker plus"): "Expected label";
+        mainPage.DzokerPlusPrint.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Table of disabilities")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 710)
+    public void SideMenuDisabilitiesTable() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.TabelaInvaliditetaPOS.getText().equals("Tabela invaliditeta"): "Expected label";
+        mainPage.TabelaInvaliditetaPOSPrint.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - HI disease conditions")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 720)
+    public void SideMenuHIDisease() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UsloviHIBolesti.getText().equals("Uslovi HI bolesti"): "Expected label";
+        mainPage.UsloviHIBolestiPrint.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - HI accident conditions")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 730)
+    public void SideMenuHIAccident() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UsloviHINezgoda.getText().equals("Uslovi HI nezgoda"): "Expected label";
+        mainPage.UsloviHINezgodaPrint.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Riziko Kredit conditions")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 740)
+    public void SideMenuRizikoKreditConditions() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UsloviRizikoKredit.getText().equals("Uslovi Riziko kredit"): "Expected label";
+        mainPage.UsloviRizikoKreditPrint.click();
+
+
+    }
+
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Conditions Serious illness")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 750)
+    public void SideMenuConditionsIllness() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UsloviTezeBolesti.getText().equals("Uslovi Teže bolesti"): "Expected label";
+        mainPage.UsloviTezeBolestiPrint.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("Side menu")
+    @Description("Checking and printing documents from Side menu")
+    @Step("Side menu - Conditions for child insurance")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 750)
+    public void SideMenuChildInsurance() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SideMenuPOS.click();
+        mainPage.SideMenuLifeInsurance.click();
+        Thread.sleep(2000);
+        assert mainPage.UsloviOsiguranjeDece.getText().equals("Uslovi za osiguranje dece"): "Expected label";
+        mainPage.UsloviOsiguranjeDecePrint.click();
 
 
     }

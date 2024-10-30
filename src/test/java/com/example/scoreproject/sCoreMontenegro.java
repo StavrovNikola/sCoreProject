@@ -4260,7 +4260,7 @@ public class sCoreMontenegro {
         mainPage.SideMenu.click();
         mainPage.Search.click();
         mainPage.DateOfContracting.click();
-        mainPage.DateOfContracting.sendKeys("01.08.2024");
+        mainPage.DateOfContracting.sendKeys("01.10.2024");
         mainPage.SearchMenu.click();
         Thread.sleep(3000);
         mainPage.ExportToExcel.click();
