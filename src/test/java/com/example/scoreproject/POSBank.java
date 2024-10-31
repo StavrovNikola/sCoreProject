@@ -1,14 +1,20 @@
 package com.example.scoreproject;
 
 import io.qameta.allure.*;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.time.Instant;
+import java.util.concurrent.TimeUnit;
 
 public class POSBank {
 
@@ -22,9 +28,7 @@ public class POSBank {
         options.addArguments("--remote-allow-origins=*");
         WebDriver driver = new ChromeDriver(options);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        //driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.get("https://qa-score.uniqa.rs/scorepos/");
         mainPage = new MainPage(driver);
         JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -1748,4 +1752,72 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
 
     }
 
+    @Epic("POS Bank")
+    @Feature("New contract")
+    @Description("Creating new contract")
+    @Step("Creating new contract - Spektar")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 760)
+    public void SpektarPOS() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SpektarPOS.click();
+        mainPage.ClientName.click();
+        mainPage.ClientName.sendKeys("Petar Petrovic");
+        mainPage.inputDateBirth.click();
+        mainPage.inputDateBirth.sendKeys("01.02.1992");
+        mainPage.inputGender.click();
+        mainPage.inputHeight.click();
+        mainPage.inputHeight.sendKeys("190");
+        mainPage.inputWeight.click();
+        mainPage.inputWeight.sendKeys("80");
+       // mainPage.inputDurationInsuranceYears.click();
+        //Thread.sleep(2500);
+      //  mainPage.inputDurationInsuranceYears.clear();
+      //  mainPage.inputDurationInsuranceYears.sendKeys("20");
+        mainPage.inputIndexation.click();
+        mainPage.inputCalculationBase.click();
+        mainPage.inputAmount.click();
+        mainPage.inputAmount.clear();
+        mainPage.inputAmount.sendKeys("15000");
+        mainPage.PrikaziPakete.click();
+        mainPage.Kompakt.click();
+        //mainPage.InfoOfferPrint.click();
+        mainPage.Ugovaranje.click();
+        mainPage.Checkbox.click();
+        mainPage.inputIdentificationNumber.click();
+        mainPage.inputIdentificationNumber.sendKeys("0102992700243");
+        mainPage.JMBGSearch.click();
+        mainPage.inputPostOfficeAddressSame.click();
+        mainPage.inputHasNotification.click();
+        mainPage.NextPagePerson.click();
+        mainPage.NextPageKorisnik.click();
+        Thread.sleep(5000);
+        mainPage.NextPageZU.click();
+        mainPage.inputStednja.click();
+        mainPage.inputZaposlen.click();
+        mainPage.inputStalniZaradaPorodiPrimanja.click();
+        mainPage.LosaReputacija.click();
+        mainPage.TajnostTransakcija.click();
+        mainPage.Identifikacija.click();
+        mainPage.Transakcija.click();
+        mainPage.InformacijeKlijent.click();
+        mainPage.NextPageAML.click();
+        Thread.sleep(3000);
+        mainPage.NextPagePlacanje.click();
+        Thread.sleep(4000);
+        mainPage.spanAktiviraj.click();
+        mainPage.PrintOffer.click();
+        Thread.sleep(3000);
+        mainPage.UplatnicaPrint.click();
+        Thread.sleep(3000);
+        mainPage.PotvrdaPotpisa.click();
+
+
+    }
 }

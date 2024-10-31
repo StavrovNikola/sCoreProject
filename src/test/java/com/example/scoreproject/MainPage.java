@@ -919,11 +919,171 @@ public class MainPage {
 
     @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(12) > td:nth-of-type(1)")
     public WebElement UsloviOsiguranjeDece;
+
     @FindBy(css = "html > body > div > div > main > table:nth-of-type(6) > tbody > tr:nth-of-type(12) > td:nth-of-type(2) > a > span:nth-of-type(1) > svg")
     public WebElement UsloviOsiguranjeDecePrint;
 
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(2) > div > div:nth-of-type(4) > div > button")
+    public WebElement SpektarPOS;
 
+    @FindBy(css = "textarea[aria-invalid='false']")
+    public WebElement ClientName;
 
+    @FindBy(css = "#dateOfBirth")
+    public WebElement inputDateBirth;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(2) > div > div > div > div:nth-of-type(1) > div:nth-of-type(1) > div > div:nth-of-type(4) > label:nth-of-type(2) > span:nth-of-type(1) > span:nth-of-type(1) > input")
+    public WebElement inputGender;
+
+    @FindBy(css = "#height")
+    public WebElement inputHeight;
+
+    @FindBy(css = "#weight")
+    public WebElement inputWeight;
+
+    @FindBy(css = "#durationOfInsuranceYears")
+    public WebElement inputDurationInsuranceYears;
+
+    @FindBy(css = "input[value='true']")
+    public WebElement inputIndexation;
+
+    @FindBy(css = "input[value='false']")
+    public WebElement inputIndexation2;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(2) > div > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div > div:nth-of-type(5) > div:nth-of-type(2) > div > label:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1) > input")
+    public WebElement inputCalculationBase;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(2) > div > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div > div:nth-of-type(5) > div:nth-of-type(2) > div > label:nth-of-type(2) > span:nth-of-type(1) > span:nth-of-type(1) > input")
+    public WebElement inputCalculationBase2;
+
+    @FindBy(css = "#amount")
+    public WebElement inputAmount;
+
+    @FindBy(css = "button[aria-label='[object Object]']")
+    public WebElement PrikaziPakete;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div:nth-of-type(1) > div > div > div:nth-of-type(7) > span > span:nth-of-type(1) > input")
+    public WebElement Kompakt;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div:nth-of-type(2) > div > div > div:nth-of-type(7) > span > span:nth-of-type(1) > input")
+    public WebElement Optimum;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div:nth-of-type(3) > div > div > div:nth-of-type(7) > span > span:nth-of-type(1) > input")
+    public WebElement Premium;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div:nth-of-type(4) > div > div > div:nth-of-type(7) > span > span:nth-of-type(1) > input")
+    public WebElement TezeBolestiPaket;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div:nth-of-type(5) > div > div > div:nth-of-type(7) > span > span:nth-of-type(1) > input")
+    public WebElement TezeBolestiPlus;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(2) > div > div > div > div:nth-of-type(2) > div > div:nth-of-type(6) > div > div > div:nth-of-type(7) > span > span:nth-of-type(1) > input")
+    public WebElement PremiumPlus;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(2) > div > div > div > div:nth-of-type(4) > div > button:nth-of-type(2) > span:nth-of-type(1)")
+    public WebElement InfoOfferPrint;
+
+    @FindBy(xpath = "//button[contains(@style, 'right;')]")
+    public WebElement Ugovaranje;
+
+    @FindBy(css = "#identificationNumber")
+    public WebElement inputIdentificationNumber;
+
+    @FindBy(css = "html > body > div:nth-of-type(1) > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1) > button > span:nth-of-type(1) > svg")
+    public WebElement JMBGSearch;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(1) > label:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1) > input")
+    public WebElement Checkbox;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div > div > label:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1) > input")
+    public WebElement inputPostOfficeAddressSame;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(2) > div:nth-of-type(3) > div > label:nth-of-type(2) > span:nth-of-type(1) > span:nth-of-type(1) > input")
+    public WebElement inputHasNotification;
+
+    @FindBy(css = "html > body > div:nth-of-type(1) > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(4) > div:nth-of-type(4) > div > label:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1) > input")
+    public WebElement FunkcionerYes;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(4) > div:nth-of-type(5) > div > label:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1) > input")
+    public WebElement PolitickiIzlozenaYes;
+
+    @FindBy(css = "html > body > div:nth-of-type(1) > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(4) > div:nth-of-type(6) > div > label:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1) > input")
+    public WebElement MedijskiEksponiranaYes;
+
+    @FindBy(css = "html > body > div:nth-of-type(1) > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(4) > div:nth-of-type(6) > div > label:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1) > input")
+    public WebElement FATCAIndiciaYes;
+
+    @FindBy(css = "html > body > div:nth-of-type(1) > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(4) > div:nth-of-type(8) > div > div:nth-of-type(1) > div > label:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1) > input")
+    public WebElement SADDrzavljanstvo;
+
+    @FindBy(css = "html > body > div:nth-of-type(1) > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div > div:nth-of-type(2) > div > div > div > div > div:nth-of-type(4) > div:nth-of-type(9) > div > div:nth-of-type(2) > div > label:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1) > input")
+    public WebElement PoreskiObveznikSAD;
+
+    @FindBy(css = "html > body > div:nth-of-type(1) > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(2) > button:nth-of-type(2) > span:nth-of-type(1)")
+    public WebElement NextPagePerson;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div > div > div > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(2) > button > span:nth-of-type(1) > svg")
+    public WebElement DodajKorisnika;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div > div > div > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div > div:nth-of-type(1) > div > div:nth-of-type(1) > div > input")
+    public WebElement inputNameKorisnika;
+
+    @FindBy(xpath = "/html/body/div/div[1]/main/div[3]/div/div/div/div[2]/button[2]")
+    public WebElement NextPageKorisnik;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(2) > button:nth-of-type(2)")
+    public WebElement NextPageKorisnik1;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(2) > button:nth-of-type(2) > span:nth-of-type(1)")
+    public WebElement NextPageZU;
+
+    @FindBy(css = "input[value='Štednja']")
+    public WebElement inputStednja;
+
+    @FindBy(css = "input[value='Zaposlen']")
+    public WebElement inputZaposlen;
+
+    @FindBy(css = "input[value*='ili']")
+    public WebElement inputStalniZaradaPorodiPrimanja;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > label:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1) > input")
+    public WebElement LosaReputacija;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(3) > div > div > div:nth-of-type(2) > div > label:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1) > input")
+    public WebElement TajnostTransakcija;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(4) > div > div > div:nth-of-type(2) > div > label:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1) > input")
+    public WebElement Identifikacija;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(5) > div > div > div:nth-of-type(2) > div > label:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1) > input")
+    public WebElement Transakcija;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(6) > div > div > div:nth-of-type(2) > div > label:nth-of-type(1) > span:nth-of-type(1) > span:nth-of-type(1) > input")
+    public WebElement InformacijeKlijent;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(2) > button:nth-of-type(2) > span:nth-of-type(1)")
+    public WebElement NextPageAML;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(2) > button:nth-of-type(2) > span:nth-of-type(1)")
+    public WebElement NextPagePlacanje;
+
+    @FindBy(css = "button[class='jss111 jss434 jss438 jss443 jss430'] span[class='jss176']")
+    public WebElement Aktiviraj;
+
+    @FindBy(css = "button[class='jss111 jss434 jss438 jss443 jss430'] span[class='jss435']")
+    public WebElement spanAktiviraj;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div:nth-of-type(3) > table > tbody > tr:nth-of-type(1) > td:nth-of-type(2) > button > span:nth-of-type(1)")
+    public WebElement PrintOffer;
+
+    @FindBy(css = "html > body > div > div > main > div:nth-of-type(3) > div > div > div > div:nth-of-type(1) > div:nth-of-type(3) > table > tbody > tr:nth-of-type(2) > td:nth-of-type(2) > button > span:nth-of-type(1)")
+    public WebElement UplatnicaPrint;
+
+    @FindBy(css = "button[class='jss111 jss434 jss438 jss443 jss431'] span[class='jss435']")
+    public WebElement PotvrdaPotpisa;
+
+    @FindBy(css = "button[class='jss111 jss434 jss438 jss443 jss432'] span[class='jss435']")
+    public WebElement IzmenaPonistenje;
 
 
     //MONTENEGRO
@@ -1328,6 +1488,48 @@ public class MainPage {
 
     @FindBy(css = "#btn_ExportToExcel")
     public WebElement ExportToExcel;
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+   
+
+
+
+
+    
+
+
+
+    
+
+    
+
+
+
+
+
 
 
 
