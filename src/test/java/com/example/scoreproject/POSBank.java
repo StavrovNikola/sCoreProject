@@ -573,7 +573,7 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
         mainPage.SideMenuPOS.click();
         mainPage.SideMenuLifeInsurance.click();
         Thread.sleep(2000);
-        assert mainPage.UpitnikEpilepsija.getText().equals("epilepsy questionnaire") : "Expected label";
+        assert mainPage.UpitnikEpilepsija.getText().equals("upitnik epilepsija") : "Expected label";
         mainPage.UpitnikEpilepsijaPrint.click();
 
     }
@@ -1557,7 +1557,7 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
         mainPage.SideMenuPOS.click();
         mainPage.SideMenuLifeInsurance.click();
         Thread.sleep(2000);
-        assert mainPage.PosebniUsloviLomKostiju.getText().equals("Special conditions bone fracture"): "Expected label";
+        assert mainPage.PosebniUsloviLomKostiju.getText().equals("Posebni uslovi lom kostiju"): "Expected label";
         mainPage.PosebniUsloviLomKostijuPrint.click();
 
 

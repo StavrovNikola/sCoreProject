@@ -38,7 +38,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Classic.click();
@@ -89,7 +89,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Comfort.click();
@@ -140,7 +140,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Uniqo.click();
@@ -199,7 +199,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Kapital.click();
@@ -250,7 +250,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.ComfortDual.click();
@@ -1400,7 +1400,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Classic.click();
@@ -1454,7 +1454,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Comfort.click();
@@ -1508,7 +1508,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Uniqo.click();
@@ -1570,7 +1570,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Kapital.click();
@@ -1624,7 +1624,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.ComfortDual.click();
@@ -1686,7 +1686,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Classic.click();
@@ -1738,7 +1738,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Comfort.click();
@@ -1790,7 +1790,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Uniqo.click();
@@ -1850,7 +1850,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.Kapital.click();
@@ -1902,7 +1902,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.ComfortDual.click();
@@ -1967,7 +1967,7 @@ public class sCoreBosnia {
         Username.sendKeys("andrea.petrovic");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Sarajevo123!");
+        Password.sendKeys("OvoJ3Test");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
@@ -1995,7 +1995,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000331");
+        BrojPonude.sendKeys("0001000337");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();
@@ -2177,7 +2177,7 @@ public class sCoreBosnia {
         Username.sendKeys("andrea.petrovic");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Sarajevo123!");
+        Password.sendKeys("OvoJ3Test");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
@@ -2205,7 +2205,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000332");
+        BrojPonude.sendKeys("0001000338");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();
@@ -2407,7 +2407,7 @@ public class sCoreBosnia {
         Username.sendKeys("andrea.petrovic");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Sarajevo123!");
+        Password.sendKeys("OvoJ3Test");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
@@ -2435,7 +2435,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000333");
+        BrojPonude.sendKeys("0001000339");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();
@@ -2672,7 +2672,7 @@ public class sCoreBosnia {
         Username.sendKeys("andrea.petrovic");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Sarajevo123!");
+        Password.sendKeys("OvoJ3Test");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
@@ -2700,7 +2700,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000334");
+        BrojPonude.sendKeys("0001000340");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();
@@ -2903,7 +2903,7 @@ public class sCoreBosnia {
         Username.sendKeys("andrea.petrovic");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Sarajevo123!");
+        Password.sendKeys("OvoJ3Test");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
@@ -2931,7 +2931,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000335");
+        BrojPonude.sendKeys("0001000341");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();
@@ -3163,7 +3163,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -3199,7 +3199,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -3235,7 +3235,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -3275,7 +3275,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -3312,7 +3312,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -3348,7 +3348,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("andrea.petrovic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -3380,7 +3380,7 @@ public class sCoreBosnia {
         Username.sendKeys("andrea.petrovic");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Sarajevo123!");
+        Password.sendKeys("OvoJ3Test");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
@@ -3408,7 +3408,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000336");
+        BrojPonude.sendKeys("0001000342");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();

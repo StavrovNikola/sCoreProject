@@ -825,7 +825,7 @@ public class sCoreCroatia {
         Select select1 = new Select(mainPage.Status);
         select1.selectByIndex(1);
         mainPage.DateOfContracting.click();
-        mainPage.DateOfContracting.sendKeys("01.08.2024");
+        mainPage.DateOfContracting.sendKeys("01.01.2024");
         mainPage.SearchMenu.click();
         mainPage.ImageSearchCRO.click();
         mainPage.AnnulationCRO.click();
@@ -857,7 +857,7 @@ public class sCoreCroatia {
         Select select1 = new Select(mainPage.Status);
         select1.selectByIndex(1);
         mainPage.DateOfContracting.click();
-        mainPage.DateOfContracting.sendKeys("01.08.2024");
+        mainPage.DateOfContracting.sendKeys("01.01.2024");
         mainPage.SearchMenu.click();
         mainPage.ImageSearchCRO.click();
         mainPage.AnnulationCRO.click();

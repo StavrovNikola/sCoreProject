@@ -114,7 +114,7 @@ public class sCoreSmokeTest {
         Username.sendKeys("sCoreAgentUW CRO");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Produkcija.!123");
+        Password.sendKeys("Prosinac1!");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
@@ -142,7 +142,7 @@ public class sCoreSmokeTest {
         Username.sendKeys("sCoreAgentUW CRO");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
+        Password.sendKeys("Prosinac1!");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
@@ -282,7 +282,7 @@ public class sCoreSmokeTest {
         Username.sendKeys("elvira.hadzimusovic");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Sarajevo13!");
+        Password.sendKeys("Uniqa2024!!");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
@@ -310,7 +310,7 @@ public class sCoreSmokeTest {
         Username.sendKeys("elvira.hadzimusovic");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
+        Password.sendKeys("Uniqa2024!!");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
@@ -338,7 +338,7 @@ public class sCoreSmokeTest {
         Username.sendKeys("amina.masic");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
+        Password.sendKeys("Sarajevo123!");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
@@ -558,7 +558,7 @@ public class sCoreSmokeTest {
         Username.sendKeys("sCoreAgentUW CRO");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Produkcija.!123");
+        Password.sendKeys("Prosinac1!");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();
