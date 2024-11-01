@@ -1755,10 +1755,10 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
     @Epic("POS Bank")
     @Feature("New contract")
     @Description("Creating new contract")
-    @Step("Creating new contract - Spektar")
+    @Step("Creating new contract - Spektar kompakt package")
     @Owner("Nikola Stavrov")
     @Test(priority = 760)
-    public void SpektarPOS() throws InterruptedException {
+    public void SpektarKompakt() throws InterruptedException {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("Raiff_yuajko");
@@ -1820,4 +1820,350 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
 
 
     }
+
+    @Epic("POS Bank")
+    @Feature("New contract")
+    @Description("Creating new contract")
+    @Step("Creating new contract - Spektar optimum package")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 770)
+    public void SpektarOptimum() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SpektarPOS.click();
+        mainPage.ClientName.click();
+        mainPage.ClientName.sendKeys("Petar Petrovic");
+        mainPage.inputDateBirth.click();
+        mainPage.inputDateBirth.sendKeys("01.02.1992");
+        mainPage.inputGender.click();
+        mainPage.inputHeight.click();
+        mainPage.inputHeight.sendKeys("190");
+        mainPage.inputWeight.click();
+        mainPage.inputWeight.sendKeys("80");
+        // mainPage.inputDurationInsuranceYears.click();
+        //Thread.sleep(2500);
+        //  mainPage.inputDurationInsuranceYears.clear();
+        //  mainPage.inputDurationInsuranceYears.sendKeys("20");
+        mainPage.inputIndexation.click();
+        mainPage.inputCalculationBase.click();
+        mainPage.inputAmount.click();
+        mainPage.inputAmount.clear();
+        mainPage.inputAmount.sendKeys("15000");
+        mainPage.PrikaziPakete.click();
+        mainPage.Optimum.click();
+        //mainPage.InfoOfferPrint.click();
+        mainPage.Ugovaranje.click();
+        mainPage.Checkbox.click();
+        mainPage.inputIdentificationNumber.click();
+        mainPage.inputIdentificationNumber.sendKeys("0102992700243");
+        mainPage.JMBGSearch.click();
+        mainPage.inputPostOfficeAddressSame.click();
+        mainPage.inputHasNotification.click();
+        mainPage.NextPagePerson.click();
+        mainPage.NextPageKorisnik.click();
+        Thread.sleep(5000);
+        mainPage.NextPageZU.click();
+        mainPage.inputStednja.click();
+        mainPage.inputZaposlen.click();
+        mainPage.inputStalniZaradaPorodiPrimanja.click();
+        mainPage.LosaReputacija.click();
+        mainPage.TajnostTransakcija.click();
+        mainPage.Identifikacija.click();
+        mainPage.Transakcija.click();
+        mainPage.InformacijeKlijent.click();
+        mainPage.NextPageAML.click();
+        Thread.sleep(3000);
+        mainPage.NextPagePlacanje.click();
+        Thread.sleep(4000);
+        mainPage.spanAktiviraj.click();
+        mainPage.PrintOffer.click();
+        Thread.sleep(3000);
+        mainPage.UplatnicaPrint.click();
+        Thread.sleep(3000);
+        mainPage.PotvrdaPotpisa.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("New contract")
+    @Description("Creating new contract")
+    @Step("Creating new contract - Spektar premium package")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 780)
+    public void SpektarPremium() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SpektarPOS.click();
+        mainPage.ClientName.click();
+        mainPage.ClientName.sendKeys("Petar Petrovic");
+        mainPage.inputDateBirth.click();
+        mainPage.inputDateBirth.sendKeys("01.02.1992");
+        mainPage.inputGender.click();
+        mainPage.inputHeight.click();
+        mainPage.inputHeight.sendKeys("190");
+        mainPage.inputWeight.click();
+        mainPage.inputWeight.sendKeys("80");
+        // mainPage.inputDurationInsuranceYears.click();
+        //Thread.sleep(2500);
+        //  mainPage.inputDurationInsuranceYears.clear();
+        //  mainPage.inputDurationInsuranceYears.sendKeys("20");
+        mainPage.inputIndexation.click();
+        mainPage.inputCalculationBase.click();
+        mainPage.inputAmount.click();
+        mainPage.inputAmount.clear();
+        mainPage.inputAmount.sendKeys("15000");
+        mainPage.PrikaziPakete.click();
+        mainPage.Premium.click();
+        //mainPage.InfoOfferPrint.click();
+        mainPage.Ugovaranje.click();
+        mainPage.Checkbox.click();
+        mainPage.inputIdentificationNumber.click();
+        mainPage.inputIdentificationNumber.sendKeys("0102992700243");
+        mainPage.JMBGSearch.click();
+        mainPage.inputPostOfficeAddressSame.click();
+        mainPage.inputHasNotification.click();
+        mainPage.NextPagePerson.click();
+        mainPage.NextPageKorisnik.click();
+        Thread.sleep(5000);
+        mainPage.NextPageZU.click();
+        mainPage.inputStednja.click();
+        mainPage.inputZaposlen.click();
+        mainPage.inputStalniZaradaPorodiPrimanja.click();
+        mainPage.LosaReputacija.click();
+        mainPage.TajnostTransakcija.click();
+        mainPage.Identifikacija.click();
+        mainPage.Transakcija.click();
+        mainPage.InformacijeKlijent.click();
+        mainPage.NextPageAML.click();
+        Thread.sleep(3000);
+        mainPage.NextPagePlacanje.click();
+        Thread.sleep(4000);
+        mainPage.spanAktiviraj.click();
+        mainPage.PrintOffer.click();
+        Thread.sleep(3000);
+        mainPage.UplatnicaPrint.click();
+        Thread.sleep(3000);
+        mainPage.PotvrdaPotpisa.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("New contract")
+    @Description("Creating new contract")
+    @Step("Creating new contract - Spektar teže bolesti package")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 790)
+    public void SpektarTezeBolesti() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SpektarPOS.click();
+        mainPage.ClientName.click();
+        mainPage.ClientName.sendKeys("Petar Petrovic");
+        mainPage.inputDateBirth.click();
+        mainPage.inputDateBirth.sendKeys("01.02.1992");
+        mainPage.inputGender.click();
+        mainPage.inputHeight.click();
+        mainPage.inputHeight.sendKeys("190");
+        mainPage.inputWeight.click();
+        mainPage.inputWeight.sendKeys("80");
+        // mainPage.inputDurationInsuranceYears.click();
+        //Thread.sleep(2500);
+        //  mainPage.inputDurationInsuranceYears.clear();
+        //  mainPage.inputDurationInsuranceYears.sendKeys("20");
+        mainPage.inputIndexation.click();
+        mainPage.inputCalculationBase.click();
+        mainPage.inputAmount.click();
+        mainPage.inputAmount.clear();
+        mainPage.inputAmount.sendKeys("15000");
+        mainPage.PrikaziPakete.click();
+        mainPage.TezeBolestiPaket.click();
+        //mainPage.InfoOfferPrint.click();
+        mainPage.Ugovaranje.click();
+        mainPage.Checkbox.click();
+        mainPage.inputIdentificationNumber.click();
+        mainPage.inputIdentificationNumber.sendKeys("0102992700243");
+        mainPage.JMBGSearch.click();
+        mainPage.inputPostOfficeAddressSame.click();
+        mainPage.inputHasNotification.click();
+        mainPage.NextPagePerson.click();
+        mainPage.NextPageKorisnik.click();
+        Thread.sleep(5000);
+        mainPage.NextPageZU.click();
+        mainPage.inputStednja.click();
+        mainPage.inputZaposlen.click();
+        mainPage.inputStalniZaradaPorodiPrimanja.click();
+        mainPage.LosaReputacija.click();
+        mainPage.TajnostTransakcija.click();
+        mainPage.Identifikacija.click();
+        mainPage.Transakcija.click();
+        mainPage.InformacijeKlijent.click();
+        mainPage.NextPageAML.click();
+        Thread.sleep(3000);
+        mainPage.NextPagePlacanje.click();
+        Thread.sleep(4000);
+        mainPage.spanAktiviraj.click();
+        mainPage.PrintOffer.click();
+        Thread.sleep(3000);
+        mainPage.UplatnicaPrint.click();
+        Thread.sleep(3000);
+        mainPage.PotvrdaPotpisa.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("New contract")
+    @Description("Creating new contract")
+    @Step("Creating new contract - Spektar teže bolesti plus package")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 800)
+    public void SpektarTezeBolestiPlus() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SpektarPOS.click();
+        mainPage.ClientName.click();
+        mainPage.ClientName.sendKeys("Petar Petrovic");
+        mainPage.inputDateBirth.click();
+        mainPage.inputDateBirth.sendKeys("01.02.1992");
+        mainPage.inputGender.click();
+        mainPage.inputHeight.click();
+        mainPage.inputHeight.sendKeys("190");
+        mainPage.inputWeight.click();
+        mainPage.inputWeight.sendKeys("80");
+        // mainPage.inputDurationInsuranceYears.click();
+        //Thread.sleep(2500);
+        //  mainPage.inputDurationInsuranceYears.clear();
+        //  mainPage.inputDurationInsuranceYears.sendKeys("20");
+        mainPage.inputIndexation.click();
+        mainPage.inputCalculationBase.click();
+        mainPage.inputAmount.click();
+        mainPage.inputAmount.clear();
+        mainPage.inputAmount.sendKeys("15000");
+        mainPage.PrikaziPakete.click();
+        mainPage.TezeBolestiPlus.click();
+        //mainPage.InfoOfferPrint.click();
+        mainPage.Ugovaranje.click();
+        mainPage.Checkbox.click();
+        mainPage.inputIdentificationNumber.click();
+        mainPage.inputIdentificationNumber.sendKeys("0102992700243");
+        mainPage.JMBGSearch.click();
+        mainPage.inputPostOfficeAddressSame.click();
+        mainPage.inputHasNotification.click();
+        mainPage.NextPagePerson.click();
+        mainPage.NextPageKorisnik.click();
+        Thread.sleep(5000);
+        mainPage.NextPageZU.click();
+        mainPage.inputStednja.click();
+        mainPage.inputZaposlen.click();
+        mainPage.inputStalniZaradaPorodiPrimanja.click();
+        mainPage.LosaReputacija.click();
+        mainPage.TajnostTransakcija.click();
+        mainPage.Identifikacija.click();
+        mainPage.Transakcija.click();
+        mainPage.InformacijeKlijent.click();
+        mainPage.NextPageAML.click();
+        Thread.sleep(3000);
+        mainPage.NextPagePlacanje.click();
+        Thread.sleep(4000);
+        mainPage.spanAktiviraj.click();
+        mainPage.PrintOffer.click();
+        Thread.sleep(3000);
+        mainPage.UplatnicaPrint.click();
+        Thread.sleep(3000);
+        mainPage.PotvrdaPotpisa.click();
+
+
+    }
+
+    @Epic("POS Bank")
+    @Feature("New contract")
+    @Description("Creating new contract")
+    @Step("Creating new contract - Spektar premium plus package")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 810)
+    public void SpektarPremiumPlus() throws InterruptedException {
+
+        mainPage.inputUsername.click();
+        mainPage.inputUsername.sendKeys("Raiff_yuajko");
+        mainPage.inputPassword.click();
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.buttonLogin.click();
+        mainPage.LifeInsurance.click();
+        mainPage.SpektarPOS.click();
+        mainPage.ClientName.click();
+        mainPage.ClientName.sendKeys("Petar Petrovic");
+        mainPage.inputDateBirth.click();
+        mainPage.inputDateBirth.sendKeys("01.02.1992");
+        mainPage.inputGender.click();
+        mainPage.inputHeight.click();
+        mainPage.inputHeight.sendKeys("190");
+        mainPage.inputWeight.click();
+        mainPage.inputWeight.sendKeys("80");
+        // mainPage.inputDurationInsuranceYears.click();
+        //Thread.sleep(2500);
+        //  mainPage.inputDurationInsuranceYears.clear();
+        //  mainPage.inputDurationInsuranceYears.sendKeys("20");
+        mainPage.inputIndexation.click();
+        mainPage.inputCalculationBase.click();
+        mainPage.inputAmount.click();
+        mainPage.inputAmount.clear();
+        mainPage.inputAmount.sendKeys("15000");
+        mainPage.PrikaziPakete.click();
+        mainPage.PremiumPlus.click();
+        //mainPage.InfoOfferPrint.click();
+        mainPage.Ugovaranje.click();
+        mainPage.Checkbox.click();
+        mainPage.inputIdentificationNumber.click();
+        mainPage.inputIdentificationNumber.sendKeys("0102992700243");
+        mainPage.JMBGSearch.click();
+        mainPage.inputPostOfficeAddressSame.click();
+        mainPage.inputHasNotification.click();
+        mainPage.NextPagePerson.click();
+        mainPage.NextPageKorisnik.click();
+        Thread.sleep(5000);
+        mainPage.NextPageZU.click();
+        mainPage.inputStednja.click();
+        mainPage.inputZaposlen.click();
+        mainPage.inputStalniZaradaPorodiPrimanja.click();
+        mainPage.LosaReputacija.click();
+        mainPage.TajnostTransakcija.click();
+        mainPage.Identifikacija.click();
+        mainPage.Transakcija.click();
+        mainPage.InformacijeKlijent.click();
+        mainPage.NextPageAML.click();
+        Thread.sleep(3000);
+        mainPage.NextPagePlacanje.click();
+        Thread.sleep(4000);
+        mainPage.spanAktiviraj.click();
+        mainPage.PrintOffer.click();
+        Thread.sleep(3000);
+        mainPage.UplatnicaPrint.click();
+        Thread.sleep(3000);
+        mainPage.PotvrdaPotpisa.click();
+
+
+    }
+
 }
