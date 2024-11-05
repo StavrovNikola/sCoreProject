@@ -1,12 +1,9 @@
 package com.example.scoreproject;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-
-// page_url = https://www.jetbrains.com/
 public class MainPage {
 
 
@@ -254,6 +251,11 @@ public class MainPage {
     @FindBy(xpath = "//*[@id='btn_Activate']")
     public WebElement Activate;
 
+    @FindBy(css = "#btn_Activate")
+    public WebElement linkActivate;
+
+
+
     @FindBy(xpath = "//*[@id='btn_Print']")
     public WebElement Print;
 
@@ -335,6 +337,9 @@ public class MainPage {
     @FindBy(css = "#Kol62")
     public WebElement IndexValue;
 
+    @FindBy(css = "label[for='Kol14_60']")
+    public WebElement Vinculation;
+
     @FindBy(css = "#ribbon_menu_area")
     public WebElement RibbonMenu;
 
@@ -348,34 +353,182 @@ public class MainPage {
     public WebElement TabPersons;
 
     @FindBy(xpath = "/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/label")
-    public WebElement labelUgovaraOsiguranikIstoLice2;
+    public WebElement UgovaraOsiguranikIstoLice2;
 
     @FindBy(xpath = "//a[contains(@onclick, '0);(1,')]")
-    public WebElement linkDodaj;
+    public WebElement Dodaj;
+    
+    @FindBy(xpath = "//*[@id='MainContent_wucIndividualBusinessEntitySearch_tbFirstName']")
+    public WebElement inputName;
+
+    @FindBy(css = "#MainContent_wucIndividualBusinessEntitySearch_tbIdentificationNumber")
+    public WebElement IdentificationNumber;
+
+    @FindBy(css = "#MainContent_wucIndividualBusinessEntitySearch_SearchButton")
+    public WebElement ClientSearch;
+
+    @FindBy(css = "#MainContent_wucIndividualBusinessEntitySearch_IndividualBusinessEntitiesListView_ProcessingButton_0")
+    public WebElement ClientPreview;
+
+    @FindBy(css = "#MainContent_IndividualClientLifeFormView_lbAccept")
+    public WebElement ClientAccept;
 
     @FindBy(css = "a[onclick='return showIFrame(\"https://qa-score.uniqa.rs/BusinessEntities/IFrameForms/IFrameClientMain/1/4/0/1/2/1/0/2/0/1/0/0/0/0/1/0/418/2035694/209\", 1000, 600, 1, 0);(6, -1, \":0:1\");']")
-    public WebElement linkDodaj2;
+    public WebElement AddPlatilac;
 
-    @FindBy(css = "label[for='Kol17']")
+    @FindBy(css = "label[for='Kol17'] span")
     public WebElement UgovaraPlatilacIstoLice;
-
-    @FindBy(css = "a[onclick='return showIFrame(\"https://qa-score.uniqa.rs/BusinessEntities/IFrameForms/IFrameClientMain/1/4/0/1/13/1/0/2/0/0/0/0/0/0/1/0/418/2035694/209\", 1000, 600, 1, 0);(16, -1, \":0:1\");']")
-    public WebElement linkDodaj3;
 
     @FindBy(css = "label[for='Kol15']")
     public WebElement labelUgovaraOsiguranikImajuZakonskog;
 
+    @FindBy(css = "a[onclick='return showIFrame(\"https://qa-score.uniqa.rs/BusinessEntities/IFrameForms/IFrameClientMain/1/4/0/1/10/1/0/2/1/0/0/0/0/0/1/0/602/2058373/209\", 1000, 600, 1, 0);(10, -1, \":0:1\");']")
+    public WebElement AddZakonskiZastupnik;
+
     @FindBy(css = "a[onclick='return removeItemFromGrid(2, -1, \":0:1\");']")
-    public WebElement linkDodaj4;
+    public WebElement AddDeathBeneficiary;
+
+    @FindBy(css = "#Kol2")
+    public WebElement inputOpis;
+
+    @FindBy(css = "input[id='Kol3']")
+    public WebElement inputProcenat;
+
+    @FindBy(css = "a[id='btn_Accept']")
+    public WebElement AcceptDeathBeneficiares;
 
     @FindBy(css = "a[onclick='return showDocumentNotificationIFrame(2035694,1,1,\"https://qa-score.uniqa.rs/BusinessEntities/IFrameForms/IFrameContactAddresses/1/0/2/209\", 1000, 600, 1, 0);(5, -1, \":0:1\");']")
-    public WebElement linkDodaj5;
+    public WebElement AddAddress;
 
     @FindBy(css = "a[onclick='return showDocumentNotificationIFrame(2035694,2,1,\"https://qa-score.uniqa.rs/BusinessEntities/IFrameForms/IFrameSMSNotification/1/0/2/209\", 1000, 600, 1, 0);(8, -1, \":0:1\");']")
-    public WebElement linkDodaj6;
+    public WebElement AddSMS;
 
-    @FindBy(xpath = "//*[@id='MainContent_wucIndividualBusinessEntitySearch_tbIdentificationNumber']")
-    public WebElement inputMainContentWucIndividual2;
+    @FindBy(css = "#tab_Vinculations")
+    public WebElement linkTabVinculations;
+
+    @FindBy(css = "a[onclick='return removeItemFromGrid(1, -1, \":0:1\");']")
+    public WebElement AddVinculation;
+
+    @FindBy(css = "select[id='Kol23']")
+    public WebElement Creditor;
+
+    @FindBy(css = "#Kol8")
+    public WebElement FirstVinculationBank;
+
+    @FindBy(css = "input[mappingkey='sTech.sCore.Models.Vinculation.FirstName']")
+    public WebElement inputNameVinculation;
+
+    @FindBy(css = "input[id='Kol17']")
+    public WebElement inputSurnameVinculation;
+
+    @FindBy(css = "#Kol18")
+    public WebElement getInputIdentificationNumberVinculation;
+
+    @FindBy(css = "#Kol15")
+    public WebElement CreditLoanNumber;
+
+    @FindBy(css = "a[id='btn_Accept']")
+    public WebElement linkAcceptVinculation;
+
+    @FindBy(css = "#tab_MoneyLaundry")
+    public WebElement linkTabMoneyLaundry;
+
+    @FindBy(css = "label[for='qnn_1_0_1']")
+    public WebElement labelStednja;
+
+    @FindBy(css = "label[for='qnn_1_1_1']")
+    public WebElement labelZaposlen;
+
+    @FindBy(css = "label[for='qnn_1_3_0']")
+    public WebElement labelStalniZaradaPorodiPrimanja;
+
+    @FindBy(css = "#btn_AcceptMoneyLaundry")
+    public WebElement linkAcceptMoneyLaundry;
+
+    @FindBy(css = "#tab_AssociateMoneyLaundry")
+    public WebElement linkTabAssociateMoneyLaundry;
+
+    @FindBy(css = "label[for='qnn_1_0_0']")
+    public WebElement labelRadioInline;
+
+    @FindBy(css = "label[for='qnn_1_1_0']")
+    public WebElement labelRadioInline2;
+
+    @FindBy(css = "label[for='qnn_1_2_0']")
+    public WebElement labelRadioInline3;
+
+    @FindBy(css = "label[for='qnn_1_3_0']")
+    public WebElement labelRadioInline4;
+
+    @FindBy(css = "label[for='qnn_1_4_1']")
+    public WebElement labelRadioInline5;
+
+    @FindBy(css = "#btn_AcceptMoneyLaundry")
+    public WebElement linkAcceptMoneyLaundry2;
+
+    @FindBy(css = "#btn_CertificationOfSignature")
+    public WebElement linkCertificationSignature;
+
+    @FindBy(css = "#tab_Printouts")
+    public WebElement linkTabPrintouts;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div > div > table > tbody > tr:nth-of-type(1) > td:nth-of-type(19) > span > a > img")
+    public WebElement image;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div > div > table > tbody > tr:nth-of-type(2) > td:nth-of-type(19) > span > a > img")
+    public WebElement image2;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div > div > table > tbody > tr:nth-of-type(3) > td:nth-of-type(19) > span > a > img")
+    public WebElement image3;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div > div > table > tbody > tr:nth-of-type(4) > td:nth-of-type(19) > span > a > img")
+    public WebElement image4;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div > div > table > tbody > tr:nth-of-type(5) > td:nth-of-type(19) > span > a > img")
+    public WebElement image5;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div > div > table > tbody > tr:nth-of-type(6) > td:nth-of-type(19) > span > a > img")
+    public WebElement image6;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div > div > table > tbody > tr:nth-of-type(7) > td:nth-of-type(19) > span > a > img")
+    public WebElement image7;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div > div > table > tbody > tr:nth-of-type(8) > td:nth-of-type(19) > span > a > img")
+    public WebElement image8;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div > div > table > tbody > tr:nth-of-type(9) > td:nth-of-type(19) > span > a > img")
+    public WebElement image9;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 0, 1);']")
+    public WebElement Polisa;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 1, 1);']")
+    public WebElement AMLKlijent;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 2, 1);']")
+    public WebElement AMLSaradnik;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 3, 1);']")
+    public WebElement PotvrdaZaPreuzimanje;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 4, 1);']")
+    public WebElement PropratnoPismo;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 5, 1);']")
+    public WebElement Uplatnica;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 6, 1);']")
+    public WebElement PUI;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 7, 1);']")
+    public WebElement Izjava;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 8, 1);']")
+    public WebElement IOOPSRB;
+
+    @FindBy(xpath = "/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li")
+    public WebElement CertificationSignatureMessage;
+
 
     @FindBy(css = "html > body > form > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div > ul:nth-of-type(1) > li:nth-of-type(3) > a")
     public WebElement MassPrint;
@@ -1489,6 +1642,38 @@ public class MainPage {
     @FindBy(css = "#btn_ExportToExcel")
     public WebElement ExportToExcel;
 
+
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
