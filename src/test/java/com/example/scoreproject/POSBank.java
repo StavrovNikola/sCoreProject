@@ -1,33 +1,25 @@
 package com.example.scoreproject;
-
 import io.qameta.allure.*;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import java.time.Duration;
-import java.time.Instant;
-import java.util.concurrent.TimeUnit;
 
 public class POSBank {
 
     private MainPage mainPage;
-
+    WebDriver driver;
 
 
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
-        WebDriver driver = new ChromeDriver(options);
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.get("https://qa-score.uniqa.rs/scorepos/");
@@ -2165,6 +2157,11 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
         mainPage.PotvrdaPotpisa.click();
 
 
+    }
+
+    @AfterMethod
+    public void tearDown() {
+        driver.quit();
     }
 
      }
