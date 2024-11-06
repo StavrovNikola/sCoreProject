@@ -1791,7 +1791,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000355");
+        BrojPonude.sendKeys("0001000361");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();
@@ -2001,7 +2001,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000356");
+        BrojPonude.sendKeys("0001000362");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();
@@ -2231,7 +2231,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000357");
+        BrojPonude.sendKeys("0001000363");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();
@@ -2496,7 +2496,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000358");
+        BrojPonude.sendKeys("0001000364");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();
@@ -2727,7 +2727,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000359");
+        BrojPonude.sendKeys("0001000365");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();
@@ -3189,7 +3189,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000360");
+        BrojPonude.sendKeys("0001000366");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();

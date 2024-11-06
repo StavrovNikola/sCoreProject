@@ -254,7 +254,8 @@ public class MainPage {
     @FindBy(css = "#btn_Activate")
     public WebElement linkActivate;
 
-
+    @FindBy(css = "#Kol8 div[align='left']")
+    public WebElement divJokerPlusTarifa;
 
     @FindBy(xpath = "//*[@id='btn_Print']")
     public WebElement Print;
@@ -373,11 +374,17 @@ public class MainPage {
     @FindBy(css = "#MainContent_IndividualClientLifeFormView_lbAccept")
     public WebElement ClientAccept;
 
+    @FindBy(xpath = "//a[contains(@onclick, '0);(6,')]")
+    public WebElement DodajOsiguranik;
+
     @FindBy(css = "a[onclick='return showIFrame(\"https://qa-score.uniqa.rs/BusinessEntities/IFrameForms/IFrameClientMain/1/4/0/1/2/1/0/2/0/1/0/0/0/0/1/0/418/2035694/209\", 1000, 600, 1, 0);(6, -1, \":0:1\");']")
     public WebElement AddPlatilac;
 
     @FindBy(css = "label[for='Kol17'] span")
     public WebElement UgovaraPlatilacIstoLice;
+
+    @FindBy(xpath = "//label[@for='Kol17']")
+    public WebElement labelUgovaraPlatilacIstoLice;
 
     @FindBy(css = "label[for='Kol15']")
     public WebElement labelUgovaraOsiguranikImajuZakonskog;
@@ -387,6 +394,9 @@ public class MainPage {
 
     @FindBy(css = "a[onclick='return removeItemFromGrid(2, -1, \":0:1\");']")
     public WebElement AddDeathBeneficiary;
+
+    @FindBy(css = "a[onclick='return removeItemFromGrid(3, -1, \":0:1\");']")
+    public WebElement AddDozivljenje;
 
     @FindBy(css = "#Kol2")
     public WebElement inputOpis;
@@ -423,6 +433,15 @@ public class MainPage {
 
     @FindBy(css = "#Kol18")
     public WebElement getInputIdentificationNumberVinculation;
+
+    @FindBy(css = "#Kol19")
+    public WebElement Naziv;
+
+    @FindBy(css = "#Kol20")
+    public WebElement PIB;
+
+    @FindBy(css = "#Kol21")
+    public WebElement MBR;
 
     @FindBy(css = "#Kol15")
     public WebElement CreditLoanNumber;
@@ -526,9 +545,29 @@ public class MainPage {
     @FindBy(css = "a[onclick='return openItemForPrint(1, 8, 1);']")
     public WebElement IOOPSRB;
 
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 3, 1);']")
+    public WebElement UplatnicaPonuda;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 5, 1);']")
+    public WebElement IOOPPonuda;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 6, 1);']")
+    public WebElement IzjavaPonuda;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 4, 1);']")
+    public WebElement PUIPonuda;
+
     @FindBy(xpath = "/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li")
     public WebElement CertificationSignatureMessage;
 
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(1) > div > div > div:nth-of-type(1) > div:nth-of-type(5)")
+    public WebElement StatusUgovora;
+
+    @FindBy(css = "#btn_Confirm")
+    public WebElement linkConfirmBOC;
+
+    @FindBy(css = "#btn_CreatePolicy")
+    public WebElement CreatePolicy;
 
     @FindBy(css = "html > body > form > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div > ul:nth-of-type(1) > li:nth-of-type(3) > a")
     public WebElement MassPrint;
@@ -1641,6 +1680,19 @@ public class MainPage {
 
     @FindBy(css = "#btn_ExportToExcel")
     public WebElement ExportToExcel;
+
+
+   
+
+
+
+
+
+
+
+
+    
+
 
 
 

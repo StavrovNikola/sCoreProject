@@ -2,12 +2,14 @@ package com.example.scoreproject;
 import io.qameta.allure.*;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import java.time.Duration;
+import java.util.Arrays;
 
 public class POSBank {
 
@@ -1788,28 +1790,12 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
         mainPage.JMBGSearch.click();
         mainPage.inputPostOfficeAddressSame.click();
         mainPage.inputHasNotification.click();
-        mainPage.NextPagePerson.click();
-        mainPage.NextPageKorisnik.click();
-        Thread.sleep(5000);
-        mainPage.NextPageZU.click();
-        mainPage.inputStednja.click();
-        mainPage.inputZaposlen.click();
-        mainPage.inputStalniZaradaPorodiPrimanja.click();
-        mainPage.LosaReputacija.click();
-        mainPage.TajnostTransakcija.click();
-        mainPage.Identifikacija.click();
-        mainPage.Transakcija.click();
-        mainPage.InformacijeKlijent.click();
-        mainPage.NextPageAML.click();
-        Thread.sleep(3000);
-        mainPage.NextPagePlacanje.click();
-        Thread.sleep(4000);
-        mainPage.spanAktiviraj.click();
-        mainPage.PrintOffer.click();
-        Thread.sleep(3000);
-        mainPage.UplatnicaPrint.click();
-        Thread.sleep(3000);
-        mainPage.PotvrdaPotpisa.click();
+        for (WebElement webElement : Arrays.asList(mainPage.NextPagePerson, mainPage.NextPageKorisnik, mainPage.NextPageZU)) {
+            webElement.click(); Thread.sleep(6000); }
+        for (WebElement webElement : Arrays.asList(mainPage.inputStednja, mainPage.inputZaposlen, mainPage.inputStalniZaradaPorodiPrimanja, mainPage.LosaReputacija, mainPage.TajnostTransakcija, mainPage.Identifikacija, mainPage.Transakcija, mainPage.InformacijeKlijent)) {
+            webElement.click(); Thread.sleep(2000); }
+        for (WebElement webElement : Arrays.asList(mainPage.NextPageAML, mainPage.NextPagePlacanje, mainPage.spanAktiviraj, mainPage.PrintOffer, mainPage.UplatnicaPrint, mainPage.PotvrdaPotpisa)) {
+            webElement.click(); Thread.sleep(6000); }
 
 
     }
@@ -1857,28 +1843,12 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
         mainPage.JMBGSearch.click();
         mainPage.inputPostOfficeAddressSame.click();
         mainPage.inputHasNotification.click();
-        mainPage.NextPagePerson.click();
-        mainPage.NextPageKorisnik.click();
-        Thread.sleep(5000);
-        mainPage.NextPageZU.click();
-        mainPage.inputStednja.click();
-        mainPage.inputZaposlen.click();
-        mainPage.inputStalniZaradaPorodiPrimanja.click();
-        mainPage.LosaReputacija.click();
-        mainPage.TajnostTransakcija.click();
-        mainPage.Identifikacija.click();
-        mainPage.Transakcija.click();
-        mainPage.InformacijeKlijent.click();
-        mainPage.NextPageAML.click();
-        Thread.sleep(3000);
-        mainPage.NextPagePlacanje.click();
-        Thread.sleep(4000);
-        mainPage.spanAktiviraj.click();
-        mainPage.PrintOffer.click();
-        Thread.sleep(3000);
-        mainPage.UplatnicaPrint.click();
-        Thread.sleep(3000);
-        mainPage.PotvrdaPotpisa.click();
+        for (WebElement webElement : Arrays.asList(mainPage.NextPagePerson, mainPage.NextPageKorisnik, mainPage.NextPageZU)) {
+            webElement.click(); Thread.sleep(6000); }
+        for (WebElement webElement : Arrays.asList(mainPage.inputStednja, mainPage.inputZaposlen, mainPage.inputStalniZaradaPorodiPrimanja, mainPage.LosaReputacija, mainPage.TajnostTransakcija, mainPage.Identifikacija, mainPage.Transakcija, mainPage.InformacijeKlijent)) {
+            webElement.click(); Thread.sleep(2000); }
+        for (WebElement webElement : Arrays.asList(mainPage.NextPageAML, mainPage.NextPagePlacanje, mainPage.spanAktiviraj, mainPage.PrintOffer, mainPage.UplatnicaPrint, mainPage.PotvrdaPotpisa)) {
+            webElement.click(); Thread.sleep(6000); }
 
 
     }
@@ -1926,28 +1896,12 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
         mainPage.JMBGSearch.click();
         mainPage.inputPostOfficeAddressSame.click();
         mainPage.inputHasNotification.click();
-        mainPage.NextPagePerson.click();
-        mainPage.NextPageKorisnik.click();
-        Thread.sleep(5000);
-        mainPage.NextPageZU.click();
-        mainPage.inputStednja.click();
-        mainPage.inputZaposlen.click();
-        mainPage.inputStalniZaradaPorodiPrimanja.click();
-        mainPage.LosaReputacija.click();
-        mainPage.TajnostTransakcija.click();
-        mainPage.Identifikacija.click();
-        mainPage.Transakcija.click();
-        mainPage.InformacijeKlijent.click();
-        mainPage.NextPageAML.click();
-        Thread.sleep(3000);
-        mainPage.NextPagePlacanje.click();
-        Thread.sleep(4000);
-        mainPage.spanAktiviraj.click();
-        mainPage.PrintOffer.click();
-        Thread.sleep(3000);
-        mainPage.UplatnicaPrint.click();
-        Thread.sleep(3000);
-        mainPage.PotvrdaPotpisa.click();
+        for (WebElement webElement : Arrays.asList(mainPage.NextPagePerson, mainPage.NextPageKorisnik, mainPage.NextPageZU)) {
+            webElement.click(); Thread.sleep(6000); }
+        for (WebElement webElement : Arrays.asList(mainPage.inputStednja, mainPage.inputZaposlen, mainPage.inputStalniZaradaPorodiPrimanja, mainPage.LosaReputacija, mainPage.TajnostTransakcija, mainPage.Identifikacija, mainPage.Transakcija, mainPage.InformacijeKlijent)) {
+            webElement.click(); Thread.sleep(2000); }
+        for (WebElement webElement : Arrays.asList(mainPage.NextPageAML, mainPage.NextPagePlacanje, mainPage.spanAktiviraj, mainPage.PrintOffer, mainPage.UplatnicaPrint, mainPage.PotvrdaPotpisa)) {
+            webElement.click(); Thread.sleep(6000); }
 
 
     }
@@ -1995,28 +1949,12 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
         mainPage.JMBGSearch.click();
         mainPage.inputPostOfficeAddressSame.click();
         mainPage.inputHasNotification.click();
-        mainPage.NextPagePerson.click();
-        mainPage.NextPageKorisnik.click();
-        Thread.sleep(5000);
-        mainPage.NextPageZU.click();
-        mainPage.inputStednja.click();
-        mainPage.inputZaposlen.click();
-        mainPage.inputStalniZaradaPorodiPrimanja.click();
-        mainPage.LosaReputacija.click();
-        mainPage.TajnostTransakcija.click();
-        mainPage.Identifikacija.click();
-        mainPage.Transakcija.click();
-        mainPage.InformacijeKlijent.click();
-        mainPage.NextPageAML.click();
-        Thread.sleep(3000);
-        mainPage.NextPagePlacanje.click();
-        Thread.sleep(4000);
-        mainPage.spanAktiviraj.click();
-        mainPage.PrintOffer.click();
-        Thread.sleep(3000);
-        mainPage.UplatnicaPrint.click();
-        Thread.sleep(3000);
-        mainPage.PotvrdaPotpisa.click();
+        for (WebElement webElement : Arrays.asList(mainPage.NextPagePerson, mainPage.NextPageKorisnik, mainPage.NextPageZU)) {
+            webElement.click(); Thread.sleep(6000); }
+        for (WebElement webElement : Arrays.asList(mainPage.inputStednja, mainPage.inputZaposlen, mainPage.inputStalniZaradaPorodiPrimanja, mainPage.LosaReputacija, mainPage.TajnostTransakcija, mainPage.Identifikacija, mainPage.Transakcija, mainPage.InformacijeKlijent)) {
+            webElement.click(); Thread.sleep(2000); }
+        for (WebElement webElement : Arrays.asList(mainPage.NextPageAML, mainPage.NextPagePlacanje, mainPage.spanAktiviraj, mainPage.PrintOffer, mainPage.UplatnicaPrint, mainPage.PotvrdaPotpisa)) {
+            webElement.click(); Thread.sleep(6000); }
 
 
     }
@@ -2064,29 +2002,12 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
         mainPage.JMBGSearch.click();
         mainPage.inputPostOfficeAddressSame.click();
         mainPage.inputHasNotification.click();
-        mainPage.NextPagePerson.click();
-        mainPage.NextPageKorisnik.click();
-        Thread.sleep(5000);
-        mainPage.NextPageZU.click();
-        mainPage.inputStednja.click();
-        mainPage.inputZaposlen.click();
-        mainPage.inputStalniZaradaPorodiPrimanja.click();
-        mainPage.LosaReputacija.click();
-        mainPage.TajnostTransakcija.click();
-        mainPage.Identifikacija.click();
-        mainPage.Transakcija.click();
-        mainPage.InformacijeKlijent.click();
-        mainPage.NextPageAML.click();
-        Thread.sleep(3000);
-        mainPage.NextPagePlacanje.click();
-        Thread.sleep(4000);
-        mainPage.spanAktiviraj.click();
-        mainPage.PrintOffer.click();
-        Thread.sleep(3000);
-        mainPage.UplatnicaPrint.click();
-        Thread.sleep(3000);
-        mainPage.PotvrdaPotpisa.click();
-
+        for (WebElement webElement : Arrays.asList(mainPage.NextPagePerson, mainPage.NextPageKorisnik, mainPage.NextPageZU)) {
+            webElement.click(); Thread.sleep(6000); }
+        for (WebElement webElement : Arrays.asList(mainPage.inputStednja, mainPage.inputZaposlen, mainPage.inputStalniZaradaPorodiPrimanja, mainPage.LosaReputacija, mainPage.TajnostTransakcija, mainPage.Identifikacija, mainPage.Transakcija, mainPage.InformacijeKlijent)) {
+            webElement.click(); Thread.sleep(2000); }
+        for (WebElement webElement : Arrays.asList(mainPage.NextPageAML, mainPage.NextPagePlacanje, mainPage.spanAktiviraj, mainPage.PrintOffer, mainPage.UplatnicaPrint, mainPage.PotvrdaPotpisa)) {
+            webElement.click(); Thread.sleep(6000); }
 
     }
 
@@ -2133,29 +2054,12 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
         mainPage.JMBGSearch.click();
         mainPage.inputPostOfficeAddressSame.click();
         mainPage.inputHasNotification.click();
-        mainPage.NextPagePerson.click();
-        mainPage.NextPageKorisnik.click();
-        Thread.sleep(5000);
-        mainPage.NextPageZU.click();
-        mainPage.inputStednja.click();
-        mainPage.inputZaposlen.click();
-        mainPage.inputStalniZaradaPorodiPrimanja.click();
-        mainPage.LosaReputacija.click();
-        mainPage.TajnostTransakcija.click();
-        mainPage.Identifikacija.click();
-        mainPage.Transakcija.click();
-        mainPage.InformacijeKlijent.click();
-        mainPage.NextPageAML.click();
-        Thread.sleep(3000);
-        mainPage.NextPagePlacanje.click();
-        Thread.sleep(4000);
-        mainPage.spanAktiviraj.click();
-        mainPage.PrintOffer.click();
-        Thread.sleep(3000);
-        mainPage.UplatnicaPrint.click();
-        Thread.sleep(3000);
-        mainPage.PotvrdaPotpisa.click();
-
+        for (WebElement webElement : Arrays.asList(mainPage.NextPagePerson, mainPage.NextPageKorisnik, mainPage.NextPageZU)) {
+            webElement.click(); Thread.sleep(6000); }
+        for (WebElement webElement : Arrays.asList(mainPage.inputStednja, mainPage.inputZaposlen, mainPage.inputStalniZaradaPorodiPrimanja, mainPage.LosaReputacija, mainPage.TajnostTransakcija, mainPage.Identifikacija, mainPage.Transakcija, mainPage.InformacijeKlijent)) {
+            webElement.click(); Thread.sleep(2000); }
+        for (WebElement webElement : Arrays.asList(mainPage.NextPageAML, mainPage.NextPagePlacanje, mainPage.spanAktiviraj, mainPage.PrintOffer, mainPage.UplatnicaPrint, mainPage.PotvrdaPotpisa)) {
+            webElement.click(); Thread.sleep(6000); }
 
     }
 
