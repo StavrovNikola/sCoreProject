@@ -5711,7 +5711,8 @@ public class sCoreSerbia {
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Favorit, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
-            element.click(); }
+            element.click();
+        }
         mainPage.DurationInYear.sendKeys("15");
         mainPage.ContentPlaceHolder.sendKeys("Beograd");
         mainPage.ContentPlaceHolder1.click();
@@ -5728,7 +5729,8 @@ public class sCoreSerbia {
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.IdentificationNumber.sendKeys("1311993700249");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click(); }
+            element.click();
+        }
         Thread.sleep(2500);
         js.executeScript("window.scrollBy(500, 0);");
         mainPage.DodajOsiguranik.click();
@@ -5738,7 +5740,8 @@ public class sCoreSerbia {
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame2));
         mainPage.IdentificationNumber.sendKeys("1105020700246");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click(); }
+            element.click();
+        }
         js.executeScript("window.scrollBy(500, 0);");
         Thread.sleep(2500);
         mainPage.labelUgovaraPlatilacIstoLice.click();
@@ -5747,22 +5750,24 @@ public class sCoreSerbia {
         mainPage.InsuredSumOrPremium.sendKeys("5000");
         mainPage.getInputSumTrajniInvaliditetKaoPosledicaNezgodeFavorit.sendKeys("5000");
         for (WebElement element : Arrays.asList(mainPage.Accept, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkActivate, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniZaradaPorodiPrimanja, mainPage.linkAcceptMoneyLaundry, mainPage.linkTabAssociateMoneyLaundry, mainPage.labelRadioInline, mainPage.labelRadioInline2, mainPage.labelRadioInline3, mainPage.labelRadioInline4, mainPage.labelRadioInline5, mainPage.linkAcceptMoneyLaundry2, mainPage.linkTabPrintouts)) {
-            element.click(); }
+            element.click();
+        }
         for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik, mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB, mainPage.linkCertificationSignature)) {
             webElement.click();
-            Thread.sleep(6000); }
+            Thread.sleep(6000);
+        }
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspešno urađena.") : "Expected message after Certification signature";
+    }
 
-/*
     @AfterMethod
     public void tearDown() {
         driver.quit();
     }
-*/
+
 
     }
 
-}
+
 
 
 
