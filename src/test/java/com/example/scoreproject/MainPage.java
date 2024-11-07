@@ -569,6 +569,21 @@ public class MainPage {
     @FindBy(css = "#btn_CreatePolicy")
     public WebElement CreatePolicy;
 
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(2) > fieldset > div > div > div > div:nth-of-type(1)")
+    public WebElement divOsiguranikStrani;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(2) > fieldset > div > div > div > div:nth-of-type(2)")
+    public WebElement divUgovaraStrani;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(2) > fieldset > div > div > div > div:nth-of-type(3)")
+    public WebElement divPlatilac;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(2) > fieldset > div > div > div > div:nth-of-type(4)")
+    public WebElement divPlatilacPolitickiIzlozenaOsoba;
+
+    @FindBy(css = "#Kol8 div[align='left']")
+    public WebElement divZanimanje;
+
     @FindBy(css = "html > body > form > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div > ul:nth-of-type(1) > li:nth-of-type(3) > a")
     public WebElement MassPrint;
 
@@ -1680,6 +1695,10 @@ public class MainPage {
 
     @FindBy(css = "#btn_ExportToExcel")
     public WebElement ExportToExcel;
+
+
+
+    
 
 
    
