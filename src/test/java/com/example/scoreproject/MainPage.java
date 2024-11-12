@@ -1597,7 +1597,95 @@ public class MainPage {
     @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(4) > td:nth-of-type(2)")
     public WebElement FidelisLifeTarget2045J12024;
 
+    @FindBy(css = "#tab_Persons")
+    public WebElement linkTabPersons;
+
+    @FindBy(css = "label[for='Kol14_60']")
+    public WebElement labelVinkulacijom;
+
+    @FindBy(css = "#MainContent_wucIndividualBusinessEntitySearch_tbOIB")
+    public WebElement inputOIB;
+
+    @FindBy(css = "#MainContent_wucIndividualBusinessEntitySearch_SearchButton")
+    public WebElement personSearch;
+
+    @FindBy(css = "#MainContent_wucIndividualBusinessEntitySearch_IndividualBusinessEntitiesListView_ProcessingButton_0")
+    public WebElement personPreview;
+
+    @FindBy(css = "#MainContent_IndividualClientLifeFormView_lbAccept")
+    public WebElement personAccept;
+
+    @FindBy(css = "a[onclick='return showDocumentNotificationIFrame(628746,1,4,\"https://aasv098.uniqa.hr/BusinessEntities/IFrameForms/IFrameContactAddresses/4/3192288/2/87\", 1000, 600, 1, 0);(5, -1, \":0:1\");']")
+    public WebElement AddContactAddress;
+
+    @FindBy(css = "#MainContent_ucBusinessEntityNotifications_BusinessEntityAddressesListView_btnSelect_1")
+    public WebElement linkMainContentBusinessEntity;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(15) > div > div > div > div:nth-of-type(2) > div > div")
+    public WebElement divDodaj;
+
+    @FindBy(css = "#tab_Concerns")
+    public WebElement linkTabConcerns;
+
+    @FindBy(css = "#qnn_6_6")
+    public WebElement inputAlkohol;
+
+    @FindBy(css = "#qnn_6_9")
+    public WebElement inputImePrezimeDoktor;
+
+    @FindBy(css = "label[for='qnn_6_4_0']")
+    public WebElement NEZdrav;
+
+    @FindBy(css = "#qnn_6_4_0_0")
+    public WebElement NEZdravOpis;
+
+    @FindBy(css = "label[for='qnn_1_2_0']")
+    public WebElement labelStalniPlaMirovinaIli;
+
+    @FindBy(css = "#qnn_1_2_0_0")
+    public WebElement inputStalniIzvori;
+
+    @FindBy(css = "label[for='qnn_1_3_0']")
+    public WebElement RH;
+
+    @FindBy(css = "label[for='qnn_1_4_1']")
+    public WebElement StalniRezidentDa;
+
+    @FindBy(css = "label[for='qnn_1_5_0']")
+    public WebElement DaIdentifikacijskiBroj;
+
+    @FindBy(css = "label[for='qnn_1_7_1']")
+    public WebElement NeDrugaOsoba;
+
+    @FindBy(css = "label[for='qnn_1_9_0']")
+    public WebElement NeZakonski;
+
+    @FindBy(css = "#qnn_1_10")
+    public WebElement inputDjelatnostStranke;
+
+    @FindBy(css = "#tab_Printouts")
+    public WebElement linkTabPrintoutsCRO;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 0, 1);']")
+    public WebElement linkIspisOriginalaPolisa;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 1, 1);']")
+    public WebElement linkIspisOriginalaPismoZahvale;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 2, 1);']")
+    public WebElement linkIspisOriginalaNalogZaPlacanje;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr > td:nth-of-type(8) > span > a > img")
+    public WebElement VinculationsAction;
+
+    @FindBy(css = "a[onclick='return openItemFromGrid(1, 0, \":1:2\");']")
+    public WebElement IspisVinkulacija;
     
+    @FindBy(css = "td[class$='4']")
+    public WebElement VinculationStatus;
+
+    @FindBy(css = "#Kol22")
+    public WebElement inputOIBVinculationCompany;
 
 
     //BOSNIA
@@ -1695,293 +1783,8 @@ public class MainPage {
     @FindBy(css = "#btn_ExportToExcel")
     public WebElement ExportToExcel;
 
-    @FindBy(css = "#tab_Persons")
-    public WebElement linkTabPersons;
-
-    @FindBy(css = "label[for='Kol14_60']")
-    public WebElement labelVinkulacijom;
-
-    @FindBy(css = "#MainContent_wucIndividualBusinessEntitySearch_tbOIB")
-    public WebElement inputOIB;
-
-    @FindBy(css = "#MainContent_wucIndividualBusinessEntitySearch_SearchButton")
-    public WebElement personSearch;
-
-    @FindBy(css = "#MainContent_wucIndividualBusinessEntitySearch_IndividualBusinessEntitiesListView_ProcessingButton_0")
-    public WebElement personPreview;
-
-    @FindBy(css = "#MainContent_IndividualClientLifeFormView_lbAccept")
-    public WebElement personAccept;
-
-
-
-
 
     
-
-
-
-
-    
-
-
-   
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-    
-    
-    
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-
-
-
-
-   
-
-
-
-
-    
-
-
-
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

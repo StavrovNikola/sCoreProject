@@ -22,7 +22,6 @@ public class sCoreCroatia {
 
 
 
-
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
@@ -1347,756 +1346,6 @@ public class sCoreCroatia {
         mainPage.FourthQuestion2.click();
         mainPage.SaveTP.click();
         mainPage.PrintTP.click();
-    }
-
-    @Epic("sCore Croatia")
-    @Feature("New Contract")
-    @Description("Creating new contract of TB")
-    @Step("Creating new contract of TB - standard basic flow")
-    @Owner("Nikola Stavrov")
-    @Test (priority = 340)
-    public void NewContractTB () throws Exception {
-
-
-        WebDriver driver = new ChromeDriver();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-
-        driver.get("https://aasv098.uniqa.hr/POS/Croatia/NoAD/");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreAgentUW CRO");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Werts!23!!g00!");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[1]/div"));
-        Zivot.click();
-
-        WebElement TB = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[1]/div"));
-        TB.click();
-
-        driver.get("https://aasv098.uniqa.hr/POS/Croatia/Life/TB/NewContract/New/General");
-
-        WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
-        Trajanje.click();
-        Trajanje.clear();
-        Trajanje.sendKeys("15");
-
-        WebElement MestoUgovaranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[4]/div[4]/div/div/div/div/div[2]/div/input[1]"));
-        MestoUgovaranja.sendKeys("zagreb");
-
-        Thread.sleep(1500);
-        WebElement MestoUgovaranja1 = driver.findElement(By.xpath("/html/body/ul[2]/li[1]/div"));
-        MestoUgovaranja1.click();
-
-        WebElement DinamikaPlacanja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[10]/fieldset/div[1]/div/div/select"));
-        Select select = new Select(DinamikaPlacanja);
-        select.selectByIndex(4);
-
-        WebElement MetodPlacanja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[10]/fieldset/div[4]/div/div/select"));
-        Select select3 = new Select(MetodPlacanja);
-        select3.selectByVisibleText("Uplatnica");
-
-        WebElement Osobe = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[2]/a"));
-        Osobe.click();
-
-        WebElement UgovarateljOsiguranik = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/label"));
-        UgovarateljOsiguranik.click();
-
-//53588363881
-
-        WebElement DodajUgovaraca = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/div[1]/div/div/div[2]/div/div/a"));
-        DodajUgovaraca.click();
-
-        WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
-        driver.switchTo().frame(iFrame);
-        Thread.sleep(2000);
-
-        WebElement OIB = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[1]/div[1]/input"));
-        OIB.click();
-        OIB.clear();
-        OIB.sendKeys("53196123668");
-
-        WebElement PretraziLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
-        PretraziLice.click();
-
-        WebElement PregledLica = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[2]/table/tbody/tr[2]/td[9]/div/a"));
-        PregledLica.click();
-
-        WebElement PrihvatiLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[1]/div[1]/div[1]/div/a"));
-        PrihvatiLice.click();
-
-        js.executeScript("window.scrollBy(0, 500);");
-
-        WebElement Platitelj = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/div/div/label"));
-        Platitelj.click();
-
-        WebElement KorisnikZaSlucajSmrti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[12]/div/div/div/div[2]/div/div/a"));
-        KorisnikZaSlucajSmrti.click();
-
-        WebElement Opis = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[3]/div[1]/div/input"));
-        Opis.click();
-        Opis.clear();
-        Opis.sendKeys("Brat");
-
-        WebElement Postotak = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[3]/div[2]/div/input"));
-        Postotak.click();
-        Postotak.clear();
-        Postotak.sendKeys("100");
-
-        WebElement Prihvati = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        Prihvati.click();
-
-        js.executeScript("window.scrollBy(0, 1000);");
-
-        WebElement DodajAdresu = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[15]/div/div/div/div[2]/div/div/a"));
-        DodajAdresu.click();
-        Thread.sleep(1500);
-
-        WebElement iFrameAdresa = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
-        driver.switchTo().frame(iFrameAdresa);
-        Thread.sleep(2000);
-
-        WebElement IzaberiAdresu = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/div/div[3]/div/table/tbody/tr[3]/td[4]/div/a"));
-        IzaberiAdresu.click();
-
-        js.executeScript("window.scrollBy(1000, 0);");
-
-        WebElement UgovorniElementi = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[3]/a"));
-        UgovorniElementi.click();
-
-        WebElement IznosOS = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[1]/fieldset/div[1]/div[2]/div/input"));
-        IznosOS.clear();
-        IznosOS.sendKeys("5000");
-
-        WebElement Visina = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[1]/fieldset/div[3]/div[5]/div/input"));
-        Visina.sendKeys("190");
-
-        WebElement Tezina = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[1]/fieldset/div[3]/div[6]/div/input"));
-        Tezina.sendKeys("80");
-
-        WebElement PrihvatiUE = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        PrihvatiUE.click();
-
-        WebElement PorukaUEL = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li"));
-        assert PorukaUEL.getText().equals("Uspješno spremljen predmet osiguranja i rizici") : "Očekivana poruka nakon Ugovornih elemenata";
-
-        js.executeScript("window.scrollBy(0, 2000);");
-
-        WebElement AlkoholZU = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[3]/fieldset/div[2]/div/div/fieldset/div[7]/div/div/div/input"));
-        AlkoholZU.clear();
-        AlkoholZU.sendKeys("0");
-
-        WebElement ImeDoktora = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[3]/fieldset/div[2]/div/div/fieldset/div[10]/div/div/div/input"));
-        ImeDoktora.clear();
-        ImeDoktora.sendKeys("DR Test");
-
-        js.executeScript("window.scrollBy(2000, 0);");
-
-        WebElement SpremiteUpitnik = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div/a"));
-        SpremiteUpitnik.click();
-
-        WebElement PorukaUpitnik = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li"));
-        assert PorukaUpitnik.getText().equals("Uspješno spremljen upitnik.") : "Očekivana poruka nakon snimanja upitnika";
-
-        WebElement Izracunaj = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        Izracunaj.click();
-
-        WebElement Saradnik = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[1]/div[3]/a"));
-        Saradnik.click();
-
-        WebElement PretragaSaradnika = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[3]/div/fieldset/div[6]/div/a"));
-        PretragaSaradnika.click();
-
-        js.executeScript("window.scrollBy(0, 1000);");
-        Thread.sleep(2500);
-
-        WebElement OdabirSaradnika = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div[2]/table/tbody/tr[1]/td[13]/div/a"));
-        OdabirSaradnika.click();
-
-        js.executeScript("window.scrollBy(1000, 0);");
-
-        WebElement Snimi = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        Snimi.click();
-
-        WebElement SPN = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[7]/a"));
-        SPN.click();
-
-        WebElement Stednja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[1]/div/div/div/label[3]"));
-        Stednja.click();
-
-        WebElement Zaposlen = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[2]/div/div/div/label[3]"));
-        Zaposlen.click();
-
-        WebElement StalniIzvori = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[3]/div/div/div/label[2]"));
-        StalniIzvori.click();
-        Thread.sleep(1000);
-
-        WebElement MolimoNavedite = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[3]/div/div/div/div/input[1]"));
-        MolimoNavedite.click();
-        MolimoNavedite.sendKeys("123");
-
-        WebElement Drzavljanstvo = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[4]/div/div/div/label[2]"));
-        Drzavljanstvo.click();
-
-        js.executeScript("window.scrollBy(0, 500);");
-
-        WebElement PorezniRezident = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[5]/div/div/div/label[3]"));
-        PorezniRezident.click();
-
-        WebElement PIB = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[6]/div/div/div/label[2]"));
-        PIB.click();
-
-        js.executeScript("window.scrollBy(0, 500);");
-
-        WebElement PoslovniOdnos = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[8]/div/div/div/label[3]"));
-        PoslovniOdnos.click();
-
-        WebElement UiP = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[9]/div/div/div/label[3]"));
-        UiP.click();
-
-        WebElement ZP = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[10]/div/div/div/label[2]"));
-        ZP.click();
-
-        WebElement DjelatnostStranke = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[11]/div/div/div/input"));
-        DjelatnostStranke.click();
-        DjelatnostStranke.sendKeys("Djelatnost");
-
-        js.executeScript("window.scrollBy(1000, 0);");
-
-        WebElement PrihvatiSPN = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        PrihvatiSPN.click();
-
-        WebElement PorukaAML = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li"));
-        assert PorukaAML.getText().equals("Uspješno spremljen Upitnik za sprječavanje pranja novca.") : "Očekivana poruka nakon snimanja AMLa";
-
-        WebElement Aktiviraj = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[2]/a"));
-        Aktiviraj.click();
-        Thread.sleep(1500);
-
-        WebElement PorukaNoviUgovor = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li[1]"));
-        assert PorukaNoviUgovor.getText().equals("Novi ugovor je uspješno aktiviran.") : "Očekivana poruka nakon aktivacije";
-
-/*   WebElement PorukaPolica = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li[2]"));
-        assert PorukaPolica.getText().equals("Polica je uspješno kreirana.") : "Očekivana poruka nakon aktivacije";
-*/
-
-        WebElement PotvrdaPotpisaBloker = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        PotvrdaPotpisaBloker.click();
-        Thread.sleep(2000);
-
-
-       // WebElement PorukaStampaPolice = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[2]/ul/li"));
-       //assert PorukaStampaPolice.getText().equals("Potpis se ne može potvrditi prije štampe ponude.") : "Očekivana poruka nakon potvrde potpisa bez stampanja ponude";
-
-        WebElement PolicaStampaj = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/div/div/div/table/tbody/tr[1]/td[19]/div[1]/a"));
-        PolicaStampaj.click();
-        Thread.sleep(6000);
-
-        WebElement PotvrdaPotpisa = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        PotvrdaPotpisa.click();
-
-        WebElement PorukaPotvrdaPotpisa = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li"));
-        assert PorukaPotvrdaPotpisa.getText().equals("Potvrda potpisa uspješno odrađena.") : "Očekivana poruka nakon potvrde potpisa";
-/*
-        WebElement Raskid = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[12]/a"));
-        Raskid.click();
-
-        WebElement Raskini = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        Raskini.click();
-        Thread.sleep(2000);
-
-        WebElement PorukaRaskid = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li"));
-        assert PorukaRaskid.getText().equals("Uspješno raskinut dokument.") : "Očekivana poruka nakon raskida";
-
-        WebElement RaskidAktivacija = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[11]/a"));
-        RaskidAktivacija.click();
-
-        WebElement KreirajZahtevZaReaktivaciju = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[4]/a"));
-        KreirajZahtevZaReaktivaciju.click();
-
-        WebElement PorukaZahtevZaReaktivaciju = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li[1]"));
-        assert PorukaZahtevZaReaktivaciju.getText().equals("Kreiran je zahtjev za reaktivaciju.") : "Očekivana poruka nakon kreiranja zahtjeva za reaktivaciju";
-
-        WebElement PotvrdaPotpisaReaktivacija = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[4]/a"));
-        PotvrdaPotpisaReaktivacija.click();
-
-        WebElement PorukaReaktivacijaPP = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li"));
-        assert PorukaReaktivacijaPP.getText().equals("Zahtjev je poslat u centralu na obradu.") : "Očekivana poruka nakon potvrde potpisa reaktivacije";
-
-        WebElement Reaktiviranje = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[4]/a"));
-        Reaktiviranje.click();
-        Thread.sleep(1500);
-
-        WebElement PorukaReaktivacija = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li"));
-        assert PorukaReaktivacija.getText().equals("Dokument je uspješno aktiviran.") : "Očekivana poruka nakon reaktivacije";
-
-        WebElement Aneks = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[13]/a"));
-        Aneks.click();
-
-        WebElement NoviAneks = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        NoviAneks.click();
-
-        WebElement NacinPlacanja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div/div/div/div/ul/li[3]/label"));
-        NacinPlacanja.click();
-
-        WebElement DatumPocetkaAneksa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/fieldset/div[2]/div/input"));
-        DatumPocetkaAneksa.click();
-        DatumPocetkaAneksa.sendKeys("01.06.2024");
-
-        WebElement KreirajAneks = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        KreirajAneks.click();
-
-        js.executeScript("window.scrollBy(0, 500);");
-
-        WebElement NacinPlacanjaAneks = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[10]/fieldset/div[4]/div/div/select"));
-        Select select4 = new Select(NacinPlacanjaAneks);
-        select4.selectByVisibleText("Trajni nalog");
-
-        WebElement Banka = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[10]/fieldset/div[5]/div/div/select"));
-        Select select5 = new Select(Banka);
-        select5.selectByIndex(6);
-
-        js.executeScript("window.scrollBy(500, 0);");
-
-        WebElement AktivirajAneks = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        AktivirajAneks.click();
-
-        WebElement PorukaAktivacijaAneksa = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li"));
-        assert PorukaAktivacijaAneksa.getText().equals("Aneks je uspješno aktiviran.") : "Očekivana poruka nakon aktivacije aneksa";
-
-        WebElement PotvrdaPotpisaAneksa = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        PotvrdaPotpisaAneksa.click();
-
-        WebElement PorukaPotvrdaPotpisaAneksa = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li"));
-        assert PorukaPotvrdaPotpisaAneksa.getText().equals("Potvrda potpisa uspješno odrađena.") : "Očekivana poruka nakon potvrde potpisa aneksa";
-
-        js.executeScript("window.scrollBy(0, 500);");
-
-        WebElement StampaAneksa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/div/div/div/table/tbody/tr[7]/td[19]/div[1]/a"));
-        StampaAneksa.click();
-
-        js.executeScript("window.scrollBy(500, 0);");
-
-        WebElement BrojPolice = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[2]/div[1]"));
-        String headingtext = BrojPolice.getText();
-        System.out.println("Broj police: " + headingtext);
-
-        WebElement RataPremijeHeader = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[1]/div[7]"));
-        String headingtext1 = RataPremijeHeader.getText();
-        System.out.println("Rata premije: " + headingtext1);
-
-        WebElement DinamikaPlacanjaHeader = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[2]/div[7]"));
-        String headingtext2 = DinamikaPlacanjaHeader.getText();
-        System.out.println("Dinamika placanja: " + headingtext2);
-
-        WebElement UGPHeader = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[3]/div[7]"));
-        String headingtext3 = UGPHeader.getText();
-        System.out.println("UGP: " + headingtext3);
-
-        WebElement TrajanjeHeader = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[3]/div[5]"));
-        String headingtext4 = TrajanjeHeader.getText();
-        System.out.println("Trajanje (g : m : d): " + headingtext4);
-
-        WebElement DatumPocetkaHeader = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[3]/div[3]"));
-        String headingtext5 = DatumPocetkaHeader.getText();
-        System.out.println("Datum pocetka: " + headingtext5);
-
-        WebElement UgovarateljHeader = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[2]/div[3]"));
-        String headingtext6 = UgovarateljHeader.getText();
-        System.out.println("Ugovaratelj: " + headingtext6);
-
-        WebElement StatusHeader = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[1]/div[5]"));
-        String headingtext7 = StatusHeader.getText();
-        System.out.println("Status: " + headingtext7);
-
-*/
-    }
-
-
-    @Epic("sCore Croatia")
-    @Feature("New Contract")
-    @Description("Creating new contract of MO")
-    @Step("Creating new contract of MO - standard basic flow")
-    @Owner("Nikola Stavrov")
-    @Test (priority = 350)
-    public void NewContractMO () throws Exception {
-
-
-        WebDriver driver = new ChromeDriver();
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-
-        driver.get("https://aasv098.uniqa.hr/POS/Croatia/NoAD/");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreAgentUW CRO");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Werts!23!!g00!");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[1]/div"));
-        Zivot.click();
-
-        WebElement MO = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/div[2]/a[2]/div"));
-        MO.click();
-
-        driver.get("https://aasv098.uniqa.hr/POS/Croatia/Life/MO/NewContract/New/General");
-
-        WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
-        Trajanje.click();
-        Trajanje.clear();
-        Trajanje.sendKeys("10");
-
-        WebElement MestoUgovaranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[4]/div[4]/div/div/div/div/div[2]/div/input[1]"));
-        MestoUgovaranja.sendKeys("zagreb");
-
-        Thread.sleep(1500);
-        WebElement MestoUgovaranja1 = driver.findElement(By.xpath("/html/body/ul[2]/li[1]/div"));
-        MestoUgovaranja1.click();
-
-        WebElement DinamikaPlacanja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[10]/fieldset/div[1]/div/div/select"));
-        Select select = new Select(DinamikaPlacanja);
-        select.selectByIndex(4);
-
-        WebElement MetodPlacanja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[10]/fieldset/div[4]/div/div/select"));
-        Select select1 = new Select(MetodPlacanja);
-        select1.selectByVisibleText("Trajni nalog");
-
-        WebElement Banka = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[10]/fieldset/div[5]/div/div/select"));
-        Select select2 = new Select(Banka);
-        select2.selectByVisibleText("IMEX BANKA d.d.");
-
-        WebElement Osobe = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[2]/a"));
-        Osobe.click();
-
-        WebElement UgovarateljOsiguranik = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/label"));
-        UgovarateljOsiguranik.click();
-
-//53588363881
-
-        WebElement DodajUgovaraca = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/div[1]/div/div/div[2]/div/div/a"));
-        DodajUgovaraca.click();
-
-        WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
-        driver.switchTo().frame(iFrame);
-        Thread.sleep(2000);
-
-        WebElement OIB = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[1]/div[1]/input"));
-        OIB.click();
-        OIB.clear();
-        OIB.sendKeys("81540506790");
-
-        WebElement PretraziLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
-        PretraziLice.click();
-
-        WebElement PregledLica = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[2]/table/tbody/tr[2]/td[9]/div/a"));
-        PregledLica.click();
-
-        WebElement PrihvatiLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[1]/div[1]/div[1]/div/a"));
-        PrihvatiLice.click();
-
-        js.executeScript("window.scrollBy(0, 500);");
-
-        WebElement Platitelj = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/div/div/label"));
-        Platitelj.click();
-
-        WebElement KorisnikZaSlucajSmrti = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[12]/div/div/div/div[2]/div/div/a"));
-        KorisnikZaSlucajSmrti.click();
-
-        WebElement Opis = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[3]/div[1]/div/input"));
-        Opis.click();
-        Opis.clear();
-        Opis.sendKeys("Brat");
-
-        WebElement Postotak = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[3]/div[2]/div/input"));
-        Postotak.click();
-        Postotak.clear();
-        Postotak.sendKeys("100");
-
-        WebElement Prihvati = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        Prihvati.click();
-
-        js.executeScript("window.scrollBy(0, 1000);");
-
-        WebElement DodajAdresu = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[15]/div/div/div/div[2]/div/div/a"));
-        DodajAdresu.click();
-        Thread.sleep(1500);
-
-        WebElement iFrameAdresa = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
-        driver.switchTo().frame(iFrameAdresa);
-        Thread.sleep(2000);
-
-        WebElement IzaberiAdresu = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/div/div[3]/div/table/tbody/tr[3]/td[4]/div/a"));
-        IzaberiAdresu.click();
-
-        js.executeScript("window.scrollBy(1000, 0);");
-
-        WebElement UgovorniElementi = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[3]/a"));
-        UgovorniElementi.click();
-
-        WebElement IznosOS = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[1]/fieldset/div[1]/div[2]/div/input"));
-        IznosOS.clear();
-        IznosOS.sendKeys("4000");
-
-        WebElement Visina = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[1]/fieldset/div[3]/div[5]/div/input"));
-        Visina.sendKeys("180");
-
-        WebElement Tezina = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[1]/fieldset/div[3]/div[6]/div/input"));
-        Tezina.sendKeys("79");
-
-        WebElement PrihvatiUE = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        PrihvatiUE.click();
-
-        WebElement PorukaUEL = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li"));
-        assert PorukaUEL.getText().equals("Uspješno spremljen predmet osiguranja i rizici") : "Očekivana poruka nakon ugovornih elemenata";
-
-        js.executeScript("window.scrollBy(0, 2000);");
-
-        WebElement AlkoholZU = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[3]/fieldset/div[2]/div/div/fieldset/div[7]/div/div/div/input"));
-        AlkoholZU.clear();
-        AlkoholZU.sendKeys("0");
-
-        WebElement ImeDoktora = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div/div[3]/fieldset/div[2]/div/div/fieldset/div[10]/div/div/div/input"));
-        ImeDoktora.clear();
-        ImeDoktora.sendKeys("DR Test");
-
-        js.executeScript("window.scrollBy(2000, 0);");
-
-        WebElement SpremiteUpitnik = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div/a"));
-        SpremiteUpitnik.click();
-
-        WebElement PorukaUpitnik = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li"));
-        assert PorukaUpitnik.getText().equals("Uspješno spremljen upitnik.") : "Očekivana poruka nakon popunjavanja upitnika";
-
-        WebElement Izracunaj = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        Izracunaj.click();
-
-        WebElement Saradnik = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[1]/div[3]/a"));
-        Saradnik.click();
-
-        WebElement PretragaSaradnika = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[3]/div/fieldset/div[6]/div/a"));
-        PretragaSaradnika.click();
-
-        js.executeScript("window.scrollBy(0, 1000);");
-        Thread.sleep(2500);
-
-        WebElement OdabirSaradnika = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[4]/div/fieldset/div[2]/table/tbody/tr[1]/td[13]/div/a"));
-        OdabirSaradnika.click();
-
-        js.executeScript("window.scrollBy(1000, 0);");
-
-        WebElement Snimi = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        Snimi.click();
-
-        WebElement SPN = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[7]/a"));
-        SPN.click();
-
-        WebElement Stednja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[1]/div/div/div/label[3]"));
-        Stednja.click();
-
-        WebElement Zaposlen = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[2]/div/div/div/label[3]"));
-        Zaposlen.click();
-
-        WebElement StalniIzvori = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[3]/div/div/div/label[2]"));
-        StalniIzvori.click();
-        Thread.sleep(1000);
-
-        WebElement MolimoNavedite = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[3]/div/div/div/div/input[1]"));
-        MolimoNavedite.click();
-        MolimoNavedite.sendKeys("123");
-
-        WebElement Drzavljanstvo = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[4]/div/div/div/label[2]"));
-        Drzavljanstvo.click();
-
-        js.executeScript("window.scrollBy(0, 500);");
-
-        WebElement PorezniRezident = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[5]/div/div/div/label[3]"));
-        PorezniRezident.click();
-
-        WebElement PIB = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[6]/div/div/div/label[2]"));
-        PIB.click();
-
-        js.executeScript("window.scrollBy(0, 500);");
-
-        WebElement PoslovniOdnos = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[8]/div/div/div/label[3]"));
-        PoslovniOdnos.click();
-
-        WebElement UiP = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[9]/div/div/div/label[3]"));
-        UiP.click();
-
-        WebElement ZP = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[10]/div/div/div/label[2]"));
-        ZP.click();
-
-        WebElement DjelatnostStranke = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/fieldset/div[11]/div/div/div/input"));
-        DjelatnostStranke.click();
-        DjelatnostStranke.sendKeys("Djelatnost");
-
-        js.executeScript("window.scrollBy(1000, 0);");
-
-        WebElement PrihvatiSPN = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        PrihvatiSPN.click();
-
-        WebElement PorukaAML = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li"));
-        assert PorukaAML.getText().equals("Uspješno spremljen Upitnik za sprječavanje pranja novca.") : "Očekivana poruka nakon popunjavanja AMLa";
-
-        WebElement Aktiviraj = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[2]/a"));
-        Aktiviraj.click();
-        Thread.sleep(1500);
-/*
-        WebElement PorukanakonAktivacije = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li[1]"));
-        assert PorukanakonAktivacije.getText().equals("Novi ugovor je uspješno aktiviran.") : "Očekivana poruka nakon aktivacije";
-
-        WebElement PorukanakonAktivacije1 = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li[2]"));
-        assert PorukanakonAktivacije1.getText().equals("Ponuda je uspješno kreirana.") : "Očekivana poruka nakon aktivacije";
-*/
-        WebElement PotvrdaPotpisaBloker = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        PotvrdaPotpisaBloker.click();
-        Thread.sleep(2000);
-/*
-        WebElement PorukaPotvrdaPotpisa = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[2]/ul/li"));
-        assert PorukaPotvrdaPotpisa.getText().equals("Potpis se ne može potvrditi prije štampe ponude.") : "Očekivana poruka nakon potvrde potpisa pre štampe";
-*/
-        WebElement PolicaStampaj = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/div/div/div/table/tbody/tr[1]/td[19]/div[1]/a"));
-        PolicaStampaj.click();
-        Thread.sleep(5000);
-
-        WebElement PotvrdaPotpisa = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        PotvrdaPotpisa.click();
-
-        WebElement PorukaPotvrdaPotpisa1 = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li"));
-        assert PorukaPotvrdaPotpisa1.getText().equals("Potvrda potpisa uspješno odrađena.") : "Očekivana poruka nakon potvrde potpisa";
-/*
-        WebElement Raskid = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[12]/a"));
-        Raskid.click();
-
-        WebElement Raskini = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        Raskini.click();
-        Thread.sleep(2000);
-
-        WebElement PorukanakonRaskida = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li"));
-        assert PorukanakonRaskida.getText().equals("Uspješno raskinut dokument.") : "Očekivana poruka nakon raskida";
-
-        WebElement RaskidAktivacija = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[11]/a"));
-        RaskidAktivacija.click();
-
-        WebElement KreirajZahtevZaReaktivaciju = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[4]/a"));
-        KreirajZahtevZaReaktivaciju.click();
-
-        WebElement PorukaZahtevZaReaktivaciju = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li[1]"));
-        assert PorukaZahtevZaReaktivaciju.getText().equals("Kreiran je zahtjev za reaktivaciju.") : "Očekivana poruka nakon kreiranja zahteva za reaktivaciju";
-
-        WebElement PotvrdaPotpisaReaktivacija = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[4]/a"));
-        PotvrdaPotpisaReaktivacija.click();
-
-        WebElement PotvrdaPotpisaReaktivacijaPoruka = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li"));
-        assert PotvrdaPotpisaReaktivacijaPoruka.getText().equals("Zahtjev je poslat u centralu na obradu.") : "Očekivana poruka nakon potvrde potpisa zahteva za reaktivaciju";
-
-        WebElement Reaktiviranje = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[4]/a"));
-        Reaktiviranje.click();
-        Thread.sleep(1500);
-
-        WebElement PorukaReaktivacija = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[3]/ul/li"));
-        assert PorukaReaktivacija.getText().equals("Dokument je uspješno aktiviran.") : "Očekivana poruka nakon reaktivacije";
-
-        WebElement BrojPolice = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[2]/div[1]"));
-        String headingtext = BrojPolice.getText();
-        System.out.println("Broj police: " + headingtext);
-
-        WebElement RataPremijeHeader = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[1]/div[7]"));
-        String headingtext1 = RataPremijeHeader.getText();
-        System.out.println("Rata premije: " + headingtext1);
-
-        WebElement DinamikaPlacanjaHeader = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[2]/div[7]"));
-        String headingtext2 = DinamikaPlacanjaHeader.getText();
-        System.out.println("Dinamika placanja: " + headingtext2);
-
-        WebElement UGPHeader = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[3]/div[7]"));
-        String headingtext3 = UGPHeader.getText();
-        System.out.println("UGP: " + headingtext3);
-
-        WebElement TrajanjeHeader = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[3]/div[5]"));
-        String headingtext4 = TrajanjeHeader.getText();
-        System.out.println("Trajanje (g : m : d): " + headingtext4);
-
-        WebElement DatumPocetkaHeader = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[3]/div[3]"));
-        String headingtext5 = DatumPocetkaHeader.getText();
-        System.out.println("Datum pocetka: " + headingtext5);
-
-        WebElement UgovarateljHeader = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[2]/div[3]"));
-        String headingtext6 = UgovarateljHeader.getText();
-        System.out.println("Ugovaratelj: " + headingtext6);
-
-        WebElement StatusHeader = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/div/div[1]/div[5]"));
-        String headingtext7 = StatusHeader.getText();
-        System.out.println("Status: " + headingtext7);
-
-
-       /*  WebElement Aneks = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[13]/a"));
-        Aneks.click();
-
-        WebElement NoviAneks = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        NoviAneks.click();
-
-        WebElement NacinPlacanja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div/div/div/div/ul/li[3]/label"));
-        NacinPlacanja.click();
-
-        WebElement DatumPocetkaAneksa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/fieldset/div[2]/div/input"));
-        DatumPocetkaAneksa.click();
-        DatumPocetkaAneksa.sendKeys("01.12.2023");
-
-        WebElement KreirajAneks = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        KreirajAneks.click();
-
-        js.executeScript("window.scrollBy(0, 500);");
-
-        WebElement NacinPlacanjaAneks = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[10]/fieldset/div[4]/div/div/select"));
-        Select select3 = new Select(NacinPlacanjaAneks);
-        select3.selectByVisibleText("Trajni nalog");
-
-        WebElement BankaAneks = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[10]/fieldset/div[4]/div/div/select"));
-        Select select4 = new Select(BankaAneks);
-        select4.selectByVisibleText("IMEX BANKA d.d.");
-
-        js.executeScript("window.scrollBy(500, 0);");
-
-        WebElement AktivirajAneks = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        AktivirajAneks.click();
-
-        WebElement PotvrdaPotpisaAneksa = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[1]/a"));
-        PotvrdaPotpisaAneksa.click();
-
-        js.executeScript("window.scrollBy(0, 500);");
-
-        WebElement StampaAneksa = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/div/div/div/table/tbody/tr[7]/td[19]/div[1]/a"));
-        StampaAneksa.click();
-
-        js.executeScript("window.scrollBy(500, 0);");
-
-        WebElement PonistavanjeAneksa = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[12]/a"));
-        PonistavanjeAneksa.click();
-
-        WebElement PonistavanjeAneksaAkcija = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/table/tbody/tr[2]/td[17]/span/a/img"));
-        PonistavanjeAneksaAkcija.click();
-
-        WebElement PonistiAneks = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/table/tbody/tr[2]/td[17]/ul/li[2]/a"));
-        PonistiAneks.click();
-        Thread.sleep(1000);
-
-        WebElement RaskidPolice = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[11]/a"));
-        RaskidPolice.click();
-
-        WebElement RaskiniPolicu = driver.findElement(By.xpath("/html/body/form/div[3]/div[2]/div/div/div[3]/a"));
-        RaskiniPolicu.click();
-     */
-
 
     }
 
@@ -3702,31 +2951,28 @@ public class sCoreCroatia {
     @Step("Creating new contract of TB - standard basic flow")
     @Owner("Nikola Stavrov")
     @Test(priority = 510)
-    public void NewContractTBCRO () throws Exception {
+    public void NewContractTB () throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
-        mainPage.inputUsername.sendKeys("sCoreUW");
-        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.TB, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click();
-        }
+            element.click(); }
         mainPage.DurationInYear.sendKeys("10");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(2);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
-        mainPage.TabPersons.click();
-        mainPage.UgovaraOsiguranikIstoLice2.click();
-        mainPage.Dodaj.click();
+        for (WebElement webElement : Arrays.asList(mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
+            webElement.click(); }
         Thread.sleep(2500);
         WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
-        mainPage.IdentificationNumber.sendKeys("53196123668");
+        mainPage.inputOIB.sendKeys("53196123668");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click();
-        }
+            element.click(); }
         js.executeScript("window.scrollBy(-500, 0);");
         mainPage.UgovaraPlatilacIstoLice.click();
         js.executeScript("window.scrollBy(-500, 0);");
@@ -3735,85 +2981,490 @@ public class sCoreCroatia {
         mainPage.inputOpis.sendKeys("Brat");
         mainPage.inputProcenat.sendKeys("100");
         mainPage.AcceptDeathBeneficiares.click();
-        mainPage.TabConcerns.click();
+        Thread.sleep(2500);
+        js.executeScript("window.scrollBy(-1000, 0);");
+        mainPage.divDodaj.click();
+        WebElement iFrame1 = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame1));
+        mainPage.linkMainContentBusinessEntity.click();
+        js.executeScript("window.scrollBy(0, -500);");
+        mainPage.linkTabConcerns.click();
         new Select(mainPage.InsuredSum).selectByIndex(1);
-        mainPage.InsuredSumOrPremium.click();
-        mainPage.InsuredSumOrPremium.clear();
-        mainPage.InsuredSumOrPremium.sendKeys("20000");
-        mainPage.DateOfBirth.click();
-        mainPage.DateOfBirth.sendKeys("01.01.1970");
-        new Select(mainPage.GenderConcernPerson).selectByIndex(2);
-        mainPage.HeightConcernPerson.click();
+        mainPage.InsuredSumOrPremium.sendKeys("5000");
         mainPage.HeightConcernPerson.sendKeys("190");
-        mainPage.WeightConcernPerson.click();
         mainPage.WeightConcernPerson.sendKeys("85");
         mainPage.Accept.click();
-        mainPage.Calculate.click();
-        mainPage.TechnicalPersons.click();
-        mainPage.TechnicalPersonsOpenSearch.click();
-        mainPage.TechnicalPersonsOpenSearchSelect.click();
-        mainPage.Save.click();
-        mainPage.linkActivate.click();
-        mainPage.linkTabMoneyLaundry.click();
-        mainPage.labelStednja.click();
-        mainPage.labelZaposlen.click();
-        mainPage.labelStalniZaradaPorodiPrimanja.click();
-        mainPage.linkAcceptMoneyLaundry.click();
-        mainPage.linkTabAssociateMoneyLaundry.click();
-        mainPage.labelRadioInline.click();
-        mainPage.labelRadioInline2.click();
-        mainPage.labelRadioInline3.click();
-        mainPage.labelRadioInline4.click();
-        mainPage.labelRadioInline5.click();
-        mainPage.linkAcceptMoneyLaundry2.click();
-        mainPage.linkTabPrintouts.click();
-        mainPage.image.click();
-        Thread.sleep(6000);
-        mainPage.Polisa.click();
-        Thread.sleep(6000);
-        mainPage.image2.click();
-        Thread.sleep(6000);
-        mainPage.AMLKlijent.click();
-        Thread.sleep(6000);
-        mainPage.image3.click();
-        Thread.sleep(6000);
-        mainPage.AMLSaradnik.click();
-        Thread.sleep(6000);
-        mainPage.image4.click();
-        Thread.sleep(6000);
-        mainPage.PotvrdaZaPreuzimanje.click();
-        Thread.sleep(6000);
-        mainPage.image5.click();
-        Thread.sleep(6000);
-        mainPage.PropratnoPismo.click();
-        Thread.sleep(6000);
-        mainPage.image6.click();
-        Thread.sleep(6000);
-        mainPage.Uplatnica.click();
-        Thread.sleep(6000);
-        mainPage.image7.click();
-        Thread.sleep(6000);
-        mainPage.PUI.click();
-        Thread.sleep(6000);
-        mainPage.image8.click();
-        Thread.sleep(6000);
-        mainPage.Izjava.click();
-        Thread.sleep(6000);
-        mainPage.image9.click();
-        Thread.sleep(6000);
-        mainPage.IOOPSRB.click();
-        Thread.sleep(6000);
-        mainPage.linkCertificationSignature.click();
-        Thread.sleep(6000);
-        assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspešno urađena.") : "Expected message after Certification signature";
-
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputAlkohol.sendKeys("0");
+        mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
+        for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
+            webElement.click(); }
+        mainPage.inputStalniIzvori.sendKeys("123");
+        for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
+            webElement.click(); }
+        mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
+        for (WebElement element : Arrays.asList(mainPage.linkAcceptMoneyLaundry2, mainPage.linkActivate, mainPage.linkTabPrintouts)) {
+            element.click(); }
+        for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
+            webElement.click();
+            Thread.sleep(5000); }
+        assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
+        assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
     }
 
+    @Epic("sCore Croatia")
+    @Feature("New Contract")
+    @Description("Creating new contract of TB")
+    @Step("Creating new contract of TB - standard basic flow with indexation")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 520)
+    public void NewContractIndexationTB () throws Exception {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.TB, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
+            element.click(); }
+        mainPage.DurationInYear.sendKeys("12");
+        mainPage.ContentPlaceHolder.sendKeys("Zagreb");
+        mainPage.ContentPlaceHolder1.click();
+        new Select(mainPage.PaymentDinamic).selectByIndex(4);
+        new Select(mainPage.PaymentMethod).selectByIndex(1);
+        for (WebElement webElement : Arrays.asList(mainPage.IndexationCRO, mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
+            webElement.click(); }
+        Thread.sleep(2500);
+        WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
+        mainPage.inputOIB.sendKeys("53196123668");
+        for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
+            element.click(); }
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.UgovaraPlatilacIstoLice.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.AddDeathBeneficiary.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputOpis.sendKeys("Brat");
+        mainPage.inputProcenat.sendKeys("100");
+        mainPage.AcceptDeathBeneficiares.click();
+        Thread.sleep(2500);
+        js.executeScript("window.scrollBy(-1000, 0);");
+        mainPage.divDodaj.click();
+        WebElement iFrame1 = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame1));
+        mainPage.linkMainContentBusinessEntity.click();
+        js.executeScript("window.scrollBy(0, -500);");
+        mainPage.linkTabConcerns.click();
+        new Select(mainPage.InsuredSum).selectByIndex(1);
+        mainPage.InsuredSumOrPremium.sendKeys("5000");
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.Accept.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputAlkohol.sendKeys("0");
+        mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
+        for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
+            webElement.click(); }
+        mainPage.inputStalniIzvori.sendKeys("123");
+        for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
+            webElement.click(); }
+        mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
+        for (WebElement element : Arrays.asList(mainPage.linkAcceptMoneyLaundry2, mainPage.linkActivate, mainPage.linkTabPrintouts)) {
+            element.click(); }
+        for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
+            webElement.click();
+            Thread.sleep(5000); }
+        assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
+        assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
+    }
+
+    @Epic("sCore Croatia")
+    @Feature("New Contract")
+    @Description("Creating new contract of TB")
+    @Step("Creating new contract of TB - standard basic flow with vinculation standard bank")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 530)
+    public void NewContractVinculationTB () throws Exception {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.TB, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
+            element.click(); }
+        mainPage.DurationInYear.sendKeys("10");
+        mainPage.ContentPlaceHolder.sendKeys("Zagreb");
+        mainPage.ContentPlaceHolder1.click();
+        new Select(mainPage.PaymentDinamic).selectByIndex(3);
+        new Select(mainPage.PaymentMethod).selectByIndex(1);
+        for (WebElement webElement : Arrays.asList(mainPage.labelVinkulacijom, mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
+            webElement.click(); }
+        Thread.sleep(2500);
+        WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
+        mainPage.inputOIB.sendKeys("53196123668");
+        for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
+            element.click(); }
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.UgovaraPlatilacIstoLice.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.AddDeathBeneficiary.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputOpis.sendKeys("Brat");
+        mainPage.inputProcenat.sendKeys("100");
+        mainPage.AcceptDeathBeneficiares.click();
+        Thread.sleep(2500);
+        js.executeScript("window.scrollBy(-1000, 0);");
+        mainPage.divDodaj.click();
+        WebElement iFrame1 = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame1));
+        mainPage.linkMainContentBusinessEntity.click();
+        js.executeScript("window.scrollBy(0, -500);");
+        mainPage.linkTabConcerns.click();
+        new Select(mainPage.InsuredSum).selectByIndex(1);
+        mainPage.InsuredSumOrPremium.sendKeys("5000");
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.Accept.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputAlkohol.sendKeys("0");
+        mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
+        for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
+            webElement.click(); }
+        mainPage.inputStalniIzvori.sendKeys("123");
+        for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
+            webElement.click(); }
+        mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
+        mainPage.linkAcceptMoneyLaundry2.click();
+        mainPage.linkTabVinculations.click();
+        mainPage.AddVinculation.click();
+        new Select(mainPage.Creditor).selectByIndex(1);
+        new Select(mainPage.FirstVinculationBank).selectByIndex(8);
+        mainPage.CreditLoanNumber.sendKeys("12332144221");
+        mainPage.linkAcceptVinculation.click();
+        mainPage.linkActivate.click();
+        mainPage.linkTabPrintouts.click();
+        for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
+            webElement.click();
+            Thread.sleep(5000); }
+        assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
+        assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
+        mainPage.linkTabVinculations.click();
+        mainPage.VinculationsAction.click();
+        mainPage.IspisVinkulacija.click();
+        Thread.sleep(6000);
+        assert mainPage.VinculationStatus.getText().equals("Aktivna") : "Expected vinculation status";
+    }
+
+    @Epic("sCore Croatia")
+    @Feature("New Contract")
+    @Description("Creating new contract of TB")
+    @Step("Creating new contract of TB - standard basic flow with vinculation person")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 540)
+    public void NewContractVinculationPersonTB () throws Exception {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.TB, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
+            element.click(); }
+        mainPage.DurationInYear.sendKeys("10");
+        mainPage.ContentPlaceHolder.sendKeys("Zagreb");
+        mainPage.ContentPlaceHolder1.click();
+        new Select(mainPage.PaymentDinamic).selectByIndex(2);
+        new Select(mainPage.PaymentMethod).selectByIndex(1);
+        for (WebElement webElement : Arrays.asList(mainPage.labelVinkulacijom, mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
+            webElement.click(); }
+        Thread.sleep(2500);
+        WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
+        mainPage.inputOIB.sendKeys("53196123668");
+        for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
+            element.click(); }
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.UgovaraPlatilacIstoLice.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.AddDeathBeneficiary.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputOpis.sendKeys("Brat");
+        mainPage.inputProcenat.sendKeys("100");
+        mainPage.AcceptDeathBeneficiares.click();
+        Thread.sleep(2500);
+        js.executeScript("window.scrollBy(-1000, 0);");
+        mainPage.divDodaj.click();
+        WebElement iFrame1 = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame1));
+        mainPage.linkMainContentBusinessEntity.click();
+        js.executeScript("window.scrollBy(0, -500);");
+        mainPage.linkTabConcerns.click();
+        new Select(mainPage.InsuredSum).selectByIndex(1);
+        mainPage.InsuredSumOrPremium.sendKeys("5000");
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.Accept.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputAlkohol.sendKeys("0");
+        mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
+        for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
+            webElement.click(); }
+        mainPage.inputStalniIzvori.sendKeys("123");
+        for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
+            webElement.click(); }
+        mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
+        mainPage.linkAcceptMoneyLaundry2.click();
+        mainPage.linkTabVinculations.click();
+        mainPage.AddVinculation.click();
+        new Select(mainPage.Creditor).selectByIndex(2);
+        mainPage.inputNameVinculation.sendKeys("Nikola");
+        mainPage.inputSurnameVinculation.sendKeys("Testic");
+        mainPage.getInputIdentificationNumberVinculation.sendKeys("10889064376");
+        mainPage.CreditLoanNumber.sendKeys("12332144221");
+        mainPage.linkAcceptVinculation.click();
+        mainPage.linkActivate.click();
+        mainPage.linkTabPrintouts.click();
+        for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
+            webElement.click();
+            Thread.sleep(5000); }
+        assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
+        assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
+        mainPage.linkTabVinculations.click();
+        mainPage.VinculationsAction.click();
+        mainPage.IspisVinkulacija.click();
+        Thread.sleep(6000);
+        assert mainPage.VinculationStatus.getText().equals("Aktivna") : "Expected vinculation status";
+    }
+
+    @Epic("sCore Croatia")
+    @Feature("New Contract")
+    @Description("Creating new contract of TB")
+    @Step("Creating new contract of TB - standard basic flow with vinculation company")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 550)
+    public void NewContractVinculationCompanyTB () throws Exception {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.TB, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
+            element.click(); }
+        mainPage.DurationInYear.sendKeys("10");
+        mainPage.ContentPlaceHolder.sendKeys("Zagreb");
+        mainPage.ContentPlaceHolder1.click();
+        new Select(mainPage.PaymentDinamic).selectByIndex(1);
+        new Select(mainPage.PaymentMethod).selectByIndex(1);
+        for (WebElement webElement : Arrays.asList(mainPage.labelVinkulacijom, mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
+            webElement.click(); }
+        Thread.sleep(2500);
+        WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
+        mainPage.inputOIB.sendKeys("53196123668");
+        for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
+            element.click(); }
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.UgovaraPlatilacIstoLice.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.AddDeathBeneficiary.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputOpis.sendKeys("Brat");
+        mainPage.inputProcenat.sendKeys("100");
+        mainPage.AcceptDeathBeneficiares.click();
+        Thread.sleep(2500);
+        js.executeScript("window.scrollBy(-1000, 0);");
+        mainPage.divDodaj.click();
+        WebElement iFrame1 = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame1));
+        mainPage.linkMainContentBusinessEntity.click();
+        js.executeScript("window.scrollBy(0, -500);");
+        mainPage.linkTabConcerns.click();
+        new Select(mainPage.InsuredSum).selectByIndex(1);
+        mainPage.InsuredSumOrPremium.sendKeys("5000");
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.sendKeys("85");
+        mainPage.Accept.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputAlkohol.sendKeys("0");
+        mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
+        for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
+            webElement.click(); }
+        mainPage.inputStalniIzvori.sendKeys("123");
+        for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
+            webElement.click(); }
+        mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
+        mainPage.linkAcceptMoneyLaundry2.click();
+        mainPage.linkTabVinculations.click();
+        mainPage.AddVinculation.click();
+        new Select(mainPage.Creditor).selectByIndex(3);
+        mainPage.Naziv.sendKeys("Nikola Firmetina");
+        mainPage.inputOIBVinculationCompany.sendKeys("79933188513");
+        mainPage.CreditLoanNumber.sendKeys("1231230142");
+        mainPage.linkAcceptVinculation.click();
+        mainPage.linkActivate.click();
+        mainPage.linkTabPrintouts.click();
+        for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
+            webElement.click();
+            Thread.sleep(5000); }
+        assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
+        assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
+        mainPage.linkTabVinculations.click();
+        mainPage.VinculationsAction.click();
+        mainPage.IspisVinkulacija.click();
+        Thread.sleep(6000);
+        assert mainPage.VinculationStatus.getText().equals("Aktivna") : "Expected vinculation status";
+    }
+
+    @Epic("sCore Croatia")
+    @Feature("New Contract")
+    @Description("Creating new contract of MO")
+    @Step("Creating new contract of MO - standard basic flow")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 560)
+    public void NewContractMO () throws Exception {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.MO, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
+            element.click(); }
+        mainPage.DurationInYear.sendKeys("11");
+        mainPage.ContentPlaceHolder.sendKeys("Zagreb");
+        mainPage.ContentPlaceHolder1.click();
+        new Select(mainPage.PaymentDinamic).selectByIndex(1);
+        new Select(mainPage.PaymentMethod).selectByIndex(1);
+        for (WebElement webElement : Arrays.asList(mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
+            webElement.click(); }
+        Thread.sleep(2500);
+        WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
+        mainPage.inputOIB.sendKeys("81540506790");
+        for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
+            element.click(); }
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.UgovaraPlatilacIstoLice.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.AddDeathBeneficiary.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputOpis.sendKeys("Brat");
+        mainPage.inputProcenat.sendKeys("100");
+        mainPage.AcceptDeathBeneficiares.click();
+        Thread.sleep(2500);
+        js.executeScript("window.scrollBy(-1000, 0);");
+        mainPage.divDodaj.click();
+        WebElement iFrame1 = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame1));
+        mainPage.linkMainContentBusinessEntity.click();
+        js.executeScript("window.scrollBy(0, -500);");
+        mainPage.linkTabConcerns.click();
+        new Select(mainPage.InsuredSum).selectByIndex(1);
+        mainPage.InsuredSumOrPremium.sendKeys("5000");
+        mainPage.HeightConcernPerson.sendKeys("180");
+        mainPage.WeightConcernPerson.sendKeys("70");
+        mainPage.Accept.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputAlkohol.sendKeys("0");
+        mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
+        for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
+            webElement.click(); }
+        mainPage.inputStalniIzvori.sendKeys("123");
+        for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
+            webElement.click(); }
+        mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
+        for (WebElement element : Arrays.asList(mainPage.linkAcceptMoneyLaundry2, mainPage.linkActivate, mainPage.linkTabPrintouts)) {
+            element.click(); }
+        for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
+            webElement.click();
+            Thread.sleep(5000); }
+        assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
+        assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
+    }
+
+    @Epic("sCore Croatia")
+    @Feature("New Contract")
+    @Description("Creating new contract of MO")
+    @Step("Creating new contract of MO - standard basic flow with indexation")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 570)
+    public void NewContractIndexationMO () throws Exception {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.MO, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
+            element.click(); }
+        mainPage.DurationInYear.sendKeys("13");
+        mainPage.ContentPlaceHolder.sendKeys("Zagreb");
+        mainPage.ContentPlaceHolder1.click();
+        new Select(mainPage.PaymentDinamic).selectByIndex(2);
+        new Select(mainPage.PaymentMethod).selectByIndex(1);
+        for (WebElement webElement : Arrays.asList(mainPage.IndexationCRO, mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
+            webElement.click(); }
+        Thread.sleep(2500);
+        WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
+        mainPage.inputOIB.sendKeys("81540506790");
+        for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
+            element.click(); }
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.UgovaraPlatilacIstoLice.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.AddDeathBeneficiary.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputOpis.sendKeys("Brat");
+        mainPage.inputProcenat.sendKeys("100");
+        mainPage.AcceptDeathBeneficiares.click();
+        Thread.sleep(2500);
+        js.executeScript("window.scrollBy(-1000, 0);");
+        mainPage.divDodaj.click();
+        WebElement iFrame1 = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame1));
+        mainPage.linkMainContentBusinessEntity.click();
+        js.executeScript("window.scrollBy(0, -500);");
+        mainPage.linkTabConcerns.click();
+        new Select(mainPage.InsuredSum).selectByIndex(1);
+        mainPage.InsuredSumOrPremium.sendKeys("5000");
+        mainPage.HeightConcernPerson.sendKeys("180");
+        mainPage.WeightConcernPerson.sendKeys("70");
+        mainPage.Accept.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputAlkohol.sendKeys("0");
+        mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
+        for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
+            webElement.click(); }
+        mainPage.inputStalniIzvori.sendKeys("123");
+        for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
+            webElement.click(); }
+        mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
+        for (WebElement element : Arrays.asList(mainPage.linkAcceptMoneyLaundry2, mainPage.linkActivate, mainPage.linkTabPrintouts)) {
+            element.click(); }
+        for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
+            webElement.click();
+            Thread.sleep(5000); }
+        assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
+        assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
+    }
+/*
     @AfterMethod
     public void tearDown() {
         driver.quit();
     }
-
+*/
 }
 
 
