@@ -348,7 +348,7 @@ public class MainPage {
     public WebElement NewDocument;
 
     @FindBy(css = "html > body > form > div:nth-of-type(2) > div:nth-of-type(3) > div:nth-of-type(1) > div > ul:nth-of-type(1) > li:nth-of-type(1) > ul > li:nth-of-type(2) > div > a")
-    public WebElement NewContractSRB;
+    public WebElement RibbonMenuNewContract;
 
     @FindBy(css = "#tab_Persons")
     public WebElement TabPersons;
@@ -1597,8 +1597,7 @@ public class MainPage {
     @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div > div > div > div > table > tbody > tr:nth-of-type(4) > td:nth-of-type(2)")
     public WebElement FidelisLifeTarget2045J12024;
 
-
-
+    
 
 
     //BOSNIA
@@ -1695,6 +1694,31 @@ public class MainPage {
 
     @FindBy(css = "#btn_ExportToExcel")
     public WebElement ExportToExcel;
+
+    @FindBy(css = "#tab_Persons")
+    public WebElement linkTabPersons;
+
+    @FindBy(css = "label[for='Kol14_60']")
+    public WebElement labelVinkulacijom;
+
+    @FindBy(css = "#MainContent_wucIndividualBusinessEntitySearch_tbOIB")
+    public WebElement inputOIB;
+
+    @FindBy(css = "#MainContent_wucIndividualBusinessEntitySearch_SearchButton")
+    public WebElement personSearch;
+
+    @FindBy(css = "#MainContent_wucIndividualBusinessEntitySearch_IndividualBusinessEntitiesListView_ProcessingButton_0")
+    public WebElement personPreview;
+
+    @FindBy(css = "#MainContent_IndividualClientLifeFormView_lbAccept")
+    public WebElement personAccept;
+
+
+
+
+
+    
+
 
 
 

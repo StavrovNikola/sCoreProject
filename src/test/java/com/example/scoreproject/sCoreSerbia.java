@@ -2105,90 +2105,28 @@ public class sCoreSerbia {
     @Owner("Nikola Stavrov")
     @Test(priority = 550)
     public void SPNFTSerbia() throws Exception {
-
-        WebDriver driver = new ChromeDriver();
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
-
-        driver.get("https://qa-score.uniqa.rs/POS/Serbia/Products");
-        driver.manage().window().maximize();
-
-        WebElement Username = driver.findElement(By.className("form-control"));
-        Username.sendKeys("sCoreUW");
-
-        WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("OvoJ3Test");
-
-        WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
-        Prijava.click();
-
-        WebElement Zivot = driver.findElement(By.xpath("//*[@id=\"ContentPlaceHolder1_ucContainer1\"]/div[2]/a[1]/div"));
-        Zivot.click();
-        Thread.sleep(1500);
-
-        driver.get("https://qa-score.uniqa.rs/POS/Serbia/Life/SpektarPremium/NewContract/New/General");
-
-        WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[1]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
-        Trajanje.clear();
-        Trajanje.sendKeys("12");
-
-        WebElement MestoUgovaranja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[1]/div[3]/div[1]/div[4]/div[4]/div/div/div/div/div[2]/div/input[1]"));
-        MestoUgovaranja.sendKeys("beograd");
-
-        Thread.sleep(1500);
-        WebElement MestoUgovaranja1 = driver.findElement(By.xpath("/html/body/ul[2]/li[1]/div"));
-        MestoUgovaranja1.click();
-
-        WebElement DinamikaPlacanja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[1]/div[3]/div[1]/div[10]/fieldset/div[1]/div/div/select"));
-        Select select = new Select(DinamikaPlacanja);
-        select.selectByIndex(2);
-
-        WebElement ValutnaKlauzula = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[1]/div[3]/div[1]/div[10]/fieldset/div[3]/div/div/select"));
-        Select select2 = new Select(ValutnaKlauzula);
-        select2.selectByVisibleText("Da");
-
-        WebElement MetodPlacanja = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[1]/div[3]/div[1]/div[10]/fieldset/div[4]/div/div/select"));
-        Select select3 = new Select(MetodPlacanja);
-        select3.selectByVisibleText("Uplatnica");
-
-        js.executeScript("window.scrollBy(0, 500);");
-
-        WebElement Lica = driver.findElement(By.xpath("/html/body/form/div[4]/div[1]/div/ul/li[2]/a"));
-        Lica.click();
-
-        WebElement CheckmarkUgovaracOsiguranik = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[1]/div/div/div/label"));
-        CheckmarkUgovaracOsiguranik.click();
-
-        WebElement DodajUgovaraca = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/div[1]/div/div/div[2]/div/div/a"));
-        DodajUgovaraca.click();
-        Thread.sleep(2000);
-
-        // Ovde je uradjen driver.switchTo().frame(iFrame) kako bih hvatao elemente sa iFrame
-
-        WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
-        driver.switchTo().frame(iFrame);
-        Thread.sleep(2000);
-
-        WebElement JMBG = driver.findElement(By.id("MainContent_wucIndividualBusinessEntitySearch_tbIdentificationNumber"));
-        JMBG.click();
-        JMBG.sendKeys("1711984181369");
-
-        WebElement PretraziLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
-        PretraziLice.click();
-
-        WebElement PregledLica = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[2]/table/tbody/tr[2]/td[9]/div/a"));
-        PregledLica.click();
-        Thread.sleep(1500);
-
-        WebElement PrihvatiLice = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[1]/div[1]/div[1]/div/a"));
-        PrihvatiLice.click();
+        mainPage.inputUsername.sendKeys("sCoreUW");
+        mainPage.inputPassword.sendKeys("OvoJ3Test");
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Spektar, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
+            element.click(); }
+        mainPage.DurationInYear.sendKeys("10");
+        mainPage.ContentPlaceHolder.sendKeys("Beograd");
+        mainPage.ContentPlaceHolder1.click();
+        new Select(mainPage.PaymentDinamic).selectByIndex(2);
+        new Select(mainPage.Clause).selectByIndex(1);
+        new Select(mainPage.PaymentMethod).selectByIndex(1);
+        mainPage.TabPersons.click();
+        mainPage.UgovaraOsiguranikIstoLice2.click();
+        mainPage.Dodaj.click();
         Thread.sleep(2500);
-
-        //js.executeScript("window.scrollBy(0, 500);");
-
-        //WebElement PorukaSPNFT = driver.findElement(By.xpath("/html/body/form/div[3]/div[3]/div/div/div[2]/ul"));
-        //assert PorukaSPNFT.getText().equals("Unešeno lice se nalazi na sankcionoj listi EU i/ili PEP listi! Nije moguć dalji rad na dokumentu.") : "Očekivana poruka nakon dodavanja lica sa sankcione liste";
-
+        WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
+        mainPage.IdentificationNumber.sendKeys("1711984181369");
+        for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
+            element.click(); }
 
     }
 
@@ -4916,13 +4854,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Spektar - standard basic flow")
     @Owner("Nikola Stavrov")
     @Test(priority = 940)
-    public void SpektarNewContract() throws Exception {
+    public void NewContractSpektar () throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Spektar, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Spektar, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click();
         }
         mainPage.DurationInYear.sendKeys("10");
@@ -4960,7 +4898,7 @@ public class sCoreSerbia {
         for (WebElement webElement : Arrays.asList(mainPage.Accept, mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkActivate, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniZaradaPorodiPrimanja, mainPage.linkAcceptMoneyLaundry, mainPage.linkTabAssociateMoneyLaundry, mainPage.labelRadioInline, mainPage.labelRadioInline2, mainPage.labelRadioInline3, mainPage.labelRadioInline4, mainPage.labelRadioInline5, mainPage.linkAcceptMoneyLaundry2, mainPage.linkTabPrintouts)) {
             webElement.click();
         }
-        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik, mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB, mainPage.linkCertificationSignature)) {
+        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik,/* mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB,*/ mainPage.linkCertificationSignature)) {
             webElement.click();
             Thread.sleep(6000);
         }
@@ -4975,13 +4913,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Spektar with vinculation - standard basic flow and standard bank")
     @Owner("Nikola Stavrov")
     @Test(priority = 950)
-    public void SpektarNewContractVinculation() throws Exception {
+    public void NewContractVinculationSpektar () throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Spektar, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Spektar, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click();
         }
         mainPage.DurationInYear.sendKeys("13");
@@ -5025,7 +4963,7 @@ public class sCoreSerbia {
         for (WebElement element : Arrays.asList(mainPage.linkAcceptVinculation, mainPage.linkActivate, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniZaradaPorodiPrimanja, mainPage.linkAcceptMoneyLaundry, mainPage.linkTabAssociateMoneyLaundry, mainPage.labelRadioInline, mainPage.labelRadioInline2, mainPage.labelRadioInline3, mainPage.labelRadioInline4, mainPage.labelRadioInline5, mainPage.linkAcceptMoneyLaundry2, mainPage.linkTabPrintouts)) {
             element.click();
         }
-        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik, mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB, mainPage.linkCertificationSignature)) {
+        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik,/* mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB,*/ mainPage.linkCertificationSignature)) {
             webElement.click();
             Thread.sleep(6000);
         }
@@ -5039,13 +4977,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Spektar with vinculation - standard basic flow and vinculation on person")
     @Owner("Nikola Stavrov")
     @Test(priority = 960)
-    public void SpektarNewContractVinculationPerson() throws Exception {
+    public void NewContractVinculationPersonSpektar () throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Spektar, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Spektar, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click();
         }
         mainPage.DurationInYear.sendKeys("13");
@@ -5090,7 +5028,7 @@ public class sCoreSerbia {
         for (WebElement element : Arrays.asList(mainPage.linkAcceptVinculation, mainPage.linkActivate, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniZaradaPorodiPrimanja, mainPage.linkAcceptMoneyLaundry, mainPage.linkTabAssociateMoneyLaundry, mainPage.labelRadioInline, mainPage.labelRadioInline2, mainPage.labelRadioInline3, mainPage.labelRadioInline4, mainPage.labelRadioInline5, mainPage.linkAcceptMoneyLaundry2, mainPage.linkTabPrintouts)) {
             element.click();
         }
-        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik, mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB, mainPage.linkCertificationSignature)) {
+        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik,/* mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB,*/ mainPage.linkCertificationSignature)) {
             webElement.click();
             Thread.sleep(6000);
         }
@@ -5104,13 +5042,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Spektar with vinculation - standard basic flow and vinculation on company")
     @Owner("Nikola Stavrov")
     @Test(priority = 970)
-    public void SpektarNewContractVinculationCompany() throws Exception {
+    public void NewContractVinculationCompanySpektar() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Spektar, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Spektar, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click();
         }
         mainPage.DurationInYear.sendKeys("13");
@@ -5155,7 +5093,7 @@ public class sCoreSerbia {
         for (WebElement element : Arrays.asList(mainPage.linkAcceptVinculation, mainPage.linkActivate, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniZaradaPorodiPrimanja, mainPage.linkAcceptMoneyLaundry, mainPage.linkTabAssociateMoneyLaundry, mainPage.labelRadioInline, mainPage.labelRadioInline2, mainPage.labelRadioInline3, mainPage.labelRadioInline4, mainPage.labelRadioInline5, mainPage.linkAcceptMoneyLaundry2, mainPage.linkTabPrintouts)) {
             element.click();
         }
-        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik, mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB, mainPage.linkCertificationSignature)) {
+        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik,/*mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB,*/ mainPage.linkCertificationSignature)) {
             webElement.click();
             Thread.sleep(6000);
         }
@@ -5169,13 +5107,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Spektar with indexation - standard basic flow and indexation")
     @Owner("Nikola Stavrov")
     @Test(priority = 980)
-    public void SpektarNewContractIndexation() throws Exception {
+    public void NewContractIndexationSpektar () throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Spektar, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Spektar, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click();
         }
         mainPage.DurationInYear.sendKeys("13");
@@ -5214,7 +5152,7 @@ public class sCoreSerbia {
         for (WebElement element : Arrays.asList(mainPage.Accept, mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkActivate, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniZaradaPorodiPrimanja, mainPage.linkAcceptMoneyLaundry, mainPage.linkTabAssociateMoneyLaundry, mainPage.labelRadioInline, mainPage.labelRadioInline2, mainPage.labelRadioInline3, mainPage.labelRadioInline4, mainPage.labelRadioInline5, mainPage.linkAcceptMoneyLaundry2, mainPage.linkTabPrintouts)) {
             element.click();
         }
-        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik, mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB, mainPage.linkCertificationSignature)) {
+        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik,/* mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB,*/ mainPage.linkCertificationSignature)) {
             webElement.click();
             Thread.sleep(6000);
         }
@@ -5228,13 +5166,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Joker - standard basic flow with indexation")
     @Owner("Nikola Stavrov")
     @Test(priority = 990)
-    public void JokerNewContractIndexation() throws Exception {
+    public void NewContractIndexationJoker () throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Joker, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Joker, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click();
         }
         mainPage.DurationInYear.sendKeys("15");
@@ -5273,7 +5211,7 @@ public class sCoreSerbia {
         for (WebElement element : Arrays.asList(mainPage.Accept, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkActivate, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniZaradaPorodiPrimanja, mainPage.linkAcceptMoneyLaundry, mainPage.linkTabAssociateMoneyLaundry, mainPage.labelRadioInline, mainPage.labelRadioInline2, mainPage.labelRadioInline3, mainPage.labelRadioInline4, mainPage.labelRadioInline5, mainPage.linkAcceptMoneyLaundry2, mainPage.linkTabPrintouts)) {
             element.click();
         }
-        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik, mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB, mainPage.linkCertificationSignature)) {
+        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik,/* mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB,*/ mainPage.linkCertificationSignature)) {
             webElement.click();
             Thread.sleep(6000);
         }
@@ -5287,13 +5225,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Joker - standard basic flow")
     @Owner("Nikola Stavrov")
     @Test(priority = 1000)
-    public void JokerNewContract() throws Exception {
+    public void NewContractJoker() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Joker, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Joker, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click();
         }
         mainPage.DurationInYear.sendKeys("15");
@@ -5330,7 +5268,7 @@ public class sCoreSerbia {
         for (WebElement element : Arrays.asList(mainPage.Accept, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkActivate, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniZaradaPorodiPrimanja, mainPage.linkAcceptMoneyLaundry, mainPage.linkTabAssociateMoneyLaundry, mainPage.labelRadioInline, mainPage.labelRadioInline2, mainPage.labelRadioInline3, mainPage.labelRadioInline4, mainPage.labelRadioInline5, mainPage.linkAcceptMoneyLaundry2, mainPage.linkTabPrintouts)) {
             element.click();
         }
-        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik, mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB, mainPage.linkCertificationSignature)) {
+        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik,/* mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB,*/ mainPage.linkCertificationSignature)) {
             webElement.click();
             Thread.sleep(6000);
         }
@@ -5344,13 +5282,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Riziko kredit - standard basic flow")
     @Owner("Nikola Stavrov")
     @Test(priority = 1010)
-    public void RizikoKreditNewContract() throws Exception {
+    public void NewContractRizikoKredit() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.RizikoKredit, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.RizikoKredit, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click();
         }
         mainPage.DurationInYear.sendKeys("20");
@@ -5394,7 +5332,7 @@ public class sCoreSerbia {
         for (WebElement element : Arrays.asList(mainPage.linkAcceptVinculation, mainPage.linkActivate, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniZaradaPorodiPrimanja, mainPage.linkAcceptMoneyLaundry, mainPage.linkTabAssociateMoneyLaundry, mainPage.labelRadioInline, mainPage.labelRadioInline2, mainPage.labelRadioInline3, mainPage.labelRadioInline4, mainPage.labelRadioInline5, mainPage.linkAcceptMoneyLaundry2, mainPage.linkTabPrintouts)) {
             element.click();
         }
-        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik, mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB, mainPage.linkCertificationSignature)) {
+        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik,/* mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB,*/ mainPage.linkCertificationSignature)) {
             webElement.click();
             Thread.sleep(6000);
         }
@@ -5408,13 +5346,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Riziko - standard basic flow")
     @Owner("Nikola Stavrov")
     @Test(priority = 1020)
-    public void RizikoNewContract() throws Exception {
+    public void NewContractRiziko() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Riziko, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Riziko, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click();
         }
         mainPage.DurationInYear.sendKeys("20");
@@ -5450,7 +5388,7 @@ public class sCoreSerbia {
         for (WebElement element : Arrays.asList(mainPage.Accept, mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkActivate, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniZaradaPorodiPrimanja, mainPage.linkAcceptMoneyLaundry, mainPage.linkTabAssociateMoneyLaundry, mainPage.labelRadioInline, mainPage.labelRadioInline2, mainPage.labelRadioInline3, mainPage.labelRadioInline4, mainPage.labelRadioInline5, mainPage.linkAcceptMoneyLaundry2, mainPage.linkTabPrintouts)) {
             element.click();
         }
-        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik, mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB, mainPage.linkCertificationSignature)) {
+        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik,/* mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB,*/ mainPage.linkCertificationSignature)) {
             webElement.click();
             Thread.sleep(6000);
         }
@@ -5464,13 +5402,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Joker Old - basic flow")
     @Owner("Nikola Stavrov")
     @Test(priority = 1030)
-    public void JokerOldNewContract() throws Exception {
+    public void NewContractJokerOld () throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.JokerOld, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.JokerOld, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click();
         }
         mainPage.DurationInYear.sendKeys("3");
@@ -5508,7 +5446,7 @@ public class sCoreSerbia {
         for (WebElement element : Arrays.asList(mainPage.linkActivate, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniZaradaPorodiPrimanja, mainPage.linkAcceptMoneyLaundry, mainPage.linkTabAssociateMoneyLaundry, mainPage.labelRadioInline, mainPage.labelRadioInline2, mainPage.labelRadioInline3, mainPage.labelRadioInline4, mainPage.labelRadioInline5, mainPage.linkAcceptMoneyLaundry2, mainPage.linkTabPrintouts)) {
             element.click();
         }
-        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik, mainPage.image4, mainPage.UplatnicaPonuda, mainPage.image5, mainPage.PUIPonuda, mainPage.image6, mainPage.IOOPPonuda, mainPage.image7, mainPage.IzjavaPonuda, mainPage.linkCertificationSignature)) {
+        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik,/* mainPage.image4, mainPage.UplatnicaPonuda, mainPage.image5, mainPage.PUIPonuda, mainPage.image6, mainPage.IOOPPonuda, mainPage.image7, mainPage.IzjavaPonuda,*/ mainPage.linkCertificationSignature)) {
             webElement.click();
             Thread.sleep(6000);
         }
@@ -5528,13 +5466,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of SME KMP - standard basic flow")
     @Owner("Nikola Stavrov")
     @Test(priority = 1040)
-    public void SMEKMPNewContract() throws Exception {
+    public void NewContractSMEKMP() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.RizikoKredit, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.RizikoKredit, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click();
         }
         mainPage.SMEKeyPerson.click();
@@ -5581,7 +5519,7 @@ public class sCoreSerbia {
         for (WebElement element : Arrays.asList(mainPage.linkAcceptVinculation, mainPage.linkActivate, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniZaradaPorodiPrimanja, mainPage.linkAcceptMoneyLaundry, mainPage.linkTabAssociateMoneyLaundry, mainPage.labelRadioInline, mainPage.labelRadioInline2, mainPage.labelRadioInline3, mainPage.labelRadioInline4, mainPage.labelRadioInline5, mainPage.linkAcceptMoneyLaundry2, mainPage.linkTabPrintouts)) {
             element.click();
         }
-        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik, mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB, mainPage.linkCertificationSignature)) {
+        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik,/* mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB,*/ mainPage.linkCertificationSignature)) {
             webElement.click();
             Thread.sleep(6000);
         }
@@ -5595,13 +5533,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Dozivotni riziko - standard basic flow")
     @Owner("Nikola Stavrov")
     @Test(priority = 1050)
-    public void DozivotniRizikoNewContract() throws Exception {
+    public void NewContractDozivotniRiziko() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.DozivotniRiziko, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.DozivotniRiziko, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click();
         }
         mainPage.ContentPlaceHolder.sendKeys("Beograd");
@@ -5634,7 +5572,7 @@ public class sCoreSerbia {
         for (WebElement element : Arrays.asList(mainPage.Accept, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkActivate, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniZaradaPorodiPrimanja, mainPage.linkAcceptMoneyLaundry, mainPage.linkTabAssociateMoneyLaundry, mainPage.labelRadioInline, mainPage.labelRadioInline2, mainPage.labelRadioInline3, mainPage.labelRadioInline4, mainPage.labelRadioInline5, mainPage.linkAcceptMoneyLaundry2, mainPage.linkTabPrintouts)) {
             element.click();
         }
-        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik, mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB, mainPage.linkCertificationSignature)) {
+        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik,/* mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB,*/ mainPage.linkCertificationSignature)) {
             webElement.click();
             Thread.sleep(6000);
         }
@@ -5648,13 +5586,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Favorit - standard basic flow")
     @Owner("Nikola Stavrov")
     @Test(priority = 1060)
-    public void FavoritNewContract() throws Exception {
+    public void NewContractFavorit() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Favorit, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Favorit, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click();
         }
         mainPage.DurationInYear.sendKeys("15");
@@ -5691,7 +5629,7 @@ public class sCoreSerbia {
         mainPage.getInputSumTrajniInvaliditetKaoPosledicaNezgodeFavorit.sendKeys("5000");
         for (WebElement element : Arrays.asList(mainPage.Accept, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkActivate, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniZaradaPorodiPrimanja, mainPage.linkAcceptMoneyLaundry, mainPage.linkTabAssociateMoneyLaundry, mainPage.labelRadioInline, mainPage.labelRadioInline2, mainPage.labelRadioInline3, mainPage.labelRadioInline4, mainPage.labelRadioInline5, mainPage.linkAcceptMoneyLaundry2, mainPage.linkTabPrintouts)) {
             element.click(); }
-        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik, mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB, mainPage.linkCertificationSignature)) {
+        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik,/* mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB,*/ mainPage.linkCertificationSignature)) {
             webElement.click();
             Thread.sleep(6000); }
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspešno urađena.") : "Expected message after Certification signature";
@@ -5704,13 +5642,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Favorit - standard basic flow with indexation")
     @Owner("Nikola Stavrov")
     @Test(priority = 1070)
-    public void FavoritNewContractIndexation() throws Exception {
+    public void NewContractIndexationFavorit() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Favorit, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Favorit, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click();
         }
         mainPage.DurationInYear.sendKeys("15");
@@ -5752,7 +5690,7 @@ public class sCoreSerbia {
         for (WebElement element : Arrays.asList(mainPage.Accept, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkActivate, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniZaradaPorodiPrimanja, mainPage.linkAcceptMoneyLaundry, mainPage.linkTabAssociateMoneyLaundry, mainPage.labelRadioInline, mainPage.labelRadioInline2, mainPage.labelRadioInline3, mainPage.labelRadioInline4, mainPage.labelRadioInline5, mainPage.linkAcceptMoneyLaundry2, mainPage.linkTabPrintouts)) {
             element.click();
         }
-        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik, mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB, mainPage.linkCertificationSignature)) {
+        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik,/* mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB,*/ mainPage.linkCertificationSignature)) {
             webElement.click();
             Thread.sleep(6000);
         }
@@ -5766,13 +5704,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Joker - Functionary")
     @Owner("Nikola Stavrov")
     @Test(priority = 1080)
-    public void JokerNewContractFunctionary() throws Exception {
+    public void NewContractFunctionaryJoker () throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Joker, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Joker, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click(); }
         mainPage.DurationInYear.sendKeys("10");
         mainPage.ContentPlaceHolder.sendKeys("Beograd");
@@ -5834,13 +5772,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Spektar - FATCA person")
     @Owner("Nikola Stavrov")
     @Test(priority = 1090)
-    public void SpektarNewContractFATCA() throws Exception {
+    public void NewContractFATCASpektar() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Spektar, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Spektar, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click(); }
         mainPage.DurationInYear.sendKeys("10");
         mainPage.ContentPlaceHolder.sendKeys("Beograd");
@@ -5875,7 +5813,7 @@ public class sCoreSerbia {
         mainPage.inputSumDozivljenje.sendKeys("5000");
         for (WebElement webElement : Arrays.asList(mainPage.Accept, mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkActivate, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniZaradaPorodiPrimanja, mainPage.linkAcceptMoneyLaundry, mainPage.linkTabAssociateMoneyLaundry, mainPage.labelRadioInline, mainPage.labelRadioInline2, mainPage.labelRadioInline3, mainPage.labelRadioInline4, mainPage.labelRadioInline5, mainPage.linkAcceptMoneyLaundry2, mainPage.linkTabPrintouts)) {
             webElement.click(); }
-        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik, mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB, mainPage.linkCertificationSignature)) {
+        for (WebElement webElement : Arrays.asList(mainPage.image, mainPage.Polisa, mainPage.image2, mainPage.AMLKlijent, mainPage.image3, mainPage.AMLSaradnik,/* mainPage.image4, mainPage.PotvrdaZaPreuzimanje, mainPage.image5, mainPage.PropratnoPismo, mainPage.image6, mainPage.Uplatnica, mainPage.image7, mainPage.PUI, mainPage.image8, mainPage.Izjava, mainPage.image9, mainPage.IOOPSRB,*/ mainPage.linkCertificationSignature)) {
             webElement.click();
             Thread.sleep(6000); }
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspešno urađena.") : "Expected message after Certification signature";
@@ -5888,13 +5826,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Riziko kredit - Risky occupation")
     @Owner("Nikola Stavrov")
     @Test(priority = 1100)
-    public void RizikoKreditNewContractRiskyOccupation() throws Exception {
+    public void NewContractRiskyOccupationRizikoKredit() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.RizikoKredit, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.RizikoKredit, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click(); }
         mainPage.DurationInYear.sendKeys("18");
         mainPage.ContentPlaceHolder.sendKeys("Beograd");
@@ -5957,13 +5895,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Riziko kredit - Occupation not listed")
     @Owner("Nikola Stavrov")
     @Test(priority = 1110)
-    public void RizikoKreditNewContractOccupationNotListed() throws Exception {
+    public void NewContractOccupationNotListedRizikoKredit() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.RizikoKredit, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.RizikoKredit, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click(); }
         mainPage.DurationInYear.sendKeys("15");
         mainPage.ContentPlaceHolder.sendKeys("Beograd");
@@ -6026,13 +5964,13 @@ public class sCoreSerbia {
     @Step("Creating new contract of Riziko - Sports/Hobbies")
     @Owner("Nikola Stavrov")
     @Test(priority = 1120)
-    public void RizikoNewContractSportsHobbies() throws Exception {
+    public void NewContractSportsHobbiesRiziko() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreUW");
         mainPage.inputPassword.sendKeys("OvoJ3Test");
-        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Riziko, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.NewContractSRB)) {
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Riziko, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click(); }
         mainPage.DurationInYear.sendKeys("11");
         mainPage.ContentPlaceHolder.sendKeys("Beograd");
@@ -6076,12 +6014,12 @@ public class sCoreSerbia {
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspešno urađena.") : "Expected message after Certification signature";
         assert mainPage.StatusUgovora.getText().equals("Čeka BOC i UW"): "Expected document status";
 }
-/*
+
     @AfterMethod
     public void tearDown() {
         driver.quit();
     }
-*/
+
     }
 
 
