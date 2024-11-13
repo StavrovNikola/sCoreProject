@@ -2541,10 +2541,10 @@ public class sCoreCroatia {
     @Epic("sCore Croatia")
     @Feature("New Contract")
     @Description("Creating new contract of FidelisLife")
-    @Step("Creating new contract of FidelisLife - standard basic flow")
+    @Step("Creating new contract of FidelisLife - standard basic flow 2035")
     @Owner("Nikola Stavrov")
     @Test(priority = 610)
-    public void NewContractFidelisLife() throws Exception {
+    public void NewContractFidelisLife2035() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
@@ -2636,10 +2636,10 @@ public class sCoreCroatia {
     @Epic("sCore Croatia")
     @Feature("New Contract")
     @Description("Creating new contract of FidelisLife")
-    @Step("Creating new contract of FidelisLife - standard basic flow with indexation")
+    @Step("Creating new contract of FidelisLife - standard basic flow with indexation 2035")
     @Owner("Nikola Stavrov")
     @Test(priority = 620)
-    public void NewContractFidelisLifeIndexation() throws Exception {
+    public void NewContractFidelisLifeIndexation2035() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
