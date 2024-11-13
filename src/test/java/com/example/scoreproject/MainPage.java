@@ -1717,6 +1717,14 @@ public class MainPage {
     @FindBy(xpath = "//a[@onclick='return openItemForPrint(1, 3, 1);']")
     public WebElement TestPrikladnosti;
 
+    @FindBy(xpath = "//label[@for='Kol14_90']")
+    public WebElement labelUgovorenoPoveAnjePremije;
+
+    @FindBy(xpath = "//*[@id='Kol62']")
+    public WebElement VrijednostPovecanjaPremije;
+
+
+
     //BOSNIA
 
     @FindBy(xpath = "//div[contains(@class, 'ico_classic')]")

@@ -21,8 +21,6 @@ public class sCoreCroatia {
     WebDriver driver;
 
 
-
-
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
@@ -1033,7 +1031,8 @@ public class sCoreCroatia {
         mainPage.CancellationNote.sendKeys("Raskid Test");
         mainPage.SaveCancellation.click();
 
-}
+    }
+
     @Epic("sCore Croatia")
     @Feature("Reactivation")
     @Description("Policy reactivation")
@@ -1287,7 +1286,7 @@ public class sCoreCroatia {
     @Step("Creating info offer with UW")
     @Owner("Nikola Stavrov")
     @Test(priority = 330)
-    public void IndexationFidelisLife () throws InterruptedException {
+    public void IndexationFidelisLife() throws InterruptedException {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
@@ -1355,8 +1354,8 @@ public class sCoreCroatia {
     @Description("Checking Clauses and notices")
     @Step("Checking Clauses and notices - TB")
     @Owner("Nikola Stavrov")
-    @Test (priority = 390)
-    public void ClausesTB () throws Exception {
+    @Test(priority = 390)
+    public void ClausesTB() throws Exception {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
@@ -1373,10 +1372,10 @@ public class sCoreCroatia {
         mainPage.ImageSearchCRO.click();
         mainPage.Preview.click();
         mainPage.TabClausesCRO.click();
-        assert mainPage.OUZ2023.getText().equals("Opći uvjeti za osiguranje života OUŽ 1/2023"):"Excepted General Conditions";
-        assert mainPage.PUTB2023.getText().equals("Posebni uvjeti za dopunsko pokriće za slučaj nastanka teških bolesti uz osiguranje života PUTB 1/2023"):"Excepted Special Conditions";
-        assert mainPage.INFTB2023.getText().equals("Informacije ugovaratelju osiguranja života INF-TB 1/2023"):"Excepted Special Conditions";
-        assert mainPage.IOOPTB.getText().equals("Informacije o obradi podataka INF IOOP"):"Excepted Special Conditions";
+        assert mainPage.OUZ2023.getText().equals("Opći uvjeti za osiguranje života OUŽ 1/2023") : "Excepted General Conditions";
+        assert mainPage.PUTB2023.getText().equals("Posebni uvjeti za dopunsko pokriće za slučaj nastanka teških bolesti uz osiguranje života PUTB 1/2023") : "Excepted Special Conditions";
+        assert mainPage.INFTB2023.getText().equals("Informacije ugovaratelju osiguranja života INF-TB 1/2023") : "Excepted Special Conditions";
+        assert mainPage.IOOPTB.getText().equals("Informacije o obradi podataka INF IOOP") : "Excepted Special Conditions";
 
     }
 
@@ -1385,8 +1384,8 @@ public class sCoreCroatia {
     @Description("Checking Clauses and notices")
     @Step("Checking Clauses and notices - MO")
     @Owner("Nikola Stavrov")
-    @Test (priority = 400)
-    public void ClausesMO () throws Exception {
+    @Test(priority = 400)
+    public void ClausesMO() throws Exception {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
@@ -1403,9 +1402,9 @@ public class sCoreCroatia {
         mainPage.ImageSearchCRO.click();
         mainPage.Preview.click();
         mainPage.TabClausesCRO.click();
-        assert mainPage.OUZ2023.getText().equals("Opći uvjeti za osiguranje života OUŽ 1/2023"):"Excepted General Conditions";
-        assert mainPage.INFZIV2023.getText().equals("Informacije ugovaratelju osiguranja života INF-ZIV 1/2023"):"Excepted Special Conditions";
-        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Excepted Special Conditions";
+        assert mainPage.OUZ2023.getText().equals("Opći uvjeti za osiguranje života OUŽ 1/2023") : "Excepted General Conditions";
+        assert mainPage.INFZIV2023.getText().equals("Informacije ugovaratelju osiguranja života INF-ZIV 1/2023") : "Excepted Special Conditions";
+        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP") : "Excepted Special Conditions";
 
 
     }
@@ -1416,8 +1415,8 @@ public class sCoreCroatia {
     @Description("Checking Clauses and notices")
     @Step("Checking Clauses and notices - MODOR")
     @Owner("Nikola Stavrov")
-    @Test (priority = 410)
-    public void ClausesMODOR () throws Exception {
+    @Test(priority = 410)
+    public void ClausesMODOR() throws Exception {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
@@ -1434,9 +1433,9 @@ public class sCoreCroatia {
         mainPage.ImageSearchCRO.click();
         mainPage.Preview.click();
         mainPage.TabClausesCRO.click();
-        assert mainPage.OUZ2023.getText().equals("Opći uvjeti za osiguranje života OUŽ 1/2023"):"Excepted General Conditions";
-        assert mainPage.INFZIV2023.getText().equals("Informacije ugovaratelju osiguranja života INF-ZIV 1/2023"):"Excepted Special Conditions";
-        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Excepted Special Conditions";
+        assert mainPage.OUZ2023.getText().equals("Opći uvjeti za osiguranje života OUŽ 1/2023") : "Excepted General Conditions";
+        assert mainPage.INFZIV2023.getText().equals("Informacije ugovaratelju osiguranja života INF-ZIV 1/2023") : "Excepted Special Conditions";
+        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP") : "Excepted Special Conditions";
 
 
     }
@@ -1446,8 +1445,8 @@ public class sCoreCroatia {
     @Description("Checking Clauses and notices")
     @Step("Checking Clauses and notices - ROPOS")
     @Owner("Nikola Stavrov")
-    @Test (priority = 420)
-    public void ClausesROPOS () throws Exception {
+    @Test(priority = 420)
+    public void ClausesROPOS() throws Exception {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
@@ -1464,10 +1463,10 @@ public class sCoreCroatia {
         mainPage.ImageSearchCRO.click();
         mainPage.Preview.click();
         mainPage.TabClausesCRO.click();
-        assert mainPage.OUZ2023.getText().equals("Opći uvjeti za osiguranje života OUŽ 1/2023"):"Excepted General Conditions";
-        assert mainPage.INFZIV2023.getText().equals("Informacije ugovaratelju osiguranja života INF-ZIV 1/2023"):"Excepted Special Conditions";
-        assert mainPage.Clause05.getText().equals("Klauzula 05 1. U slučaju smrti osiguranika za vrijeme trajanja osiguranja, osiguratelj isplaćuje korisniku ugovoreni osigurani iznos naveden na polici. 2. Ovaj ugovor o osiguranju ne uključuje pravo na sudjelovanje u dobiti osiguratelja i dobit se ne isplaćuje. 3. Otkup i kapitalizacija prema članku 26. i 27. Općih uvjeta za osiguranje života ne mogu se zatražiti."):"Excepted Special Conditions";
-        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Excepted Special Conditions";
+        assert mainPage.OUZ2023.getText().equals("Opći uvjeti za osiguranje života OUŽ 1/2023") : "Excepted General Conditions";
+        assert mainPage.INFZIV2023.getText().equals("Informacije ugovaratelju osiguranja života INF-ZIV 1/2023") : "Excepted Special Conditions";
+        assert mainPage.Clause05.getText().equals("Klauzula 05 1. U slučaju smrti osiguranika za vrijeme trajanja osiguranja, osiguratelj isplaćuje korisniku ugovoreni osigurani iznos naveden na polici. 2. Ovaj ugovor o osiguranju ne uključuje pravo na sudjelovanje u dobiti osiguratelja i dobit se ne isplaćuje. 3. Otkup i kapitalizacija prema članku 26. i 27. Općih uvjeta za osiguranje života ne mogu se zatražiti.") : "Excepted Special Conditions";
+        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP") : "Excepted Special Conditions";
 
 
     }
@@ -1478,8 +1477,8 @@ public class sCoreCroatia {
     @Description("Checking Clauses and notices")
     @Step("Checking Clauses and notices - FidelisLife")
     @Owner("Nikola Stavrov")
-    @Test (priority = 430)
-    public void ClausesFidelisLife () throws Exception {
+    @Test(priority = 430)
+    public void ClausesFidelisLife() throws Exception {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
@@ -1496,9 +1495,9 @@ public class sCoreCroatia {
         mainPage.ImageSearchCRO.click();
         mainPage.Preview.click();
         mainPage.TabClausesCRO.click();
-        assert mainPage.OUZIF2023.getText().equals("Opći uvjeti za osiguranje života vezano za jedinice investicijskih fondova OUŽIF 1/2023"):"Excepted General Conditions";
-        assert mainPage.PUZIF2022.getText().equals("Posebni uvjeti za osiguranje života vezano za jedinice investicijskih fondova za ugovoreno povećanje premije i osiguranog iznosa bez ponovnog liječničkog pregleda PUŽIF 1/2022"):"Excepted Special Conditions";
-        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP"):"Excepted Special Conditions";
+        assert mainPage.OUZIF2023.getText().equals("Opći uvjeti za osiguranje života vezano za jedinice investicijskih fondova OUŽIF 1/2023") : "Excepted General Conditions";
+        assert mainPage.PUZIF2022.getText().equals("Posebni uvjeti za osiguranje života vezano za jedinice investicijskih fondova za ugovoreno povećanje premije i osiguranog iznosa bez ponovnog liječničkog pregleda PUŽIF 1/2022") : "Excepted Special Conditions";
+        assert mainPage.INFIOOP.getText().equals("Informacije o obradi podataka INF IOOP") : "Excepted Special Conditions";
 
 
     }
@@ -1508,8 +1507,8 @@ public class sCoreCroatia {
     @Description("Checking documents from Side menu")
     @Step("Checking documents from Side menu - TB")
     @Owner("Nikola Stavrov")
-    @Test (priority = 440)
-    public void SideMenuTB () throws Exception {
+    @Test(priority = 440)
+    public void SideMenuTB() throws Exception {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
@@ -1521,13 +1520,13 @@ public class sCoreCroatia {
         mainPage.SideMenuCRO.click();
         mainPage.SideMenuDocuments.click();
         Thread.sleep(2500);
-        assert mainPage.INFIOOPSideMenu.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
+        assert mainPage.INFIOOPSideMenu.getText().equals("Informacije o obradi podataka INF IOOP") : "Expected side menu document";
         mainPage.WhiteButton.click();
         Thread.sleep(2500);
-        assert mainPage.INFTB20231.getText().equals("Informacije ugovaratelju INF-TB_2023"):"Expected side menu document";
+        assert mainPage.INFTB20231.getText().equals("Informacije ugovaratelju INF-TB_2023") : "Expected side menu document";
         mainPage.WhiteButton1.click();
         Thread.sleep(2500);
-        assert mainPage.TB2016.getText().equals("Informacije o proizvodu osiguranja TB2016"):"Expected side menu document";
+        assert mainPage.TB2016.getText().equals("Informacije o proizvodu osiguranja TB2016") : "Expected side menu document";
         mainPage.WhiteButton2.click();
 
 
@@ -1538,8 +1537,8 @@ public class sCoreCroatia {
     @Description("Checking documents from Side menu")
     @Step("Checking documents from Side menu - MO")
     @Owner("Nikola Stavrov")
-    @Test (priority = 450)
-    public void SideMenuMO () throws Exception {
+    @Test(priority = 450)
+    public void SideMenuMO() throws Exception {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
@@ -1550,13 +1549,13 @@ public class sCoreCroatia {
         mainPage.MO.click();
         mainPage.SideMenuCRO.click();
         mainPage.SideMenuDocuments.click();
-        assert mainPage.INFIOOPSideMenu.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
+        assert mainPage.INFIOOPSideMenu.getText().equals("Informacije o obradi podataka INF IOOP") : "Expected side menu document";
         mainPage.WhiteButton.click();
         Thread.sleep(2500);
-        assert mainPage.INFZIV2023SideMenu.getText().equals("Informacije ugovaratelju INF-ZIV_2023"):"Expected side menu document";
+        assert mainPage.INFZIV2023SideMenu.getText().equals("Informacije ugovaratelju INF-ZIV_2023") : "Expected side menu document";
         mainPage.WhiteButton1.click();
         Thread.sleep(2500);
-        assert mainPage.MO16.getText().equals("Informacije o proizvodu osiguranja MO16"):"Expected side menu document";
+        assert mainPage.MO16.getText().equals("Informacije o proizvodu osiguranja MO16") : "Expected side menu document";
         mainPage.WhiteButton2.click();
 
 
@@ -1567,8 +1566,8 @@ public class sCoreCroatia {
     @Description("Checking documents from Side menu")
     @Step("Checking documents from Side menu - MODOR")
     @Owner("Nikola Stavrov")
-    @Test (priority = 460)
-    public void SideMenuMODOR () throws Exception {
+    @Test(priority = 460)
+    public void SideMenuMODOR() throws Exception {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
@@ -1579,13 +1578,13 @@ public class sCoreCroatia {
         mainPage.MODOR.click();
         mainPage.SideMenuCRO.click();
         mainPage.SideMenuDocuments.click();
-        assert mainPage.INFIOOPSideMenu.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
+        assert mainPage.INFIOOPSideMenu.getText().equals("Informacije o obradi podataka INF IOOP") : "Expected side menu document";
         mainPage.WhiteButton.click();
         Thread.sleep(2500);
-        assert mainPage.INFZIV2023SideMenu.getText().equals("Informacije ugovaratelju INF-ZIV_2023"):"Expected side menu document";
+        assert mainPage.INFZIV2023SideMenu.getText().equals("Informacije ugovaratelju INF-ZIV_2023") : "Expected side menu document";
         mainPage.WhiteButton1.click();
         Thread.sleep(2500);
-        assert mainPage.MODOR16.getText().equals("Informacije o proizvodu osiguranja MODOR16"):"Expected side menu document";
+        assert mainPage.MODOR16.getText().equals("Informacije o proizvodu osiguranja MODOR16") : "Expected side menu document";
         mainPage.WhiteButton2.click();
 
 
@@ -1596,8 +1595,8 @@ public class sCoreCroatia {
     @Description("Checking documents from Side menu")
     @Step("Checking documents from Side menu - ROPOS")
     @Owner("Nikola Stavrov")
-    @Test (priority = 470)
-    public void SideMenuROPOS () throws Exception {
+    @Test(priority = 470)
+    public void SideMenuROPOS() throws Exception {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
@@ -1608,18 +1607,17 @@ public class sCoreCroatia {
         mainPage.ROPOS.click();
         mainPage.SideMenuCRO.click();
         mainPage.SideMenuDocuments.click();
-        assert mainPage.INFIOOPSideMenu.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
+        assert mainPage.INFIOOPSideMenu.getText().equals("Informacije o obradi podataka INF IOOP") : "Expected side menu document";
         mainPage.WhiteButton.click();
         Thread.sleep(2500);
-        assert mainPage.INFZIV2023SideMenu.getText().equals("Informacije ugovaratelju INF-ZIV_2023"):"Expected side menu document";
+        assert mainPage.INFZIV2023SideMenu.getText().equals("Informacije ugovaratelju INF-ZIV_2023") : "Expected side menu document";
         mainPage.WhiteButton1.click();
         Thread.sleep(2500);
-        assert mainPage.ROPOS16.getText().equals("Informacije o proizvodu osiguranja ROPOS16"):"Expected side menu document";
+        assert mainPage.ROPOS16.getText().equals("Informacije o proizvodu osiguranja ROPOS16") : "Expected side menu document";
         mainPage.WhiteButton2.click();
         Thread.sleep(2500);
-        assert mainPage.ROPOS16J.getText().equals("Informacije o proizvodu osiguranja ROPOS16-J"):"Expected side menu document";
+        assert mainPage.ROPOS16J.getText().equals("Informacije o proizvodu osiguranja ROPOS16-J") : "Expected side menu document";
         mainPage.WhiteButton3.click();
-
 
 
     }
@@ -1629,8 +1627,8 @@ public class sCoreCroatia {
     @Description("Checking documents from Side menu")
     @Step("Checking documents from Side menu - FidelisLife")
     @Owner("Nikola Stavrov")
-    @Test (priority = 480)
-    public void SideMenuFidelisLife () throws Exception {
+    @Test(priority = 480)
+    public void SideMenuFidelisLife() throws Exception {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
@@ -1641,40 +1639,40 @@ public class sCoreCroatia {
         mainPage.FidelisLife.click();
         mainPage.SideMenuCRO.click();
         mainPage.SideMenuDocuments.click();
-        assert mainPage.INFIOOPSideMenu.getText().equals("Informacije o obradi podataka INF IOOP"):"Expected side menu document";
+        assert mainPage.INFIOOPSideMenu.getText().equals("Informacije o obradi podataka INF IOOP") : "Expected side menu document";
         mainPage.WhiteButton.click();
         Thread.sleep(2500);
-        assert mainPage.FidelisLifeTarget2035J12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2035_J 1-2024"):"Expected side menu document";
+        assert mainPage.FidelisLifeTarget2035J12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2035_J 1-2024") : "Expected side menu document";
         mainPage.WhiteButton1.click();
         Thread.sleep(2500);
-        assert mainPage.FidelisLifeTarget2040J12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2040_J 1-2024"):"Expected side menu document";
+        assert mainPage.FidelisLifeTarget2040J12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2040_J 1-2024") : "Expected side menu document";
         mainPage.WhiteButton2.click();
         Thread.sleep(2500);
-        assert mainPage.FidelisLifeTarget2045J12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2045_J 1-2024"):"Expected side menu document";
+        assert mainPage.FidelisLifeTarget2045J12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2045_J 1-2024") : "Expected side menu document";
         mainPage.WhiteButton3.click();
         Thread.sleep(2500);
-        assert mainPage.FidelisLifeTarget2050J12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2050_J 1-2024"):"Expected side menu document";
+        assert mainPage.FidelisLifeTarget2050J12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2050_J 1-2024") : "Expected side menu document";
         mainPage.WhiteButton4.click();
         Thread.sleep(2500);
-        assert mainPage.FidelisLifeTarget2055J12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2055_J 1-2024"):"Expected side menu document";
+        assert mainPage.FidelisLifeTarget2055J12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2055_J 1-2024") : "Expected side menu document";
         mainPage.WhiteButton5.click();
         Thread.sleep(2500);
-        assert mainPage.FidelisLifeTarget2035V12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2035_V 1-2024"):"Expected side menu document";
+        assert mainPage.FidelisLifeTarget2035V12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2035_V 1-2024") : "Expected side menu document";
         mainPage.WhiteButton6.click();
         Thread.sleep(2500);
-        assert mainPage.FidelisLifeTarget2040V12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2040_V 1-2024"):"Expected side menu document";
+        assert mainPage.FidelisLifeTarget2040V12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2040_V 1-2024") : "Expected side menu document";
         mainPage.WhiteButton7.click();
         Thread.sleep(2500);
-        assert mainPage.FidelisLifeTarget2045V12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2045_V 1-2024"):"Expected side menu document";
+        assert mainPage.FidelisLifeTarget2045V12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2045_V 1-2024") : "Expected side menu document";
         mainPage.WhiteButton8.click();
         Thread.sleep(2500);
-        assert mainPage.FidelisLifeTarget2050V12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2050_V 1-2024"):"Expected side menu document";
+        assert mainPage.FidelisLifeTarget2050V12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2050_V 1-2024") : "Expected side menu document";
         mainPage.WhiteButton9.click();
         Thread.sleep(2500);
-        assert mainPage.FidelisLifeTarget2055V12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2055_V 1-2024"):"Expected side menu document";
+        assert mainPage.FidelisLifeTarget2055V12024.getText().equals("Dokument s ključnim informacijama FidelisLife Target 2055_V 1-2024") : "Expected side menu document";
         mainPage.WhiteButton10.click();
         Thread.sleep(2500);
-        assert mainPage.FidelisFonds12024.getText().equals("Informacije ugovaratelju osiguranja života vezano za jedinice Fidelis investicijskih fondova INF FidelisLife 1-2024"):"Expected side menu document";
+        assert mainPage.FidelisFonds12024.getText().equals("Informacije ugovaratelju osiguranja života vezano za jedinice Fidelis investicijskih fondova INF FidelisLife 1-2024") : "Expected side menu document";
         mainPage.WhiteButton11.click();
 
 
@@ -1685,8 +1683,8 @@ public class sCoreCroatia {
     @Description("Checking funcionality of exporting data to excel")
     @Step("Checking funcionality of exporting data to excel - action Export to excel")
     @Owner("Nikola Stavrov")
-    @Test (priority = 490)
-    public void ExportToExcelCroatia () throws Exception {
+    @Test(priority = 490)
+    public void ExportToExcelCroatia() throws Exception {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
@@ -1710,8 +1708,8 @@ public class sCoreCroatia {
     @Description("Checking funcionality of SPNFT/Smaragd service")
     @Step("Checking funcionality of SPNFT - Creating documents with persons on SPNFT lists")
     @Owner("Nikola Stavrov")
-    @Test (priority = 500)
-    public void SPNFTCroatia () throws Exception {
+    @Test(priority = 500)
+    public void SPNFTCroatia() throws Exception {
 
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
@@ -1735,7 +1733,8 @@ public class sCoreCroatia {
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.IdentificationNumber.sendKeys("37621561405");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click(); }
+            element.click();
+        }
 
 
     }
@@ -1746,28 +1745,31 @@ public class sCoreCroatia {
     @Step("Creating new contract of TB - standard basic flow")
     @Owner("Nikola Stavrov")
     @Test(priority = 510)
-    public void NewContractTB () throws Exception {
+    public void NewContractTB() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
         mainPage.inputPassword.sendKeys("Werts!23!!g00!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.TB, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click(); }
+            element.click();
+        }
         mainPage.DurationInYear.sendKeys("10");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(2);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         for (WebElement webElement : Arrays.asList(mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
-            webElement.click(); }
+            webElement.click();
+        }
         Thread.sleep(2500);
         WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.inputOIB.sendKeys("53196123668");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click(); }
+            element.click();
+        }
         js.executeScript("window.scrollBy(-500, 0);");
         mainPage.UgovaraPlatilacIstoLice.click();
         js.executeScript("window.scrollBy(-500, 0);");
@@ -1794,16 +1796,20 @@ public class sCoreCroatia {
         mainPage.inputAlkohol.sendKeys("0");
         mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
         for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputStalniIzvori.sendKeys("123");
         for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
         for (WebElement element : Arrays.asList(mainPage.linkAcceptMoneyLaundry2, mainPage.linkActivate, mainPage.linkTabPrintouts)) {
-            element.click(); }
+            element.click();
+        }
         for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
             webElement.click();
-            Thread.sleep(5000); }
+            Thread.sleep(5000);
+        }
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
         assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
     }
@@ -1814,28 +1820,31 @@ public class sCoreCroatia {
     @Step("Creating new contract of TB - standard basic flow with indexation")
     @Owner("Nikola Stavrov")
     @Test(priority = 520)
-    public void NewContractIndexationTB () throws Exception {
+    public void NewContractIndexationTB() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
         mainPage.inputPassword.sendKeys("Werts!23!!g00!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.TB, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click(); }
+            element.click();
+        }
         mainPage.DurationInYear.sendKeys("12");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         for (WebElement webElement : Arrays.asList(mainPage.IndexationCRO, mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
-            webElement.click(); }
+            webElement.click();
+        }
         Thread.sleep(2500);
         WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.inputOIB.sendKeys("53196123668");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click(); }
+            element.click();
+        }
         js.executeScript("window.scrollBy(-500, 0);");
         mainPage.UgovaraPlatilacIstoLice.click();
         js.executeScript("window.scrollBy(-500, 0);");
@@ -1862,16 +1871,20 @@ public class sCoreCroatia {
         mainPage.inputAlkohol.sendKeys("0");
         mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
         for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputStalniIzvori.sendKeys("123");
         for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
         for (WebElement element : Arrays.asList(mainPage.linkAcceptMoneyLaundry2, mainPage.linkActivate, mainPage.linkTabPrintouts)) {
-            element.click(); }
+            element.click();
+        }
         for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
             webElement.click();
-            Thread.sleep(5000); }
+            Thread.sleep(5000);
+        }
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
         assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
     }
@@ -1882,28 +1895,31 @@ public class sCoreCroatia {
     @Step("Creating new contract of TB - standard basic flow with vinculation standard bank")
     @Owner("Nikola Stavrov")
     @Test(priority = 530)
-    public void NewContractVinculationTB () throws Exception {
+    public void NewContractVinculationTB() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
         mainPage.inputPassword.sendKeys("Werts!23!!g00!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.TB, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click(); }
+            element.click();
+        }
         mainPage.DurationInYear.sendKeys("10");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(3);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         for (WebElement webElement : Arrays.asList(mainPage.labelVinkulacijom, mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
-            webElement.click(); }
+            webElement.click();
+        }
         Thread.sleep(2500);
         WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.inputOIB.sendKeys("53196123668");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click(); }
+            element.click();
+        }
         js.executeScript("window.scrollBy(-500, 0);");
         mainPage.UgovaraPlatilacIstoLice.click();
         js.executeScript("window.scrollBy(-500, 0);");
@@ -1930,10 +1946,12 @@ public class sCoreCroatia {
         mainPage.inputAlkohol.sendKeys("0");
         mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
         for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputStalniIzvori.sendKeys("123");
         for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
         mainPage.linkAcceptMoneyLaundry2.click();
         mainPage.linkTabVinculations.click();
@@ -1946,7 +1964,8 @@ public class sCoreCroatia {
         mainPage.linkTabPrintouts.click();
         for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
             webElement.click();
-            Thread.sleep(5000); }
+            Thread.sleep(5000);
+        }
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
         assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
         mainPage.linkTabVinculations.click();
@@ -1962,28 +1981,31 @@ public class sCoreCroatia {
     @Step("Creating new contract of TB - standard basic flow with vinculation person")
     @Owner("Nikola Stavrov")
     @Test(priority = 540)
-    public void NewContractVinculationPersonTB () throws Exception {
+    public void NewContractVinculationPersonTB() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
         mainPage.inputPassword.sendKeys("Werts!23!!g00!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.TB, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click(); }
+            element.click();
+        }
         mainPage.DurationInYear.sendKeys("10");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(2);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         for (WebElement webElement : Arrays.asList(mainPage.labelVinkulacijom, mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
-            webElement.click(); }
+            webElement.click();
+        }
         Thread.sleep(2500);
         WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.inputOIB.sendKeys("53196123668");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click(); }
+            element.click();
+        }
         js.executeScript("window.scrollBy(-500, 0);");
         mainPage.UgovaraPlatilacIstoLice.click();
         js.executeScript("window.scrollBy(-500, 0);");
@@ -2010,10 +2032,12 @@ public class sCoreCroatia {
         mainPage.inputAlkohol.sendKeys("0");
         mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
         for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputStalniIzvori.sendKeys("123");
         for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
         mainPage.linkAcceptMoneyLaundry2.click();
         mainPage.linkTabVinculations.click();
@@ -2028,7 +2052,8 @@ public class sCoreCroatia {
         mainPage.linkTabPrintouts.click();
         for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
             webElement.click();
-            Thread.sleep(5000); }
+            Thread.sleep(5000);
+        }
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
         assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
         mainPage.linkTabVinculations.click();
@@ -2044,28 +2069,31 @@ public class sCoreCroatia {
     @Step("Creating new contract of TB - standard basic flow with vinculation company")
     @Owner("Nikola Stavrov")
     @Test(priority = 550)
-    public void NewContractVinculationCompanyTB () throws Exception {
+    public void NewContractVinculationCompanyTB() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
         mainPage.inputPassword.sendKeys("Werts!23!!g00!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.TB, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click(); }
+            element.click();
+        }
         mainPage.DurationInYear.sendKeys("10");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(1);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         for (WebElement webElement : Arrays.asList(mainPage.labelVinkulacijom, mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
-            webElement.click(); }
+            webElement.click();
+        }
         Thread.sleep(2500);
         WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.inputOIB.sendKeys("53196123668");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click(); }
+            element.click();
+        }
         js.executeScript("window.scrollBy(-500, 0);");
         mainPage.UgovaraPlatilacIstoLice.click();
         js.executeScript("window.scrollBy(-500, 0);");
@@ -2092,10 +2120,12 @@ public class sCoreCroatia {
         mainPage.inputAlkohol.sendKeys("0");
         mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
         for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputStalniIzvori.sendKeys("123");
         for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
         mainPage.linkAcceptMoneyLaundry2.click();
         mainPage.linkTabVinculations.click();
@@ -2109,7 +2139,8 @@ public class sCoreCroatia {
         mainPage.linkTabPrintouts.click();
         for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
             webElement.click();
-            Thread.sleep(5000); }
+            Thread.sleep(5000);
+        }
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
         assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
         mainPage.linkTabVinculations.click();
@@ -2125,28 +2156,31 @@ public class sCoreCroatia {
     @Step("Creating new contract of MO - standard basic flow")
     @Owner("Nikola Stavrov")
     @Test(priority = 560)
-    public void NewContractMO () throws Exception {
+    public void NewContractMO() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
         mainPage.inputPassword.sendKeys("Werts!23!!g00!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.MO, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click(); }
+            element.click();
+        }
         mainPage.DurationInYear.sendKeys("11");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(1);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         for (WebElement webElement : Arrays.asList(mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
-            webElement.click(); }
+            webElement.click();
+        }
         Thread.sleep(2500);
         WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.inputOIB.sendKeys("81540506790");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click(); }
+            element.click();
+        }
         js.executeScript("window.scrollBy(-500, 0);");
         mainPage.UgovaraPlatilacIstoLice.click();
         js.executeScript("window.scrollBy(-500, 0);");
@@ -2173,16 +2207,20 @@ public class sCoreCroatia {
         mainPage.inputAlkohol.sendKeys("0");
         mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
         for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputStalniIzvori.sendKeys("123");
         for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
         for (WebElement element : Arrays.asList(mainPage.linkAcceptMoneyLaundry2, mainPage.linkActivate, mainPage.linkTabPrintouts)) {
-            element.click(); }
+            element.click();
+        }
         for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
             webElement.click();
-            Thread.sleep(5000); }
+            Thread.sleep(5000);
+        }
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
         assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
     }
@@ -2193,28 +2231,31 @@ public class sCoreCroatia {
     @Step("Creating new contract of MO - standard basic flow with indexation")
     @Owner("Nikola Stavrov")
     @Test(priority = 570)
-    public void NewContractIndexationMO () throws Exception {
+    public void NewContractIndexationMO() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
         mainPage.inputPassword.sendKeys("Werts!23!!g00!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.MO, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click(); }
+            element.click();
+        }
         mainPage.DurationInYear.sendKeys("13");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(2);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         for (WebElement webElement : Arrays.asList(mainPage.IndexationCRO, mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
-            webElement.click(); }
+            webElement.click();
+        }
         Thread.sleep(2500);
         WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.inputOIB.sendKeys("81540506790");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click(); }
+            element.click();
+        }
         js.executeScript("window.scrollBy(-500, 0);");
         mainPage.UgovaraPlatilacIstoLice.click();
         js.executeScript("window.scrollBy(-500, 0);");
@@ -2241,16 +2282,20 @@ public class sCoreCroatia {
         mainPage.inputAlkohol.sendKeys("0");
         mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
         for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputStalniIzvori.sendKeys("123");
         for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
         for (WebElement element : Arrays.asList(mainPage.linkAcceptMoneyLaundry2, mainPage.linkActivate, mainPage.linkTabPrintouts)) {
-            element.click(); }
+            element.click();
+        }
         for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
             webElement.click();
-            Thread.sleep(5000); }
+            Thread.sleep(5000);
+        }
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
         assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
     }
@@ -2261,28 +2306,31 @@ public class sCoreCroatia {
     @Step("Creating new contract of MODOR - standard basic flow")
     @Owner("Nikola Stavrov")
     @Test(priority = 580)
-    public void NewContractMODOR () throws Exception {
+    public void NewContractMODOR() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
         mainPage.inputPassword.sendKeys("Werts!23!!g00!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.MODOR, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click(); }
+            element.click();
+        }
         mainPage.DurationInYear.sendKeys("10");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(1);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         for (WebElement webElement : Arrays.asList(mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
-            webElement.click(); }
+            webElement.click();
+        }
         Thread.sleep(2500);
         WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.inputOIB.sendKeys("64080250224");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click(); }
+            element.click();
+        }
         js.executeScript("window.scrollBy(-500, 0);");
         mainPage.UgovaraPlatilacIstoLice.click();
         js.executeScript("window.scrollBy(-500, 0);");
@@ -2309,16 +2357,20 @@ public class sCoreCroatia {
         mainPage.inputAlkohol.sendKeys("0");
         mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
         for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputStalniIzvori.sendKeys("123");
         for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
         for (WebElement element : Arrays.asList(mainPage.linkAcceptMoneyLaundry2, mainPage.linkActivate, mainPage.linkTabPrintouts)) {
-            element.click(); }
+            element.click();
+        }
         for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
             webElement.click();
-            Thread.sleep(5000); }
+            Thread.sleep(5000);
+        }
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
         assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
     }
@@ -2329,28 +2381,31 @@ public class sCoreCroatia {
     @Step("Creating new contract of MODOR - standard basic flow with indexation")
     @Owner("Nikola Stavrov")
     @Test(priority = 590)
-    public void NewContractIndexationMODOR () throws Exception {
+    public void NewContractIndexationMODOR() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
         mainPage.inputPassword.sendKeys("Werts!23!!g00!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.MODOR, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click(); }
+            element.click();
+        }
         mainPage.DurationInYear.sendKeys("12");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(2);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         for (WebElement webElement : Arrays.asList(mainPage.IndexationCRO, mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
-            webElement.click(); }
+            webElement.click();
+        }
         Thread.sleep(2500);
         WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.inputOIB.sendKeys("64080250224");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click(); }
+            element.click();
+        }
         js.executeScript("window.scrollBy(-500, 0);");
         mainPage.UgovaraPlatilacIstoLice.click();
         js.executeScript("window.scrollBy(-500, 0);");
@@ -2377,16 +2432,20 @@ public class sCoreCroatia {
         mainPage.inputAlkohol.sendKeys("0");
         mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
         for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputStalniIzvori.sendKeys("123");
         for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
         for (WebElement element : Arrays.asList(mainPage.linkAcceptMoneyLaundry2, mainPage.linkActivate, mainPage.linkTabPrintouts)) {
-            element.click(); }
+            element.click();
+        }
         for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
             webElement.click();
-            Thread.sleep(5000); }
+            Thread.sleep(5000);
+        }
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
         assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
     }
@@ -2397,28 +2456,31 @@ public class sCoreCroatia {
     @Step("Creating new contract of ROPOS - standard basic flow")
     @Owner("Nikola Stavrov")
     @Test(priority = 600)
-    public void NewContractROPOS () throws Exception {
+    public void NewContractROPOS() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
         mainPage.inputPassword.sendKeys("Werts!23!!g00!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.ROPOS, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click(); }
+            element.click();
+        }
         mainPage.DurationInYear.sendKeys("20");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(2);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         for (WebElement webElement : Arrays.asList(mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
-            webElement.click(); }
+            webElement.click();
+        }
         Thread.sleep(2500);
         WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.inputOIB.sendKeys("97451659348");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click(); }
+            element.click();
+        }
         js.executeScript("window.scrollBy(-500, 0);");
         mainPage.UgovaraPlatilacIstoLice.click();
         js.executeScript("window.scrollBy(-500, 0);");
@@ -2445,10 +2507,12 @@ public class sCoreCroatia {
         mainPage.inputAlkohol.sendKeys("0");
         mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
         for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputStalniIzvori.sendKeys("123");
         for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
         mainPage.linkAcceptMoneyLaundry2.click();
         mainPage.linkTabVinculations.click();
@@ -2463,7 +2527,8 @@ public class sCoreCroatia {
         mainPage.linkTabPrintouts.click();
         for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
             webElement.click();
-            Thread.sleep(5000); }
+            Thread.sleep(5000);
+        }
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
         assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
         mainPage.linkTabVinculations.click();
@@ -2479,14 +2544,15 @@ public class sCoreCroatia {
     @Step("Creating new contract of FidelisLife - standard basic flow")
     @Owner("Nikola Stavrov")
     @Test(priority = 610)
-    public void NewContractFidelisLife () throws Exception {
+    public void NewContractFidelisLife() throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
         mainPage.inputPassword.sendKeys("Werts!23!!g00!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.FidelisLife, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click(); }
+            element.click();
+        }
         mainPage.CustomerName.sendKeys("Test");
         mainPage.CustomerVocational.sendKeys("Test");
         mainPage.CustomerSurname.sendKeys("Test");
@@ -2496,21 +2562,24 @@ public class sCoreCroatia {
         mainPage.DistributorName.sendKeys("Test");
         mainPage.DistributorNameSurname.sendKeys("Test");
         for (WebElement webElement1 : Arrays.asList(mainPage.FirstQuestion, mainPage.SecondQuestion, mainPage.ThirdQuestion, mainPage.FourthQuestion, mainPage.FirstQuestion1, mainPage.SecondQuestion1, mainPage.ThirdQuestion1, mainPage.FourthQuestion1, mainPage.FirstQuestion2, mainPage.SecondQuestion2, mainPage.ThirdQuestion2, mainPage.FourthQuestion2, mainPage.SaveTP, mainPage.PrintTP, mainPage.linkCreateNewContract)) {
-            webElement1.click(); }
+            webElement1.click();
+        }
         mainPage.DurationInYear.sendKeys("11");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(2);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         for (WebElement webElement : Arrays.asList(mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
-            webElement.click(); }
+            webElement.click();
+        }
         Thread.sleep(2500);
         WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.inputOIB.sendKeys("96857952493");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click(); }
+            element.click();
+        }
         js.executeScript("window.scrollBy(-500, 0);");
         mainPage.UgovaraPlatilacIstoLice.click();
         js.executeScript("window.scrollBy(-500, 0);");
@@ -2545,17 +2614,20 @@ public class sCoreCroatia {
         mainPage.NeDeformitet.click();
         mainPage.NeObiteljBolest.click();
         for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputStalniIzvori.sendKeys("123");
         for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
-            webElement.click(); }
+            webElement.click();
+        }
         mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
         mainPage.linkAcceptMoneyLaundry2.click();
         mainPage.linkActivate.click();
         mainPage.linkTabPrintouts.click();
-        for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.TestPrikladnosti,mainPage.linkCertificationSignature)) {
+        for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.TestPrikladnosti, mainPage.linkCertificationSignature)) {
             webElement.click();
-            Thread.sleep(5000); }
+            Thread.sleep(5000);
+        }
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
         assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
 
@@ -2567,7 +2639,387 @@ public class sCoreCroatia {
     @Step("Creating new contract of FidelisLife - standard basic flow with indexation")
     @Owner("Nikola Stavrov")
     @Test(priority = 620)
-    public void NewContractFidelisLifeIndexation () throws Exception {
+    public void NewContractFidelisLifeIndexation() throws Exception {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.FidelisLife, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
+            element.click();
+        }
+        mainPage.CustomerName.sendKeys("Test");
+        mainPage.CustomerVocational.sendKeys("Test");
+        mainPage.CustomerSurname.sendKeys("Test");
+        mainPage.CustomerTitle.sendKeys("Test");
+        mainPage.CustomerOIB.sendKeys("27996811116");
+        mainPage.CustomerOccupation.sendKeys("Test");
+        mainPage.DistributorName.sendKeys("Test");
+        mainPage.DistributorNameSurname.sendKeys("Test");
+        for (WebElement webElement1 : Arrays.asList(mainPage.FirstQuestion, mainPage.SecondQuestion, mainPage.ThirdQuestion, mainPage.FourthQuestion, mainPage.FirstQuestion1, mainPage.SecondQuestion1, mainPage.ThirdQuestion1, mainPage.FourthQuestion1, mainPage.FirstQuestion2, mainPage.SecondQuestion2, mainPage.ThirdQuestion2, mainPage.FourthQuestion2, mainPage.SaveTP, mainPage.PrintTP, mainPage.linkCreateNewContract)) {
+            webElement1.click();
+        }
+        mainPage.DurationInYear.sendKeys("11");
+        mainPage.ContentPlaceHolder.sendKeys("Zagreb");
+        mainPage.ContentPlaceHolder1.click();
+        new Select(mainPage.PaymentDinamic).selectByIndex(2);
+        new Select(mainPage.PaymentMethod).selectByIndex(1);
+        mainPage.IndexationCRO.click();
+        for (WebElement webElement : Arrays.asList(mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
+            webElement.click();
+        }
+        Thread.sleep(2500);
+        WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
+        mainPage.inputOIB.sendKeys("96857952493");
+        for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
+            element.click();
+        }
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.UgovaraPlatilacIstoLice.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.AddDeathBeneficiary.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputOpis.sendKeys("Brat");
+        mainPage.inputProcenat.sendKeys("100");
+        mainPage.AcceptDeathBeneficiares.click();
+        Thread.sleep(2500);
+        js.executeScript("window.scrollBy(-1000, 0);");
+        mainPage.divDodaj.click();
+        WebElement iFrame1 = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame1));
+        mainPage.linkMainContentBusinessEntity.click();
+        js.executeScript("window.scrollBy(0, -500);");
+        mainPage.linkTabConcerns.click();
+        new Select(mainPage.InsuredSum).selectByIndex(1);
+        mainPage.InsuredSumOrPremium.sendKeys("8000");
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.sendKeys("85");
+        new Select(mainPage.ChosenAmountSum).selectByIndex(2);
+        mainPage.Accept.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        Thread.sleep(2500);
+        mainPage.ZdravSam.click();
+        mainPage.Alkohol.sendKeys("0");
+        mainPage.Nepusac.click();
+        mainPage.NeDroga.click();
+        mainPage.DRImePrezime.click();
+        mainPage.DRImePrezime.sendKeys("Dobri Doca");
+        mainPage.NeDeformitet.click();
+        mainPage.NeObiteljBolest.click();
+        for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
+            webElement.click();
+        }
+        mainPage.inputStalniIzvori.sendKeys("123");
+        for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
+            webElement.click();
+        }
+        mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
+        mainPage.linkAcceptMoneyLaundry2.click();
+        mainPage.linkActivate.click();
+        mainPage.linkTabPrintouts.click();
+        for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.TestPrikladnosti, mainPage.linkCertificationSignature)) {
+            webElement.click();
+            Thread.sleep(5000);
+        }
+        assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
+        assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
+
+    }
+
+    @Epic("sCore Croatia")
+    @Feature("New Contract")
+    @Description("Creating new contract of FidelisLife")
+    @Step("Creating new contract of FidelisLife - standard basic flow 2040")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 630)
+    public void NewContractFidelisLife2040() throws Exception {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.FidelisLife, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
+            element.click();
+        }
+        mainPage.CustomerName.sendKeys("Test");
+        mainPage.CustomerVocational.sendKeys("Test");
+        mainPage.CustomerSurname.sendKeys("Test");
+        mainPage.CustomerTitle.sendKeys("Test");
+        mainPage.CustomerOIB.sendKeys("27996811116");
+        mainPage.CustomerOccupation.sendKeys("Test");
+        mainPage.DistributorName.sendKeys("Test");
+        mainPage.DistributorNameSurname.sendKeys("Test");
+        for (WebElement webElement1 : Arrays.asList(mainPage.FirstQuestion, mainPage.SecondQuestion, mainPage.ThirdQuestion, mainPage.FourthQuestion, mainPage.FirstQuestion1, mainPage.SecondQuestion1, mainPage.ThirdQuestion1, mainPage.FourthQuestion1, mainPage.FirstQuestion2, mainPage.SecondQuestion2, mainPage.ThirdQuestion2, mainPage.FourthQuestion2, mainPage.SaveTP, mainPage.PrintTP, mainPage.linkCreateNewContract)) {
+            webElement1.click();
+        }
+        mainPage.DurationInYear.sendKeys("16");
+        mainPage.ContentPlaceHolder.sendKeys("Zagreb");
+        mainPage.ContentPlaceHolder1.click();
+        new Select(mainPage.PaymentDinamic).selectByIndex(3);
+        new Select(mainPage.PaymentMethod).selectByIndex(1);
+        for (WebElement webElement : Arrays.asList(mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
+            webElement.click();
+        }
+        Thread.sleep(2500);
+        WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
+        mainPage.inputOIB.sendKeys("86176652379");
+        for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
+            element.click();
+        }
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.UgovaraPlatilacIstoLice.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.AddDeathBeneficiary.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputOpis.sendKeys("Brat");
+        mainPage.inputProcenat.sendKeys("100");
+        mainPage.AcceptDeathBeneficiares.click();
+        Thread.sleep(2500);
+        js.executeScript("window.scrollBy(-1000, 0);");
+        mainPage.divDodaj.click();
+        WebElement iFrame1 = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame1));
+        mainPage.linkMainContentBusinessEntity.click();
+        js.executeScript("window.scrollBy(0, -500);");
+        mainPage.linkTabConcerns.click();
+        new Select(mainPage.InsuredSum).selectByIndex(1);
+        mainPage.InsuredSumOrPremium.sendKeys("8000");
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.sendKeys("85");
+        new Select(mainPage.ChosenAmountSum).selectByIndex(2);
+        mainPage.Accept.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        Thread.sleep(2500);
+        mainPage.ZdravSam.click();
+        mainPage.Alkohol.sendKeys("0");
+        mainPage.Nepusac.click();
+        mainPage.NeDroga.click();
+        mainPage.DRImePrezime.click();
+        mainPage.DRImePrezime.sendKeys("Dobri Doca");
+        mainPage.NeDeformitet.click();
+        mainPage.NeObiteljBolest.click();
+        for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
+            webElement.click();
+        }
+        mainPage.inputStalniIzvori.sendKeys("123");
+        for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
+            webElement.click();
+        }
+        mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
+        mainPage.linkAcceptMoneyLaundry2.click();
+        mainPage.linkActivate.click();
+        mainPage.linkTabPrintouts.click();
+        for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.TestPrikladnosti, mainPage.linkCertificationSignature)) {
+            webElement.click();
+            Thread.sleep(5000);
+        }
+        assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
+        assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
+
+    }
+
+    @Epic("sCore Croatia")
+    @Feature("New Contract")
+    @Description("Creating new contract of FidelisLife")
+    @Step("Creating new contract of FidelisLife - standard basic flow 2045")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 640)
+    public void NewContractFidelisLife2045() throws Exception {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.FidelisLife, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
+            element.click();
+        }
+        mainPage.CustomerName.sendKeys("Test");
+        mainPage.CustomerVocational.sendKeys("Test");
+        mainPage.CustomerSurname.sendKeys("Test");
+        mainPage.CustomerTitle.sendKeys("Test");
+        mainPage.CustomerOIB.sendKeys("27996811116");
+        mainPage.CustomerOccupation.sendKeys("Test");
+        mainPage.DistributorName.sendKeys("Test");
+        mainPage.DistributorNameSurname.sendKeys("Test");
+        for (WebElement webElement1 : Arrays.asList(mainPage.FirstQuestion, mainPage.SecondQuestion, mainPage.ThirdQuestion, mainPage.FourthQuestion, mainPage.FirstQuestion1, mainPage.SecondQuestion1, mainPage.ThirdQuestion1, mainPage.FourthQuestion1, mainPage.FirstQuestion2, mainPage.SecondQuestion2, mainPage.ThirdQuestion2, mainPage.FourthQuestion2, mainPage.SaveTP, mainPage.PrintTP, mainPage.linkCreateNewContract)) {
+            webElement1.click();
+        }
+        mainPage.DurationInYear.sendKeys("21");
+        mainPage.ContentPlaceHolder.sendKeys("Zagreb");
+        mainPage.ContentPlaceHolder1.click();
+        new Select(mainPage.PaymentDinamic).selectByIndex(4);
+        new Select(mainPage.PaymentMethod).selectByIndex(1);
+        for (WebElement webElement : Arrays.asList(mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
+            webElement.click();
+        }
+        Thread.sleep(2500);
+        WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
+        mainPage.inputOIB.sendKeys("86176652379");
+        for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
+            element.click();
+        }
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.UgovaraPlatilacIstoLice.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.AddDeathBeneficiary.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputOpis.sendKeys("Brat");
+        mainPage.inputProcenat.sendKeys("100");
+        mainPage.AcceptDeathBeneficiares.click();
+        Thread.sleep(2500);
+        js.executeScript("window.scrollBy(-1000, 0);");
+        mainPage.divDodaj.click();
+        WebElement iFrame1 = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame1));
+        mainPage.linkMainContentBusinessEntity.click();
+        js.executeScript("window.scrollBy(0, -500);");
+        mainPage.linkTabConcerns.click();
+        new Select(mainPage.InsuredSum).selectByIndex(1);
+        mainPage.InsuredSumOrPremium.sendKeys("8000");
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.sendKeys("85");
+        new Select(mainPage.ChosenAmountSum).selectByIndex(2);
+        mainPage.Accept.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        Thread.sleep(2500);
+        mainPage.ZdravSam.click();
+        mainPage.Alkohol.sendKeys("0");
+        mainPage.Nepusac.click();
+        mainPage.NeDroga.click();
+        mainPage.DRImePrezime.click();
+        mainPage.DRImePrezime.sendKeys("Dobri Doca");
+        mainPage.NeDeformitet.click();
+        mainPage.NeObiteljBolest.click();
+        for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
+            webElement.click();
+        }
+        mainPage.inputStalniIzvori.sendKeys("123");
+        for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
+            webElement.click();
+        }
+        mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
+        mainPage.linkAcceptMoneyLaundry2.click();
+        mainPage.linkActivate.click();
+        mainPage.linkTabPrintouts.click();
+        for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.TestPrikladnosti, mainPage.linkCertificationSignature)) {
+            webElement.click();
+            Thread.sleep(5000);
+        }
+        assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
+        assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
+
+    }
+
+    @Epic("sCore Croatia")
+    @Feature("New Contract")
+    @Description("Creating new contract of FidelisLife")
+    @Step("Creating new contract of FidelisLife - standard basic flow 2050")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 650)
+    public void NewContractFidelisLife2050() throws Exception {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.FidelisLife, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
+            element.click();
+        }
+        mainPage.CustomerName.sendKeys("Test");
+        mainPage.CustomerVocational.sendKeys("Test");
+        mainPage.CustomerSurname.sendKeys("Test");
+        mainPage.CustomerTitle.sendKeys("Test");
+        mainPage.CustomerOIB.sendKeys("27996811116");
+        mainPage.CustomerOccupation.sendKeys("Test");
+        mainPage.DistributorName.sendKeys("Test");
+        mainPage.DistributorNameSurname.sendKeys("Test");
+        for (WebElement webElement1 : Arrays.asList(mainPage.FirstQuestion, mainPage.SecondQuestion, mainPage.ThirdQuestion, mainPage.FourthQuestion, mainPage.FirstQuestion1, mainPage.SecondQuestion1, mainPage.ThirdQuestion1, mainPage.FourthQuestion1, mainPage.FirstQuestion2, mainPage.SecondQuestion2, mainPage.ThirdQuestion2, mainPage.FourthQuestion2, mainPage.SaveTP, mainPage.PrintTP, mainPage.linkCreateNewContract)) {
+            webElement1.click();
+        }
+        mainPage.DurationInYear.sendKeys("26");
+        mainPage.ContentPlaceHolder.sendKeys("Zagreb");
+        mainPage.ContentPlaceHolder1.click();
+        new Select(mainPage.PaymentDinamic).selectByIndex(5);
+        new Select(mainPage.PaymentMethod).selectByIndex(1);
+        for (WebElement webElement : Arrays.asList(mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
+            webElement.click();
+        }
+        Thread.sleep(2500);
+        WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
+        mainPage.inputOIB.sendKeys("86176652379");
+        for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
+            element.click();
+        }
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.UgovaraPlatilacIstoLice.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.AddDeathBeneficiary.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputOpis.sendKeys("Brat");
+        mainPage.inputProcenat.sendKeys("100");
+        mainPage.AcceptDeathBeneficiares.click();
+        Thread.sleep(2500);
+        js.executeScript("window.scrollBy(-1000, 0);");
+        mainPage.divDodaj.click();
+        WebElement iFrame1 = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame1));
+        mainPage.linkMainContentBusinessEntity.click();
+        js.executeScript("window.scrollBy(0, -500);");
+        mainPage.linkTabConcerns.click();
+        new Select(mainPage.InsuredSum).selectByIndex(1);
+        mainPage.InsuredSumOrPremium.sendKeys("8000");
+        mainPage.HeightConcernPerson.sendKeys("190");
+        mainPage.WeightConcernPerson.sendKeys("85");
+        new Select(mainPage.ChosenAmountSum).selectByIndex(2);
+        mainPage.Accept.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        Thread.sleep(2500);
+        mainPage.ZdravSam.click();
+        mainPage.Alkohol.sendKeys("0");
+        mainPage.Nepusac.click();
+        mainPage.NeDroga.click();
+        mainPage.DRImePrezime.click();
+        mainPage.DRImePrezime.sendKeys("Dobri Doca");
+        mainPage.NeDeformitet.click();
+        mainPage.NeObiteljBolest.click();
+        for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
+            webElement.click();
+        }
+        mainPage.inputStalniIzvori.sendKeys("123");
+        for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
+            webElement.click();
+        }
+        mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
+        mainPage.linkAcceptMoneyLaundry2.click();
+        mainPage.linkActivate.click();
+        mainPage.linkTabPrintouts.click();
+        for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.TestPrikladnosti, mainPage.linkCertificationSignature)) {
+            webElement.click();
+            Thread.sleep(5000);
+        }
+        assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
+        assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
+
+    }
+    @Epic("sCore Croatia")
+    @Feature("New Contract")
+    @Description("Creating new contract of FidelisLife")
+    @Step("Creating new contract of FidelisLife - standard basic flow 2055")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 660)
+    public void NewContractFidelisLife2055 () throws Exception {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
@@ -2585,19 +3037,18 @@ public class sCoreCroatia {
         mainPage.DistributorNameSurname.sendKeys("Test");
         for (WebElement webElement1 : Arrays.asList(mainPage.FirstQuestion, mainPage.SecondQuestion, mainPage.ThirdQuestion, mainPage.FourthQuestion, mainPage.FirstQuestion1, mainPage.SecondQuestion1, mainPage.ThirdQuestion1, mainPage.FourthQuestion1, mainPage.FirstQuestion2, mainPage.SecondQuestion2, mainPage.ThirdQuestion2, mainPage.FourthQuestion2, mainPage.SaveTP, mainPage.PrintTP, mainPage.linkCreateNewContract)) {
             webElement1.click(); }
-        mainPage.DurationInYear.sendKeys("11");
+        mainPage.DurationInYear.sendKeys("31");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
-        new Select(mainPage.PaymentDinamic).selectByIndex(2);
+        new Select(mainPage.PaymentDinamic).selectByIndex(5);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
-        mainPage.IndexationCRO.click();
         for (WebElement webElement : Arrays.asList(mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
             webElement.click(); }
         Thread.sleep(2500);
         WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
-        mainPage.inputOIB.sendKeys("96857952493");
+        mainPage.inputOIB.sendKeys("86176652379");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
             element.click(); }
         js.executeScript("window.scrollBy(-500, 0);");
@@ -2647,14 +3098,13 @@ public class sCoreCroatia {
             Thread.sleep(5000); }
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
         assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
-
-    }
-/*
+        /*
     @AfterMethod
     public void tearDown() {
         driver.quit();
     }
 */
+    }
 }
 
 
