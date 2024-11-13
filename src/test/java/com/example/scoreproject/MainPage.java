@@ -1687,6 +1687,35 @@ public class MainPage {
     @FindBy(css = "#Kol22")
     public WebElement inputOIBVinculationCompany;
 
+    @FindBy(xpath = "//*[@id='btn_Print']")
+    public WebElement PrintTestPrikladnosti;
+
+    @FindBy(xpath = "//*[@id='btn_CreateNewContract']")
+    public WebElement linkCreateNewContract;
+
+    @FindBy(xpath = "//label[@for='qnn_6_0_1']")
+    public WebElement ZdravSam;
+
+    @FindBy(xpath = "//*[@id='qnn_6_1']")
+    public WebElement Alkohol;
+
+    @FindBy(xpath = "//label[@for='qnn_6_2_0']")
+    public WebElement Nepusac;
+
+    @FindBy(xpath = "//label[@for='qnn_6_3_0']")
+    public WebElement NeDroga;
+
+    @FindBy(xpath = "//*[@id='qnn_6_4']")
+    public WebElement DRImePrezime;
+
+    @FindBy(xpath = "//label[@for='qnn_6_5_0']")
+    public WebElement NeDeformitet;
+
+    @FindBy(xpath = "//label[@for='qnn_6_6_0']")
+    public WebElement NeObiteljBolest;
+
+    @FindBy(xpath = "//a[@onclick='return openItemForPrint(1, 3, 1);']")
+    public WebElement TestPrikladnosti;
 
     //BOSNIA
 
@@ -1782,6 +1811,14 @@ public class MainPage {
 
     @FindBy(css = "#btn_ExportToExcel")
     public WebElement ExportToExcel;
+
+
+
+    
+
+    
+
+    
 
 
     

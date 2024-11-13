@@ -2284,7 +2284,7 @@ public class sCoreBosnia {
         JMBGOsiguranika.clear();
         JMBGOsiguranika.sendKeys("0711020700240");
 
-        WebElement PretraziLice1 = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
+        WebElement PretraziLice1 = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[9]/div/a"));
         PretraziLice1.click();
 
         WebElement PregledLica1 = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[2]/table/tbody/tr[2]/td[9]/div/a"));
@@ -2782,7 +2782,7 @@ public class sCoreBosnia {
         JMBGOsiguranika.clear();
         JMBGOsiguranika.sendKeys("2104986150002");
 
-        WebElement PretraziLice1 = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[8]/div/a"));
+        WebElement PretraziLice1 = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[1]/div[9]/div/a"));
         PretraziLice1.click();
 
         WebElement PregledLica1 = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/fieldset/div[2]/table/tbody/tr[2]/td[9]/div/a"));
