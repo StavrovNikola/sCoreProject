@@ -1723,6 +1723,14 @@ public class MainPage {
     @FindBy(xpath = "//*[@id='Kol62']")
     public WebElement VrijednostPovecanjaPremije;
 
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(2) > fieldset > div > div > div > div:nth-of-type(1)")
+    public WebElement divOsiguranaOsobaStrani;
+
+    @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(2) > div > div:nth-of-type(2) > fieldset > div > div > div > div:nth-of-type(2)")
+    public WebElement divStrani;
+
+    @FindBy(css = "#Kol8 div[align='left']")
+    public WebElement divZanimanje2;
 
 
     //BOSNIA

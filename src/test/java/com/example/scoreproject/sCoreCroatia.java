@@ -2921,8 +2921,7 @@ public class sCoreCroatia {
         mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
         mainPage.inputPassword.sendKeys("Werts!23!!g00!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.FidelisLife, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click();
-        }
+            element.click(); }
         mainPage.CustomerName.sendKeys("Test");
         mainPage.CustomerVocational.sendKeys("Test");
         mainPage.CustomerSurname.sendKeys("Test");
@@ -2932,24 +2931,21 @@ public class sCoreCroatia {
         mainPage.DistributorName.sendKeys("Test");
         mainPage.DistributorNameSurname.sendKeys("Test");
         for (WebElement webElement1 : Arrays.asList(mainPage.FirstQuestion, mainPage.SecondQuestion, mainPage.ThirdQuestion, mainPage.FourthQuestion, mainPage.FirstQuestion1, mainPage.SecondQuestion1, mainPage.ThirdQuestion1, mainPage.FourthQuestion1, mainPage.FirstQuestion2, mainPage.SecondQuestion2, mainPage.ThirdQuestion2, mainPage.FourthQuestion2, mainPage.SaveTP, mainPage.PrintTP, mainPage.linkCreateNewContract)) {
-            webElement1.click();
-        }
+            webElement1.click(); }
         mainPage.DurationInYear.sendKeys("31");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(5);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         for (WebElement webElement : Arrays.asList(mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
-            webElement.click();
-        }
+            webElement.click(); }
         Thread.sleep(2500);
         WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
         new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.inputOIB.sendKeys("86176652379");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click();
-        }
+            element.click(); }
         js.executeScript("window.scrollBy(-500, 0);");
         mainPage.UgovaraPlatilacIstoLice.click();
         js.executeScript("window.scrollBy(-500, 0);");
@@ -2984,28 +2980,239 @@ public class sCoreCroatia {
         mainPage.NeDeformitet.click();
         mainPage.NeObiteljBolest.click();
         for (WebElement webElement : Arrays.asList(mainPage.SaveQuestionary, mainPage.Calculate, mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
-            webElement.click();
-        }
+            webElement.click(); }
         mainPage.inputStalniIzvori.sendKeys("123");
         for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
-            webElement.click();
-        }
+            webElement.click(); }
         mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
         mainPage.linkAcceptMoneyLaundry2.click();
         mainPage.linkActivate.click();
         mainPage.linkTabPrintouts.click();
         for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.TestPrikladnosti, mainPage.linkCertificationSignature)) {
-            webElement.click();
-            Thread.sleep(5000);
-        }
+            webElement.click(); Thread.sleep(5000); }
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
         assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
     }
+
+    @Epic("sCore Croatia")
+    @Feature("New Contract")
+    @Description("Creating new contract of MO")
+    @Step("Creating new contract of MO - Foreigner")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 670)
+    public void NewContractForeignerMO() throws Exception {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.MO, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
+            element.click(); }
+        mainPage.DurationInYear.sendKeys("20");
+        mainPage.ContentPlaceHolder.sendKeys("Zagreb");
+        mainPage.ContentPlaceHolder1.click();
+        new Select(mainPage.PaymentDinamic).selectByIndex(1);
+        new Select(mainPage.PaymentMethod).selectByIndex(1);
+        for (WebElement webElement : Arrays.asList(mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
+            webElement.click(); }
+        Thread.sleep(2500);
+        WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
+        mainPage.inputOIB.sendKeys("18824724184");
+        for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
+            element.click(); }
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.UgovaraPlatilacIstoLice.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.AddDeathBeneficiary.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputOpis.sendKeys("Brat");
+        mainPage.inputProcenat.sendKeys("100");
+        mainPage.AcceptDeathBeneficiares.click();
+        Thread.sleep(2500);
+        js.executeScript("window.scrollBy(-1000, 0);");
+        mainPage.divDodaj.click();
+        WebElement iFrame1 = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame1));
+        mainPage.linkMainContentBusinessEntity.click();
+        js.executeScript("window.scrollBy(0, -500);");
+        mainPage.linkTabConcerns.click();
+        new Select(mainPage.InsuredSum).selectByIndex(1);
+        mainPage.InsuredSumOrPremium.sendKeys("5000");
+        mainPage.HeightConcernPerson.sendKeys("180");
+        mainPage.WeightConcernPerson.sendKeys("70");
+        mainPage.Accept.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputAlkohol.sendKeys("0");
+        mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
+        mainPage.SaveQuestionary.click();
+        mainPage.Calculate.click();
+        assert mainPage.divOsiguranaOsobaStrani.getText().equals("Osigurana osoba strani državljanin"): "Expected messagge";
+        assert mainPage.divStrani.getText().equals("Ugovaratelj strani državljanin"): "Expected messagge";
+        for (WebElement webElement1 : Arrays.asList(mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
+            webElement1.click(); }
+        mainPage.inputStalniIzvori.sendKeys("123");
+        for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
+            webElement.click(); }
+        mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
+        for (WebElement element : Arrays.asList(mainPage.linkAcceptMoneyLaundry2, mainPage.linkActivate, mainPage.linkTabPrintouts)) {
+            element.click(); }
+        for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
+            webElement.click(); Thread.sleep(5000); }
+        assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
+        assert mainPage.StatusUgovora.getText().equals("Čeka procjenu rizika") : "Expected Contract status";
+    }
+
+    @Epic("sCore Croatia")
+    @Feature("New Contract")
+    @Description("Creating new contract of MO")
+    @Step("Creating new contract of MO - Occupation not on the list")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 680)
+    public void NewContractOccupationListMO() throws Exception {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.MO, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
+            element.click(); }
+        mainPage.DurationInYear.sendKeys("20");
+        mainPage.ContentPlaceHolder.sendKeys("Zagreb");
+        mainPage.ContentPlaceHolder1.click();
+        new Select(mainPage.PaymentDinamic).selectByIndex(1);
+        new Select(mainPage.PaymentMethod).selectByIndex(1);
+        for (WebElement webElement : Arrays.asList(mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
+            webElement.click(); }
+        Thread.sleep(2500);
+        WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
+        mainPage.inputOIB.sendKeys("88540543380");
+        for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
+            element.click(); }
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.UgovaraPlatilacIstoLice.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.AddDeathBeneficiary.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputOpis.sendKeys("Brat");
+        mainPage.inputProcenat.sendKeys("100");
+        mainPage.AcceptDeathBeneficiares.click();
+        Thread.sleep(2500);
+        js.executeScript("window.scrollBy(-1000, 0);");
+        mainPage.divDodaj.click();
+        WebElement iFrame1 = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame1));
+        mainPage.linkMainContentBusinessEntity.click();
+        js.executeScript("window.scrollBy(0, -500);");
+        mainPage.linkTabConcerns.click();
+        new Select(mainPage.InsuredSum).selectByIndex(1);
+        mainPage.InsuredSumOrPremium.sendKeys("6000");
+        mainPage.HeightConcernPerson.sendKeys("180");
+        mainPage.WeightConcernPerson.sendKeys("70");
+        mainPage.Accept.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputAlkohol.sendKeys("0");
+        mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
+        mainPage.SaveQuestionary.click();
+        mainPage.Calculate.click();
+        assert mainPage.divZanimanje2.getText().equals("Zanimanje"): "Expected messagge";
+        for (WebElement webElement1 : Arrays.asList(mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
+            webElement1.click(); }
+        mainPage.inputStalniIzvori.sendKeys("123");
+        for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
+            webElement.click(); }
+        mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
+        for (WebElement element : Arrays.asList(mainPage.linkAcceptMoneyLaundry2, mainPage.linkActivate, mainPage.linkTabPrintouts)) {
+            element.click(); }
+        for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
+            webElement.click(); Thread.sleep(5000); }
+        assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
+        assert mainPage.StatusUgovora.getText().equals("Čeka procjenu rizika") : "Expected Contract status";
+    }
+
+    @Epic("sCore Croatia")
+    @Feature("New Contract")
+    @Description("Creating new contract of MODOR")
+    @Step("Creating new contract of MODOR - Occupation")
+    @Owner("Nikola Stavrov")
+    @Test(priority = 690)
+    public void NewContractOccupationMODOR() throws Exception {
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        mainPage.inputUsername.sendKeys("sCoreAgentUW CRO");
+        mainPage.inputPassword.sendKeys("Werts!23!!g00!");
+        for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.MODOR, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
+            element.click(); }
+        mainPage.DurationInYear.sendKeys("13");
+        mainPage.ContentPlaceHolder.sendKeys("Zagreb");
+        mainPage.ContentPlaceHolder1.click();
+        new Select(mainPage.PaymentDinamic).selectByIndex(1);
+        new Select(mainPage.PaymentMethod).selectByIndex(1);
+        for (WebElement webElement : Arrays.asList(mainPage.TabPersons, mainPage.UgovaraOsiguranikIstoLice2, mainPage.Dodaj)) {
+            webElement.click(); }
+        Thread.sleep(2500);
+        WebElement iFrame = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
+        mainPage.inputOIB.sendKeys("23799916743");
+        for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
+            element.click(); }
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.UgovaraPlatilacIstoLice.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.AddDeathBeneficiary.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputOpis.sendKeys("Brat");
+        mainPage.inputProcenat.sendKeys("100");
+        mainPage.AcceptDeathBeneficiares.click();
+        Thread.sleep(2500);
+        js.executeScript("window.scrollBy(-1000, 0);");
+        mainPage.divDodaj.click();
+        WebElement iFrame1 = driver.findElement(By.xpath("/html/body/div[3]/iframe"));
+        new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame1));
+        mainPage.linkMainContentBusinessEntity.click();
+        js.executeScript("window.scrollBy(0, -500);");
+        mainPage.linkTabConcerns.click();
+        new Select(mainPage.InsuredSum).selectByIndex(1);
+        mainPage.InsuredSumOrPremium.sendKeys("6500");
+        mainPage.HeightConcernPerson.sendKeys("185");
+        mainPage.WeightConcernPerson.sendKeys("80");
+        mainPage.Accept.click();
+        js.executeScript("window.scrollBy(-500, 0);");
+        mainPage.inputAlkohol.sendKeys("0");
+        mainPage.inputImePrezimeDoktor.sendKeys("Doktor Doca");
+        mainPage.SaveQuestionary.click();
+        mainPage.Calculate.click();
+       // assert mainPage.divZanimanje2.getText().equals("Zanimanje"): "Expected messagge";
+        for (WebElement webElement1 : Arrays.asList(mainPage.TechnicalPersons, mainPage.TechnicalPersonsOpenSearch, mainPage.TechnicalPersonsOpenSearchSelect, mainPage.Save, mainPage.linkTabMoneyLaundry, mainPage.labelStednja, mainPage.labelZaposlen, mainPage.labelStalniPlaMirovinaIli)) {
+            webElement1.click(); }
+        mainPage.inputStalniIzvori.sendKeys("123");
+        for (WebElement webElement : Arrays.asList(mainPage.RH, mainPage.StalniRezidentDa, mainPage.DaIdentifikacijskiBroj, mainPage.NeDrugaOsoba, mainPage.NeZakonski, mainPage.inputDjelatnostStranke)) {
+            webElement.click(); }
+        mainPage.inputDjelatnostStranke.sendKeys("Zakonski Test");
+        for (WebElement element : Arrays.asList(mainPage.linkAcceptMoneyLaundry2, mainPage.linkActivate, mainPage.linkTabPrintouts)) {
+            element.click(); }
+        for (WebElement webElement : Arrays.asList(mainPage.linkIspisOriginalaPolisa, mainPage.linkIspisOriginalaPismoZahvale, mainPage.linkIspisOriginalaNalogZaPlacanje, mainPage.linkCertificationSignature)) {
+            webElement.click();
+            Thread.sleep(5000); }
+        assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
+        assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
+    }
+    /*
         @AfterMethod
         public void tearDown (){
             driver.quit();
-        }
 
+
+        }
+*/
     }
 
 
