@@ -2555,7 +2555,7 @@ public class sCoreBosnia {
         SifraLica.clear();
         SifraLica.sendKeys("1890778");
 
-        WebElement PretraziPravno = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/div[2]/fieldset/div[1]/div[6]/div/div/a"));
+        WebElement PretraziPravno = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/div[2]/fieldset/div[1]/div[7]/div/div/a"));
         PretraziPravno.click();
 
         WebElement PregledPravnog = driver.findElement(By.xpath("/html/body/form/div[2]/div[2]/div/div[2]/fieldset/div[2]/table/tbody/tr[2]/td[8]/div/a"));
