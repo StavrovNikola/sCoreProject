@@ -3205,14 +3205,14 @@ public class sCoreCroatia {
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspješno odrađena.") : "Expected message after Certification signature";
         assert mainPage.StatusUgovora.getText().equals("A") : "Expected Contract status";
     }
-    /*
+
         @AfterMethod
         public void tearDown (){
             driver.quit();
 
 
         }
-*/
+
     }
 
 
