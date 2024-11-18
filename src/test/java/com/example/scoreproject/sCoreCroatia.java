@@ -3040,7 +3040,7 @@ public class sCoreCroatia {
         js.executeScript("window.scrollBy(0, -500);");
         mainPage.linkTabConcerns.click();
         new Select(mainPage.InsuredSum).selectByIndex(1);
-        mainPage.InsuredSumOrPremium.sendKeys("5000");
+        mainPage.InsuredSumOrPremium.sendKeys("6500");
         mainPage.HeightConcernPerson.sendKeys("180");
         mainPage.WeightConcernPerson.sendKeys("70");
         mainPage.Accept.click();
