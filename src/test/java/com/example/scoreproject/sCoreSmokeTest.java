@@ -340,7 +340,7 @@ public class sCoreSmokeTest {
         Username.sendKeys("amina.masic");
 
         WebElement Password = driver.findElement(By.id("Password"));
-        Password.sendKeys("Sarajevo123!");
+        Password.sendKeys("Uniqa2024.!");
 
         WebElement Prijava = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div/div[2]/form/fieldset/div[4]/button[1]"));
         Prijava.click();

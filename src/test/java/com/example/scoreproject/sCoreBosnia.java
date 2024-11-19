@@ -822,7 +822,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("Uniqa2024.!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -851,7 +851,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("Uniqa2024.!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -880,7 +880,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("Uniqa2024.!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -907,7 +907,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("Uniqa2024.!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -935,7 +935,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("Uniqa2024.!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -964,7 +964,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("Uniqa2024.!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -993,7 +993,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("Uniqa2024.!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1029,7 +1029,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("Uniqa2024.!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1064,7 +1064,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("Uniqa2024.!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1099,7 +1099,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("Uniqa2024.!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1134,7 +1134,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("Uniqa2024.!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1165,7 +1165,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("Uniqa2024.!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1194,7 +1194,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("Uniqa2024.!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1225,7 +1225,7 @@ public class sCoreBosnia {
         mainPage.inputUsername.click();
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.click();
-        mainPage.inputPassword.sendKeys("Sarajevo123!");
+        mainPage.inputPassword.sendKeys("Uniqa2024.!");
         mainPage.buttonLogin.click();
         mainPage.Life.click();
         mainPage.SideMenu.click();
@@ -1791,7 +1791,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000392");
+        BrojPonude.sendKeys("0001000398");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();
@@ -2001,7 +2001,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000393");
+        BrojPonude.sendKeys("0001000399");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();
@@ -2231,7 +2231,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000394");
+        BrojPonude.sendKeys("0001000400");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();
@@ -2496,7 +2496,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000395");
+        BrojPonude.sendKeys("0001000401");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();
@@ -2727,7 +2727,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000396");
+        BrojPonude.sendKeys("0001000402");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();
@@ -3189,7 +3189,7 @@ public class sCoreBosnia {
         WebElement BrojPonude = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[1]/div/div/input"));
         BrojPonude.click();
         BrojPonude.clear();
-        BrojPonude.sendKeys("0001000397");
+        BrojPonude.sendKeys("0001000403");
 
         WebElement Trajanje = driver.findElement(By.xpath("/html/body/form/div[4]/div[2]/div/div/div[2]/fieldset/div[2]/div[3]/div[1]/div[2]/div[5]/div/div/div[2]/div[2]/div/span[2]/input"));
         Trajanje.clear();

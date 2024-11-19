@@ -2066,6 +2066,7 @@ public void SideMenuKidneyUrinaryDiseases() throws InterruptedException {
     @AfterMethod
     public void tearDown() {
         driver.quit();
+
     }
 
      }

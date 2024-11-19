@@ -2375,7 +2375,7 @@ public class sCoreSerbia {
         ImePrezime.sendKeys("Nikola Stankovic");
 
         WebElement DatumRodjenja = driver.findElement(By.xpath("/html/body/div/div/main/div[2]/div/div/div/div[1]/div[1]/div/div[2]/div/div/input"));
-        DatumRodjenja.sendKeys("20.12.1975");
+        DatumRodjenja.sendKeys("01.02.1992");
 
         WebElement Pol = driver.findElement(By.xpath("/html/body/div/div/main/div[2]/div/div/div/div[1]/div[1]/div/div[4]/label[2]/span[1]/span[1]/input"));
         Pol.click();
@@ -2398,7 +2398,7 @@ public class sCoreSerbia {
         WebElement Iznos = driver.findElement(By.xpath("/html/body/div/div/main/div[2]/div/div/div/div[1]/div[2]/div/div[7]/div/div/input"));
         Iznos.click();
         Iznos.clear();
-        Iznos.sendKeys("3500");
+        Iznos.sendKeys("5000");
 
         WebElement NominalnaKamatnaStopa = driver.findElement(By.xpath("/html/body/div/div/main/div[2]/div/div/div/div[1]/div[2]/div/div[8]/div/div/input"));
         NominalnaKamatnaStopa.click();
@@ -2421,7 +2421,7 @@ public class sCoreSerbia {
         WebElement JMBG = driver.findElement(By.xpath("/html/body/div/div/main/div[3]/div/div/div/div[1]/div/div[2]/div/div/div/div/div[1]/div[2]/div[1]/div/div/input"));
         JMBG.click();
         JMBG.clear();
-        JMBG.sendKeys("2012975752025");
+        JMBG.sendKeys("0102992700243");
 
         WebElement Pretrazi = driver.findElement(By.xpath("/html/body/div/div/main/div[3]/div/div/div/div[1]/div/div[2]/div/div/div/div/div[1]/div[2]/div[1]/button"));
         Pretrazi.click();
