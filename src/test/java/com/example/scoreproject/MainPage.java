@@ -1292,6 +1292,9 @@ public class MainPage {
     @FindBy(css = "button[class='jss111 jss434 jss438 jss443 jss432'] span[class='jss435']")
     public WebElement IzmenaPonistenje;
 
+    @FindBy(css = "a[onclick='return showIFrame(\"https://mne-test-iis2.stech.loc/BusinessEntities/IFrameForms/IFrameClientMain/3/4/0/4/2/1/0/2/1/1/0/0/0/0/1/0/595/634900/43\", 1000, 600, 1, 0);(6, -1, \":0:1\");']")
+    public WebElement OsiguranikDodaj;
+
 
     //MONTENEGRO
 
@@ -1355,9 +1358,60 @@ public class MainPage {
     @FindBy(css = "label[for='Kol14_195']")
     public WebElement SMEKMPCheckbox;
 
+    @FindBy(css = "#Kol2")
+    public WebElement DatumPocetka;
+
+    @FindBy(css = "label[for='qnn_1_0_1'] span")
+    public WebElement Stednja;
+
+    @FindBy(css = "label[for='qnn_1_1_1'] span")
+    public WebElement Zaposlen;
+
+    @FindBy(css = "label[for='qnn_1_2_0'] span")
+    public WebElement StalniIzvori;
+
+    @FindBy(css = "label[for='qnn_1_8_0'] span")
+    public WebElement NegativnaSaznanja;
+
+    @FindBy(css = "label[for='qnn_1_9_0'] span")
+    public WebElement TajnostTransakcije;
+
+    @FindBy(css = "label[for='qnn_1_10_0'] span")
+    public WebElement IdentifikacijaProblem;
+
+    @FindBy(css = "label[for='qnn_1_11_0'] span")
+    public WebElement KlijentInformacije;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 0, 1);']")
+    public WebElement PolisaStampaj;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 1, 1);']")
+    public WebElement KID;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 2, 1);']")
+    public WebElement StampaAML;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 3, 1);']")
+    public WebElement PismoPropratno;
+
+    @FindBy(css = "a[onclick='return openItemForPrint(1, 4, 1);']")
+    public WebElement StampaUplatnica;
+
+    @FindBy(css = "#inp_7271_1")
+    public WebElement inputDozivljenje;
+
+    @FindBy(css = "#btn_Confirm")
+    public WebElement linkConfirm;
+
+    @FindBy(css = "#btn_CreatePolicy")
+    public WebElement linkCreatePolicy;
+
+    @FindBy(css = "#MainContent_IndividualClientLifeFormView_UpdateButton")
+    public WebElement linkMainContentIndividualClient;
+
+    @FindBy(css = "button[class='swal2-confirm swal2-styled']")
+    public WebElement SavePerson;
     
-
-
     //CROATIA
 
     @FindBy(css = "div[class$='tb']")
@@ -1828,6 +1882,17 @@ public class MainPage {
     @FindBy(css = "#btn_ExportToExcel")
     public WebElement ExportToExcel;
 
+
+
+
+
+
+
+
+    
+
+
+ 
 
 
     
