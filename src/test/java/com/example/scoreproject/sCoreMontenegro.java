@@ -2430,12 +2430,12 @@ public class sCoreMontenegro {
         // assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspešno urađena.") : "Expected message after Certification signature";
 
     }
-/*
+
     @AfterMethod
     public void tearDown() {
         driver.quit();
     }
-*/
+
      }
 
 
