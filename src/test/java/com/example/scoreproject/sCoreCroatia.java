@@ -1721,9 +1721,8 @@ public class sCoreCroatia {
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("12");
-        new Select(mainPage.PaymentDinamic).selectByIndex(2);
-        new Select(mainPage.PaymentMethod).selectByIndex(4);
-        new Select(mainPage.Banka).selectByIndex(3);
+        new Select(mainPage.PaymentDinamic).selectByIndex(1);
+        new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.linkTabPersons.click();
         mainPage.UgovaraOsiguranikIstoLice2.click();
         mainPage.Dodaj.click();

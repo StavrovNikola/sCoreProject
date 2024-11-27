@@ -102,6 +102,8 @@ public class sCoreMontenegro {
         mainPage.ContentPlaceHolder.click();
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
+        mainPage.DatumPocetka.clear();
+        mainPage.DatumPocetka.sendKeys("01.12.2024");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -152,6 +154,8 @@ public class sCoreMontenegro {
         mainPage.ContentPlaceHolder.click();
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
+        mainPage.DatumPocetka.clear();
+        mainPage.DatumPocetka.sendKeys("01.12.2024");
         new Select(mainPage.PaymentDinamic).selectByIndex(2);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -200,6 +204,8 @@ public class sCoreMontenegro {
         mainPage.ContentPlaceHolder.click();
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
+        mainPage.DatumPocetka.clear();
+        mainPage.DatumPocetka.sendKeys("01.12.2024");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(2);
         new Select(mainPage.Banka).selectByIndex(7);
@@ -295,6 +301,8 @@ public class sCoreMontenegro {
         mainPage.ContentPlaceHolder.click();
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
+        mainPage.DatumPocetka.clear();
+        mainPage.DatumPocetka.sendKeys("01.12.2024");
         new Select(mainPage.PaymentDinamic).selectByIndex(1);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -390,6 +398,8 @@ public class sCoreMontenegro {
         mainPage.ContentPlaceHolder.click();
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
+        mainPage.DatumPocetka.clear();
+        mainPage.DatumPocetka.sendKeys("01.12.2024");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -440,6 +450,8 @@ public class sCoreMontenegro {
         mainPage.ContentPlaceHolder.click();
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
+        mainPage.DatumPocetka.clear();
+        mainPage.DatumPocetka.sendKeys("01.12.2024");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -488,6 +500,8 @@ public class sCoreMontenegro {
         mainPage.ContentPlaceHolder.click();
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
+        mainPage.DatumPocetka.clear();
+        mainPage.DatumPocetka.sendKeys("01.12.2024");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(2);
         new Select(mainPage.Banka).selectByIndex(7);
@@ -583,6 +597,8 @@ public class sCoreMontenegro {
         mainPage.ContentPlaceHolder.click();
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
+        mainPage.DatumPocetka.clear();
+        mainPage.DatumPocetka.sendKeys("01.12.2024");
         new Select(mainPage.PaymentDinamic).selectByIndex(1);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -678,6 +694,10 @@ public class sCoreMontenegro {
         mainPage.ContentPlaceHolder.click();
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
+        mainPage.DatumPocetka.clear();
+        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.clear();
+        mainPage.DatumPocetka.sendKeys("01.12.2024");
         new Select(mainPage.PaymentDinamic).selectByIndex(3);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -728,6 +748,8 @@ public class sCoreMontenegro {
         mainPage.ContentPlaceHolder.click();
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
+        mainPage.DatumPocetka.clear();
+        mainPage.DatumPocetka.sendKeys("01.12.2024");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -776,6 +798,8 @@ public class sCoreMontenegro {
         mainPage.ContentPlaceHolder.click();
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
+        mainPage.DatumPocetka.clear();
+        mainPage.DatumPocetka.sendKeys("01.12.2024");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(2);
         new Select(mainPage.Banka).selectByIndex(7);
@@ -871,6 +895,8 @@ public class sCoreMontenegro {
         mainPage.ContentPlaceHolder.click();
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
+        mainPage.DatumPocetka.clear();
+        mainPage.DatumPocetka.sendKeys("01.12.2024");
         new Select(mainPage.PaymentDinamic).selectByIndex(1);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -2322,7 +2348,7 @@ public class sCoreMontenegro {
 
     }
 
-    @Epic("sCore Serbia")
+    @Epic("sCore Montenegro")
     @Feature("New Contract")
     @Description("Creating new contract of Riziko vital kredit")
     @Step("Creating new contract of Riziko vital kredit - standard basic flow")
@@ -2378,7 +2404,7 @@ public class sCoreMontenegro {
 
     }
 
-    @Epic("sCore Serbia")
+    @Epic("sCore Montenegro")
     @Feature("New Contract")
     @Description("Creating new contract of Riziko Plus")
     @Step("Creating new contract of Riziko Plus - standard basic flow")
