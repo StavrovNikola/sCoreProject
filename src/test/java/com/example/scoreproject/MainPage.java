@@ -1804,14 +1804,72 @@ public class MainPage {
     @FindBy(xpath = "//div[contains(@class, 'ico_comfortdual')]")
     public WebElement ComfortDual;
 
+    @FindBy(css = "div[class$='comfortextraplus']")
+    public WebElement ComfortExtraPlus;
+
+
     @FindBy(css = "#Kol112")
     public WebElement BusinessUnit;
+
+    @FindBy(css = "#Kol25")
+    public WebElement BrojPonude;
+
+    @FindBy(css = "#qnn_6_7")
+    public WebElement inputZU;
+
+    @FindBy(css = "#qnn_6_15")
+    public WebElement inputZUUniqo;
+
+    @FindBy(css = "a[onclick='return showIFrame(\"https://t-unba-iis.uniqa.ba/BusinessEntities/IFrameForms/IFrameClientMain/5/4/0/7/17/1/0/2/1/0/0/0/0/0/1/0/548/668750/29\", 1000, 600, 1, 0);(22, -1, \":0:1\");']")
+    public WebElement linkDodajOsiguranik;
+
+    @FindBy(css = "a[onclick='return removeItemFromGrid(2, -1, \":0:1\");']")
+    public WebElement KorisnikSmrt;
+
+    @FindBy(css = "label[for='Kol17']")
+    public WebElement labelUgovaraIstoLice;
 
     @FindBy(css = "input[id='Kol17']")
     public WebElement ClientInfoBA;
 
     @FindBy(css = "#tab_Concerns")
     public WebElement TabConcernsBA;
+
+    @FindBy(css = "#tab_MoneyLaundry")
+    public WebElement TabMoneyLaundry;
+
+    @FindBy(css = "label[for='qnn_1_0_1']")
+    public WebElement labelTednja;
+
+    @FindBy(css = "label[for='qnn_1_1_1']")
+    public WebElement labelZaposlenBA;
+
+    @FindBy(css = "label[for='qnn_1_2_0']")
+    public WebElement labelStalniPlataPorodiPrimanja;
+
+    @FindBy(css = "label[for='qnn_1_3_1']")
+    public WebElement UsvojeIme;
+
+    @FindBy(css = "label[for='qnn_1_4_0']")
+    public WebElement TrecaOsoba;
+
+    @FindBy(css = "label[for='qnn_1_9_0']")
+    public WebElement ClanPorodicePolisa;
+
+    @FindBy(css = "label[for='qnn_1_11_0']")
+    public WebElement FatcaIndicija;
+
+    @FindBy(css = "label[for='qnn_1_12_0']")
+    public WebElement SaznanjaNegativna;
+
+    @FindBy(css = "label[for='qnn_1_13_0']")
+    public WebElement TransakcijaTajnost;
+
+    @FindBy(css = "label[for='qnn_1_14_0']")
+    public WebElement IdentifikacijaProblemBA;
+
+    @FindBy(css = "label[for='qnn_1_15_1']")
+    public WebElement InformacijeKlijentBA;
 
     @FindBy(css = "#Kol31")
     public WebElement DateOfBirth1;
@@ -1881,6 +1939,7 @@ public class MainPage {
 
     @FindBy(css = "#btn_ExportToExcel")
     public WebElement ExportToExcel;
+
 
 
 
