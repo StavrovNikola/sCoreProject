@@ -319,6 +319,7 @@ public class sCoreBosnia {
         new Select(mainPage.SalesUnitChanel).selectByIndex(1);
         Thread.sleep(2500);
         new Select(mainPage.SalesUnitPartner).selectByIndex(2);
+        Thread.sleep(2500);
         mainPage.TechnicalPersonSearch.click();
         mainPage.TechnicalPerson.click();
         mainPage.Save.click();
@@ -370,6 +371,7 @@ public class sCoreBosnia {
         new Select(mainPage.SalesUnitChanel).selectByIndex(1);
         Thread.sleep(2500);
         new Select(mainPage.SalesUnitPartner).selectByIndex(2);
+        Thread.sleep(2500);
         mainPage.TechnicalPersonSearch.click();
         mainPage.TechnicalPerson.click();
         mainPage.Save.click();
@@ -428,6 +430,7 @@ public class sCoreBosnia {
         new Select(mainPage.SalesUnitChanel).selectByIndex(1);
         Thread.sleep(2500);
         new Select(mainPage.SalesUnitPartner).selectByIndex(2);
+        Thread.sleep(2500);
         mainPage.TechnicalPersonSearch.click();
         mainPage.TechnicalPerson.click();
         mainPage.Save.click();
@@ -537,6 +540,7 @@ public class sCoreBosnia {
         new Select(mainPage.SalesUnitChanel).selectByIndex(1);
         Thread.sleep(2500);
         new Select(mainPage.SalesUnitPartner).selectByIndex(2);
+        Thread.sleep(2500);
         mainPage.TechnicalPersonSearch.click();
         mainPage.TechnicalPerson.click();
         mainPage.Save.click();
@@ -748,6 +752,7 @@ public class sCoreBosnia {
         new Select(mainPage.SalesUnitChanel).selectByIndex(1);
         Thread.sleep(2500);
         new Select(mainPage.SalesUnitPartner).selectByIndex(2);
+        Thread.sleep(2500);
         mainPage.TechnicalPersonSearch.click();
         mainPage.TechnicalPerson.click();
         mainPage.Save.click();
@@ -806,6 +811,7 @@ public class sCoreBosnia {
         new Select(mainPage.SalesUnitChanel).selectByIndex(1);
         Thread.sleep(2500);
         new Select(mainPage.SalesUnitPartner).selectByIndex(2);
+        Thread.sleep(2500);
         mainPage.TechnicalPersonSearch.click();
         mainPage.TechnicalPerson.click();
         mainPage.Save.click();
@@ -1956,7 +1962,7 @@ public class sCoreBosnia {
             element.click();
         }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0001000241");
+        mainPage.BrojPonude.sendKeys("0001000252");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("10");
@@ -1990,10 +1996,9 @@ public class sCoreBosnia {
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.sendKeys("Uniqa2024.!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Classic, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click();
-        }
+            element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0001000238");
+        mainPage.BrojPonude.sendKeys("0001000253");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("15");
@@ -2008,8 +2013,7 @@ public class sCoreBosnia {
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.IdentificationNumber.sendKeys("1012984180057");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click();
-        }
+            element.click(); }
         js.executeScript("window.scrollBy(-500, 0);");
         mainPage.UgovaraPlatilacIstoLice.click();
         js.executeScript("window.scrollBy(-500, 0);");
@@ -2039,8 +2043,7 @@ public class sCoreBosnia {
         new Select(mainPage.SalesUnitPartner).selectByIndex(2);
         Thread.sleep(2500);
         for (WebElement webElement : Arrays.asList(mainPage.TechnicalPersonSearch, mainPage.TechnicalPerson, mainPage.Save, mainPage.linkActivate, mainPage.TabMoneyLaundry, mainPage.labelTednja, mainPage.labelZaposlenBA, mainPage.labelStalniPlataPorodiPrimanja, mainPage.UsvojeIme, mainPage.TrecaOsoba, mainPage.ClanPorodicePolisa, mainPage.FatcaIndicija, mainPage.SaznanjaNegativna, mainPage.TransakcijaTajnost, mainPage.IdentifikacijaProblemBA, mainPage.InformacijeKlijentBA, mainPage.linkAcceptMoneyLaundry, mainPage.linkCertificationSignature)) {
-            webElement.click();
-        }
+            webElement.click(); }
     }
 
     @Epic("sCore Bosnia")
@@ -2056,10 +2059,9 @@ public class sCoreBosnia {
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.sendKeys("Uniqa2024.!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Comfort, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click();
-        }
+            element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0001000239");
+        mainPage.BrojPonude.sendKeys("0001000254");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("12");
@@ -2074,8 +2076,7 @@ public class sCoreBosnia {
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.IdentificationNumber.sendKeys("1012984180057");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click();
-        }
+            element.click(); }
         js.executeScript("window.scrollBy(-500, 0);");
         mainPage.UgovaraPlatilacIstoLice.click();
         js.executeScript("window.scrollBy(-500, 0);");
@@ -2105,8 +2106,7 @@ public class sCoreBosnia {
         new Select(mainPage.SalesUnitPartner).selectByIndex(2);
         Thread.sleep(2500);
         for (WebElement webElement : Arrays.asList(mainPage.TechnicalPersonSearch, mainPage.TechnicalPerson, mainPage.Save, mainPage.linkActivate, mainPage.TabMoneyLaundry, mainPage.labelTednja, mainPage.labelZaposlenBA, mainPage.labelStalniPlataPorodiPrimanja, mainPage.UsvojeIme, mainPage.TrecaOsoba, mainPage.ClanPorodicePolisa, mainPage.FatcaIndicija, mainPage.SaznanjaNegativna, mainPage.TransakcijaTajnost, mainPage.IdentifikacijaProblemBA, mainPage.InformacijeKlijentBA, mainPage.linkAcceptMoneyLaundry, mainPage.linkCertificationSignature)) {
-            webElement.click();
-        }
+            webElement.click(); }
     }
 
     @Epic("sCore Bosnia")
@@ -2122,10 +2122,9 @@ public class sCoreBosnia {
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.sendKeys("Uniqa2024.!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Kapital, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click();
-        }
+            element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0001000240");
+        mainPage.BrojPonude.sendKeys("0001000255");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("16");
@@ -2140,8 +2139,7 @@ public class sCoreBosnia {
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.IdentificationNumber.sendKeys("1012984180057");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click();
-        }
+            element.click(); }
         js.executeScript("window.scrollBy(-500, 0);");
         mainPage.UgovaraPlatilacIstoLice.click();
         js.executeScript("window.scrollBy(-500, 0);");
@@ -2171,8 +2169,7 @@ public class sCoreBosnia {
         new Select(mainPage.SalesUnitPartner).selectByIndex(2);
         Thread.sleep(2500);
         for (WebElement webElement : Arrays.asList(mainPage.TechnicalPersonSearch, mainPage.TechnicalPerson, mainPage.Save, mainPage.linkActivate, mainPage.TabMoneyLaundry, mainPage.labelTednja, mainPage.labelZaposlenBA, mainPage.labelStalniPlataPorodiPrimanja, mainPage.UsvojeIme, mainPage.TrecaOsoba, mainPage.ClanPorodicePolisa, mainPage.FatcaIndicija, mainPage.SaznanjaNegativna, mainPage.TransakcijaTajnost, mainPage.IdentifikacijaProblemBA, mainPage.InformacijeKlijentBA, mainPage.linkAcceptMoneyLaundry, mainPage.linkCertificationSignature)) {
-            webElement.click();
-        }
+            webElement.click(); }
     }
 
     @Epic("sCore Bosnia")
@@ -2188,10 +2185,9 @@ public class sCoreBosnia {
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.sendKeys("Uniqa2024.!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Uniqo, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click();
-        }
+            element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0001000245");
+        mainPage.BrojPonude.sendKeys("0001000256");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("18");
@@ -2205,8 +2201,7 @@ public class sCoreBosnia {
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.IdentificationNumber.sendKeys("1012984180057");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click();
-        }
+            element.click(); }
         Thread.sleep(2500);
         js.executeScript("window.scrollBy(500, 0);");
         mainPage.DodajOsiguranik.click();
@@ -2216,8 +2211,7 @@ public class sCoreBosnia {
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame2));
         mainPage.IdentificationNumber.sendKeys("0711020700240");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click();
-        }
+            element.click(); }
         js.executeScript("window.scrollBy(500, 0);");
         Thread.sleep(2500);
         mainPage.labelUgovaraIstoLice.click();
@@ -2257,8 +2251,7 @@ public class sCoreBosnia {
         new Select(mainPage.SalesUnitPartner).selectByIndex(2);
         Thread.sleep(2500);
         for (WebElement webElement : Arrays.asList(mainPage.TechnicalPersonSearch, mainPage.TechnicalPerson, mainPage.Save, mainPage.linkActivate, mainPage.TabMoneyLaundry, mainPage.labelTednja, mainPage.labelZaposlenBA, mainPage.labelStalniPlataPorodiPrimanja, mainPage.UsvojeIme, mainPage.TrecaOsoba, mainPage.ClanPorodicePolisa, mainPage.FatcaIndicija, mainPage.SaznanjaNegativna, mainPage.TransakcijaTajnost, mainPage.IdentifikacijaProblemBA, mainPage.InformacijeKlijentBA, mainPage.linkAcceptMoneyLaundry, mainPage.linkCertificationSignature)) {
-            webElement.click();
-        }
+            webElement.click(); }
     }
 
     @Epic("sCore Bosnia")
@@ -2274,10 +2267,9 @@ public class sCoreBosnia {
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.sendKeys("Uniqa2024.!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.ComfortDual, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click();
-        }
+            element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0001000249");
+        mainPage.BrojPonude.sendKeys("0001000257");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("11");
@@ -2292,8 +2284,7 @@ public class sCoreBosnia {
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.IdentificationNumber.sendKeys("1012984180057");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click();
-        }
+            element.click(); }
         Thread.sleep(2500);
         js.executeScript("window.scrollBy(-500, 0);");
         Thread.sleep(2500);
@@ -2304,8 +2295,7 @@ public class sCoreBosnia {
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame2));
         mainPage.IdentificationNumber.sendKeys("2104986150002");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click();
-        }
+            element.click(); }
         js.executeScript("window.scrollBy(500, 0);");
         Thread.sleep(2500);
         mainPage.labelUgovaraIstoLice.click();
@@ -2345,8 +2335,7 @@ public class sCoreBosnia {
         new Select(mainPage.SalesUnitPartner).selectByIndex(2);
         Thread.sleep(2500);
         for (WebElement webElement : Arrays.asList(mainPage.TechnicalPersonSearch, mainPage.TechnicalPerson, mainPage.Save, mainPage.linkActivate, mainPage.TabMoneyLaundry, mainPage.labelTednja, mainPage.labelZaposlenBA, mainPage.labelStalniPlataPorodiPrimanja, mainPage.UsvojeIme, mainPage.TrecaOsoba, mainPage.ClanPorodicePolisa, mainPage.FatcaIndicija, mainPage.SaznanjaNegativna, mainPage.TransakcijaTajnost, mainPage.IdentifikacijaProblemBA, mainPage.InformacijeKlijentBA, mainPage.linkAcceptMoneyLaundry, mainPage.linkCertificationSignature)) {
-            webElement.click();
-        }
+            webElement.click(); }
     }
 
     @Epic("sCore Bosnia")
@@ -2362,10 +2351,9 @@ public class sCoreBosnia {
         mainPage.inputUsername.sendKeys("amina.masic");
         mainPage.inputPassword.sendKeys("Uniqa2024.!");
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.ComfortExtraPlus, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
-            element.click();
-        }
+            element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0001000251");
+        mainPage.BrojPonude.sendKeys("0001000258");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("10");
@@ -2380,8 +2368,7 @@ public class sCoreBosnia {
                 .until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(iFrame));
         mainPage.IdentificationNumber.sendKeys("1012984180057");
         for (WebElement element : Arrays.asList(mainPage.ClientSearch, mainPage.ClientPreview, mainPage.ClientAccept)) {
-            element.click();
-        }
+            element.click(); }
         js.executeScript("window.scrollBy(-500, 0);");
         mainPage.UgovaraPlatilacIstoLice.click();
         js.executeScript("window.scrollBy(-500, 0);");
@@ -2411,8 +2398,7 @@ public class sCoreBosnia {
         new Select(mainPage.SalesUnitPartner).selectByIndex(2);
         Thread.sleep(2500);
         for (WebElement webElement : Arrays.asList(mainPage.TechnicalPersonSearch, mainPage.TechnicalPerson, mainPage.Save, mainPage.linkActivate, mainPage.TabMoneyLaundry, mainPage.labelTednja, mainPage.labelZaposlenBA, mainPage.labelStalniPlataPorodiPrimanja, mainPage.UsvojeIme, mainPage.TrecaOsoba, mainPage.ClanPorodicePolisa, mainPage.FatcaIndicija, mainPage.SaznanjaNegativna, mainPage.TransakcijaTajnost, mainPage.IdentifikacijaProblemBA, mainPage.InformacijeKlijentBA, mainPage.linkAcceptMoneyLaundry, mainPage.linkCertificationSignature, mainPage.CreatePolicy, mainPage.PolisaStampaj)) {
-            webElement.click();
-        }
+            webElement.click(); }
     }
 
         @Epic("sCore Bosnia")
@@ -2563,12 +2549,11 @@ public class sCoreBosnia {
 
             }
 
-/*
     @AfterMethod
     public void tearDown() {
         driver.quit();
     }
-*/
+
     }
 
 

@@ -834,8 +834,7 @@ public class sCoreSerbia {
         mainPage.Life.click();
         for (WebElement webElement : Arrays.asList(mainPage.DozivotniNe, mainPage.NextQuestion, mainPage.MladjiOd14Ne, mainPage.NextQuestion, mainPage.OsiguranjeKreditaNe, mainPage.NextQuestion, mainPage.SamoStednjaNe, mainPage.NextQuestion, mainPage.RizikSmrtiNe, mainPage.InfoOffer)) {
             Thread.sleep(1000);
-            webElement.click();
-        }
+            webElement.click(); }
         mainPage.Product.click();
         mainPage.ClientInfo.click();
         mainPage.ClientInfo.sendKeys("Test Lice");
@@ -1063,8 +1062,7 @@ public class sCoreSerbia {
         mainPage.Life.click();
         for (WebElement webElement : Arrays.asList(mainPage.DozivotniNe, mainPage.NextQuestion, mainPage.MladjiOd14Ne, mainPage.NextQuestion, mainPage.OsiguranjeKreditaNe, mainPage.NextQuestion, mainPage.SamoStednjaDa, mainPage.NextQuestion, mainPage.JokerPlusDa, mainPage.InfoOffer)) {
             Thread.sleep(1000);
-            webElement.click();
-        }
+            webElement.click(); }
         mainPage.Product.click();
         mainPage.ClientInfo.click();
         mainPage.ClientInfo.sendKeys("Test Lice");
