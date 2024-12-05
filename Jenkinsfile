@@ -8,17 +8,17 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh './mvnw clean install'
+                bat './mvnw clean install'
             }
         }
         stage('Test') {
             steps {
-                sh './mvnw test'
+                bat './mvnw test'
             }
         }
         stage('Package') {
             steps {
-                sh './mvnw package'
+                bat './mvnw package'
             }
         }
     }
