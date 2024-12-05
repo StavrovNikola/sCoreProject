@@ -49,7 +49,7 @@ public class sCoreCroatia {
         mainPage.TB.click();
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
-        mainPage.DurationInYear.sendKeys("12");
+        mainPage.DurationInYear.sendKeys("11");
         new Select(mainPage.PaymentDinamic).selectByIndex(2);
         new Select(mainPage.PaymentMethod).selectByIndex(4);
         new Select(mainPage.Banka).selectByIndex(3);
