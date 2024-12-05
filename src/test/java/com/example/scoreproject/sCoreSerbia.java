@@ -5935,12 +5935,12 @@ public class sCoreSerbia {
         assert mainPage.CertificationSignatureMessage.getText().equals("Potvrda potpisa uspešno urađena.") : "Expected message after Certification signature";
         assert mainPage.StatusUgovora.getText().equals("Čeka BOC i UW"): "Expected document status";
 }
-
+/*
     @AfterMethod
     public void tearDown() {
         driver.quit();
     }
-
+*/
     }
 
 
