@@ -13,17 +13,17 @@ pipeline {
         }
         stage('Build') {
             steps {
-                bat './mvnw clean install'
+                bat './mvnw.cmd clean install'
             }
         }
         stage('Test') {
             steps {
-                bat './mvnw test'
+                bat './mvnw.cmd test'
             }
         }
         stage('Package') {
             steps {
-                bat './mvnw package'
+                bat './mvnw.cmd package'
             }
         }
     }
