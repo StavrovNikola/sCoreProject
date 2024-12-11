@@ -1965,7 +1965,7 @@ public class sCoreBosnia {
             element.click();
         }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0001000207");
+        mainPage.BrojPonude.sendKeys("0002001001");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("10");
@@ -2001,7 +2001,7 @@ public class sCoreBosnia {
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Classic, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0001000217");
+        mainPage.BrojPonude.sendKeys("0002001002");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("15");
@@ -2064,7 +2064,7 @@ public class sCoreBosnia {
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Comfort, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0001000219");
+        mainPage.BrojPonude.sendKeys("0002001003");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("12");
@@ -2127,7 +2127,7 @@ public class sCoreBosnia {
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Kapital, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0001000225");
+        mainPage.BrojPonude.sendKeys("0002001004");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("16");
@@ -2190,7 +2190,7 @@ public class sCoreBosnia {
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Uniqo, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0001000226");
+        mainPage.BrojPonude.sendKeys("0002001005");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("18");
@@ -2272,7 +2272,7 @@ public class sCoreBosnia {
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.ComfortDual, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0001000227");
+        mainPage.BrojPonude.sendKeys("0002001006");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("11");
@@ -2356,7 +2356,7 @@ public class sCoreBosnia {
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.ComfortExtraPlus, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0001000255");
+        mainPage.BrojPonude.sendKeys("0002001007");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("10");
