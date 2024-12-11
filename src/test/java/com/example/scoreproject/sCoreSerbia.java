@@ -2373,7 +2373,7 @@ public class sCoreSerbia {
         ImePrezime.sendKeys("Nikola Stankovic");
 
         WebElement DatumRodjenja = driver.findElement(By.xpath("/html/body/div/div/main/div[2]/div/div/div/div[1]/div[1]/div/div[2]/div/div/input"));
-        DatumRodjenja.sendKeys("01.02.1992");
+        DatumRodjenja.sendKeys("13.11.1992");
 
         WebElement Pol = driver.findElement(By.xpath("/html/body/div/div/main/div[2]/div/div/div/div[1]/div[1]/div/div[4]/label[2]/span[1]/span[1]/input"));
         Pol.click();
@@ -2419,7 +2419,7 @@ public class sCoreSerbia {
         WebElement JMBG = driver.findElement(By.xpath("/html/body/div/div/main/div[3]/div/div/div/div[1]/div/div[2]/div/div/div/div/div[1]/div[2]/div[1]/div/div/input"));
         JMBG.click();
         JMBG.clear();
-        JMBG.sendKeys("0102992700243");
+        JMBG.sendKeys("1311992700245");
 
         WebElement Pretrazi = driver.findElement(By.xpath("/html/body/div/div/main/div[3]/div/div/div/div[1]/div/div[2]/div/div/div/div/div[1]/div[2]/div[1]/button"));
         Pretrazi.click();
