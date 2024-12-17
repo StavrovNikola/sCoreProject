@@ -223,7 +223,7 @@ public class sCoreCroatia {
         mainPage.FidelisLife.click();
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
-        mainPage.DurationInYear.sendKeys("16");
+        mainPage.DurationInYear.sendKeys("15");
         new Select(mainPage.PaymentDinamic).selectByIndex(3);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -464,7 +464,7 @@ public class sCoreCroatia {
         mainPage.FidelisLife.click();
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
-        mainPage.DurationInYear.sendKeys("21");
+        mainPage.DurationInYear.sendKeys("20");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -694,7 +694,7 @@ public class sCoreCroatia {
         mainPage.FidelisLife.click();
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
-        mainPage.DurationInYear.sendKeys("16");
+        mainPage.DurationInYear.sendKeys("15");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -1297,7 +1297,7 @@ public class sCoreCroatia {
         mainPage.FidelisLife.click();
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
-        mainPage.DurationInYear.sendKeys("16");
+        mainPage.DurationInYear.sendKeys("15");
         new Select(mainPage.PaymentDinamic).selectByIndex(3);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.IndexationCRO.click();
@@ -2491,7 +2491,7 @@ public class sCoreCroatia {
         mainPage.DistributorNameSurname.sendKeys("Test");
         for (WebElement webElement1 : Arrays.asList(mainPage.FirstQuestion, mainPage.SecondQuestion, mainPage.ThirdQuestion, mainPage.FourthQuestion, mainPage.FirstQuestion1, mainPage.SecondQuestion1, mainPage.ThirdQuestion1, mainPage.FourthQuestion1, mainPage.FirstQuestion2, mainPage.SecondQuestion2, mainPage.ThirdQuestion2, mainPage.FourthQuestion2, mainPage.SaveTP, mainPage.PrintTP, mainPage.linkCreateNewContract)) {
             webElement1.click(); }
-        mainPage.DurationInYear.sendKeys("11");
+        mainPage.DurationInYear.sendKeys("10");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(2);
@@ -2579,7 +2579,7 @@ public class sCoreCroatia {
         mainPage.DistributorNameSurname.sendKeys("Test");
         for (WebElement webElement1 : Arrays.asList(mainPage.FirstQuestion, mainPage.SecondQuestion, mainPage.ThirdQuestion, mainPage.FourthQuestion, mainPage.FirstQuestion1, mainPage.SecondQuestion1, mainPage.ThirdQuestion1, mainPage.FourthQuestion1, mainPage.FirstQuestion2, mainPage.SecondQuestion2, mainPage.ThirdQuestion2, mainPage.FourthQuestion2, mainPage.SaveTP, mainPage.PrintTP, mainPage.linkCreateNewContract)) {
             webElement1.click(); }
-        mainPage.DurationInYear.sendKeys("11");
+        mainPage.DurationInYear.sendKeys("10");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(2);
@@ -2668,7 +2668,7 @@ public class sCoreCroatia {
         mainPage.DistributorNameSurname.sendKeys("Test");
         for (WebElement webElement1 : Arrays.asList(mainPage.FirstQuestion, mainPage.SecondQuestion, mainPage.ThirdQuestion, mainPage.FourthQuestion, mainPage.FirstQuestion1, mainPage.SecondQuestion1, mainPage.ThirdQuestion1, mainPage.FourthQuestion1, mainPage.FirstQuestion2, mainPage.SecondQuestion2, mainPage.ThirdQuestion2, mainPage.FourthQuestion2, mainPage.SaveTP, mainPage.PrintTP, mainPage.linkCreateNewContract)) {
             webElement1.click(); }
-        mainPage.DurationInYear.sendKeys("16");
+        mainPage.DurationInYear.sendKeys("15");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(3);
@@ -2756,7 +2756,7 @@ public class sCoreCroatia {
         mainPage.DistributorNameSurname.sendKeys("Test");
         for (WebElement webElement1 : Arrays.asList(mainPage.FirstQuestion, mainPage.SecondQuestion, mainPage.ThirdQuestion, mainPage.FourthQuestion, mainPage.FirstQuestion1, mainPage.SecondQuestion1, mainPage.ThirdQuestion1, mainPage.FourthQuestion1, mainPage.FirstQuestion2, mainPage.SecondQuestion2, mainPage.ThirdQuestion2, mainPage.FourthQuestion2, mainPage.SaveTP, mainPage.PrintTP, mainPage.linkCreateNewContract)) {
             webElement1.click(); }
-        mainPage.DurationInYear.sendKeys("21");
+        mainPage.DurationInYear.sendKeys("20");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
@@ -2844,7 +2844,7 @@ public class sCoreCroatia {
         mainPage.DistributorNameSurname.sendKeys("Test");
         for (WebElement webElement1 : Arrays.asList(mainPage.FirstQuestion, mainPage.SecondQuestion, mainPage.ThirdQuestion, mainPage.FourthQuestion, mainPage.FirstQuestion1, mainPage.SecondQuestion1, mainPage.ThirdQuestion1, mainPage.FourthQuestion1, mainPage.FirstQuestion2, mainPage.SecondQuestion2, mainPage.ThirdQuestion2, mainPage.FourthQuestion2, mainPage.SaveTP, mainPage.PrintTP, mainPage.linkCreateNewContract)) {
             webElement1.click(); }
-        mainPage.DurationInYear.sendKeys("26");
+        mainPage.DurationInYear.sendKeys("25");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(5);
@@ -2931,7 +2931,7 @@ public class sCoreCroatia {
         mainPage.DistributorNameSurname.sendKeys("Test");
         for (WebElement webElement1 : Arrays.asList(mainPage.FirstQuestion, mainPage.SecondQuestion, mainPage.ThirdQuestion, mainPage.FourthQuestion, mainPage.FirstQuestion1, mainPage.SecondQuestion1, mainPage.ThirdQuestion1, mainPage.FourthQuestion1, mainPage.FirstQuestion2, mainPage.SecondQuestion2, mainPage.ThirdQuestion2, mainPage.FourthQuestion2, mainPage.SaveTP, mainPage.PrintTP, mainPage.linkCreateNewContract)) {
             webElement1.click(); }
-        mainPage.DurationInYear.sendKeys("31");
+        mainPage.DurationInYear.sendKeys("30");
         mainPage.ContentPlaceHolder.sendKeys("Zagreb");
         mainPage.ContentPlaceHolder1.click();
         new Select(mainPage.PaymentDinamic).selectByIndex(5);
