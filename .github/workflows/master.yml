@@ -32,4 +32,5 @@ jobs:
 
       - name: Run Tests
         run: |
-          C:\Users\rss0108\apache-maven-3.9.4\bin\mvn test -X -Dtest=*
+          C:\Users\rss0108\apache-maven-3.9.4\bin\mvn test -X
+      
