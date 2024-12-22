@@ -79,10 +79,10 @@
                         </property>
                     </systemProperties>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>src/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <includes>
-                        <include>**/*Test.java</include>  <!-- Ensure Test classes are included -->
+                        <include>**/*Test.java</include>  <!-- Make sure all Test classes are included -->
                     </includes>
                     <testFailureIgnore>false</testFailureIgnore>  <!-- Don't ignore test failures -->
                     <skipTests>false</skipTests>
