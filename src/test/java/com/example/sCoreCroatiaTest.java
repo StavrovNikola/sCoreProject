@@ -1,4 +1,4 @@
-package com.example.scoreproject;
+package com.example;
 import com.example.MainPage;
 import io.qameta.allure.*;
 import org.openqa.selenium.By;
