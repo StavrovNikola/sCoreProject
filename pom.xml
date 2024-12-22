@@ -81,6 +81,11 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <includes>
+                        <include>**/*Test.java</include>  <!-- Ensure Test classes are included -->
+                    </includes>
+                    <testFailureIgnore>false</testFailureIgnore>  <!-- Don't ignore test failures -->
+                    <skipTests>false</skipTests>
                 </configuration>
                 <dependencies>
                     <dependency>
