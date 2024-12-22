@@ -28,16 +28,10 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          # Explicitly set Maven path for PowerShell session
-          $env:PATH = $env:PATH + ";C:\Users\rss0108\apache-maven-3.9.4\bin"
-          echo $env:PATH
-          where mvn
-          mvn install -DskipTests
+          # Directly use the full path to mvn
+          C:\Users\rss0108\apache-maven-3.9.4\bin\mvn install -DskipTests
 
       - name: Run Tests
         run: |
-          # Explicitly set Maven path for PowerShell session
-          $env:PATH = $env:PATH + ";C:\Users\rss0108\apache-maven-3.9.4\bin"
-          echo $env:PATH
-          where mvn
-          mvn test
+          # Directly use the full path to mvn
+          C:\Users\rss0108\apache-maven-3.9.4\bin\mvn test
