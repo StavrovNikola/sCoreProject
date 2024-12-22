@@ -22,7 +22,7 @@ jobs:
 
       - name: Add Maven to PATH
         run: |
-          echo "C:\Users\rss0108\apache-maven-3.9.4\bin" | setx PATH "$env:PATH"
+          $env:PATH="C:\Users\rss0108\apache-maven-3.9.4\bin;$env:PATH"
 
       - name: Debug PATH
         run: |
