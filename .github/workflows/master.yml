@@ -1,0 +1,27 @@
+name: Run Selenium Tests
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  run-tests:
+    runs-on: self-hosted
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up JDK
+      uses: actions/setup-java@v3
+      with:
+        java-version: '21' # Or specify your required JDK version
+        distribution: 'temurin'
+
+    - name: Install Dependencies
+      run: mvn install -DskipTests
+
+    - name: Run Tests
+      run: mvn test
