@@ -28,10 +28,10 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          export PATH=$PATH:"C:\Users\rss0108\apache-maven-3.9.4\bin"  # Maven path updated
+          $env:PATH = $env:PATH + ";C:\Users\rss0108\apache-maven-3.9.4\bin"  # Add Maven path correctly for PowerShell
           mvn install -DskipTests
 
       - name: Run Tests
         run: |
-          export PATH=$PATH:"C:\Users\rss0108\apache-maven-3.9.4\bin"  # Maven path updated
+          $env:PATH = $env:PATH + ";C:\Users\rss0108\apache-maven-3.9.4\bin"  # Add Maven path correctly for PowerShell
           mvn test
