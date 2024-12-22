@@ -27,7 +27,11 @@ jobs:
           mvn -v
 
       - name: Install Dependencies
-        run: mvn install -DskipTests
+        run: |
+          export PATH=$PATH:"C:\Users\rss0108\apache-maven-3.9.4\bin"  # Maven path updated
+          mvn install -DskipTests
 
       - name: Run Tests
-        run: mvn test
+        run: |
+          export PATH=$PATH:"C:\Users\rss0108\apache-maven-3.9.4\bin"  # Maven path updated
+          mvn test
