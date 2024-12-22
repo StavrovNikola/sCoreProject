@@ -11,24 +11,30 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-    - name: Set up JDK
-      uses: actions/setup-java@v3
-      with:
-        java-version: '21' # Or specify your required JDK version
-        distribution: 'temurin'
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          java-version: '21'
+          distribution: 'temurin'
 
-    - name: Install Maven
-      run: |
-        curl -o maven.tar.gz https://downloads.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.tar.gz
-        tar -xzf maven.tar.gz -C $HOME
-        echo "$HOME/apache-maven-3.9.4/bin" >> $GITHUB_PATH
+      - name: Debug PATH
+        run: |
+          echo "PATH: $PATH"
+          which mvn
+          mvn -v
 
+      - name: Install Maven
+        run: |
+          curl -o maven.tar.gz https://downloads.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.tar.gz
+          tar -xzf maven.tar.gz -C $HOME
+          echo "$HOME/apache-maven-3.9.4/bin" >> $GITHUB_PATH
+          mvn -v
 
-    - name: Install Dependencies
-      run: mvn install -DskipTests
+      - name: Install Dependencies
+        run: mvn install -DskipTests
 
-    - name: Run Tests
-      run: mvn test
+      - name: Run Tests
+        run: mvn test
