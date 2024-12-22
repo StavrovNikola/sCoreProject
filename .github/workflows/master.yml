@@ -20,6 +20,10 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
+      - name: Add Maven to PATH
+        run: |
+          echo "C:\Users\rss0108\apache-maven-3.9.4\bin" | setx PATH "$env:PATH"
+
       - name: Debug PATH
         run: |
           echo "PATH: $env:PATH"
@@ -28,10 +32,8 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          # Directly use the full path to mvn
-          C:\Users\rss0108\apache-maven-3.9.4\bin\mvn install -DskipTests
+          mvn install -DskipTests
 
       - name: Run Tests
         run: |
-          # Directly use the full path to mvn
-          C:\Users\rss0108\apache-maven-3.9.4\bin\mvn test
+          mvn test
