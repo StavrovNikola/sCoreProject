@@ -22,15 +22,8 @@ jobs:
 
       - name: Debug PATH
         run: |
-          echo "PATH: $PATH"
-          which mvn
-          mvn -v
-
-      - name: Install Maven
-        run: |
-          curl -o maven.tar.gz https://downloads.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.tar.gz
-          tar -xzf maven.tar.gz -C $HOME
-          echo "$HOME/apache-maven-3.9.4/bin" >> $GITHUB_PATH
+          echo "PATH: $env:PATH"
+          where mvn
           mvn -v
 
       - name: Install Dependencies
