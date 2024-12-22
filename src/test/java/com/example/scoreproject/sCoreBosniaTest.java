@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.Arrays;
 
-public class sCoreBosnia {
+public class sCoreBosniaTest {
 
     private MainPage mainPage;
     WebDriver driver;

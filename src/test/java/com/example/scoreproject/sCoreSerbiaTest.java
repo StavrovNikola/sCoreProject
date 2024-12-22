@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
 
-public class sCoreSerbia {
+public class sCoreSerbiaTest {
     private MainPage mainPage;
     WebDriver driver;
 

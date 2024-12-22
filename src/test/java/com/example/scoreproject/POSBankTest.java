@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.Arrays;
 
-public class POSBank {
+public class POSBankTest {
 
     private MainPage mainPage;
     WebDriver driver;
