@@ -20,18 +20,16 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Debug PATH
+      - name: Debug Maven and Java
         run: |
-          echo "PATH: $env:PATH"
-          where mvn
-          C:\Users\rss0108\apache-maven-3.9.4\bin\mvn -v
+          mvn -v
+          java -version
 
       - name: Install Dependencies
-        run: |
-          C:\Users\rss0108\apache-maven-3.9.4\bin\mvn install
+        run: mvn install
 
       - name: Verify testng.xml exists
         run: dir src\resources
 
       - name: Run Tests
-          mvn clean test -DsuiteXmlFile=testng.xml
+        run: mvn clean test -DsuiteXmlFile=src/resources/testng.xml
