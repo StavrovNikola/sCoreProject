@@ -11,8 +11,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.target>21</maven.compiler.target>
-        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
         <aspectj.version>1.9.22</aspectj.version>
         <allure.version>2.27.0</allure.version>
     </properties>
@@ -60,6 +60,7 @@
             <version>2.0.13</version>
             <scope>test</scope>
         </dependency>
+        <dependencies>
     </dependencies>
     <build>
         <plugins>
@@ -78,14 +79,6 @@
                             <value>${project.build.directory}/allure-results</value>
                         </property>
                     </systemProperties>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>src/resources/testng.xml</suiteXmlFile>
-                    </suiteXmlFiles>
-                    <includes>
-                        <include>**/*Test.java</include>  <!-- Make sure all Test classes are included -->
-                    </includes>
-                    <testFailureIgnore>false</testFailureIgnore>  <!-- Don't ignore test failures -->
-                    <skipTests>false</skipTests>
                 </configuration>
                 <dependencies>
                     <dependency>
