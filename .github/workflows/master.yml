@@ -34,4 +34,4 @@ jobs:
         run: dir src\resources
 
       - name: Run Tests
-        run: mvn test -B -e -X -DsuiteXmlFile=src/resources/testng.xml
+          mvn clean test -DsuiteXmlFile=testng.xml
