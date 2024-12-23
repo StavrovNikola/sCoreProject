@@ -31,7 +31,7 @@ jobs:
           C:\Users\rss0108\apache-maven-3.9.4\bin\mvn install
 
       - name: Verify testng.xml exists
-        run: dir src\test\resources
+        run: dir src\resources
 
       - name: Run Tests
         run: mvn test -B -e -X -DsuiteXmlFile=src/resources/testng.xml
