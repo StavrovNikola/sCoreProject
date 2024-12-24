@@ -35,7 +35,7 @@ pipeline {
     post {
         always {
             archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
-            allure includeProperties: false, jdk: '', results: [[path: 'C:\Users\rss0108\AquaProjects\sCoreProject\allure-results']]
+            allure includeProperties: false, jdk: '', results: [[path: 'sCoreProject/allure-results']]
         }
     }
 }
