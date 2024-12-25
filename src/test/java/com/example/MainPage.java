@@ -1325,6 +1325,9 @@ public class MainPage {
     @FindBy(css = "#DurationMonthValue")
     public WebElement DurationInMonthsMNE;
 
+    @FindBy(css = "#Kol2")
+    public WebElement StartOfInsurance;
+
     @FindBy(css = "html > body > form > div:nth-of-type(4) > div:nth-of-type(2) > div > div > div:nth-of-type(13) > div > div > div > div:nth-of-type(2) > div > div > div:nth-of-type(4) > div > table > tbody > tr:nth-of-type(2) > td:nth-of-type(40) > div > div > span > a > img")
     public WebElement ImageSearchMNE;
 
@@ -1939,6 +1942,8 @@ public class MainPage {
 
     @FindBy(css = "#btn_ExportToExcel")
     public WebElement ExportToExcel;
+
+
 
 
 

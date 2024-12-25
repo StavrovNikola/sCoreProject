@@ -104,7 +104,7 @@ public class sCoreMontenegroTest {
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
         mainPage.DatumPocetka.clear();
-        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.sendKeys("01.01.2025");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -156,7 +156,7 @@ public class sCoreMontenegroTest {
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
         mainPage.DatumPocetka.clear();
-        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.sendKeys("01.01.2025");
         new Select(mainPage.PaymentDinamic).selectByIndex(2);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -206,7 +206,7 @@ public class sCoreMontenegroTest {
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
         mainPage.DatumPocetka.clear();
-        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.sendKeys("01.01.2025");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(2);
         new Select(mainPage.Banka).selectByIndex(7);
@@ -303,7 +303,7 @@ public class sCoreMontenegroTest {
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
         mainPage.DatumPocetka.clear();
-        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.sendKeys("01.01.2025");
         new Select(mainPage.PaymentDinamic).selectByIndex(1);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -400,7 +400,7 @@ public class sCoreMontenegroTest {
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
         mainPage.DatumPocetka.clear();
-        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.sendKeys("01.01.2025");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -452,7 +452,7 @@ public class sCoreMontenegroTest {
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
         mainPage.DatumPocetka.clear();
-        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.sendKeys("01.01.2025");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -497,12 +497,12 @@ public class sCoreMontenegroTest {
         mainPage.ClientInfo.sendKeys("Test Lice");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
-        mainPage.DurationInYear.sendKeys("18");
+        mainPage.DurationInYear.sendKeys("17");
         mainPage.ContentPlaceHolder.click();
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
         mainPage.DatumPocetka.clear();
-        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.sendKeys("01.01.2025");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(2);
         new Select(mainPage.Banka).selectByIndex(7);
@@ -599,7 +599,7 @@ public class sCoreMontenegroTest {
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
         mainPage.DatumPocetka.clear();
-        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.sendKeys("01.01.2025");
         new Select(mainPage.PaymentDinamic).selectByIndex(1);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -696,7 +696,7 @@ public class sCoreMontenegroTest {
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
         mainPage.DatumPocetka.clear();
-        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.sendKeys("01.01.2025");
         mainPage.DatumPocetka.clear();
         mainPage.DatumPocetka.sendKeys("01.12.2024");
         new Select(mainPage.PaymentDinamic).selectByIndex(3);
@@ -750,7 +750,7 @@ public class sCoreMontenegroTest {
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
         mainPage.DatumPocetka.clear();
-        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.sendKeys("01.01.2025");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -800,7 +800,7 @@ public class sCoreMontenegroTest {
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
         mainPage.DatumPocetka.clear();
-        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.sendKeys("01.01.2025");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(2);
         new Select(mainPage.Banka).selectByIndex(7);
@@ -897,7 +897,7 @@ public class sCoreMontenegroTest {
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
         mainPage.DatumPocetka.clear();
-        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.sendKeys("01.01.2025");
         new Select(mainPage.PaymentDinamic).selectByIndex(1);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();
@@ -2094,7 +2094,7 @@ public class sCoreMontenegroTest {
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
         mainPage.DatumPocetka.clear();
-        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.sendKeys("01.01.2025");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabPersons.click();
@@ -2146,7 +2146,7 @@ public class sCoreMontenegroTest {
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
         mainPage.DatumPocetka.clear();
-        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.sendKeys("01.01.2025");
         new Select(mainPage.PaymentDinamic).selectByIndex(2);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabPersons.click();
@@ -2199,7 +2199,7 @@ public class sCoreMontenegroTest {
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
         mainPage.DatumPocetka.clear();
-        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.sendKeys("01.01.2025");
         new Select(mainPage.PaymentDinamic).selectByIndex(3);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.Vinculation.click();
@@ -2314,7 +2314,7 @@ public class sCoreMontenegroTest {
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
         mainPage.DatumPocetka.clear();
-        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.sendKeys("01.01.2025");
         new Select(mainPage.PaymentDinamic).selectByIndex(4);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabPersons.click();
@@ -2423,7 +2423,7 @@ public class sCoreMontenegroTest {
         mainPage.ContentPlaceHolder.sendKeys("Podgorica");
         mainPage.ContentPlaceHolder1.click();
         mainPage.DatumPocetka.clear();
-        mainPage.DatumPocetka.sendKeys("01.12.2024");
+        mainPage.DatumPocetka.sendKeys("01.01.2025");
         new Select(mainPage.PaymentDinamic).selectByIndex(1);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabPersons.click();
