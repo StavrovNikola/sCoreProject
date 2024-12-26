@@ -216,7 +216,7 @@ public class sCoreMontenegroTest {
         mainPage.InsuredSumOrPremium.clear();
         mainPage.InsuredSumOrPremium.sendKeys("25000");
         mainPage.DateOfBirth.click();
-        mainPage.DateOfBirth.sendKeys("01.01.2023");
+        mainPage.DateOfBirth.sendKeys("01.01.2024");
         new Select(mainPage.GenderConcernPerson).selectByIndex(2);
         mainPage.Accept.click();
         mainPage.Calculate.click();
