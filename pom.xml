@@ -18,12 +18,14 @@
     </properties>
 
     <dependencies>
-        <dependency>
+
+    <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.20.0</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
@@ -60,7 +62,7 @@
             <version>2.0.13</version>
             <scope>test</scope>
         </dependency>
-        <dependencies>
+
     </dependencies>
     <build>
         <plugins>
