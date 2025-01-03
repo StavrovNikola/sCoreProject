@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
         jdk 'Java_21'       // Replace 'Java_21' with the JDK name configured in Jenkins
-        maven 'Maven_3.8.1' // Replace 'Maven_3.8.1' with the Maven name configured in Jenkins
+        maven 'Maven_3.8.1' // Replace 'Maven_3.8.1' with the Maven configured in Jenkins
     }
     environment {
         ALLURE_RESULTS = 'target/allure-results'
