@@ -248,6 +248,7 @@ public class sCoreCroatiaTest {
         mainPage.Save.click();
         mainPage.Activate.click();
         mainPage.Print.click();
+        Thread.sleep(3500);
         mainPage.CreateNewContract.click();
         mainPage.CustomerName.sendKeys("Test");
         mainPage.CustomerVocational.sendKeys("Test");
@@ -488,6 +489,7 @@ public class sCoreCroatiaTest {
         mainPage.Save.click();
         mainPage.Activate.click();
         mainPage.Print.click();
+        Thread.sleep(3500);
         mainPage.CreateNewContract.click();
         mainPage.CustomerName.sendKeys("Test");
         mainPage.CustomerVocational.sendKeys("Test");
@@ -713,6 +715,7 @@ public class sCoreCroatiaTest {
         mainPage.Calculate.click();
         mainPage.Activate1.click();
         mainPage.Print.click();
+        Thread.sleep(3500);
         mainPage.CreateNewContract.click();
         mainPage.CustomerName.sendKeys("Test");
         mainPage.CustomerVocational.sendKeys("Test");

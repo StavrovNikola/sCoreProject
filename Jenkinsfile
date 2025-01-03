@@ -1,41 +1,50 @@
 pipeline {
-    agent any
-    environment {
+   agent any
+   tools {
         JAVA_HOME = 'C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.4.7-hotspot'
-        PATH = "${JAVA_HOME}\\bin;${env.PATH}"
+                PATH = "${JAVA_HOME}\\bin;${env.PATH}"
     }
-
+    environment {
+        ALLURE_RESULTS = 'target/allure-results'
+    }
     stages {
         stage('Checkout') {
             steps {
-                checkout scm
+                // Clone the repository
+                git branch: 'master', url: 'https://github.com/StavrovNikola/sCoreProject.git' // Replace with your repo URL
             }
         }
         stage('Build') {
             steps {
-                bat './mvnw.cmd clean install'
+                // Clean and build the Maven project
+                sh 'mvn clean install'
             }
         }
-        stage('Test') {
+        stage('Run Tests') {
             steps {
-                bat './mvnw.cmd test'
-            }
-        }
-        stage('Package') {
-            steps {
-                bat './mvnw.cmd package'
+                // Run Selenium TestNG tests
+                sh 'mvn test'
             }
         }
         stage('Generate Allure Report') {
             steps {
-                bat './mvnw.cmd allure:report'
+                // Generate Allure report
+                sh 'mvn allure:report'
+            }
+        }
+        stage('Publish Allure Report') {
+            steps {
+                // Publish Allure report in Jenkins
+                allure includeProperties: false, jdk: '', results: [[path: "${env.ALLURE_RESULTS}"]]
             }
         }
     }
     post {
         always {
-            archiveArtifacts artifacts: 'target/*.jar', fingerprint: true
-            allure includeProperties: false, jdk: '', results: [[path: 'sCoreProject/allure-results']]
+            // Archive test results and other build artifacts
+            junit 'target/surefire-reports/*.xml'
+            archiveArtifacts artifacts: 'target/**/*.jar', allowEmptyArchive: true
         }
     }
 }
+
