@@ -1,8 +1,8 @@
 pipeline {
    agent any
    tools {
-        JAVA_HOME = 'C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.4.7-hotspot'
-                PATH = "${JAVA_HOME}\\bin;${env.PATH}"
+        jdk 'Java_21'
+        maven 'Maven_3.2.5'
     }
     environment {
         ALLURE_RESULTS = 'target/allure-results'
