@@ -24,10 +24,8 @@ public class sCoreBosniaTest {
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("window-size=1920,1080");
         options.addArguments("--remote-allow-origins=*");
-        options.addArguments("--headless");
-        options.addArguments("--disable-gpu");
-        options.addArguments("--no-sandbox");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -1969,7 +1967,7 @@ public class sCoreBosniaTest {
             element.click();
         }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0002001059");
+        mainPage.BrojPonude.sendKeys("0002001066");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("10");
@@ -2005,7 +2003,7 @@ public class sCoreBosniaTest {
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Classic, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0002001060");
+        mainPage.BrojPonude.sendKeys("0002001067");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("15");
@@ -2068,7 +2066,7 @@ public class sCoreBosniaTest {
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Comfort, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0002001061");
+        mainPage.BrojPonude.sendKeys("0002001068");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("12");
@@ -2131,7 +2129,7 @@ public class sCoreBosniaTest {
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Kapital, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0002001062");
+        mainPage.BrojPonude.sendKeys("0002001069");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("16");
@@ -2194,7 +2192,7 @@ public class sCoreBosniaTest {
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.Uniqo, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0002001063");
+        mainPage.BrojPonude.sendKeys("0002001070");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("18");
@@ -2276,7 +2274,7 @@ public class sCoreBosniaTest {
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.ComfortDual, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("0002001064");
+        mainPage.BrojPonude.sendKeys("0002001071");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("11");
@@ -2360,7 +2358,7 @@ public class sCoreBosniaTest {
         for (WebElement element : Arrays.asList(mainPage.buttonLogin, mainPage.Life, mainPage.ComfortExtraPlus, mainPage.RibbonMenu, mainPage.NewDocument, mainPage.RibbonMenuNewContract)) {
             element.click(); }
         new Select(mainPage.BusinessUnit).selectByIndex(21);
-        mainPage.BrojPonude.sendKeys("00020010265");
+        mainPage.BrojPonude.sendKeys("00020010272");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
         mainPage.DurationInYear.sendKeys("10");
