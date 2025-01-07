@@ -24,11 +24,19 @@ public class sCoreBosniaTest {
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless"); // Enable headless mode for Jenkins
+        options.addArguments("--disable-gpu");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-infobars");
+        options.addArguments("--disable-extensions");
+        options.addArguments("--disable-popup-blocking");
+        options.addArguments("--disable-notifications");
         options.addArguments("window-size=1920,1080");
-        options.addArguments("--remote-allow-origins=*");
-        driver = new ChromeDriver();
+
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.get("https://t-unba-iis.uniqa.ba/POS/BosniaAndHerzegovina/Products");
         mainPage = new MainPage(driver);
     }
