@@ -2369,7 +2369,7 @@ public class sCoreBosniaTest {
         mainPage.BrojPonude.sendKeys("0002001086");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
-        mainPage.DurationInYear.sendKeys("10");
+        mainPage.DurationInYear.sendKeys("11");
         new Select(mainPage.PaymentDinamic).selectByIndex(1);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabPersons.click();
