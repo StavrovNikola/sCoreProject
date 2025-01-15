@@ -344,7 +344,7 @@ public class sCoreCroatiaTest {
         mainPage.MO.click();
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
-        mainPage.DurationInYear.sendKeys("11");
+        mainPage.DurationInYear.sendKeys("10");
         new Select(mainPage.PaymentDinamic).selectByIndex(2);
         new Select(mainPage.PaymentMethod).selectByIndex(1);
         mainPage.TabConcerns.click();

@@ -231,7 +231,7 @@ public class sCoreSerbiaTest {
         mainPage.ClientInfo.sendKeys("Test Lice");
         mainPage.DurationInYear.click();
         mainPage.DurationInYear.clear();
-        mainPage.DurationInYear.sendKeys("20");
+        mainPage.DurationInYear.sendKeys("21");
         mainPage.ContentPlaceHolder.click();
         mainPage.ContentPlaceHolder.sendKeys("Beograd");
         mainPage.ContentPlaceHolder1.click();
